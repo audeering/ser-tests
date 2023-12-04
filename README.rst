@@ -15,7 +15,7 @@ and robustness.
 * arousal_
 * dominance_
 * valence_
-* `emotional categoris`_
+* `emotional categories`_
 
 
 **Usage**
