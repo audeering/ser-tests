@@ -1,0 +1,624 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Robustness simulated recording condition &mdash; SER Tests</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Robustness small changes" href="robustness_small_changes.html" />
+    <link rel="prev" title="Robustness recording condition" href="robustness_recording_condition.html" />
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <a href="../../../index.html">
+          
+            <img src="../../../_static/images/audeering.png" class="logo" alt="audEERING"/>
+          
+          
+            <span> SER Tests</span>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v18bf98f
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../method-tests.html">Method Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bibliography.html">Bibliography</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Results</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dominance.html">Dominance</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../valence.html">Valence</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../1543ec32-1.0.3/index.html">CNN14</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">hubert-L</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="correctness_consistency.html">Correctness consistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_distribution.html">Correctness distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_regression.html">Correctness regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_speaker_average.html">Correctness speaker average</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_speaker_ranking.html">Correctness speaker ranking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_accent.html">Fairness accent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_language.html">Fairness language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_linguistic_sentiment.html">Fairness linguistic sentiment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_pitch.html">Fairness pitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_background_noise.html">Robustness background noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_low_quality_phone.html">Robustness low quality phone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_recording_condition.html">Robustness recording condition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Robustness simulated recording condition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#percentage-unchanged-predictions-simulated-position">Percentage Unchanged Predictions Simulated Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#percentage-unchanged-predictions-simulated-room">Percentage Unchanged Predictions Simulated Room</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization-simulated-position">Visualization Simulated Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization-simulated-room">Visualization Simulated Room</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_small_changes.html">Robustness small changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_spectral_tilt.html">Robustness spectral tilt</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../75e4ad67-1.1.0/index.html">hubert-b</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../random-gaussian/index.html">random-gaussian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../d6bb0fbb-1.0.0/index.html">w2v2-L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../51c582b7-1.0.0/index.html">w2v2-L-robust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../171c3b63-1.0.0/index.html">w2v2-L-vox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../d800ca50-1.0.0/index.html">w2v2-L-xls-r</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../a3b14624-1.1.0/index.html">w2v2-b</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../emotion.html">Emotion</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Comparisons</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../comparison/arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../comparison/dominance.html">Dominance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../comparison/valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../comparison/emotion.html">Emotion</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SER Tests</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../valence.html">Valence</a> &raquo;</li>
+          <li><a href="index.html">hubert-L</a> &raquo;</li>
+      <li>Robustness simulated recording condition</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://gitlab.audeering.com/audeering/ser-tests/" class="fa fa-gitlab"> GitLab</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="robustness-simulated-recording-condition">
+<span id="test-valence-cf81bd56-1-1-0-robustness-simulated-recording-condition"></span><h1>Robustness simulated recording condition<a class="headerlink" href="#robustness-simulated-recording-condition" title="Permalink to this heading">¶</a></h1>
+<p>0.0% passed tests (0 <span class="green">passed</span> / 6 <span class="red">failed</span>).</p>
+<div class="section" id="percentage-unchanged-predictions-simulated-position">
+<h2>Percentage Unchanged Predictions Simulated Position<a class="headerlink" href="#percentage-unchanged-predictions-simulated-position" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Threshold: 0.8</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Data</p></th>
+<th class="head"><p>Percentage Unchanged Predictions Simulated Position</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>emovo-1.2.1-emotion.test</p></td>
+<td><p><span class="red">0.65</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>imda-nsc-read-speech-balanced-2.6.0-headset</p></td>
+<td><p><span class="red">0.67</span></p></td>
+</tr>
+<tr class="row-even"><td><p>timit-1.4.1-files</p></td>
+<td><p><span class="red">0.75</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.69</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="percentage-unchanged-predictions-simulated-room">
+<h2>Percentage Unchanged Predictions Simulated Room<a class="headerlink" href="#percentage-unchanged-predictions-simulated-room" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: 0.8</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Data</p></th>
+<th class="head"><p>Percentage Unchanged Predictions Simulated Room</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>emovo-1.2.1-emotion.test</p></td>
+<td><p><span class="red">0.58</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>imda-nsc-read-speech-balanced-2.6.0-headset</p></td>
+<td><p><span class="red">0.66</span></p></td>
+</tr>
+<tr class="row-even"><td><p>timit-1.4.1-files</p></td>
+<td><p><span class="red">0.64</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.63</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="visualization-simulated-position">
+<h2>Visualization Simulated Position<a class="headerlink" href="#visualization-simulated-position" title="Permalink to this heading">¶</a></h2>
+<p>Difference of predictions for audio with a baseline simulated position and audio with a different simulated position. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<div class="figure align-center">
+<img alt="../../../_images/visualization-simulated-position_emovo-1.2.1-emotion.test28.png" src="../../../_images/visualization-simulated-position_emovo-1.2.1-emotion.test28.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../../_images/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset28.png" src="../../../_images/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset28.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../../_images/visualization-simulated-position_timit-1.4.1-files28.png" src="../../../_images/visualization-simulated-position_timit-1.4.1-files28.png" />
+</div>
+</div>
+<div class="section" id="visualization-simulated-room">
+<h2>Visualization Simulated Room<a class="headerlink" href="#visualization-simulated-room" title="Permalink to this heading">¶</a></h2>
+<p>Difference of predictions for audio with a baseline simulated room and audio with a different simulated room. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<div class="figure align-center">
+<img alt="../../../_images/visualization-simulated-room_emovo-1.2.1-emotion.test28.png" src="../../../_images/visualization-simulated-room_emovo-1.2.1-emotion.test28.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../../_images/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset28.png" src="../../../_images/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset28.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../../_images/visualization-simulated-room_timit-1.4.1-files28.png" src="../../../_images/visualization-simulated-room_timit-1.4.1-files28.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="robustness_small_changes.html" class="btn btn-neutral float-right" title="Robustness small changes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="robustness_recording_condition.html" class="btn btn-neutral float-left" title="Robustness recording condition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div>
+      
+      
+      
+      
+      
+      
+      
+      
+        <ul>
+          <li><a href="http://data.pp.audeering.com">Data</a></li>
+          <li><a href="http://devops.pp.audeering.com/sphinx/">Docs</a></li>
+          <li><a href="http://devops.pp.audeering.com/">Infra</a></li>
+          <li><a href="http://models.pp.audeering.com">Models</a></li>
+          <li><a href="http://research.pp.audeering.com">Research</a></li>
+          <li><a href="http://tools.pp.audeering.com">Tools</a></li>
+        </ul>
+      
+    <p>
+        
+        
+        
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+        
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        
+      &copy; 2023 audEERING GmbH
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

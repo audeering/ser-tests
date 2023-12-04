@@ -1,0 +1,214 @@
+.. _test-arousal-75e4ad67-1.1.0-robustness_background_noise:
+
+Robustness background noise
+===========================
+
+.. role:: red
+.. role:: green
+
+47.2% passed tests (17 :green:`passed` / 19 :red:`failed`).
+
+
+Change Average Value Babble Noise
+---------------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_background_noise/change-average-value-babble-noise.csv
+
+Change Average Value Coughing
+-----------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_background_noise/change-average-value-coughing.csv
+
+Change Average Value Environmental Noise
+----------------------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_background_noise/change-average-value-environmental-noise.csv
+
+Change Average Value Music
+--------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_background_noise/change-average-value-music.csv
+
+Change Average Value Sneezing
+-----------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_background_noise/change-average-value-sneezing.csv
+
+Change Average Value White Noise
+--------------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_background_noise/change-average-value-white-noise.csv
+
+Change Ccc Babble Noise
+-----------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-ccc-babble-noise.csv
+
+Change Ccc Coughing
+-------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-ccc-coughing.csv
+
+Change Ccc Environmental Noise
+------------------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-ccc-environmental-noise.csv
+
+Change Ccc Music
+----------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-ccc-music.csv
+
+Change Ccc Sneezing
+-------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-ccc-sneezing.csv
+
+Change Ccc White Noise
+----------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-ccc-white-noise.csv
+
+Percentage Unchanged Predictions Babble Noise
+---------------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-babble-noise.csv
+
+Percentage Unchanged Predictions Coughing
+-----------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-coughing.csv
+
+Percentage Unchanged Predictions Environmental Noise
+----------------------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-environmental-noise.csv
+
+Percentage Unchanged Predictions Music
+--------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-music.csv
+
+Percentage Unchanged Predictions Sneezing
+-----------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-sneezing.csv
+
+Percentage Unchanged Predictions White Noise
+--------------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-white-noise.csv
+
+Visualization Babble Noise
+--------------------------
+
+Difference of predictions for clean audio and audio with added babble noise. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-babble-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+Visualization Coughing
+----------------------
+
+Difference of predictions for clean audio and audio with added coughing. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-coughing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+Visualization Environmental Noise
+---------------------------------
+
+Difference of predictions for clean audio and audio with added environmental noise. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+Visualization Music
+-------------------
+
+Difference of predictions for clean audio and audio with added music. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-music_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+Visualization Sneezing
+----------------------
+
+Difference of predictions for clean audio and audio with added sneezing. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-sneezing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+Visualization White Noise
+-------------------------
+
+Difference of predictions for clean audio and audio with added white noise. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-white-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center

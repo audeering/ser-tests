@@ -1,0 +1,4 @@
+/* Ensure smaller math fonts as KaTeX default of 1.21em */
+.katex {
+    font-size: 1.1em;
+}

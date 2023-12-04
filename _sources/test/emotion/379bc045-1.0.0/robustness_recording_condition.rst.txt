@@ -1,0 +1,30 @@
+.. _test-emotion-379bc045-1.0.0-robustness_recording_condition:
+
+Robustness recording condition
+==============================
+
+.. role:: red
+.. role:: green
+
+100.0% passed tests (2 :green:`passed` / 0 :red:`failed`).
+
+
+Percentage Unchanged Predictions Recording Condition
+----------------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_recording_condition/percentage-unchanged-predictions-recording-condition.csv
+
+Visualization
+-------------
+
+Confusion Matrix showing the shift from the predictions of the baseline recording condition audio to the predictions of the different recording condition audio.
+
+
+
+.. figure:: robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-boundary.png
+    :align: center
+
+.. figure:: robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-mobile.png
+    :align: center

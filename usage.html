@@ -1,0 +1,648 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Usage &mdash; SER Tests</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/audeering.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/plot_directive.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
+  <link rel="stylesheet" href="_static/colors.css" type="text/css" />
+  <link rel="stylesheet" href="_static/math.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Method Tests" href="method-tests.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <a href="index.html">
+          
+            <img src="_static/images/audeering.png" class="logo" alt="audEERING"/>
+          
+          
+            <span> SER Tests</span>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v18bf98f
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#run-a-test">Run a test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submit-results">Submit results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-details-as-html">Test details as HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rank-models">Rank models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#model-comparisons">Model comparisons</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="method-tests.html">Method Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Results</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="test/arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test/dominance.html">Dominance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test/valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test/emotion.html">Emotion</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Comparisons</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="comparison/arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comparison/dominance.html">Dominance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comparison/valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comparison/emotion.html">Emotion</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SER Tests</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Usage</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://gitlab.audeering.com/audeering/ser-tests/" class="fa fa-gitlab"> GitLab</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h1>
+<p>This test suite has multiple purposes:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#usage-run-test"><span class="std std-ref">test a new model</span></a> locally
+for a particular test
+or all available tests</p></li>
+<li><p><a class="reference internal" href="#usage-submit-results"><span class="std std-ref">submit test results</span></a>
+if the model is considered to be a release candidate</p></li>
+<li><p>inspect test results on the HTML pages
+to learn about <a class="reference internal" href="#usage-test-details"><span class="std std-ref">test details</span></a></p></li>
+<li><p><a class="reference internal" href="#usage-rank-models"><span class="std std-ref">rank models</span></a>
+by test results
+to select the next production model</p></li>
+<li><p>use impact analysis results and test results to summarize
+expected <a class="reference internal" href="#usage-model-comparison"><span class="std std-ref">differences between models</span></a></p></li>
+</ul>
+<p>We cover each of them in the following sub-sections.</p>
+<div class="section" id="run-a-test">
+<span id="usage-run-test"></span><h2>Run a test<a class="headerlink" href="#run-a-test" title="Permalink to this heading">¶</a></h2>
+<p>Tests are executed by the <code class="file docutils literal notranslate"><span class="pre">test.py</span></code> script,
+that is located in the root folder of the repository.
+It provides online help with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>test.py<span class="w"> </span>--help
+</pre></div>
+</div>
+<p>You always have to provide the condition to test.
+You select a model with <code class="docutils literal notranslate"><span class="pre">--model</span> <span class="pre">MODEL_ID</span></code>.
+If no model is specified,
+it will run the tests on all previously tested models.
+You can also specify the maximum signal length
+that should be used for the model with <code class="docutils literal notranslate"><span class="pre">--max-signal-length</span></code>.
+If you do, a short tuning parameter ID will be appended
+to the model name when displaying results.
+You select a test with <code class="docutils literal notranslate"><span class="pre">--test</span> <span class="pre">TEST</span></code>.
+If you don’t specify a test
+it will run all tests for the given model.
+It will directly output which tests failed or passed.</p>
+<p><strong>Examples</strong></p>
+<p>Run <a class="reference internal" href="method-tests.html#method-tests-fairness-sex"><span class="std std-ref">Fairness Sex</span></a> test
+for the model <a class="reference internal" href="test/arousal/1543ec32-1.0.3/index.html#test-arousal-1543ec32-1-0-3"><span class="std std-ref">CNN14</span></a>
+on arousal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>test.py<span class="w"> </span>arousal<span class="w"> </span>--test<span class="w"> </span>fairness_sex<span class="w"> </span>--model<span class="w"> </span>1543ec32-1.0.3
+</pre></div>
+</div>
+<p>Run <a class="reference internal" href="method-tests.html#method-tests"><span class="std std-ref">all available tests</span></a>
+for the model <a class="reference internal" href="test/arousal/1543ec32-1.0.3/index.html#test-arousal-1543ec32-1-0-3"><span class="std std-ref">CNN14</span></a>
+on arousal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>test.py<span class="w"> </span>arousal<span class="w"> </span>--model<span class="w"> </span>1543ec32-1.0.3
+</pre></div>
+</div>
+<p>Run <a class="reference internal" href="method-tests.html#method-tests"><span class="std std-ref">all available tests</span></a>
+for the model with ID 1543ec32-1.0.3
+on arousal with a maximum signal length of 3 seconds:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>test.py<span class="w"> </span>arousal<span class="w"> </span>--model<span class="w"> </span>1543ec32-1.0.3<span class="w"> </span>--max-signal-length<span class="w"> </span><span class="m">5</span>
+</pre></div>
+</div>
+<p>Run <a class="reference internal" href="method-tests.html#method-tests-fairness-sex"><span class="std std-ref">Fairness Sex</span></a> test
+for <a class="reference internal" href="test/arousal.html#test-arousal"><span class="std std-ref">all previously tested arousal models</span></a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>test.py<span class="w"> </span>arousal<span class="w"> </span>--test<span class="w"> </span>fairness_sex
+</pre></div>
+</div>
+<p>Run <a class="reference internal" href="method-tests.html#method-tests"><span class="std std-ref">all available tests</span></a>
+for <a class="reference internal" href="test/arousal.html#test-arousal"><span class="std std-ref">all previously tested arousal models</span></a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>test.py<span class="w"> </span>arousal
+</pre></div>
+</div>
+</div>
+<div class="section" id="submit-results">
+<span id="usage-submit-results"></span><h2>Submit results<a class="headerlink" href="#submit-results" title="Permalink to this heading">¶</a></h2>
+<p>The results of a test are stored
+under <code class="file docutils literal notranslate"><span class="pre">docs/results/test/</span><em><span class="pre">CONDITION</span></em><span class="pre">/</span><em><span class="pre">MODEL_ID</span></em><span class="pre">/</span><em><span class="pre">TEST</span></em></code>
+as CSV and PNG files.
+For example,
+the folder
+<code class="file docutils literal notranslate"><span class="pre">docs/results/test/arousal/1543ec32-1.0.3/correctness_regression/</span></code>
+contains besides other files
+<code class="file docutils literal notranslate"><span class="pre">mean-squared-error.csv</span></code>.</p>
+<p>If this is the first time you tested the selected model
+it will also store information about that model
+under the model folder
+<code class="file docutils literal notranslate"><span class="pre">docs/results/test/</span><em><span class="pre">CONDITION</span></em><span class="pre">/</span><em><span class="pre">MODEL_ID</span></em></code>.</p>
+<p>If your tested model is ranked under the top five
+condition overview pages,
+or you think there are other reasons worth submitting
+the test results,
+please commit those files to a new branch,
+push to the Github server,
+and open a pull request.</p>
+</div>
+<div class="section" id="test-details-as-html">
+<span id="usage-test-details"></span><h2>Test details as HTML<a class="headerlink" href="#test-details-as-html" title="Permalink to this heading">¶</a></h2>
+<p>Every time you push to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch
+of the Github repository,
+a CI job will automatically update the HTML pages
+you find under
+<a class="reference external" href="https://audeering.github.io/ser-tests/">https://audeering.github.io/ser-tests/</a>.
+Here,
+you can inspect all submitted test results.</p>
+<p>To build that page locally, please run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>docs/requirements.txt
+$<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>sphinx<span class="w"> </span>docs/<span class="w"> </span>build/html<span class="w"> </span>-b<span class="w"> </span>html
+</pre></div>
+</div>
+</div>
+<div class="section" id="rank-models">
+<span id="usage-rank-models"></span><h2>Rank models<a class="headerlink" href="#rank-models" title="Permalink to this heading">¶</a></h2>
+<p>Models are automatically ranked
+by their test results
+on the test overview pages.
+The ranking is calculated
+by the percentage of passed tests.</p>
+</div>
+<div class="section" id="model-comparisons">
+<span id="usage-model-comparison"></span><h2>Model comparisons<a class="headerlink" href="#model-comparisons" title="Permalink to this heading">¶</a></h2>
+<p>If we want to update compare one model
+to another,
+we need to summarize the changes
+the user might expect.
+To this end, we show the comparison of the individual
+test results.</p>
+<p>If a change from one model baseline to one
+or more model candidates should be analysed,
+the tests of the involved models have to be
+<a class="reference internal" href="#usage-run-test"><span class="std std-ref">run</span></a> and
+<a class="reference internal" href="#usage-submit-results"><span class="std std-ref">submitted</span></a>.</p>
+<p>Finally, the intended baseline and candidate
+model ids have to be specified in
+<code class="file docutils literal notranslate"><span class="pre">docs/results/comparison/</span><em><span class="pre">CONDITION</span></em><span class="pre">.yaml</span></code> under the
+respective condition in order for them
+to be displayed in the HTML pages.
+For example, to show the comparison between two models
+1543ec32-1.0.3 and 51c582b7-1.0.0
+for emotion
+the file <code class="file docutils literal notranslate"><span class="pre">comparison/emotion.yaml</span></code> should contain:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">baseline</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1543ec32-1.0.3</span>
+<span class="w">  </span><span class="nt">candidates</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">51c582b7-1.0.0</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="method-tests.html" class="btn btn-neutral float-right" title="Method Tests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div>
+      
+      
+      
+      
+      
+      
+      
+      
+        <ul>
+          <li><a href="http://data.pp.audeering.com">Data</a></li>
+          <li><a href="http://devops.pp.audeering.com/sphinx/">Docs</a></li>
+          <li><a href="http://devops.pp.audeering.com/">Infra</a></li>
+          <li><a href="http://models.pp.audeering.com">Models</a></li>
+          <li><a href="http://research.pp.audeering.com">Research</a></li>
+          <li><a href="http://tools.pp.audeering.com">Tools</a></li>
+        </ul>
+      
+    <p>
+        
+        
+        
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+        
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        
+      &copy; 2023 audEERING GmbH
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+.. _test-emotion-379bc045-1.0.0-fairness_sex:
+
+Fairness sex
+============
+
+.. role:: red
+.. role:: green
+
+100.0% passed tests (40 :green:`passed` / 0 :red:`failed`).
+
+
+Precision Per Class Female
+--------------------------
+
+Precision female - Precision combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_sex/precision-per-class-female.csv
+
+Precision Per Class Male
+------------------------
+
+Precision male - Precision combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_sex/precision-per-class-male.csv
+
+Recall Per Class Female
+-----------------------
+
+Recall female - Recall combined.
+
+
+.. csv-table:: Threshold: 0.175
+    :header-rows: 1
+    :file: fairness_sex/recall-per-class-female.csv
+
+Recall Per Class Male
+---------------------
+
+Recall female - Recall combined.
+
+
+.. csv-table:: Threshold: 0.175
+    :header-rows: 1
+    :file: fairness_sex/recall-per-class-male.csv
+
+Unweighted Average Precision Female
+-----------------------------------
+
+UAP Female - UAP combined.
+
+
+.. csv-table:: Threshold: 0.05
+    :header-rows: 1
+    :file: fairness_sex/unweighted-average-precision-female.csv
+
+Unweighted Average Precision Male
+---------------------------------
+
+UAP Male - UAP combined.
+
+
+.. csv-table:: Threshold: 0.05
+    :header-rows: 1
+    :file: fairness_sex/unweighted-average-precision-male.csv
+
+Unweighted Average Recall Female
+--------------------------------
+
+UAR Female - UAR combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_sex/unweighted-average-recall-female.csv
+
+Unweighted Average Recall Male
+------------------------------
+
+UAR Male - UAR combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_sex/unweighted-average-recall-male.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_sex/visualization_iemocap-2.3.0-full_female.png
+    :align: center
+
+.. figure:: fairness_sex/visualization_iemocap-2.3.0-full_male.png
+    :align: center
+
+.. figure:: fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_female.png
+    :align: center
+
+.. figure:: fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_male.png
+    :align: center

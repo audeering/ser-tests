@@ -1,0 +1,596 @@
+.. _comparison-emotion-1641e15f-1.0.1_ca6bb2f2-1.0.0_63291c59-1.0.0_379bc045-1.0.0_ccf4ed91-1.0.0-fairness_sex:
+
+Fairness sex
+============
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_sex/overall_scores.csv
+
+
+Precision Per Class Female
+--------------------------
+
+Precision female - Precision combined.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`0.02`
+      - :green:`-0.03`
+      - :green:`-0.00`
+      - :green:`0.02`
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`-0.04`
+      - :green:`0.04`
+      - :red:`0.09`
+      - :green:`-0.00`
+      - :green:`0.07`
+      - :green:`0.06`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.05`
+      - :green:`-0.04`
+      - :green:`-0.00`
+      - :green:`-0.04`
+      - :green:`-0.03`
+      - :green:`0.05`
+      - :green:`0.04`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.04`
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.04`
+    * - mean
+      - -0.01
+      - -0.01
+      - -0.01
+      - 0.00
+      - -0.02
+      - -0.03
+      - -0.01
+      - -0.01
+      - -0.01
+      - -0.04
+      - 0.04
+      - 0.07
+      - 0.01
+      - 0.05
+      - 0.05
+      - 0.00
+      - -0.01
+      - -0.01
+      - -0.01
+      - -0.01
+
+Precision Per Class Male
+------------------------
+
+Precision male - Precision combined.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`-0.02`
+      - :green:`0.03`
+      - :green:`0.00`
+      - :green:`-0.02`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`0.05`
+      - :green:`-0.04`
+      - :red:`-0.09`
+      - :green:`0.00`
+      - :green:`-0.07`
+      - :green:`-0.06`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.07`
+      - :green:`0.05`
+      - :green:`0.00`
+      - :green:`0.06`
+      - :green:`0.02`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.04`
+      - :green:`0.06`
+      - :green:`0.07`
+    * - mean
+      - 0.02
+      - 0.01
+      - 0.01
+      - 0.00
+      - 0.02
+      - 0.04
+      - 0.02
+      - 0.01
+      - 0.02
+      - 0.04
+      - -0.04
+      - -0.06
+      - -0.01
+      - -0.05
+      - -0.04
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.02
+      - 0.03
+
+Recall Per Class Female
+-----------------------
+
+Recall female - Recall combined.
+
+
+.. flat-table:: Threshold: 0.175
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`0.05`
+      - :green:`-0.00`
+      - :green:`0.02`
+      - :green:`-0.01`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.00`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`-0.07`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.04`
+      - :green:`0.01`
+      - :green:`0.05`
+      - :green:`-0.03`
+      - :green:`-0.07`
+      - :green:`-0.06`
+      - :green:`-0.01`
+      - :green:`-0.09`
+      - :green:`-0.07`
+      - :green:`-0.04`
+      - :green:`-0.10`
+      - :green:`-0.04`
+      - :green:`-0.10`
+      - :green:`0.00`
+    * - mean
+      - -0.02
+      - 0.00
+      - 0.00
+      - -0.02
+      - 0.01
+      - 0.00
+      - 0.04
+      - 0.01
+      - 0.04
+      - -0.02
+      - -0.03
+      - -0.02
+      - -0.01
+      - -0.04
+      - -0.03
+      - -0.01
+      - -0.05
+      - -0.01
+      - -0.05
+      - 0.01
+
+Recall Per Class Male
+---------------------
+
+Recall female - Recall combined.
+
+
+.. flat-table:: Threshold: 0.175
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`-0.05`
+      - :green:`0.00`
+      - :green:`-0.02`
+      - :green:`0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`-0.00`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`0.05`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`0.07`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :green:`-0.01`
+      - :green:`-0.05`
+      - :green:`0.03`
+      - :green:`0.07`
+      - :green:`0.06`
+      - :green:`0.01`
+      - :green:`0.09`
+      - :green:`0.07`
+      - :green:`0.04`
+      - :green:`0.10`
+      - :green:`0.04`
+      - :green:`0.10`
+      - :green:`0.00`
+    * - mean
+      - 0.02
+      - 0.00
+      - 0.00
+      - 0.02
+      - -0.01
+      - -0.00
+      - -0.04
+      - -0.01
+      - -0.04
+      - 0.02
+      - 0.03
+      - 0.02
+      - 0.01
+      - 0.04
+      - 0.03
+      - 0.01
+      - 0.05
+      - 0.01
+      - 0.05
+      - -0.01
+
+Unweighted Average Precision Female
+-----------------------------------
+
+UAP Female - UAP combined.
+
+
+.. flat-table:: Threshold: 0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Unweighted Average Precision Female
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`-0.00`
+      - :green:`0.03`
+      - :green:`0.00`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.02`
+      - :green:`-0.01`
+    * - mean
+      - 0.00
+      - 0.01
+      - 0.00
+      - 0.00
+      - -0.01
+
+Unweighted Average Precision Male
+---------------------------------
+
+UAP Male - UAP combined.
+
+
+.. flat-table:: Threshold: 0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Unweighted Average Precision Male
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`0.00`
+      - :green:`-0.03`
+      - :green:`0.00`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`0.02`
+    * - mean
+      - 0.01
+      - -0.00
+      - 0.01
+      - 0.00
+      - 0.01
+
+Unweighted Average Recall Female
+--------------------------------
+
+UAR Female - UAR combined.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Unweighted Average Recall Female
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.01`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :green:`-0.01`
+      - :green:`-0.05`
+      - :green:`-0.02`
+    * - mean
+      - -0.01
+      - -0.01
+      - 0.00
+      - -0.02
+      - -0.01
+
+Unweighted Average Recall Male
+------------------------------
+
+UAR Male - UAR combined.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Unweighted Average Recall Male
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`0.03`
+      - :green:`0.04`
+      - :green:`0.01`
+      - :green:`0.05`
+      - :green:`0.02`
+    * - mean
+      - 0.01
+      - 0.01
+      - 0.00
+      - 0.02
+      - 0.01
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_sex/visualization_iemocap-2.3.0-full_female.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_female.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_female.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_female.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_female.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_sex/visualization_iemocap-2.3.0-full_male.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_male.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_male.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_male.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/fairness_sex/visualization_iemocap-2.3.0-full_male.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_female.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_female.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_female.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_female.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_female.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_male.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_male.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_male.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_male.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/fairness_sex/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard_male.png
+

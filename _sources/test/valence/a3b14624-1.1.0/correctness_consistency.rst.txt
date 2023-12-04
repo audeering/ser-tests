@@ -1,0 +1,71 @@
+.. _test-valence-a3b14624-1.1.0-correctness_consistency:
+
+Correctness consistency
+=======================
+
+.. role:: red
+.. role:: green
+
+46.8% passed tests (22 :green:`passed` / 25 :red:`failed`).
+
+
+Samples In Expected High Range
+------------------------------
+
+Proportion of samples whose predictions fall into the expected value range of >= 0.55
+
+
+.. csv-table:: Threshold: 0.75
+    :header-rows: 1
+    :file: correctness_consistency/samples-in-expected-high-range.csv
+
+Samples In Expected Low Range
+-----------------------------
+
+Proportion of samples whose predictions fall into the expected value range of <= 0.45
+
+
+.. csv-table:: Threshold: 0.75
+    :header-rows: 1
+    :file: correctness_consistency/samples-in-expected-low-range.csv
+
+Samples In Expected Neutral Range
+---------------------------------
+
+Proportion of samples whose predictions fall into the expected value range of [0.3, 0.6]
+
+
+.. csv-table:: Threshold: 0.75
+    :header-rows: 1
+    :file: correctness_consistency/samples-in-expected-neutral-range.csv
+
+Visualization
+-------------
+
+Distribution of dimensional model predictions for samples with different categorical emotions. The expected range of model predictions is highlighted by the green brackground.
+
+
+
+.. figure:: correctness_consistency/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_consistency/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+    :align: center
+
+.. figure:: correctness_consistency/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_consistency/visualization_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: correctness_consistency/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_consistency/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_consistency/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_consistency/visualization_ravdess-1.1.2-emotion.speech.test.png
+    :align: center

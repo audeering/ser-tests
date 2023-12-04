@@ -1,0 +1,78 @@
+.. _test-valence-171c3b63-1.0.0-robustness_spectral_tilt:
+
+Robustness spectral tilt
+========================
+
+.. role:: red
+.. role:: green
+
+66.7% passed tests (8 :green:`passed` / 4 :red:`failed`).
+
+
+Change Average Value Downward Tilt
+----------------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-average-value-downward-tilt.csv
+
+Change Average Value Upward Tilt
+--------------------------------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-average-value-upward-tilt.csv
+
+Change Ccc Downward Tilt
+------------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-ccc-downward-tilt.csv
+
+Change Ccc Upward Tilt
+----------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-ccc-upward-tilt.csv
+
+Percentage Unchanged Predictions Downward Tilt
+----------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_spectral_tilt/percentage-unchanged-predictions-downward-tilt.csv
+
+Percentage Unchanged Predictions Upward Tilt
+--------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_spectral_tilt/percentage-unchanged-predictions-upward-tilt.csv
+
+Visualization Downward Tilt
+---------------------------
+
+Difference of predictions for original audio and audio with a downward spectral tilt. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_spectral_tilt/visualization-downward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-downward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+Visualization Upward Tilt
+-------------------------
+
+Difference of predictions for original audio and audio with an upward spectral tilt. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_spectral_tilt/visualization-upward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-upward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center

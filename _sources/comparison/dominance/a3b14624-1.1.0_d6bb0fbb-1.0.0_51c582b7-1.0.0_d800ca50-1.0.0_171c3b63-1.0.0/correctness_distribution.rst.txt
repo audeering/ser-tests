@@ -1,0 +1,130 @@
+.. _comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_distribution:
+
+Correctness distribution
+========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: correctness_distribution/overall_scores.csv
+
+
+Jensen Shannon Distance
+-----------------------
+
+.. flat-table:: Threshold: 0.2
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Jensen-Shannon Distance
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.31`
+      - :red:`0.34`
+      - :red:`0.34`
+      - :red:`0.33`
+      - :red:`0.37`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.14`
+      - :green:`0.10`
+      - :green:`0.14`
+      - :green:`0.10`
+      - :green:`0.08`
+    * - msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard
+      - :green:`0.13`
+      - :green:`0.11`
+      - :green:`0.12`
+      - :green:`0.08`
+      - :green:`0.11`
+    * - mean
+      - 0.19
+      - 0.18
+      - 0.20
+      - 0.17
+      - 0.19
+
+Mean Value
+----------
+
+.. flat-table:: Threshold: 0.03
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Mean Value
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`-0.03`
+      - :green:`-0.02`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.01`
+      - :green:`0.02`
+      - :red:`0.03`
+      - :green:`0.02`
+      - :green:`0.01`
+    * - msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`0.02`
+      - :green:`-0.00`
+      - :green:`-0.00`
+    * - mean
+      - -0.01
+      - -0.00
+      - 0.02
+      - 0.00
+      - 0.00
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/51c582b7-1.0.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d800ca50-1.0.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/171c3b63-1.0.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/51c582b7-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d800ca50-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/171c3b63-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/51c582b7-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d800ca50-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/171c3b63-1.0.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+

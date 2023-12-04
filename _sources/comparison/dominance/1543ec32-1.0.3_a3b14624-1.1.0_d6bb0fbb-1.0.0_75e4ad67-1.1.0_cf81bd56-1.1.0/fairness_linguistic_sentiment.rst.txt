@@ -1,0 +1,989 @@
+.. _comparison-dominance-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-fairness_linguistic_sentiment:
+
+Fairness linguistic sentiment
+=============================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/overall_scores.csv
+
+
+Bin Proportion Shift Difference Negative Sentiment
+--------------------------------------------------
+
+Shift in bin proportions for negative sentiment for specific language - Average of the shift in bin proportions for negative sentiment for all languages. The full expression leading to the test score is displayed in parentheses. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` (-inf, 0.25]
+      - :cspan:`4` (0.25, 0.5]
+      - :cspan:`4` (0.5, 0.75]
+      - :cspan:`4` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - checklist-synth-1.0.0-words-in-context-de
+      - 
+      - 
+      - 
+      - :green:`-0.06` (-0.07 - -0.01)
+      - 
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.06` (0.07 - 0.01)
+      - :green:`-0.02` (0.00 - 0.02)
+      - :green:`0.00` (0.02 - 0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-en
+      - 
+      - 
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :red:`0.18` (0.20 - 0.02)
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :red:`-0.18` (-0.20 - -0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-es
+      - 
+      - 
+      - 
+      - :green:`-0.01` (-0.02 - -0.01)
+      - 
+      - :green:`-0.03` (-0.04 - -0.01)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`0.00` (0.02 - 0.01)
+      - :green:`-0.02` (0.01 - 0.02)
+      - :green:`0.02` (0.04 - 0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.02` (-0.01 - -0.02)
+      - :green:`0.01` (-0.00 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - 
+      - 
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - :green:`0.00` (-0.01 - -0.01)
+      - :green:`0.02` (0.03 - 0.00)
+      - :green:`0.03` (0.03 - 0.00)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.03` (-0.01 - 0.02)
+      - :green:`-0.01` (0.01 - 0.02)
+      - :green:`-0.02` (-0.03 - -0.01)
+      - :green:`-0.03` (-0.03 - -0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.03` (0.01 - -0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-it
+      - 
+      - 
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`-0.02` (0.00 - 0.02)
+      - :green:`0.00` (-0.00 - -0.01)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.02` (0.00 - -0.02)
+      - :green:`0.01` (-0.00 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - 
+      - 
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.02` (0.00 - 0.02)
+      - :green:`-0.01` (0.00 - 0.02)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.00` (-0.00 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - 
+      - 
+      - 
+      - :green:`0.01` (-0.00 - -0.01)
+      - 
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`-0.04` (-0.02 - 0.02)
+      - :green:`0.00` (0.02 - 0.02)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.04` (0.02 - -0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - 
+      - 
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - 
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.00` (0.01 - 0.01)
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`0.03` (0.05 - 0.02)
+      - :green:`0.00` (-0.00 - -0.01)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.02` (0.00 - -0.02)
+      - :green:`-0.04` (-0.05 - -0.01)
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - -0.00
+      - 
+      - -0.00
+      - -0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 
+      - 
+      - 
+      - 
+
+Bin Proportion Shift Difference Neutral Sentiment
+-------------------------------------------------
+
+Shift in bin proportions for neutral sentiment for specific language - Average of the shift in bin proportions for neutral sentiment for all languages. The full expression leading to the test score is displayed in parentheses. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` (-inf, 0.25]
+      - :cspan:`4` (0.25, 0.5]
+      - :cspan:`4` (0.5, 0.75]
+      - :cspan:`4` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - checklist-synth-1.0.0-words-in-context-de
+      - 
+      - 
+      - 
+      - :red:`0.08` (0.09 - 0.01)
+      - 
+      - :green:`0.06` (0.08 - 0.02)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :red:`-0.09` (-0.09 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`-0.05` (-0.08 - -0.03)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.02` (0.00 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-en
+      - 
+      - 
+      - 
+      - :green:`-0.01` (-0.00 - 0.01)
+      - 
+      - :green:`0.03` (0.05 - 0.02)
+      - :green:`0.02` (0.01 - -0.01)
+      - :green:`0.04` (0.03 - -0.01)
+      - :red:`0.10` (0.10 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`-0.02` (-0.05 - -0.03)
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`-0.04` (-0.03 - 0.01)
+      - :red:`-0.09` (-0.10 - -0.01)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.02` (0.00 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-es
+      - 
+      - 
+      - 
+      - :green:`-0.02` (-0.01 - 0.01)
+      - 
+      - :green:`-0.04` (-0.02 - 0.02)
+      - :green:`0.02` (0.01 - -0.01)
+      - :green:`0.03` (0.02 - -0.01)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`-0.05` (-0.06 - -0.00)
+      - :green:`0.06` (0.02 - -0.03)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.03` (-0.02 - 0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.05` (0.06 - 0.00)
+      - :green:`-0.02` (-0.00 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.03` (-0.02 - 0.02)
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`-0.03` (-0.04 - -0.01)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.05` (0.02 - -0.03)
+      - :green:`0.01` (0.02 - 0.01)
+      - :green:`0.03` (0.04 - 0.01)
+      - :green:`0.01` (-0.01 - -0.01)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`-0.02` (0.00 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-it
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.00` (-0.01 - -0.01)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`0.02` (0.01 - -0.00)
+      - :green:`0.03` (-0.00 - -0.03)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.00` (0.01 - 0.01)
+      - :green:`0.02` (0.01 - -0.01)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.01` (0.00 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.01` (0.00 - 0.02)
+      - :green:`0.00` (-0.01 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`0.00` (-0.03 - -0.03)
+      - :green:`-0.01` (0.01 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.01` (0.03 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - 
+      - 
+      - 
+      - :green:`-0.01` (-0.00 - 0.01)
+      - 
+      - :green:`0.03` (0.05 - 0.02)
+      - :green:`-0.07` (-0.08 - -0.01)
+      - :red:`-0.08` (-0.09 - -0.01)
+      - :green:`0.02` (0.02 - 0.00)
+      - :green:`0.02` (0.01 - -0.00)
+      - :green:`-0.01` (-0.05 - -0.03)
+      - :green:`0.06` (0.08 - 0.01)
+      - :red:`0.08` (0.09 - 0.01)
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`-0.02` (-0.01 - 0.00)
+      - :green:`-0.02` (0.00 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`0.01` (-0.01 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`-0.02` (-0.02 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`-0.07` (-0.10 - -0.03)
+      - :green:`-0.01` (0.01 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`0.03` (0.02 - -0.01)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :red:`0.08` (0.10 - 0.02)
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - 0.00
+      - 
+      - -0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 
+      - 
+      - 
+      - 
+
+Bin Proportion Shift Difference Positive Sentiment
+--------------------------------------------------
+
+Shift in bin proportions for positive sentiment for specific language - Average of the shift in bin proportions for positive sentiment for all languages. The full expression leading to the test score is displayed in parentheses. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` (-inf, 0.25]
+      - :cspan:`4` (0.25, 0.5]
+      - :cspan:`4` (0.5, 0.75]
+      - :cspan:`4` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - checklist-synth-1.0.0-words-in-context-de
+      - 
+      - 
+      - 
+      - :green:`0.03` (0.03 - 0.01)
+      - 
+      - :green:`-0.02` (-0.02 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.02` (-0.03 - -0.01)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.02` (0.02 - -0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.02` (0.00 - 0.02)
+      - :green:`-0.00` (0.00 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-en
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.03` (-0.02 - 0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.03` (-0.04 - -0.01)
+      - :red:`-0.19` (-0.21 - -0.02)
+      - :green:`0.03` (0.02 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.04` (0.04 - 0.01)
+      - :red:`0.19` (0.21 - 0.02)
+      - :green:`-0.00` (0.00 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-es
+      - 
+      - 
+      - 
+      - :green:`0.01` (0.02 - 0.01)
+      - 
+      - :green:`0.05` (0.05 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`0.04` (0.01 - -0.02)
+      - :green:`-0.05` (-0.05 - -0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.04` (-0.01 - 0.02)
+      - :green:`0.00` (0.00 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - 
+      - 
+      - 
+      - :green:`-0.01` (-0.00 - 0.01)
+      - 
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`-0.02` (-0.02 - -0.00)
+      - :green:`-0.02` (-0.02 - 0.00)
+      - :green:`0.00` (-0.01 - -0.01)
+      - :green:`0.03` (0.01 - -0.02)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.02` (0.02 - 0.00)
+      - :green:`0.02` (0.02 - -0.00)
+      - :green:`0.01` (0.01 - 0.01)
+      - :green:`-0.03` (-0.01 - 0.02)
+      - :green:`-0.00` (0.00 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-it
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.03` (0.01 - -0.01)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`-0.02` (0.00 - 0.02)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`-0.00` (0.00 - 0.01)
+      - :green:`-0.02` (0.00 - 0.02)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.02` (0.02 - -0.00)
+      - :green:`0.04` (0.04 - 0.00)
+      - :green:`0.02` (0.00 - -0.01)
+      - :green:`0.04` (0.01 - -0.02)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.02` (-0.02 - 0.00)
+      - :green:`-0.04` (-0.04 - -0.00)
+      - :green:`-0.01` (-0.01 - 0.01)
+      - :green:`-0.04` (-0.01 - 0.02)
+      - :green:`-0.00` (0.00 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - 
+      - 
+      - 
+      - :green:`-0.01` (0.00 - 0.01)
+      - 
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.00` (-0.01 - -0.01)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`-0.00` (-0.01 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.00` (0.01 - 0.01)
+      - :green:`-0.02` (0.00 - 0.02)
+      - :green:`0.01` (0.01 - 0.00)
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - -0.00
+      - 
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 
+      - 
+      - 
+      - 
+
+Mean Shift Difference Negative Sentiment
+----------------------------------------
+
+Mean shift for negative sentiment for specific language - Average of the mean shift for negative sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. flat-table:: Threshold: 0.025
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Mean Shift Difference Negative Sentiment
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - checklist-synth-1.0.0-words-in-context-de
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-en
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :red:`-0.03` (-0.03 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-es
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-it
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.00` (-0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+    * - mean
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+
+Mean Shift Difference Neutral Sentiment
+---------------------------------------
+
+Mean shift for neutral sentiment for specific language - Average of the mean shift for neutral sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. flat-table:: Threshold: 0.025
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Mean Shift Difference Neutral Sentiment
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - checklist-synth-1.0.0-words-in-context-de
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-en
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.02` (-0.01 - 0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :red:`-0.03` (-0.03 - -0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-es
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.01` (0.01 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-it
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.02` (0.02 - -0.00)
+      - :green:`0.01` (0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - :green:`0.01` (0.02 - 0.00)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`0.00` (0.01 - 0.00)
+      - :green:`0.02` (0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+    * - mean
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - 0.00
+
+Mean Shift Difference Positive Sentiment
+----------------------------------------
+
+Mean shift for positive sentiment for specific language - Average of the mean shift for positive sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. flat-table:: Threshold: 0.025
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Mean Shift Difference Positive Sentiment
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - checklist-synth-1.0.0-words-in-context-de
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+    * - checklist-synth-1.0.0-words-in-context-en
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.01` (0.01 - 0.00)
+      - :red:`0.03` (0.04 - 0.00)
+    * - checklist-synth-1.0.0-words-in-context-es
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+    * - checklist-synth-1.0.0-words-in-context-it
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - :green:`-0.00` (-0.01 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (-0.01 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.01` (-0.00 - 0.00)
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+    * - mean
+      - -0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - -0.00
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+

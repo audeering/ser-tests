@@ -1,0 +1,11 @@
+.. _comparison-emotion:
+
+Emotion
+=======
+
+
+.. toctree::
+    :hidden:
+
+    emotion/1641e15f-1.0.1_ca6bb2f2-1.0.0_63291c59-1.0.0_379bc045-1.0.0_ccf4ed91-1.0.0/index
+    emotion/6d83a25c-1.0.1_1641e15f-1.0.1_ca6bb2f2-1.0.0_6cd49211-1.0.0_88cede08-1.0.0/index

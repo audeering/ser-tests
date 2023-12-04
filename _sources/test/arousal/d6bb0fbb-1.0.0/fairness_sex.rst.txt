@@ -1,0 +1,126 @@
+.. _test-arousal-d6bb0fbb-1.0.0-fairness_sex:
+
+Fairness sex
+============
+
+.. role:: red
+.. role:: green
+
+100.0% passed tests (36 :green:`passed` / 0 :red:`failed`).
+
+
+Concordance Correlation Coeff Female
+------------------------------------
+
+CCC female - CCC combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_sex/concordance-correlation-coeff-female.csv
+
+Concordance Correlation Coeff Male
+----------------------------------
+
+CCC male - CCC combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_sex/concordance-correlation-coeff-male.csv
+
+Mean Absolute Error Female
+--------------------------
+
+Mean absolute error female - mean absolute error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.02
+    :header-rows: 1
+    :file: fairness_sex/mean-absolute-error-female.csv
+
+Mean Absolute Error Male
+------------------------
+
+Mean absolute error male - mean absolute error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.02
+    :header-rows: 1
+    :file: fairness_sex/mean-absolute-error-male.csv
+
+Mean Directional Error Female
+-----------------------------
+
+Mean directional error female - mean directional error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.04
+    :header-rows: 1
+    :file: fairness_sex/mean-directional-error-female.csv
+
+Mean Directional Error Male
+---------------------------
+
+Mean directional error male - mean directional error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.04
+    :header-rows: 1
+    :file: fairness_sex/mean-directional-error-male.csv
+
+Precision Per Bin Female
+------------------------
+
+Precision per bin female - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_sex/precision-per-bin-female.csv
+
+Precision Per Bin Male
+----------------------
+
+Precision per bin male - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_sex/precision-per-bin-male.csv
+
+Recall Per Bin Female
+---------------------
+
+Recall per bin female - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_sex/recall-per-bin-female.csv
+
+Recall Per Bin Male
+-------------------
+
+Recall per bin male - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_sex/recall-per-bin-male.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_sex/visualization_iemocap-2.3.0-full_female.png
+    :align: center
+
+.. figure:: fairness_sex/visualization_iemocap-2.3.0-full_male.png
+    :align: center
+
+.. figure:: fairness_sex/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female.png
+    :align: center
+
+.. figure:: fairness_sex/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male.png
+    :align: center

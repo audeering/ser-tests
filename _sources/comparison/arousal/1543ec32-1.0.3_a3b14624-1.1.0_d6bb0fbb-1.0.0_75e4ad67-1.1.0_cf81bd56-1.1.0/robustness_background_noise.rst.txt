@@ -1,0 +1,723 @@
+.. _comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_background_noise:
+
+Robustness background noise
+===========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_background_noise/overall_scores.csv
+
+
+Change Average Value Babble Noise
+---------------------------------
+
+.. flat-table:: Threshold: 0.03
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change Average Value Babble Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.02`
+      - :green:`-0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`-0.01`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.04`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`-0.00`
+    * - mean
+      - 0.03
+      - 0.01
+      - 0.01
+      - 0.01
+      - -0.01
+
+Change Average Value Coughing
+-----------------------------
+
+.. flat-table:: Threshold: 0.03
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change Average Value Coughing
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.02`
+      - :red:`0.06`
+      - :red:`0.04`
+      - :red:`0.05`
+      - :red:`0.04`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.03`
+      - :red:`0.06`
+      - :red:`0.04`
+      - :red:`0.06`
+      - :red:`0.04`
+    * - mean
+      - 0.03
+      - 0.06
+      - 0.04
+      - 0.06
+      - 0.04
+
+Change Average Value Environmental Noise
+----------------------------------------
+
+.. flat-table:: Threshold: 0.03
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change Average Value Environmental Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.00`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - mean
+      - -0.01
+      - -0.01
+      - -0.01
+      - -0.01
+      - -0.02
+
+Change Average Value Music
+--------------------------
+
+.. flat-table:: Threshold: 0.03
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change Average Value Music
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`-0.02`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`-0.02`
+    * - mean
+      - 0.01
+      - -0.01
+      - -0.01
+      - 0.00
+      - -0.02
+
+Change Average Value Sneezing
+-----------------------------
+
+.. flat-table:: Threshold: 0.03
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change Average Value Sneezing
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.02`
+      - :red:`0.04`
+      - :red:`0.06`
+      - :red:`0.07`
+      - :red:`0.05`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.04`
+      - :red:`0.06`
+      - :red:`0.05`
+      - :red:`0.07`
+      - :red:`0.04`
+    * - mean
+      - 0.03
+      - 0.05
+      - 0.06
+      - 0.07
+      - 0.04
+
+Change Average Value White Noise
+--------------------------------
+
+.. flat-table:: Threshold: 0.03
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change Average Value White Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`-0.08`
+      - :red:`-0.05`
+      - :red:`-0.07`
+      - :green:`-0.02`
+      - :red:`-0.04`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.02`
+      - :red:`-0.05`
+      - :red:`-0.08`
+      - :red:`-0.04`
+      - :red:`-0.04`
+    * - mean
+      - -0.03
+      - -0.05
+      - -0.08
+      - -0.03
+      - -0.04
+
+Change Ccc Babble Noise
+-----------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change CCC Babble Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.04`
+      - :green:`-0.00`
+      - :green:`0.00`
+      - :green:`-0.00`
+      - :green:`-0.01`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.08`
+      - :green:`-0.00`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.01`
+    * - mean
+      - -0.02
+      - 0.00
+      - -0.01
+      - -0.01
+      - -0.01
+
+Change Ccc Coughing
+-------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change CCC Coughing
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.02`
+      - :green:`-0.01`
+      - :green:`-0.04`
+      - :green:`-0.02`
+      - :green:`-0.03`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.05`
+      - :red:`-0.06`
+      - :red:`-0.08`
+      - :red:`-0.07`
+      - :red:`-0.05`
+    * - mean
+      - -0.02
+      - -0.03
+      - -0.06
+      - -0.05
+      - -0.04
+
+Change Ccc Environmental Noise
+------------------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change CCC Environmental Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.02`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.05`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - mean
+      - -0.02
+      - -0.02
+      - -0.01
+      - -0.01
+      - -0.02
+
+Change Ccc Music
+----------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change CCC Music
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.03`
+      - :green:`-0.02`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`-0.02`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.05`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - mean
+      - -0.01
+      - -0.01
+      - 0.00
+      - -0.01
+      - -0.02
+
+Change Ccc Sneezing
+-------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change CCC Sneezing
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.04`
+      - :green:`0.01`
+      - :red:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.04`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.05`
+      - :green:`-0.04`
+      - :red:`-0.09`
+      - :red:`-0.07`
+      - :red:`-0.05`
+    * - mean
+      - -0.01
+      - -0.01
+      - -0.07
+      - -0.05
+      - -0.04
+
+Change Ccc White Noise
+----------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change CCC White Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.07`
+      - :red:`-0.05`
+      - :red:`-0.07`
+      - :green:`-0.02`
+      - :red:`-0.05`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.17`
+      - :red:`-0.06`
+      - :red:`-0.05`
+      - :green:`-0.04`
+      - :red:`-0.05`
+    * - mean
+      - -0.05
+      - -0.06
+      - -0.06
+      - -0.03
+      - -0.05
+
+Percentage Unchanged Predictions Babble Noise
+---------------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Babble Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.71`
+      - :green:`0.92`
+      - :green:`0.95`
+      - :red:`0.83`
+      - :green:`0.92`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.59`
+      - :red:`0.89`
+      - :red:`0.90`
+      - :red:`0.81`
+      - :green:`0.91`
+    * - mean
+      - 0.65
+      - 0.91
+      - 0.93
+      - 0.82
+      - 0.92
+
+Percentage Unchanged Predictions Coughing
+-----------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Coughing
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.69`
+      - :red:`0.50`
+      - :red:`0.60`
+      - :red:`0.50`
+      - :red:`0.65`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.70`
+      - :red:`0.46`
+      - :red:`0.61`
+      - :red:`0.47`
+      - :red:`0.66`
+    * - mean
+      - 0.69
+      - 0.48
+      - 0.60
+      - 0.48
+      - 0.66
+
+Percentage Unchanged Predictions Environmental Noise
+----------------------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Environmental Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.69`
+      - :red:`0.82`
+      - :red:`0.84`
+      - :red:`0.80`
+      - :red:`0.83`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.64`
+      - :red:`0.82`
+      - :red:`0.79`
+      - :red:`0.83`
+      - :red:`0.86`
+    * - mean
+      - 0.67
+      - 0.82
+      - 0.81
+      - 0.81
+      - 0.84
+
+Percentage Unchanged Predictions Music
+--------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Music
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.72`
+      - :red:`0.87`
+      - :green:`0.93`
+      - :red:`0.86`
+      - :red:`0.88`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.64`
+      - :red:`0.87`
+      - :red:`0.87`
+      - :red:`0.87`
+      - :red:`0.89`
+    * - mean
+      - 0.68
+      - 0.87
+      - 0.90
+      - 0.86
+      - 0.89
+
+Percentage Unchanged Predictions Sneezing
+-----------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Sneezing
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.74`
+      - :red:`0.53`
+      - :red:`0.51`
+      - :red:`0.38`
+      - :red:`0.51`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.64`
+      - :red:`0.48`
+      - :red:`0.56`
+      - :red:`0.38`
+      - :red:`0.61`
+    * - mean
+      - 0.69
+      - 0.51
+      - 0.54
+      - 0.38
+      - 0.56
+
+Percentage Unchanged Predictions White Noise
+--------------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions White Noise
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.38`
+      - :red:`0.52`
+      - :red:`0.27`
+      - :red:`0.63`
+      - :red:`0.62`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.39`
+      - :red:`0.49`
+      - :red:`0.19`
+      - :red:`0.56`
+      - :red:`0.54`
+    * - mean
+      - 0.39
+      - 0.51
+      - 0.23
+      - 0.59
+      - 0.58
+
+Visualization Babble Noise
+--------------------------
+
+Difference of predictions for clean audio and audio with added babble noise. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-coughing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-music_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-music_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-music_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-music_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-music_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-sneezing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/robustness_background_noise/visualization-white-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+

@@ -1,0 +1,143 @@
+.. _comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_low_quality_phone:
+
+Robustness low quality phone
+============================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_low_quality_phone/overall_scores.csv
+
+
+Change Average Value Low Quality Phone
+--------------------------------------
+
+.. flat-table:: Threshold: 0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change Average Value Low Quality Phone
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.04`
+      - :green:`-0.00`
+      - :green:`-0.03`
+      - :green:`-0.02`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`-0.02`
+      - :red:`-0.05`
+      - :green:`-0.02`
+      - :red:`-0.06`
+      - :green:`-0.04`
+    * - mean
+      - -0.01
+      - -0.04
+      - -0.01
+      - -0.04
+      - -0.03
+
+Change Ccc Low Quality Phone
+----------------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change CCC Low Quality Phone
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`-0.03`
+      - :red:`-0.06`
+      - :green:`-0.03`
+      - :red:`-0.07`
+      - :red:`-0.05`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.02`
+      - :green:`-0.04`
+      - :red:`-0.06`
+      - :red:`-0.07`
+    * - mean
+      - -0.04
+      - -0.04
+      - -0.04
+      - -0.07
+      - -0.06
+
+Percentage Unchanged Predictions Low Quality Phone
+--------------------------------------------------
+
+.. flat-table:: Threshold: 0.5
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Low Quality Phone
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.60`
+      - :green:`0.55`
+      - :green:`0.73`
+      - :green:`0.52`
+      - :green:`0.63`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.56`
+      - :red:`0.46`
+      - :green:`0.71`
+      - :red:`0.39`
+      - :green:`0.53`
+    * - mean
+      - 0.58
+      - 0.51
+      - 0.72
+      - 0.46
+      - 0.58
+
+Visualization
+-------------
+
+Difference of predictions for original audio and low quality phone audio. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/51c582b7-1.0.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d800ca50-1.0.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/171c3b63-1.0.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/a3b14624-1.1.0/robustness_low_quality_phone/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/robustness_low_quality_phone/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/51c582b7-1.0.0/robustness_low_quality_phone/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/d800ca50-1.0.0/robustness_low_quality_phone/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/171c3b63-1.0.0/robustness_low_quality_phone/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
