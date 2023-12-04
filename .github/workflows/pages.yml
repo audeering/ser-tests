@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
 
     - name: Cache emodb
       uses: actions/cache@v3
@@ -44,7 +46,7 @@ jobs:
     #  run: |
     #    python -m sphinx docs/ build/html -b html -W -D katex_prerender=True
 
-    - name: Deploy documentation to Github pages
+    - name: Deploy Github pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
