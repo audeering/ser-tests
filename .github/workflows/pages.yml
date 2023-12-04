@@ -3,6 +3,8 @@ name: Pages
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main, dev ]
 
 jobs:
   build:
@@ -46,4 +48,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/build
+        publish_dir: ./build/html
