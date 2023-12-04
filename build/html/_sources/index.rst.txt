@@ -1,0 +1,29 @@
+.. include:: ../README.rst
+
+
+.. toctree::
+    :caption: Documentation
+    :hidden:
+
+    installation
+    usage
+    method-tests
+    bibliography
+
+.. toctree::
+    :caption: Results
+    :hidden:
+
+    test/arousal
+    test/dominance
+    test/valence
+    test/emotion
+
+.. toctree::
+    :caption: Comparisons
+    :hidden:
+
+    comparison/arousal
+    comparison/dominance
+    comparison/valence
+    comparison/emotion

@@ -1,0 +1,364 @@
+.. _comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_small_changes:
+
+Robustness small changes
+========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_small_changes/overall_scores.csv
+
+
+Percentage Unchanged Predictions Additive Tone
+----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Additive Tone
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.98`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.98`
+      - :green:`0.98`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.99`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 0.98
+      - 1.00
+      - 1.00
+      - 0.99
+      - 0.99
+
+Percentage Unchanged Predictions Append Zeros
+---------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Append Zeros
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+
+Percentage Unchanged Predictions Clip
+-------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Clip
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.99`
+      - :green:`0.99`
+      - :green:`1.00`
+      - :green:`0.99`
+      - :green:`0.99`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 0.99
+      - 0.99
+      - 1.00
+      - 0.99
+      - 0.99
+
+Percentage Unchanged Predictions Crop Beginning
+-----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Crop Beginning
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.98`
+      - :green:`0.99`
+      - :green:`0.99`
+      - :green:`0.99`
+      - :green:`0.99`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 0.99
+      - 0.99
+      - 0.99
+      - 0.99
+      - 0.99
+
+Percentage Unchanged Predictions Crop End
+-----------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Crop End
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+
+Percentage Unchanged Predictions Gain
+-------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Gain
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+
+Percentage Unchanged Predictions Highpass Filter
+------------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Highpass Filter
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.99`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+      - 0.99
+
+Percentage Unchanged Predictions Lowpass Filter
+-----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Lowpass Filter
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+      - 1.00
+
+Percentage Unchanged Predictions Prepend Zeros
+----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred Prepend Zeros
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.98`
+      - :green:`0.99`
+      - :green:`0.98`
+      - :green:`0.98`
+      - :green:`0.98`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.99`
+      - :green:`1.00`
+    * - mean
+      - 0.99
+      - 0.99
+      - 0.99
+      - 0.98
+      - 0.99
+
+Percentage Unchanged Predictions White Noise
+--------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percent Unchanged Pred White Noise
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.90`
+      - :red:`0.90`
+      - :green:`0.99`
+      - :red:`0.87`
+      - :red:`0.76`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.80`
+      - :red:`0.72`
+      - :red:`0.91`
+      - :red:`0.74`
+      - :red:`0.76`
+    * - mean
+      - 0.85
+      - 0.81
+      - 0.95
+      - 0.80
+      - 0.76
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - .. figure:: ../../../test/dominance/a3b14624-1.1.0/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/51c582b7-1.0.0/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d800ca50-1.0.0/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/171c3b63-1.0.0/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/a3b14624-1.1.0/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/51c582b7-1.0.0/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/d800ca50-1.0.0/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/171c3b63-1.0.0/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+

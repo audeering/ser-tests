@@ -1,0 +1,41 @@
+.. _test-dominance-75e4ad67-1.1.0:
+
+hubert-b
+========
+
+.. role:: red
+.. role:: green
+
+85.3% passed tests (418 :green:`passed` / 72 :red:`failed`).
+
+.. csv-table:: Tests overview
+    :header-rows: 1
+    :file: tests_overview.csv
+
+.. csv-table:: Model parameters
+    :header-rows: 1
+    :file: model-params.csv
+
+.. csv-table:: Model information
+    :header-rows: 1
+    :file: model-info.csv
+
+.. toctree::
+    :hidden:
+
+    correctness_consistency
+    correctness_distribution
+    correctness_regression
+    correctness_speaker_average
+    correctness_speaker_ranking
+    fairness_accent
+    fairness_language
+    fairness_linguistic_sentiment
+    fairness_pitch
+    fairness_sex
+    robustness_background_noise
+    robustness_low_quality_phone
+    robustness_recording_condition
+    robustness_simulated_recording_condition
+    robustness_small_changes
+    robustness_spectral_tilt

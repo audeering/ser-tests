@@ -1,0 +1,79 @@
+.. _comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_recording_condition:
+
+Robustness recording condition
+==============================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_recording_condition/overall_scores.csv
+
+
+Percentage Unchanged Predictions Recording Condition
+----------------------------------------------------
+
+.. flat-table:: Threshold: 0.8
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Recording Condition
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - imda-nsc-read-speech-balanced-2.6.0-headset-boundary
+      - :red:`0.72`
+      - :red:`0.71`
+      - :green:`0.87`
+      - :red:`0.56`
+      - :red:`0.66`
+    * - imda-nsc-read-speech-balanced-2.6.0-headset-mobile
+      - :red:`0.56`
+      - :red:`0.57`
+      - :red:`0.77`
+      - :red:`0.42`
+      - :red:`0.51`
+    * - mean
+      - 0.64
+      - 0.64
+      - 0.82
+      - 0.49
+      - 0.58
+
+Visualization
+-------------
+
+Difference of predictions for baseline recording condition audio and different recording condition audio. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-boundary.png
+
+      - .. figure:: ../../../test/valence/d6bb0fbb-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-boundary.png
+
+      - .. figure:: ../../../test/valence/51c582b7-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-boundary.png
+
+      - .. figure:: ../../../test/valence/d800ca50-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-boundary.png
+
+      - .. figure:: ../../../test/valence/171c3b63-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-boundary.png
+
+    * - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-mobile.png
+
+      - .. figure:: ../../../test/valence/d6bb0fbb-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-mobile.png
+
+      - .. figure:: ../../../test/valence/51c582b7-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-mobile.png
+
+      - .. figure:: ../../../test/valence/d800ca50-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-mobile.png
+
+      - .. figure:: ../../../test/valence/171c3b63-1.0.0/robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-mobile.png
+

@@ -1,0 +1,96 @@
+.. _test-emotion-379bc045-1.0.0-robustness_spectral_tilt:
+
+Robustness spectral tilt
+========================
+
+.. role:: red
+.. role:: green
+
+80.0% passed tests (24 :green:`passed` / 6 :red:`failed`).
+
+
+Change Uap Downward Tilt
+------------------------
+
+.. csv-table:: Threshold: -0.02
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-uap-downward-tilt.csv
+
+Change Uap Upward Tilt
+----------------------
+
+.. csv-table:: Threshold: -0.02
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-uap-upward-tilt.csv
+
+Change Uar Downward Tilt
+------------------------
+
+.. csv-table:: Threshold: -0.02
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-uar-downward-tilt.csv
+
+Change Uar Upward Tilt
+----------------------
+
+.. csv-table:: Threshold: -0.02
+    :header-rows: 1
+    :file: robustness_spectral_tilt/change-uar-upward-tilt.csv
+
+Percentage Unchanged Predictions Downward Tilt
+----------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_spectral_tilt/percentage-unchanged-predictions-downward-tilt.csv
+
+Percentage Unchanged Predictions Upward Tilt
+--------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_spectral_tilt/percentage-unchanged-predictions-upward-tilt.csv
+
+Visualization Downward Tilt
+---------------------------
+
+Confusion Matrix showing the shift from the predictions of original audio to the predictions of audio with a downward spectral tilt.
+
+
+
+.. figure:: robustness_spectral_tilt/visualization-downward-tilt_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-downward-tilt_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-downward-tilt_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-downward-tilt_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-downward-tilt_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+Visualization Upward Tilt
+-------------------------
+
+Confusion Matrix showing the shift from the predictions of original audio to the predictions of audio with an upward spectral tilt.
+
+
+
+.. figure:: robustness_spectral_tilt/visualization-upward-tilt_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-upward-tilt_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-upward-tilt_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-upward-tilt_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_spectral_tilt/visualization-upward-tilt_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center

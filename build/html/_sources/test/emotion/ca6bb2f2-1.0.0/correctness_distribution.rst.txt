@@ -1,0 +1,51 @@
+.. _test-emotion-ca6bb2f2-1.0.0-correctness_distribution:
+
+Correctness distribution
+========================
+
+.. role:: red
+.. role:: green
+
+70.0% passed tests (28 :green:`passed` / 12 :red:`failed`).
+
+
+Relative Difference Per Class
+-----------------------------
+
+.. csv-table:: Threshold: 0.15
+    :header-rows: 1
+    :file: correctness_distribution/relative-difference-per-class.csv
+
+Visualization
+-------------
+
+
+.. figure:: correctness_distribution/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-2.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_ravdess-1.1.2-emotion.speech.test.png
+    :align: center

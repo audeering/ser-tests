@@ -1,0 +1,7 @@
+audeer
+audmetric
+matplotlib
+numpy
+pandas
+scipy
+seaborn

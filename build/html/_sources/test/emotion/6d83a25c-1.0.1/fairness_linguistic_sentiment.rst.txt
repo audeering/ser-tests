@@ -1,0 +1,68 @@
+.. _test-emotion-6d83a25c-1.0.1-fairness_linguistic_sentiment:
+
+Fairness linguistic sentiment
+=============================
+
+.. role:: red
+.. role:: green
+
+97.9% passed tests (94 :green:`passed` / 2 :red:`failed`).
+
+
+Class Proportion Shift Difference Negative Sentiment
+----------------------------------------------------
+
+Shift in class proportions for negative sentiment for specific language - Average of the shift in class proportions for negative sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/class-proportion-shift-difference-negative-sentiment.csv
+
+Class Proportion Shift Difference Neutral Sentiment
+---------------------------------------------------
+
+Shift in class proportions for neutral sentiment for specific language - Average of the shift in class proportions for neutral sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/class-proportion-shift-difference-neutral-sentiment.csv
+
+Class Proportion Shift Difference Positive Sentiment
+----------------------------------------------------
+
+Shift in class proportions for positive sentiment for specific language - Average of the shift in class proportions for positive sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/class-proportion-shift-difference-positive-sentiment.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+    :align: center

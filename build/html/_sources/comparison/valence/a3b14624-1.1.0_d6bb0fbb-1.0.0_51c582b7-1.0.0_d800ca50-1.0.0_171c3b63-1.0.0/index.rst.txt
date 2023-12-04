@@ -1,0 +1,143 @@
+.. _comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0:
+
+w2v2-b vs. w2v2-L vs. w2v2-L-robust vs. w2v2-L-xls-r vs. w2v2-L-vox
+===================================================================
+
+.. role:: red
+.. role:: green
+
+This compares the models :ref:`w2v2-b <test-valence-a3b14624-1.1.0>` and :ref:`w2v2-L <test-valence-d6bb0fbb-1.0.0>` and :ref:`w2v2-L-robust <test-valence-51c582b7-1.0.0>` and :ref:`w2v2-L-xls-r <test-valence-d800ca50-1.0.0>` and :ref:`w2v2-L-vox <test-valence-171c3b63-1.0.0>` to one another.
+
+.. flat-table:: Tests overview
+    :header-rows: 2
+
+    * - :rspan:`1` Topic
+      - :cspan:`4` Passed Tests
+    * - w2v2-b
+      - w2v2-L
+      - w2v2-L-robust
+      - w2v2-L-xls-r
+      - w2v2-L-vox
+    * - Overall Score
+      - 77.8% (378 :green:`passed` /  108 :red:`failed`)
+      - 79.4% (324 :green:`passed` /  84 :red:`failed`)
+      - 80.5% (360 :green:`passed` /  87 :red:`failed`)
+      - 77.6% (347 :green:`passed` /  100 :red:`failed`)
+      - 81.1% (344 :green:`passed` /  80 :red:`failed`)
+    * - :ref:`Correctness consistency <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_consistency>`
+      - :red:`46.8%`
+      - :red:`59.6%`
+      - :red:`42.6%`
+      - :red:`59.6%`
+      - :red:`68.1%`
+    * - :ref:`Correctness distribution <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_distribution>`
+      - :red:`33.3%`
+      - :red:`50.0%`
+      - 83.3%
+      - :red:`50.0%`
+      - :red:`33.3%`
+    * - :ref:`Correctness regression <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_regression>`
+      - :red:`0.0%`
+      - :red:`0.0%`
+      - :red:`22.2%`
+      - :red:`0.0%`
+      - :red:`0.0%`
+    * - :ref:`Correctness speaker average <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_speaker_average>`
+      - 83.3%
+      - 83.3%
+      - :green:`100.0%`
+      - 83.3%
+      - :red:`66.7%`
+    * - :ref:`Correctness speaker ranking <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_speaker_ranking>`
+      - :red:`25.0%`
+      - :red:`25.0%`
+      - :red:`50.0%`
+      - :red:`12.5%`
+      - :red:`12.5%`
+    * - :ref:`Fairness accent <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_accent>`
+      - 98.7%
+      - 96.8%
+      - :green:`100.0%`
+      - 92.7%
+      - 95.7%
+    * - :ref:`Fairness language <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_language>`
+      - 75.0%
+      - :green:`100.0%`
+      - 75.0%
+      - :green:`100.0%`
+      - :green:`100.0%`
+    * - :ref:`Fairness linguistic sentiment <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_linguistic_sentiment>`
+      - 89.6%
+      - :green:`100.0%`
+      - 89.8%
+      - 97.7%
+      - :green:`100.0%`
+    * - :ref:`Fairness pitch <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_pitch>`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - 81.0%
+      - 95.2%
+    * - :ref:`Fairness sex <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_sex>`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+    * - :ref:`Robustness background noise <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_background_noise>`
+      - :red:`36.1%`
+      - :red:`22.2%`
+      - :red:`41.7%`
+      - :red:`33.3%`
+      - :red:`44.4%`
+    * - :ref:`Robustness low quality phone <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_low_quality_phone>`
+      - :red:`0.0%`
+      - 83.3%
+      - :red:`66.7%`
+      - :red:`50.0%`
+      - :red:`66.7%`
+    * - :ref:`Robustness recording condition <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_recording_condition>`
+      - :red:`0.0%`
+      - :red:`0.0%`
+      - :red:`50.0%`
+      - :red:`0.0%`
+      - :red:`0.0%`
+    * - :ref:`Robustness simulated recording condition <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_simulated_recording_condition>`
+      - :red:`0.0%`
+      - :red:`16.7%`
+      - :red:`0.0%`
+      - :red:`0.0%`
+      - :red:`0.0%`
+    * - :ref:`Robustness small changes <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_small_changes>`
+      - 75.0%
+      - 80.0%
+      - 90.0%
+      - :red:`60.0%`
+      - 80.0%
+    * - :ref:`Robustness spectral tilt <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_spectral_tilt>`
+      - 75.0%
+      - 75.0%
+      - 91.7%
+      - 75.0%
+      - :red:`66.7%`
+
+
+.. toctree::
+    :hidden:
+
+    correctness_consistency
+    correctness_distribution
+    correctness_regression
+    correctness_speaker_average
+    correctness_speaker_ranking
+    fairness_accent
+    fairness_language
+    fairness_linguistic_sentiment
+    fairness_pitch
+    fairness_sex
+    robustness_background_noise
+    robustness_low_quality_phone
+    robustness_recording_condition
+    robustness_simulated_recording_condition
+    robustness_small_changes
+    robustness_spectral_tilt

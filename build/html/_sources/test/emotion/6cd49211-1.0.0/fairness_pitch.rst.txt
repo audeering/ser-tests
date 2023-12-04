@@ -1,0 +1,143 @@
+.. _test-emotion-6cd49211-1.0.0-fairness_pitch:
+
+Fairness pitch
+==============
+
+.. role:: red
+.. role:: green
+
+100.0% passed tests (30 :green:`passed` / 0 :red:`failed`).
+
+
+Precision Per Class High Pitch
+------------------------------
+
+Precision high pitch - precision combined.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_pitch/precision-per-class-high-pitch.csv
+
+Precision Per Class Low Pitch
+-----------------------------
+
+Precision low pitch - precision combined.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_pitch/precision-per-class-low-pitch.csv
+
+Precision Per Class Medium Pitch
+--------------------------------
+
+Precision medium pitch - precision combined.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_pitch/precision-per-class-medium-pitch.csv
+
+Recall Per Class High Pitch
+---------------------------
+
+Recall high pitch - recall combined.
+
+
+.. csv-table:: Threshold: 0.225
+    :header-rows: 1
+    :file: fairness_pitch/recall-per-class-high-pitch.csv
+
+Recall Per Class Low Pitch
+--------------------------
+
+Recall low pitch - recall combined.
+
+
+.. csv-table:: Threshold: 0.225
+    :header-rows: 1
+    :file: fairness_pitch/recall-per-class-low-pitch.csv
+
+Recall Per Class Medium Pitch
+-----------------------------
+
+Recall medium pitch - recall combined.
+
+
+.. csv-table:: Threshold: 0.225
+    :header-rows: 1
+    :file: fairness_pitch/recall-per-class-medium-pitch.csv
+
+Unweighted Average Precision High Pitch
+---------------------------------------
+
+UAP high pitch - UAP combined.
+
+
+.. csv-table:: Threshold: 0.05
+    :header-rows: 1
+    :file: fairness_pitch/unweighted-average-precision-high-pitch.csv
+
+Unweighted Average Precision Low Pitch
+--------------------------------------
+
+UAP low pitch - UAP combined.
+
+
+.. csv-table:: Threshold: 0.05
+    :header-rows: 1
+    :file: fairness_pitch/unweighted-average-precision-low-pitch.csv
+
+Unweighted Average Precision Medium Pitch
+-----------------------------------------
+
+UAP medium pitch - UAP combined.
+
+
+.. csv-table:: Threshold: 0.05
+    :header-rows: 1
+    :file: fairness_pitch/unweighted-average-precision-medium-pitch.csv
+
+Unweighted Average Recall High Pitch
+------------------------------------
+
+UAR high pitch - UAR combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_pitch/unweighted-average-recall-high-pitch.csv
+
+Unweighted Average Recall Low Pitch
+-----------------------------------
+
+UAR low pitch - UAR combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_pitch/unweighted-average-recall-low-pitch.csv
+
+Unweighted Average Recall Medium Pitch
+--------------------------------------
+
+UAR medium pitch - UAR combined.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_pitch/unweighted-average-recall-medium-pitch.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_high.png
+    :align: center
+
+.. figure:: fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_low.png
+    :align: center
+
+.. figure:: fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_medium.png
+    :align: center

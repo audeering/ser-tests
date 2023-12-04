@@ -1,0 +1,22 @@
+.. _test-emotion:
+
+Emotion
+=======
+
+.. csv-table:: Ranking of tested models
+    :header-rows: 1
+    :widths: 10, 75, 15
+    :file: emotion.csv
+
+.. toctree::
+    :hidden:
+
+    emotion/6d83a25c-1.0.1/index
+    emotion/88cede08-1.0.0/index
+    emotion/6cd49211-1.0.0/index
+    emotion/random-categorical/index
+    emotion/ca6bb2f2-1.0.0/index
+    emotion/63291c59-1.0.0/index
+    emotion/379bc045-1.0.0/index
+    emotion/ccf4ed91-1.0.0/index
+    emotion/1641e15f-1.0.1/index
