@@ -1,0 +1,49 @@
+name: Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Cache emodb
+      uses: actions/cache@v3
+      with:
+        path: ~/audb
+        key: emodb-1.4.1
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.8
+
+    - name: Setup audb config
+      run: |
+        cp misc/audb.yaml ~/.audb.yaml
+
+    # Build the HTML pages
+    #
+    # Currently disabled,
+    # as this requires access to auglib.
+    # Instead we have commited the build dir directly.
+    #
+    #- name: Install package
+    #  run: |
+    #    python -m pip install --upgrade pip
+    #    pip install -r docs/requirements.txt
+    #
+    #- name: Build HTML pages
+    #  run: |
+    #    python -m sphinx docs/ build/html -b html -W -D katex_prerender=True
+
+    - name: Deploy documentation to Github pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/build
