@@ -1,0 +1,13 @@
+Entry,Value
+Author,aderington
+Date,2023-04-14
+Name,onnx
+Subgroup,ser.basic4.audpann.cnn14
+Version,1.0.1
+Min_length,500
+Batch_size,16
+Learning_rate,0.001
+Best_epoch,34
+Seed,3
+Sample,"{'emodb': {'version': '1.1.1', 'flavor': {'bit_depth': None, 'channels': None, 'format': 'wav', 'mixdown': True, 'sampling_rate': 16000}, 'data': {'wav/03a01Fa.wav': [[0.8074951171875, 0.03554034233093262, 0.14863066375255585, 0.008333970792591572]], 'wav/08a01Ab.wav': [[0.5907111167907715, 0.15763787925243378, 0.15374456346035004, 0.0979064479470253]]}}}"
+Model_ids,"{'torch': '97aa2de2-1.0.1', 'onnx_quant': '1ce05bad-1.0.1'}"

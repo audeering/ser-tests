@@ -1,0 +1,51 @@
+Data:
+  - name: crema-d
+    version: 1.2.0
+    table: emotion.categories.test.gold_standard
+    column: emotion
+  - name: emovo
+    version: 1.2.1
+    table: emotion.test
+    column: emotion
+  - name: iemocap
+    version: 2.3.0
+    table: emotion.categories.test.gold_standard
+    column: emotion
+  - name: meld
+    version: 1.3.1
+    table: emotion.categories.test.gold_standard
+    column: emotion    
+  - name: msppodcast
+    version: 2.6.0
+    table: emotion.categories.test-1.gold_standard
+    column: emotion
+
+Metrics:
+  - name: Change UAR Downward Tilt
+    short: UAR Downward
+    threshold: -0.02
+  - name: Change UAR Upward Tilt
+    short: UAR Upward
+    threshold: -0.02
+  - name: Change UAP Downward Tilt
+    short: UAP Downward
+    threshold: -0.02
+  - name: Change UAP Upward Tilt
+    short: UAP Upward
+    threshold: -0.02
+  - name: Percentage Unchanged Predictions Downward Tilt
+    short: Unchanged Downward
+    threshold: 0.8
+  - name: Percentage Unchanged Predictions Upward Tilt
+    short: Unchanged Upward
+    threshold: 0.8
+  - name: Visualization Downward Tilt
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      original audio to the predictions of
+      audio with a downward spectral tilt.
+  - name: Visualization Upward Tilt
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      original audio to the predictions of
+      audio with an upward spectral tilt.

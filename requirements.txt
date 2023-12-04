@@ -1,0 +1,20 @@
+audb >=1.2.4
+audeer >=1.17.0
+audformat >=0.13.3
+audinterface
+audmodel
+audmetric >=1.1.3
+audobject
+audonnx >=0.5.0
+audplot >=1.4.5
+audresample
+auglib >=0.11.1
+# Fix matplotlib version to allow reproducibility of PNG images
+# as the used matploblib version is added as metadata
+matplotlib ==3.6.0
+numpy
+pandas
+praat-parselmouth
+scipy
+seaborn
+sox

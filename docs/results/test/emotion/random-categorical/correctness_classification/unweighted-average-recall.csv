@@ -1,0 +1,11 @@
+Data,Unweighted Average Recall
+crema-d-1.2.0-emotion.categories.test.gold_standard,0.26
+danish-emotional-speech-1.1.1-emotion.test,0.27
+emodb-1.2.0-emotion.categories.test.gold_standard,0.29
+emovo-1.2.1-emotion.test,0.24
+iemocap-2.3.0-emotion.categories.test.gold_standard,0.25
+meld-1.3.1-emotion.categories.test.gold_standard,0.25
+msppodcast-2.6.0-emotion.categories.test-1.gold_standard,0.24
+msppodcast-2.6.0-emotion.categories.test-2.gold_standard,0.25
+polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard,0.28
+ravdess-1.1.2-emotion.speech.test,0.28

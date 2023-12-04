@@ -1,0 +1,28 @@
+Data:
+  - name: emovo
+    version: 1.2.1
+    table: emotion.test
+  - name: imda-nsc-read-speech-balanced
+    version: 2.6.0
+    table: headset
+  - name: timit
+    version: 1.4.1
+    table: files
+
+Metrics:
+  - name: Percentage Unchanged Predictions Simulated Position
+    short: Unchanged Simulated Position
+    threshold: 0.8
+  - name: Percentage Unchanged Predictions Simulated Room
+    short: Unchanged Simulated Room
+    threshold: 0.8
+  - name: Visualization Simulated Position
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      audio with a baseline simulated position to the predictions of
+      audio with a different simulated position.
+  - name: Visualization Simulated Room
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      audio with a baseline simulated room to the predictions of
+      audio with a different simulated room.

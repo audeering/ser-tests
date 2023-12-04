@@ -1,0 +1,4 @@
+repositories:
+  - name: data-public-local
+    backend: artifactory
+    host: https://artifactory.audeering.com/artifactory

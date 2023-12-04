@@ -1,0 +1,7 @@
+Entry,Value
+data,msppodcast-2.3.0
+tasks,"arousal, valence, dominance"
+features,torchaudio.transforms.MelSpectrogram
+sampling_rate,16000
+quantization,False
+output_range,"(0, 1)"

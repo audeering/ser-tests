@@ -1,0 +1,4 @@
+Entry,Value
+data,msp-2.4.0
+model,facebook/wav2vec2-xls-r-300m
+sampling_rate,16000

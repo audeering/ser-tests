@@ -1,0 +1,12 @@
+- baseline: 1641e15f-1.0.1
+  candidates:
+    - ca6bb2f2-1.0.0
+    - 63291c59-1.0.0
+    - 379bc045-1.0.0
+    - ccf4ed91-1.0.0
+- baseline: 6d83a25c-1.0.1
+  candidates:
+    - 1641e15f-1.0.1
+    - ca6bb2f2-1.0.0
+    - 6cd49211-1.0.0
+    - 88cede08-1.0.0

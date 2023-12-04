@@ -1,0 +1,16 @@
+__pycache__/
+build/
+cache/
+docs/method-tests/
+docs/method-impact/
+docs/test/arousal*
+docs/test/dominance*
+docs/test/valence*
+docs/test/emotion*
+docs/comparison/arousal*
+docs/comparison/dominance*
+docs/comparison/valence*
+docs/comparison/emotion*
+docs/index.rst
+docs/extra/media/*/
+!docs/extra/media/fairness_thresholds

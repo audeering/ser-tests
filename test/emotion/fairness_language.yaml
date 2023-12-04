@@ -1,0 +1,25 @@
+Data:
+  - name: mozillacommonvoice
+    version: 10.1.0
+    split: de
+  - name: mozillacommonvoice
+    version: 10.1.0
+    split: en
+  - name: mozillacommonvoice
+    version: 10.1.0
+    split: es
+  - name: mozillacommonvoice
+    version: 10.1.0
+    split: fr
+  - name: mozillacommonvoice
+    version: 10.1.0
+    split: it
+  - name: mozillacommonvoice
+    version: 10.1.0
+    split: zh
+
+Metrics:
+  - name: Relative Difference Per Class
+    short: Difference
+    threshold: 0.1
+  - name: Visualization

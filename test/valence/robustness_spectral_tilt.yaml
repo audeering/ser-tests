@@ -1,0 +1,43 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    table: emotion.dimensions.test.gold_standard
+    column: valence
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: valence
+
+Metrics:
+  - name: Change CCC Downward Tilt
+    short: CCC Downward
+    threshold: -0.05
+  - name: Change CCC Upward Tilt
+    short: CCC Upward
+    threshold: -0.05
+  - name: Change Average Value Downward Tilt
+    short: Value Downward
+    threshold: 0.03
+  - name: Change Average Value Upward Tilt
+    short: Value Upward
+    threshold: 0.03
+  - name: Percentage Unchanged Predictions Downward Tilt
+    short: Unchanged Downward
+    threshold: 0.8
+  - name: Percentage Unchanged Predictions Upward Tilt
+    short: Unchanged Upward
+    threshold: 0.8
+  - name: Visualization Downward Tilt
+    description: >
+      Difference of predictions for original audio
+      and audio with a downward spectral tilt.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.
+  - name: Visualization Upward Tilt
+    description: >
+      Difference of predictions for original audio
+      and audio with an upward spectral tilt.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.

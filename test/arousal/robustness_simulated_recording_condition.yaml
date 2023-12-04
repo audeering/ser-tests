@@ -1,0 +1,32 @@
+Data:
+  - name: emovo
+    version: 1.2.1
+    table: emotion.test
+  - name: imda-nsc-read-speech-balanced
+    version: 2.6.0
+    table: headset
+  - name: timit
+    version: 1.4.1
+    table: files
+
+Metrics:
+  - name: Percentage Unchanged Predictions Simulated Position
+    short: Unchanged Simulated Position
+    threshold: 0.8
+  - name: Percentage Unchanged Predictions Simulated Room
+    short: Unchanged Simulated Room
+    threshold: 0.8
+  - name: Visualization Simulated Position
+    description: >
+      Difference of predictions for audio with a baseline simulated
+      position and audio with a different simulated position.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.
+  - name: Visualization Simulated Room
+    description: >
+      Difference of predictions for audio with a baseline simulated
+      room and audio with a different simulated room.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.

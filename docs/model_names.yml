@@ -1,0 +1,16 @@
+1543ec32-1.0.3: CNN14
+75e4ad67-1.1.0: hubert-b
+cf81bd56-1.1.0: hubert-L
+a3b14624-1.1.0: w2v2-b
+d6bb0fbb-1.0.0: w2v2-L
+51c582b7-1.0.0: w2v2-L-robust
+171c3b63-1.0.0: w2v2-L-vox
+d800ca50-1.0.0: w2v2-L-xls-r
+6d83a25c-1.0.1: CNN14-cat
+6cd49211-1.0.0: hubert-b-cat
+88cede08-1.0.0: hubert-L-cat
+1641e15f-1.0.1: w2v2-b-cat
+ca6bb2f2-1.0.0: w2v2-L-cat
+63291c59-1.0.0: w2v2-L-robust-cat
+379bc045-1.0.0: w2v2-L-vox-cat
+ccf4ed91-1.0.0: w2v2-L-xls-r-cat

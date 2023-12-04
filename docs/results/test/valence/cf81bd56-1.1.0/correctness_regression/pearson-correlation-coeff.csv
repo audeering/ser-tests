@@ -1,0 +1,4 @@
+Data,Pearson Correlation Coeff
+iemocap-2.3.0-emotion.dimensions.test.gold_standard,0.492
+msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard,0.637
+msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard,0.376

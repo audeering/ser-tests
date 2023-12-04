@@ -1,0 +1,107 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    table: emotion.dimensions.test.gold_standard
+    column: valence
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: valence
+
+Metrics:
+  - name: Change CCC Babble Noise
+    short: CCC Babble
+    threshold: -0.05
+  - name: Change CCC Coughing
+    short: CCC Coughing
+    threshold: -0.05
+  - name: Change CCC Environmental Noise
+    short: CCC Environmental
+    threshold: -0.05
+  - name: Change CCC Music
+    short: CCC Music
+    threshold: -0.05
+  - name: Change CCC Sneezing
+    short: CCC Sneezing
+    threshold: -0.05
+  - name: Change CCC White Noise
+    short: CCC White
+    threshold: -0.05
+  - name: Change Average Value Babble Noise
+    short: Value Babble
+    threshold: 0.03
+  - name: Change Average Value Coughing
+    short: Value Coughing
+    threshold: 0.03
+  - name: Change Average Value Environmental Noise
+    short: Value Environmental
+    threshold: 0.03
+  - name: Change Average Value Music
+    short: Value Music
+    threshold: 0.03
+  - name: Change Average Value Sneezing
+    short: Value Sneezing
+    threshold: 0.03
+  - name: Change Average Value White Noise
+    short: Value White
+    threshold: 0.03
+  - name: Percentage Unchanged Predictions Babble Noise
+    short: Unchanged Babble
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Coughing
+    short: Unchanged Coughing
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Environmental Noise
+    short: Unchanged Environmental
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Music
+    short: Unchanged Music
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Sneezing
+    short: Unchanged Sneezing
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions White Noise
+    short: Unchanged White
+    threshold: 0.9
+  - name: Visualization Babble Noise
+    description: >
+      Difference of predictions for clean audio
+      and audio with added babble noise.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.
+  - name: Visualization Coughing
+    description: >
+      Difference of predictions for clean audio
+      and audio with added coughing.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.
+  - name: Visualization Environmental Noise
+    description: >
+      Difference of predictions for clean audio
+      and audio with added environmental noise.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.
+  - name: Visualization Music
+    description: >
+      Difference of predictions for clean audio
+      and audio with added music.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.
+  - name: Visualization Sneezing
+    description: >
+      Difference of predictions for clean audio
+      and audio with added sneezing.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.
+  - name: Visualization White Noise
+    description: >
+      Difference of predictions for clean audio
+      and audio with added white noise.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.

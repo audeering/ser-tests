@@ -1,0 +1,70 @@
+Data:
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.categories.test-1.gold_standard
+    column: emotion
+    speaker_table: files.test-1
+    speaker_column: speaker
+
+Metrics:
+  - name: Precision Per Class High Pitch
+    short: Precision High Pitch
+    threshold: 0.1
+    description: >
+      Precision high pitch - precision combined.
+  - name: Precision Per Class Low Pitch
+    short: Precision Low Pitch
+    threshold: 0.1
+    description: >
+      Precision low pitch - precision combined.
+  - name: Precision Per Class Medium Pitch
+    short: Precision Medium Pitch
+    threshold: 0.1
+    description: >
+      Precision medium pitch - precision combined.
+  - name: Recall Per Class High Pitch
+    short: Recall High Pitch
+    threshold: 0.225
+    description: >
+      Recall high pitch - recall combined.
+  - name: Recall Per Class Low Pitch
+    short: Recall Low Pitch
+    threshold: 0.225
+    description: >
+      Recall low pitch - recall combined.
+  - name: Recall Per Class Medium Pitch
+    short: Recall Medium Pitch
+    threshold: 0.225
+    description: >
+      Recall medium pitch - recall combined.
+  - name: Unweighted Average Precision High Pitch
+    short: UAP High Pitch
+    threshold: 0.05
+    description: >
+      UAP high pitch - UAP combined.
+  - name: Unweighted Average Precision Low Pitch
+    short: UAP Low Pitch
+    threshold: 0.05
+    description: >
+      UAP low pitch - UAP combined.
+  - name: Unweighted Average Precision Medium Pitch
+    short: UAP Medium Pitch
+    threshold: 0.05
+    description: >
+      UAP medium pitch - UAP combined.
+  - name: Unweighted Average Recall High Pitch
+    short: UAR High Pitch
+    threshold: 0.075
+    description: >
+      UAR high pitch - UAR combined.
+  - name: Unweighted Average Recall Low Pitch
+    short: UAR Low Pitch
+    threshold: 0.075
+    description: >
+      UAR low pitch - UAR combined.
+  - name: Unweighted Average Recall Medium Pitch
+    short: UAR Medium Pitch
+    threshold: 0.075
+    description: >
+      UAR medium pitch - UAR combined.
+  - name: Visualization

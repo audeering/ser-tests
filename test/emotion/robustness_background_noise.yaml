@@ -1,0 +1,107 @@
+Data:
+  - name: crema-d
+    version: 1.2.0
+    table: emotion.categories.test.gold_standard
+    column: emotion
+  - name: emovo
+    version: 1.2.1
+    table: emotion.test
+    column: emotion
+  - name: iemocap
+    version: 2.3.0
+    table: emotion.categories.test.gold_standard
+    column: emotion
+  - name: meld
+    version: 1.3.1
+    table: emotion.categories.test.gold_standard
+    column: emotion    
+  - name: msppodcast
+    version: 2.6.0
+    table: emotion.categories.test-1.gold_standard
+    column: emotion
+
+Metrics:
+  - name: Change UAR Babble Noise
+    short: UAR Babble
+    threshold: -0.05
+  - name: Change UAR Coughing
+    short: UAR Coughing
+    threshold: -0.05
+  - name: Change UAR Environmental Noise
+    short: UAR Environmental
+    threshold: -0.05
+  - name: Change UAR Music
+    short: UAR Music
+    threshold: -0.05
+  - name: Change UAR Sneezing
+    short: UAR Sneezing
+    threshold: -0.05
+  - name: Change UAR White Noise
+    short: UAR White
+    threshold: -0.05
+  - name: Change UAP Babble Noise
+    short: UAP Babble
+    threshold: -0.05
+  - name: Change UAP Coughing
+    short: UAP Coughing
+    threshold: -0.05
+  - name: Change UAP Environmental Noise
+    short: UAP Environmental
+    threshold: -0.05
+  - name: Change UAP Music
+    short: UAP Music
+    threshold: -0.05
+  - name: Change UAP Sneezing
+    short: Value Sneezing
+    threshold: -0.05
+  - name: Change UAP White Noise
+    short: UAP White
+    threshold: -0.05
+  - name: Percentage Unchanged Predictions Babble Noise
+    short: Unchanged Babble
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Coughing
+    short: Unchanged Coughing
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Environmental Noise
+    short: Unchanged Environmental
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Music
+    short: Unchanged Music
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions Sneezing
+    short: Unchanged Sneezing
+    threshold: 0.9
+  - name: Percentage Unchanged Predictions White Noise
+    short: Unchanged White
+    threshold: 0.9
+  - name: Visualization Babble Noise
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      the clean audio to the predictions of the
+      audio with added babble noise.
+  - name: Visualization Coughing
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      the clean audio to the predictions of the
+      audio with added coughing.
+  - name: Visualization Environmental Noise
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      the clean audio to the predictions of the
+      audio with added environmental noise.
+  - name: Visualization Music
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      the clean audio to the predictions of the
+      audio with added music.
+  - name: Visualization Sneezing
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      the clean audio to the predictions of the
+      audio with added sneezing.
+  - name: Visualization White Noise
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      the clean audio to the predictions of the
+      audio with added white noise.

@@ -1,0 +1,9 @@
+Data,boredom,sadness
+crema-d-1.2.0-emotion.categories.test.gold_standard,,0.41
+danish-emotional-speech-1.1.1-emotion.test,,0.46
+emodb-1.2.0-emotion.categories.test.gold_standard,0.47,0.41
+emovo-1.2.1-emotion.test,,0.39
+iemocap-2.3.0-emotion.categories.test.gold_standard,,0.37
+meld-1.3.1-emotion.categories.test.gold_standard,,0.42
+polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard,0.48,0.15
+ravdess-1.1.2-emotion.speech.test,,0.59

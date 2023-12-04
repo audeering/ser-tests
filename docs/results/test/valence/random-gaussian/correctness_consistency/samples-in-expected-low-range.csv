@@ -1,0 +1,9 @@
+Data,anger,disgust,fear,frustration,sadness
+crema-d-1.2.0-emotion.categories.test.gold_standard,0.35,0.27,0.35,,0.41
+danish-emotional-speech-1.1.1-emotion.test,0.35,,,,0.44
+emodb-1.2.0-emotion.categories.test.gold_standard,0.4,0.5,0.33,,0.37
+emovo-1.2.1-emotion.test,0.4,0.38,0.48,,0.45
+iemocap-2.3.0-emotion.categories.test.gold_standard,0.35,,0.47,0.38,0.44
+meld-1.3.1-emotion.categories.test.gold_standard,0.34,0.28,0.36,,0.37
+polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard,0.48,,0.38,,0.32
+ravdess-1.1.2-emotion.speech.test,0.44,0.44,0.41,,0.31

@@ -1,0 +1,4 @@
+Data,anger,happiness,neutral,sadness
+iemocap-2.3.0-full,-0.12,0.07,-0.31,0.36
+meld-1.3.1-emotion.categories.test.gold_standard,0.01,0.34,-0.5,0.15
+msppodcast-2.6.0-emotion.categories.test-1.gold_standard,0.04,0.05,-0.17,0.07

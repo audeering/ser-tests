@@ -1,0 +1,22 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    table: emotion.dimensions.test.gold_standard
+    column: dominance
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: dominance
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-2.gold_standard
+    column: dominance
+
+Metrics:
+  - name: Jensen-Shannon Distance
+    short: Distance
+    threshold: 0.2
+  - name: Mean Value
+    short: Mean
+    threshold: 0.03
+  - name: Visualization

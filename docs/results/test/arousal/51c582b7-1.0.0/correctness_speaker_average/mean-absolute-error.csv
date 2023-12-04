@@ -1,0 +1,4 @@
+Data,Mean Absolute Error
+iemocap-2.3.0-full,0.04
+msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard,0.03
+msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard,0.04
