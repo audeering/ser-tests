@@ -1,0 +1,56 @@
+.. _test-arousal-51c582b7-1.0.0-robustness_simulated_recording_condition:
+
+Robustness simulated recording condition
+========================================
+
+.. role:: red
+.. role:: green
+
+33.3% passed tests (2 :green:`passed` / 4 :red:`failed`).
+
+
+Percentage Unchanged Predictions Simulated Position
+---------------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_simulated_recording_condition/percentage-unchanged-predictions-simulated-position.csv
+
+Percentage Unchanged Predictions Simulated Room
+-----------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_simulated_recording_condition/percentage-unchanged-predictions-simulated-room.csv
+
+Visualization Simulated Position
+--------------------------------
+
+Difference of predictions for audio with a baseline simulated position and audio with a different simulated position. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-position_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-position_timit-1.4.1-files.png
+    :align: center
+
+Visualization Simulated Room
+----------------------------
+
+Difference of predictions for audio with a baseline simulated room and audio with a different simulated room. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-room_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-room_timit-1.4.1-files.png
+    :align: center

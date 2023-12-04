@@ -1,0 +1,289 @@
+.. _comparison-emotion-1641e15f-1.0.1_ca6bb2f2-1.0.0_63291c59-1.0.0_379bc045-1.0.0_ccf4ed91-1.0.0-correctness_speaker_average:
+
+Correctness speaker average
+===========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: correctness_speaker_average/overall_scores.csv
+
+
+Class Proportion Mean Absolute Error
+------------------------------------
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :green:`0.09`
+      - :green:`0.06`
+      - :green:`0.06`
+      - :red:`0.12`
+      - :green:`0.06`
+      - :red:`0.10`
+      - :red:`0.11`
+      - :red:`0.12`
+      - :green:`0.08`
+      - :green:`0.05`
+      - :red:`0.21`
+      - :red:`0.28`
+      - :red:`0.16`
+      - :red:`0.31`
+      - :red:`0.26`
+      - :red:`0.19`
+      - :red:`0.23`
+      - :red:`0.10`
+      - :red:`0.36`
+      - :red:`0.32`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :red:`0.21`
+      - :red:`0.42`
+      - :red:`0.43`
+      - :red:`0.36`
+      - :red:`0.34`
+      - :red:`0.19`
+      - :red:`0.47`
+      - :red:`0.49`
+      - :red:`0.42`
+      - :red:`0.50`
+      - :red:`0.46`
+      - :green:`0.07`
+      - :green:`0.03`
+      - :green:`0.03`
+      - :red:`0.15`
+      - :green:`0.06`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`0.05`
+      - :red:`0.10`
+      - :green:`0.07`
+      - :green:`0.07`
+      - :red:`0.15`
+      - :red:`0.11`
+      - :red:`0.12`
+      - :green:`0.07`
+      - :red:`0.10`
+      - :red:`0.10`
+      - :red:`0.23`
+      - :red:`0.26`
+      - :red:`0.16`
+      - :red:`0.17`
+      - :red:`0.16`
+      - :green:`0.09`
+      - :green:`0.05`
+      - :green:`0.05`
+      - :green:`0.09`
+      - :red:`0.13`
+    * - mean
+      - 0.05
+      - 0.06
+      - 0.05
+      - 0.07
+      - 0.14
+      - 0.21
+      - 0.22
+      - 0.18
+      - 0.17
+      - 0.11
+      - 0.30
+      - 0.34
+      - 0.25
+      - 0.33
+      - 0.29
+      - 0.12
+      - 0.10
+      - 0.06
+      - 0.20
+      - 0.17
+
+Class Proportion Mean Directional Error
+---------------------------------------
+
+.. flat-table:: Threshold: 0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - iemocap-2.3.0-full
+      - :red:`-0.09`
+      - :red:`-0.06`
+      - :red:`-0.06`
+      - :red:`-0.12`
+      - :red:`-0.06`
+      - :red:`0.10`
+      - :red:`0.11`
+      - :red:`0.12`
+      - :red:`0.07`
+      - :green:`-0.00`
+      - :red:`-0.21`
+      - :red:`-0.28`
+      - :red:`-0.16`
+      - :red:`-0.31`
+      - :red:`-0.26`
+      - :red:`0.19`
+      - :red:`0.23`
+      - :red:`0.10`
+      - :red:`0.36`
+      - :red:`0.32`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.02`
+      - :green:`0.03`
+      - :green:`0.03`
+      - :green:`0.01`
+      - :red:`0.21`
+      - :red:`0.42`
+      - :red:`0.43`
+      - :red:`0.36`
+      - :red:`0.34`
+      - :red:`0.19`
+      - :red:`-0.47`
+      - :red:`-0.49`
+      - :red:`-0.42`
+      - :red:`-0.50`
+      - :red:`-0.46`
+      - :red:`0.07`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :red:`0.15`
+      - :red:`0.06`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`0.05`
+      - :red:`0.10`
+      - :red:`0.07`
+      - :green:`0.04`
+      - :red:`0.15`
+      - :red:`0.11`
+      - :red:`0.12`
+      - :red:`0.06`
+      - :red:`0.05`
+      - :red:`-0.08`
+      - :red:`-0.23`
+      - :red:`-0.26`
+      - :red:`-0.16`
+      - :red:`-0.17`
+      - :red:`-0.16`
+      - :red:`0.08`
+      - :green:`0.03`
+      - :green:`0.03`
+      - :red:`0.07`
+      - :red:`0.09`
+    * - mean
+      - -0.02
+      - 0.02
+      - 0.01
+      - -0.02
+      - 0.10
+      - 0.21
+      - 0.22
+      - 0.18
+      - 0.15
+      - 0.04
+      - -0.30
+      - -0.34
+      - -0.25
+      - -0.33
+      - -0.29
+      - 0.11
+      - 0.10
+      - 0.05
+      - 0.19
+      - 0.16
+
+Visualization
+-------------
+
+The plot shows the proportion of the predicted samples for each class, as well as the true proportion of the class. We select a slightly higher threshold for the absolute error in the plots compared to the Class Proportion Difference test as we are interested in highlighting only big deviations here.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_speaker_average/visualization_iemocap-2.3.0-full.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/correctness_speaker_average/visualization_iemocap-2.3.0-full.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/correctness_speaker_average/visualization_iemocap-2.3.0-full.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/correctness_speaker_average/visualization_iemocap-2.3.0-full.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/correctness_speaker_average/visualization_iemocap-2.3.0-full.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_speaker_average/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/correctness_speaker_average/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/correctness_speaker_average/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/correctness_speaker_average/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/correctness_speaker_average/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_speaker_average/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/correctness_speaker_average/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/correctness_speaker_average/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/correctness_speaker_average/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/correctness_speaker_average/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+

@@ -1,0 +1,51 @@
+.. _test-valence-random-gaussian-correctness_speaker_ranking:
+
+Correctness speaker ranking
+===========================
+
+.. role:: red
+.. role:: green
+
+0.0% passed tests (0 :green:`passed` / 8 :red:`failed`).
+
+
+Precision Bottom 25%
+--------------------
+
+.. csv-table:: Threshold: 0.7
+    :header-rows: 1
+    :file: correctness_speaker_ranking/precision-bottom-25%.csv
+
+Precision Top 25%
+-----------------
+
+.. csv-table:: Threshold: 0.7
+    :header-rows: 1
+    :file: correctness_speaker_ranking/precision-top-25%.csv
+
+Spearmans Rho
+-------------
+
+.. csv-table:: Threshold: 0.7
+    :header-rows: 1
+    :file: correctness_speaker_ranking/spearmans-rho.csv
+
+Top Bottom Confusions
+---------------------
+
+.. csv-table:: Threshold: 0.15
+    :header-rows: 1
+    :file: correctness_speaker_ranking/top-bottom-confusions.csv
+
+Visualization
+-------------
+
+The plots visualize the precision of predicting speakers to be in the Top 25% or Bottom 25% of all speakers. Green dots indicate correctly classified speakers, red false positive speakers, whereby red squares indicate confusions between Top 25% and Bottom 25% speakers. The remaining grey data points are samples outside the range of interest. They contain false negatives that should have been predicted in the Top 25% or Bottom 25% of speakers, but were not. True negatives are those speakers that are not part of the Top 25% or Bottom 25%, and were predicted as such.
+
+
+
+.. figure:: correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+.. figure:: correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+    :align: center

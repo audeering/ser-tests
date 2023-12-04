@@ -1,0 +1,173 @@
+.. _test-dominance-random-gaussian-fairness_pitch:
+
+Fairness pitch
+==============
+
+.. role:: red
+.. role:: green
+
+100.0% passed tests (21 :green:`passed` / 0 :red:`failed`).
+
+
+Concordance Correlation Coeff High Pitch
+----------------------------------------
+
+CCC high pitch - CCC combined.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_pitch/concordance-correlation-coeff-high-pitch.csv
+
+Concordance Correlation Coeff Low Pitch
+---------------------------------------
+
+CCC low pitch - CCC combined.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_pitch/concordance-correlation-coeff-low-pitch.csv
+
+Concordance Correlation Coeff Medium Pitch
+------------------------------------------
+
+CCC medium pitch - CCC combined.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_pitch/concordance-correlation-coeff-medium-pitch.csv
+
+Mean Absolute Error High Pitch
+------------------------------
+
+Mean absolute error high pitch - mean absolute error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.02
+    :header-rows: 1
+    :file: fairness_pitch/mean-absolute-error-high-pitch.csv
+
+Mean Absolute Error Low Pitch
+-----------------------------
+
+Mean absolute error low pitch - mean absolute error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.02
+    :header-rows: 1
+    :file: fairness_pitch/mean-absolute-error-low-pitch.csv
+
+Mean Absolute Error Medium Pitch
+--------------------------------
+
+Mean absolute error medium pitch - mean absolute error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.02
+    :header-rows: 1
+    :file: fairness_pitch/mean-absolute-error-medium-pitch.csv
+
+Mean Directional Error High Pitch
+---------------------------------
+
+Mean directional error high pitch - mean directional error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.04
+    :header-rows: 1
+    :file: fairness_pitch/mean-directional-error-high-pitch.csv
+
+Mean Directional Error Low Pitch
+--------------------------------
+
+Mean directional error low pitch - mean directional error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.04
+    :header-rows: 1
+    :file: fairness_pitch/mean-directional-error-low-pitch.csv
+
+Mean Directional Error Medium Pitch
+-----------------------------------
+
+Mean directional error medium pitch - mean directional error combined on the regression scale.
+
+
+.. csv-table:: Threshold: 0.04
+    :header-rows: 1
+    :file: fairness_pitch/mean-directional-error-medium-pitch.csv
+
+Precision Per Bin High Pitch
+----------------------------
+
+Precision per bin high pitch - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.125
+    :header-rows: 1
+    :file: fairness_pitch/precision-per-bin-high-pitch.csv
+
+Precision Per Bin Low Pitch
+---------------------------
+
+Precision per bin low pitch - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.125
+    :header-rows: 1
+    :file: fairness_pitch/precision-per-bin-low-pitch.csv
+
+Precision Per Bin Medium Pitch
+------------------------------
+
+Precision per bin medium pitch - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.125
+    :header-rows: 1
+    :file: fairness_pitch/precision-per-bin-medium-pitch.csv
+
+Recall Per Bin High Pitch
+-------------------------
+
+Recall per bin high pitch - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.125
+    :header-rows: 1
+    :file: fairness_pitch/recall-per-bin-high-pitch.csv
+
+Recall Per Bin Low Pitch
+------------------------
+
+Recall per bin low pitch - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.125
+    :header-rows: 1
+    :file: fairness_pitch/recall-per-bin-low-pitch.csv
+
+Recall Per Bin Medium Pitch
+---------------------------
+
+Recall per bin medium pitch - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.125
+    :header-rows: 1
+    :file: fairness_pitch/recall-per-bin-medium-pitch.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_high.png
+    :align: center
+
+.. figure:: fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_low.png
+    :align: center
+
+.. figure:: fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_medium.png
+    :align: center

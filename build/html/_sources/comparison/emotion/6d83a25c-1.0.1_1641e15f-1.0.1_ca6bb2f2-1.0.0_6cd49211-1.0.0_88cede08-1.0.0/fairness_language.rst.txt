@@ -1,0 +1,263 @@
+.. _comparison-emotion-6d83a25c-1.0.1_1641e15f-1.0.1_ca6bb2f2-1.0.0_6cd49211-1.0.0_88cede08-1.0.0-fairness_language:
+
+Fairness language
+=================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_language/overall_scores.csv
+
+
+Relative Difference Per Class
+-----------------------------
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - mozillacommonvoice-10.1.0-de
+      - :green:`-0.03`
+      - :green:`-0.06`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.04`
+      - :green:`-0.05`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :red:`0.11`
+      - :green:`0.08`
+      - :green:`-0.03`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :green:`-0.02`
+      - :green:`-0.00`
+      - :green:`0.06`
+      - :green:`-0.02`
+    * - mozillacommonvoice-10.1.0-en
+      - :green:`-0.04`
+      - :green:`-0.05`
+      - :green:`0.00`
+      - :green:`-0.02`
+      - :green:`0.00`
+      - :green:`-0.01`
+      - :green:`-0.05`
+      - :green:`-0.06`
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`-0.03`
+      - :red:`-0.11`
+      - :red:`-0.21`
+      - :red:`-0.13`
+      - :red:`-0.19`
+      - :green:`0.08`
+      - :red:`0.20`
+      - :red:`0.27`
+      - :red:`0.16`
+      - :red:`0.19`
+    * - mozillacommonvoice-10.1.0-es
+      - :green:`-0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.00`
+      - :green:`0.02`
+      - :green:`-0.02`
+      - :green:`-0.06`
+      - :red:`-0.10`
+      - :red:`-0.14`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`0.04`
+      - :green:`0.07`
+      - :red:`0.13`
+      - :green:`-0.01`
+    * - mozillacommonvoice-10.1.0-fr
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`0.04`
+      - :green:`0.05`
+      - :green:`0.02`
+      - :green:`0.07`
+      - :green:`0.04`
+      - :green:`-0.03`
+      - :green:`-0.06`
+      - :green:`-0.03`
+      - :green:`-0.05`
+    * - mozillacommonvoice-10.1.0-it
+      - :green:`0.01`
+      - :green:`0.07`
+      - :green:`0.00`
+      - :green:`0.02`
+      - :green:`-0.00`
+      - :green:`0.03`
+      - :green:`0.04`
+      - :green:`0.06`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`0.04`
+      - :green:`-0.00`
+      - :red:`0.11`
+      - :red:`0.17`
+      - :green:`0.05`
+      - :green:`-0.08`
+      - :red:`-0.11`
+      - :red:`-0.17`
+      - :red:`-0.20`
+      - :green:`-0.05`
+    * - mozillacommonvoice-10.1.0-zh
+      - :green:`0.05`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`-0.02`
+      - :green:`0.04`
+      - :green:`0.04`
+      - :green:`0.00`
+      - :green:`0.00`
+      - :green:`0.05`
+      - :green:`0.03`
+      - :green:`0.07`
+      - :red:`0.11`
+      - :green:`0.04`
+      - :green:`-0.08`
+      - :green:`-0.09`
+      - :red:`-0.12`
+      - :red:`-0.12`
+      - :green:`-0.05`
+    * - mean
+      - -0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - -0.00
+      - -0.00
+      - 0.00
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+

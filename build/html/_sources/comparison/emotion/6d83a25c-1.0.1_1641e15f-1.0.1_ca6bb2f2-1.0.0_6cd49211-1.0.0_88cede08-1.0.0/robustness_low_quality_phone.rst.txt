@@ -1,0 +1,227 @@
+.. _comparison-emotion-6d83a25c-1.0.1_1641e15f-1.0.1_ca6bb2f2-1.0.0_6cd49211-1.0.0_88cede08-1.0.0-robustness_low_quality_phone:
+
+Robustness low quality phone
+============================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_low_quality_phone/overall_scores.csv
+
+
+Change Uap Low Quality Phone
+----------------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAP Low Quality Phone
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`-0.16`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :red:`-0.16`
+      - :green:`0.03`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.18`
+      - :red:`-0.05`
+      - :green:`-0.04`
+      - :red:`-0.08`
+      - :red:`-0.09`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`0.12`
+      - :red:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :green:`-0.00`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.01`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :red:`-0.05`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :green:`-0.00`
+      - :green:`-0.03`
+      - :green:`-0.01`
+    * - mean
+      - 0.02
+      - -0.03
+      - -0.01
+      - -0.07
+      - -0.02
+
+Change Uar Low Quality Phone
+----------------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAR Low Quality Phone
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.02`
+      - :red:`-0.09`
+      - :red:`-0.07`
+      - :red:`-0.06`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.01`
+      - :green:`-0.02`
+      - :green:`0.01`
+      - :red:`-0.08`
+      - :green:`-0.01`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`-0.04`
+      - :green:`-0.03`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.02`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`-0.08`
+      - :red:`-0.05`
+      - :green:`-0.02`
+      - :red:`-0.08`
+      - :green:`-0.04`
+    * - mean
+      - -0.03
+      - -0.03
+      - -0.03
+      - -0.06
+      - -0.03
+
+Percentage Unchanged Predictions Low Quality Phone
+--------------------------------------------------
+
+.. flat-table:: Threshold: 0.5
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Low Quality Phone
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.91`
+      - :green:`0.68`
+      - :green:`0.69`
+      - :green:`0.87`
+      - :green:`0.77`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.73`
+      - :green:`0.64`
+      - :green:`0.71`
+      - :green:`0.65`
+      - :green:`0.76`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`0.79`
+      - :green:`0.70`
+      - :green:`0.76`
+      - :green:`0.79`
+      - :green:`0.77`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.59`
+      - :green:`0.66`
+      - :green:`0.72`
+      - :green:`0.67`
+      - :green:`0.67`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`0.60`
+      - :green:`0.69`
+      - :green:`0.69`
+      - :green:`0.70`
+      - :green:`0.80`
+    * - mean
+      - 0.72
+      - 0.67
+      - 0.71
+      - 0.74
+      - 0.75
+
+Visualization
+-------------
+
+Confusion Matrix showing the shift from the predictions of the original audio to the predictions of the low quality phone audio.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/robustness_low_quality_phone/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_low_quality_phone/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_low_quality_phone/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/robustness_low_quality_phone/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/robustness_low_quality_phone/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/robustness_low_quality_phone/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_low_quality_phone/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_low_quality_phone/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/robustness_low_quality_phone/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/robustness_low_quality_phone/visualization_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/robustness_low_quality_phone/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_low_quality_phone/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_low_quality_phone/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/robustness_low_quality_phone/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/robustness_low_quality_phone/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/robustness_low_quality_phone/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_low_quality_phone/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_low_quality_phone/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/robustness_low_quality_phone/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/robustness_low_quality_phone/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+

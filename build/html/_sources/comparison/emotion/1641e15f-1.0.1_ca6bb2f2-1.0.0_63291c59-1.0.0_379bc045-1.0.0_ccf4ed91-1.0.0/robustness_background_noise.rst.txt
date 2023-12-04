@@ -1,0 +1,1227 @@
+.. _comparison-emotion-1641e15f-1.0.1_ca6bb2f2-1.0.0_63291c59-1.0.0_379bc045-1.0.0_ccf4ed91-1.0.0-robustness_background_noise:
+
+Robustness background noise
+===========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_background_noise/overall_scores.csv
+
+
+Change Uap Babble Noise
+-----------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAP Babble Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`-0.00`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`0.20`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.02`
+      - :green:`0.04`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.11`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`0.00`
+      - :green:`-0.02`
+      - :green:`-0.02`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`-0.00`
+      - :green:`0.01`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+    * - mean
+      - -0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.06
+
+Change Uap Coughing
+-------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAP Coughing
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.01`
+      - :green:`-0.03`
+      - :red:`-0.08`
+      - :green:`-0.00`
+      - :green:`0.09`
+    * - emovo-1.2.1-emotion.test
+      - :green:`-0.01`
+      - :green:`-0.04`
+      - :red:`-0.12`
+      - :green:`-0.02`
+      - :green:`0.12`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.00`
+      - :green:`-0.04`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`0.01`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.00`
+      - :green:`-0.01`
+    * - mean
+      - -0.01
+      - -0.02
+      - -0.05
+      - -0.01
+      - 0.03
+
+Change Uap Environmental Noise
+------------------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAP Environmental Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`-0.00`
+      - :green:`0.02`
+      - :green:`-0.02`
+      - :green:`0.05`
+      - :green:`0.28`
+    * - emovo-1.2.1-emotion.test
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :red:`-0.05`
+      - :green:`0.01`
+      - :green:`0.11`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.00`
+      - :green:`-0.03`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.03`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.00`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.00`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+    * - mean
+      - -0.00
+      - -0.01
+      - -0.02
+      - 0.01
+      - 0.07
+
+Change Uap Music
+----------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAP Music
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`-0.00`
+      - :green:`0.09`
+      - :green:`0.14`
+    * - emovo-1.2.1-emotion.test
+      - :green:`-0.00`
+      - :green:`0.02`
+      - :green:`-0.03`
+      - :green:`-0.00`
+      - :green:`0.13`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.00`
+      - :green:`-0.02`
+      - :green:`0.00`
+      - :green:`-0.00`
+      - :green:`-0.02`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+    * - mean
+      - -0.00
+      - -0.00
+      - -0.01
+      - 0.01
+      - 0.05
+
+Change Uap Sneezing
+-------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAP Sneezing
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.02`
+      - :green:`-0.03`
+      - :red:`-0.09`
+      - :green:`0.05`
+      - :green:`0.10`
+    * - emovo-1.2.1-emotion.test
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :red:`-0.09`
+      - :green:`-0.02`
+      - :green:`0.15`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`0.00`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`-0.00`
+      - :green:`-0.03`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`-0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`0.01`
+    * - mean
+      - -0.01
+      - -0.01
+      - -0.04
+      - 0.01
+      - 0.05
+
+Change Uap White Noise
+----------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAP White Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.01`
+      - :green:`0.05`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.28`
+    * - emovo-1.2.1-emotion.test
+      - :green:`-0.02`
+      - :green:`0.01`
+      - :red:`-0.05`
+      - :green:`0.07`
+      - :green:`0.21`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`0.01`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`-0.00`
+    * - mean
+      - -0.01
+      - 0.00
+      - -0.00
+      - 0.02
+      - 0.10
+
+Change Uar Babble Noise
+-----------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAR Babble Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`-0.00`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`-0.00`
+      - :green:`0.03`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.03`
+      - :green:`0.05`
+      - :green:`0.07`
+      - :green:`0.01`
+      - :green:`-0.00`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`-0.04`
+      - :green:`-0.02`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`0.00`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`-0.05`
+      - :green:`-0.03`
+      - :red:`-0.05`
+      - :red:`-0.06`
+      - :green:`-0.02`
+    * - mean
+      - -0.01
+      - 0.00
+      - 0.00
+      - -0.02
+      - -0.00
+
+Change Uar Coughing
+-------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAR Coughing
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.05`
+      - :green:`-0.02`
+      - :green:`-0.04`
+      - :green:`0.05`
+      - :green:`0.04`
+    * - emovo-1.2.1-emotion.test
+      - :red:`-0.07`
+      - :red:`-0.11`
+      - :red:`-0.14`
+      - :red:`-0.05`
+      - :green:`-0.04`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`-0.09`
+      - :red:`-0.09`
+      - :red:`-0.10`
+      - :red:`-0.09`
+      - :red:`-0.06`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :red:`-0.05`
+      - :green:`-0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`-0.15`
+      - :red:`-0.13`
+      - :red:`-0.13`
+      - :red:`-0.17`
+      - :red:`-0.10`
+    * - mean
+      - -0.06
+      - -0.08
+      - -0.09
+      - -0.06
+      - -0.04
+
+Change Uar Environmental Noise
+------------------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAR Environmental Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.01`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.04`
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.02`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.00`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`-0.00`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :green:`-0.02`
+    * - mean
+      - -0.01
+      - -0.01
+      - -0.01
+      - -0.02
+      - -0.01
+
+Change Uar Music
+----------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAR Music
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`-0.00`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.01`
+      - :green:`0.04`
+      - :green:`0.02`
+      - :green:`-0.04`
+      - :green:`-0.00`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.01`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`-0.00`
+      - :green:`0.00`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :red:`-0.05`
+      - :green:`-0.01`
+    * - mean
+      - -0.01
+      - -0.00
+      - -0.00
+      - -0.03
+      - -0.00
+
+Change Uar Sneezing
+-------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAR Sneezing
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.02`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`0.02`
+      - :green:`0.06`
+    * - emovo-1.2.1-emotion.test
+      - :red:`-0.07`
+      - :red:`-0.12`
+      - :red:`-0.10`
+      - :green:`-0.00`
+      - :green:`-0.02`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`-0.10`
+      - :red:`-0.09`
+      - :red:`-0.08`
+      - :red:`-0.08`
+      - :green:`-0.04`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :red:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`-0.16`
+      - :red:`-0.16`
+      - :red:`-0.10`
+      - :red:`-0.16`
+      - :red:`-0.10`
+    * - mean
+      - -0.07
+      - -0.09
+      - -0.07
+      - -0.05
+      - -0.02
+
+Change Uar White Noise
+----------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Change UAR White Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`-0.05`
+      - :red:`-0.06`
+      - :red:`-0.08`
+      - :red:`-0.07`
+      - :green:`-0.02`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.01`
+      - :green:`0.04`
+      - :red:`-0.08`
+      - :red:`-0.08`
+      - :green:`0.02`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :red:`-0.07`
+      - :green:`-0.03`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.02`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.02`
+    * - mean
+      - -0.03
+      - -0.02
+      - -0.05
+      - -0.05
+      - -0.01
+
+Percentage Unchanged Predictions Babble Noise
+---------------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Babble Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.80`
+      - :red:`0.77`
+      - :red:`0.78`
+      - :green:`0.95`
+      - :green:`0.91`
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.74`
+      - :red:`0.77`
+      - :red:`0.79`
+      - :red:`0.74`
+      - :red:`0.82`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.87`
+      - :red:`0.85`
+      - :red:`0.88`
+      - :red:`0.88`
+      - :red:`0.88`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.90`
+      - :red:`0.90`
+      - :green:`0.91`
+      - :green:`0.92`
+      - :green:`0.92`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`0.85`
+      - :red:`0.85`
+      - :red:`0.86`
+      - :red:`0.82`
+      - :red:`0.80`
+    * - mean
+      - 0.83
+      - 0.83
+      - 0.84
+      - 0.86
+      - 0.87
+
+Percentage Unchanged Predictions Coughing
+-----------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Coughing
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.68`
+      - :red:`0.63`
+      - :red:`0.57`
+      - :red:`0.79`
+      - :red:`0.82`
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.56`
+      - :red:`0.60`
+      - :red:`0.57`
+      - :red:`0.41`
+      - :red:`0.58`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.64`
+      - :red:`0.66`
+      - :red:`0.69`
+      - :red:`0.64`
+      - :red:`0.67`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.79`
+      - :red:`0.79`
+      - :red:`0.81`
+      - :red:`0.77`
+      - :red:`0.78`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`0.63`
+      - :red:`0.68`
+      - :red:`0.73`
+      - :red:`0.54`
+      - :red:`0.53`
+    * - mean
+      - 0.66
+      - 0.67
+      - 0.67
+      - 0.63
+      - 0.68
+
+Percentage Unchanged Predictions Environmental Noise
+----------------------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Environmental Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.83`
+      - :red:`0.83`
+      - :red:`0.84`
+      - :green:`0.96`
+      - :green:`0.95`
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.79`
+      - :red:`0.83`
+      - :red:`0.84`
+      - :red:`0.76`
+      - :red:`0.87`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.85`
+      - :red:`0.85`
+      - :red:`0.88`
+      - :red:`0.89`
+      - :red:`0.87`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.89`
+      - :red:`0.89`
+      - :red:`0.90`
+      - :green:`0.92`
+      - :green:`0.91`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`0.85`
+      - :red:`0.86`
+      - :red:`0.89`
+      - :red:`0.84`
+      - :red:`0.84`
+    * - mean
+      - 0.84
+      - 0.85
+      - 0.87
+      - 0.87
+      - 0.89
+
+Percentage Unchanged Predictions Music
+--------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Music
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.84`
+      - :red:`0.85`
+      - :red:`0.86`
+      - :green:`0.96`
+      - :green:`0.96`
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.79`
+      - :red:`0.79`
+      - :red:`0.84`
+      - :red:`0.76`
+      - :red:`0.85`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.86`
+      - :red:`0.87`
+      - :red:`0.90`
+      - :red:`0.89`
+      - :green:`0.91`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.91`
+      - :green:`0.92`
+      - :green:`0.92`
+      - :green:`0.93`
+      - :green:`0.92`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`0.85`
+      - :red:`0.86`
+      - :red:`0.89`
+      - :red:`0.83`
+      - :red:`0.84`
+    * - mean
+      - 0.85
+      - 0.86
+      - 0.88
+      - 0.87
+      - 0.90
+
+Percentage Unchanged Predictions Sneezing
+-----------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions Sneezing
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.66`
+      - :red:`0.58`
+      - :red:`0.57`
+      - :green:`0.91`
+      - :red:`0.81`
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.52`
+      - :red:`0.53`
+      - :red:`0.56`
+      - :red:`0.49`
+      - :red:`0.52`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.62`
+      - :red:`0.66`
+      - :red:`0.73`
+      - :red:`0.74`
+      - :red:`0.64`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.77`
+      - :red:`0.75`
+      - :red:`0.80`
+      - :red:`0.81`
+      - :red:`0.78`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`0.62`
+      - :red:`0.62`
+      - :red:`0.76`
+      - :red:`0.58`
+      - :red:`0.50`
+    * - mean
+      - 0.64
+      - 0.63
+      - 0.68
+      - 0.71
+      - 0.65
+
+Percentage Unchanged Predictions White Noise
+--------------------------------------------
+
+.. flat-table:: Threshold: 0.9
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Percentage Unchanged Predictions White Noise
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.76`
+      - :red:`0.73`
+      - :red:`0.70`
+      - :green:`0.91`
+      - :green:`0.91`
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.71`
+      - :red:`0.74`
+      - :red:`0.81`
+      - :red:`0.66`
+      - :red:`0.81`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.77`
+      - :red:`0.79`
+      - :red:`0.80`
+      - :red:`0.79`
+      - :red:`0.85`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.78`
+      - :red:`0.83`
+      - :red:`0.82`
+      - :red:`0.79`
+      - :red:`0.83`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :red:`0.72`
+      - :red:`0.78`
+      - :red:`0.82`
+      - :red:`0.71`
+      - :red:`0.79`
+    * - mean
+      - 0.75
+      - 0.77
+      - 0.79
+      - 0.77
+      - 0.84
+
+Visualization Babble Noise
+--------------------------
+
+Confusion Matrix showing the shift from the predictions of the clean audio to the predictions of the audio with added babble noise.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-b-cat
+      - w2v2-L-cat
+      - w2v2-L-robust-cat
+      - w2v2-L-vox-cat
+      - w2v2-L-xls-r-cat
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-babble-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-babble-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-babble-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-babble-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-babble-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-babble-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-babble-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-babble-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-babble-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-babble-noise_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-babble-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-babble-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-babble-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-babble-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-babble-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-babble-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-coughing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-coughing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-coughing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-coughing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-coughing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-coughing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-coughing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-coughing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-coughing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-coughing_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-coughing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-coughing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-coughing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-coughing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-coughing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-coughing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-coughing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-environmental-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-environmental-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-environmental-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-environmental-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-environmental-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-environmental-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-environmental-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-environmental-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-environmental-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-environmental-noise_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-environmental-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-environmental-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-environmental-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-environmental-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-environmental-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-music_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-music_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-music_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-music_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-music_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-music_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-music_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-music_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-music_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-music_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-music_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-music_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-music_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-music_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-music_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-music_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-music_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-music_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-music_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-music_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-sneezing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-sneezing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-sneezing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-sneezing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-sneezing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-sneezing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-sneezing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-sneezing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-sneezing_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-sneezing_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-sneezing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-sneezing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-sneezing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-sneezing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-sneezing_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-sneezing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-sneezing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-white-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-white-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-white-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-white-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-white-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-white-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-white-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-white-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-white-noise_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-white-noise_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-white-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-white-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-white-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-white-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-white-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/1641e15f-1.0.1/robustness_background_noise/visualization-white-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/63291c59-1.0.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/379bc045-1.0.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/ccf4ed91-1.0.0/robustness_background_noise/visualization-white-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+

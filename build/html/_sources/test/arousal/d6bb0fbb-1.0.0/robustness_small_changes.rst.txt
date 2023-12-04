@@ -1,0 +1,90 @@
+.. _test-arousal-d6bb0fbb-1.0.0-robustness_small_changes:
+
+Robustness small changes
+========================
+
+.. role:: red
+.. role:: green
+
+90.0% passed tests (18 :green:`passed` / 2 :red:`failed`).
+
+
+Percentage Unchanged Predictions Additive Tone
+----------------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-additive-tone.csv
+
+Percentage Unchanged Predictions Append Zeros
+---------------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-append-zeros.csv
+
+Percentage Unchanged Predictions Clip
+-------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-clip.csv
+
+Percentage Unchanged Predictions Crop Beginning
+-----------------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-crop-beginning.csv
+
+Percentage Unchanged Predictions Crop End
+-----------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-crop-end.csv
+
+Percentage Unchanged Predictions Gain
+-------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-gain.csv
+
+Percentage Unchanged Predictions Highpass Filter
+------------------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-highpass-filter.csv
+
+Percentage Unchanged Predictions Lowpass Filter
+-----------------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-lowpass-filter.csv
+
+Percentage Unchanged Predictions Prepend Zeros
+----------------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-prepend-zeros.csv
+
+Percentage Unchanged Predictions White Noise
+--------------------------------------------
+
+.. csv-table:: Threshold: 0.95
+    :header-rows: 1
+    :file: robustness_small_changes/percentage-unchanged-predictions-white-noise.csv
+
+Visualization
+-------------
+
+
+.. figure:: robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center

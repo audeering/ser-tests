@@ -1,0 +1,40 @@
+.. _test-valence-1543ec32-1.0.3-correctness_speaker_average:
+
+Correctness speaker average
+===========================
+
+.. role:: red
+.. role:: green
+
+66.7% passed tests (4 :green:`passed` / 2 :red:`failed`).
+
+
+Mean Absolute Error
+-------------------
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: correctness_speaker_average/mean-absolute-error.csv
+
+Mean Directional Error
+----------------------
+
+.. csv-table:: Threshold: 0.05
+    :header-rows: 1
+    :file: correctness_speaker_average/mean-directional-error.csv
+
+Visualization
+-------------
+
+The plot shows the predicted average value with the true average value. We select a slightly higher threshold for the absolute error in the plots compared to the Mean Absolute Error test as we are interested in highlighting only big deviations here.
+
+
+
+.. figure:: correctness_speaker_average/visualization_iemocap-2.3.0-full.png
+    :align: center
+
+.. figure:: correctness_speaker_average/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+.. figure:: correctness_speaker_average/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+    :align: center

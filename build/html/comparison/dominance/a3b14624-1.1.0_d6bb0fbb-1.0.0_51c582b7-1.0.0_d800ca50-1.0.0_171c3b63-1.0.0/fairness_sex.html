@@ -1,0 +1,1478 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Fairness sex &mdash; SER Tests</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Robustness background noise" href="robustness_background_noise.html" />
+    <link rel="prev" title="Fairness pitch" href="fairness_pitch.html" />
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <link rel="stylesheet" href="../../../_static/css/audeering-wide.css" type="text/css" />
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <a href="../../../index.html">
+          
+            <img src="../../../_static/images/audeering.png" class="logo" alt="audEERING"/>
+          
+          
+            <span> SER Tests</span>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v18bf98f
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../method-tests.html">Method Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bibliography.html">Bibliography</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Results</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/dominance.html">Dominance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/emotion.html">Emotion</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Comparisons</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../arousal.html">Arousal</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../dominance.html">Dominance</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">w2v2-b vs. w2v2-L vs. w2v2-L-robust vs. w2v2-L-xls-r vs. w2v2-L-vox</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="correctness_consistency.html">Correctness consistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_distribution.html">Correctness distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_regression.html">Correctness regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_speaker_average.html">Correctness speaker average</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_speaker_ranking.html">Correctness speaker ranking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_accent.html">Fairness accent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_language.html">Fairness language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_linguistic_sentiment.html">Fairness linguistic sentiment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_pitch.html">Fairness pitch</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Fairness sex</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#concordance-correlation-coeff-female">Concordance Correlation Coeff Female</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#concordance-correlation-coeff-male">Concordance Correlation Coeff Male</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mean-absolute-error-female">Mean Absolute Error Female</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mean-absolute-error-male">Mean Absolute Error Male</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mean-directional-error-female">Mean Directional Error Female</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mean-directional-error-male">Mean Directional Error Male</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#precision-per-bin-female">Precision Per Bin Female</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#precision-per-bin-male">Precision Per Bin Male</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#recall-per-bin-female">Recall Per Bin Female</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#recall-per-bin-male">Recall Per Bin Male</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_background_noise.html">Robustness background noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_low_quality_phone.html">Robustness low quality phone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_recording_condition.html">Robustness recording condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_simulated_recording_condition.html">Robustness simulated recording condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_small_changes.html">Robustness small changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_spectral_tilt.html">Robustness spectral tilt</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0/index.html">CNN14 vs. w2v2-b vs. w2v2-L vs. hubert-b vs. hubert-L</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emotion.html">Emotion</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SER Tests</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../dominance.html">Dominance</a> &raquo;</li>
+          <li><a href="index.html">w2v2-b vs. w2v2-L vs. w2v2-L-robust vs. w2v2-L-xls-r vs. w2v2-L-vox</a> &raquo;</li>
+      <li>Fairness sex</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://gitlab.audeering.com/audeering/ser-tests/" class="fa fa-gitlab"> GitLab</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="fairness-sex">
+<span id="comparison-dominance-a3b14624-1-1-0-d6bb0fbb-1-0-0-51c582b7-1-0-0-d800ca50-1-0-0-171c3b63-1-0-0-fairness-sex"></span><h1>Fairness sex<a class="headerlink" href="#fairness-sex" title="Permalink to this heading">¶</a></h1>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Overall scores</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Overall Score</p></td>
+<td><p>92.5% passed tests (37 <span class="green">passed</span> /  3 <span class="red">failed</span>).</p></td>
+<td><p>97.5% passed tests (39 <span class="green">passed</span> /  1 <span class="red">failed</span>).</p></td>
+<td><p>100.0% passed tests (40 <span class="green">passed</span> /  0 <span class="red">failed</span>).</p></td>
+<td><p>97.5% passed tests (39 <span class="green">passed</span> /  1 <span class="red">failed</span>).</p></td>
+<td><p>95.0% passed tests (38 <span class="green">passed</span> /  2 <span class="red">failed</span>).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="concordance-correlation-coeff-female">
+<h2>Concordance Correlation Coeff Female<a class="headerlink" href="#concordance-correlation-coeff-female" title="Permalink to this heading">¶</a></h2>
+<p>CCC female - CCC combined.</p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: 0.075</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> Concordance Correlation Coeff Female</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.01</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="concordance-correlation-coeff-male">
+<h2>Concordance Correlation Coeff Male<a class="headerlink" href="#concordance-correlation-coeff-male" title="Permalink to this heading">¶</a></h2>
+<p>CCC male - CCC combined.</p>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Threshold: 0.075</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> Concordance Correlation Coeff Male</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.01</p></td>
+<td><p>0.02</p></td>
+<td><p>0.01</p></td>
+<td><p>0.02</p></td>
+<td><p>0.01</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mean-absolute-error-female">
+<h2>Mean Absolute Error Female<a class="headerlink" href="#mean-absolute-error-female" title="Permalink to this heading">¶</a></h2>
+<p>Mean absolute error female - mean absolute error combined on the regression scale.</p>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Threshold: 0.02</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> Mean Absolute Error Female</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.01</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mean-absolute-error-male">
+<h2>Mean Absolute Error Male<a class="headerlink" href="#mean-absolute-error-male" title="Permalink to this heading">¶</a></h2>
+<p>Mean absolute error male - mean absolute error combined on the regression scale.</p>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Threshold: 0.02</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> Mean Absolute Error Male</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.01</p></td>
+<td><p>0.01</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mean-directional-error-female">
+<h2>Mean Directional Error Female<a class="headerlink" href="#mean-directional-error-female" title="Permalink to this heading">¶</a></h2>
+<p>Mean directional error female - mean directional error combined on the regression scale.</p>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">Threshold: 0.04</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> Mean Directional Error Female</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.01</p></td>
+<td><p>0.00</p></td>
+<td><p>0.01</p></td>
+<td><p>0.01</p></td>
+<td><p>0.01</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mean-directional-error-male">
+<h2>Mean Directional Error Male<a class="headerlink" href="#mean-directional-error-male" title="Permalink to this heading">¶</a></h2>
+<p>Mean directional error male - mean directional error combined on the regression scale.</p>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Threshold: 0.04</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> Mean Directional Error Male</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>-0.01</p></td>
+<td><p>0.00</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.01</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="precision-per-bin-female">
+<h2>Precision Per Bin Female<a class="headerlink" href="#precision-per-bin-female" title="Permalink to this heading">¶</a></h2>
+<p>Precision per bin female - precision per bin combined. Bins with too few samples are skipped.</p>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">Threshold: 0.1</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> (-inf, 0.25]</p></th>
+<th class="head" colspan="5"><p> (0.25, 0.5]</p></th>
+<th class="head" colspan="5"><p> (0.5, 0.75]</p></th>
+<th class="head" colspan="5"><p> (0.75, inf]</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="red">-0.12</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="red">0.12</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="red">0.10</span></p></td>
+<td><p><span class="red">0.11</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="red">0.11</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.03</p></td>
+<td><p>0.05</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.12</p></td>
+<td><p>0.07</p></td>
+<td><p>0.06</p></td>
+<td><p>0.03</p></td>
+<td><p>0.06</p></td>
+<td><p>0.07</p></td>
+<td><p>0.00</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.01</p></td>
+<td><p>0.00</p></td>
+<td><p>0.07</p></td>
+<td><p>0.08</p></td>
+<td><p>0.05</p></td>
+<td><p>0.06</p></td>
+<td><p>0.07</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="precision-per-bin-male">
+<h2>Precision Per Bin Male<a class="headerlink" href="#precision-per-bin-male" title="Permalink to this heading">¶</a></h2>
+<p>Precision per bin male - precision per bin combined. Bins with too few samples are skipped.</p>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">Threshold: 0.1</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> (-inf, 0.25]</p></th>
+<th class="head" colspan="5"><p> (0.25, 0.5]</p></th>
+<th class="head" colspan="5"><p> (0.5, 0.75]</p></th>
+<th class="head" colspan="5"><p> (0.75, inf]</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.00</p></td>
+<td><p>0.01</p></td>
+<td><p>-0.02</p></td>
+<td><p>0.00</p></td>
+<td><p>0.04</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.04</p></td>
+<td><p>0.00</p></td>
+<td><p>0.01</p></td>
+<td><p>0.01</p></td>
+<td><p>0.01</p></td>
+<td><p>0.00</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.05</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="recall-per-bin-female">
+<h2>Recall Per Bin Female<a class="headerlink" href="#recall-per-bin-female" title="Permalink to this heading">¶</a></h2>
+<p>Recall per bin female - recall per bin combined. Bins with too few samples are skipped.</p>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Threshold: 0.1</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> (-inf, 0.25]</p></th>
+<th class="head" colspan="5"><p> (0.25, 0.5]</p></th>
+<th class="head" colspan="5"><p> (0.5, 0.75]</p></th>
+<th class="head" colspan="5"><p> (0.75, inf]</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="red">0.10</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>-0.05</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.02</p></td>
+<td><p>-0.06</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.02</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.04</p></td>
+<td><p>0.07</p></td>
+<td><p>0.06</p></td>
+<td><p>0.04</p></td>
+<td><p>0.07</p></td>
+<td><p>0.06</p></td>
+<td><p>-0.03</p></td>
+<td><p>-0.06</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.06</p></td>
+<td><p>-0.01</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="recall-per-bin-male">
+<h2>Recall Per Bin Male<a class="headerlink" href="#recall-per-bin-male" title="Permalink to this heading">¶</a></h2>
+<p>Recall per bin male - recall per bin combined. Bins with too few samples are skipped.</p>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Threshold: 0.1</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="5"><p> (-inf, 0.25]</p></th>
+<th class="head" colspan="5"><p> (0.25, 0.5]</p></th>
+<th class="head" colspan="5"><p> (0.5, 0.75]</p></th>
+<th class="head" colspan="5"><p> (0.75, inf]</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="red">-0.10</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.05</p></td>
+<td><p>0.04</p></td>
+<td><p>0.02</p></td>
+<td><p>0.06</p></td>
+<td><p>0.01</p></td>
+<td><p>0.03</p></td>
+<td><p>0.02</p></td>
+<td><p>0.01</p></td>
+<td><p>0.04</p></td>
+<td><p>0.04</p></td>
+<td><p>-0.07</p></td>
+<td><p>-0.06</p></td>
+<td><p>-0.04</p></td>
+<td><p>-0.07</p></td>
+<td><p>-0.06</p></td>
+<td><p>0.03</p></td>
+<td><p>0.06</p></td>
+<td><p>0.04</p></td>
+<td><p>0.06</p></td>
+<td><p>0.01</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>w2v2-L-robust</p></th>
+<th class="head"><p>w2v2-L-xls-r</p></th>
+<th class="head"><p>w2v2-L-vox</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_female9.png" src="../../../_images/visualization_iemocap-2.3.0-full_female9.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_female10.png" src="../../../_images/visualization_iemocap-2.3.0-full_female10.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_female13.png" src="../../../_images/visualization_iemocap-2.3.0-full_female13.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_female14.png" src="../../../_images/visualization_iemocap-2.3.0-full_female14.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_female15.png" src="../../../_images/visualization_iemocap-2.3.0-full_female15.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_male9.png" src="../../../_images/visualization_iemocap-2.3.0-full_male9.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_male10.png" src="../../../_images/visualization_iemocap-2.3.0-full_male10.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_male13.png" src="../../../_images/visualization_iemocap-2.3.0-full_male13.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_male14.png" src="../../../_images/visualization_iemocap-2.3.0-full_male14.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full_male15.png" src="../../../_images/visualization_iemocap-2.3.0-full_male15.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female9.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female9.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female10.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female10.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female13.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female13.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female14.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female14.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female15.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_female15.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male9.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male9.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male10.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male10.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male13.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male13.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male14.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male14.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male15.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_male15.png" />
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="robustness_background_noise.html" class="btn btn-neutral float-right" title="Robustness background noise" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="fairness_pitch.html" class="btn btn-neutral float-left" title="Fairness pitch" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div>
+      
+      
+      
+      
+      
+      
+      
+      
+        <ul>
+          <li><a href="http://data.pp.audeering.com">Data</a></li>
+          <li><a href="http://devops.pp.audeering.com/sphinx/">Docs</a></li>
+          <li><a href="http://devops.pp.audeering.com/">Infra</a></li>
+          <li><a href="http://models.pp.audeering.com">Models</a></li>
+          <li><a href="http://research.pp.audeering.com">Research</a></li>
+          <li><a href="http://tools.pp.audeering.com">Tools</a></li>
+        </ul>
+      
+    <p>
+        
+        
+        
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+        
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        
+      &copy; 2023 audEERING GmbH
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

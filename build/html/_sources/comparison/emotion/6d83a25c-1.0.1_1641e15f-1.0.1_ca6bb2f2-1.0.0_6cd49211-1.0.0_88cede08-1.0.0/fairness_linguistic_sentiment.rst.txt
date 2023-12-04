@@ -1,0 +1,776 @@
+.. _comparison-emotion-6d83a25c-1.0.1_1641e15f-1.0.1_ca6bb2f2-1.0.0_6cd49211-1.0.0_88cede08-1.0.0-fairness_linguistic_sentiment:
+
+Fairness linguistic sentiment
+=============================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/overall_scores.csv
+
+
+Class Proportion Shift Difference Negative Sentiment
+----------------------------------------------------
+
+Shift in class proportions for negative sentiment for specific language - Average of the shift in class proportions for negative sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - checklist-synth-1.0.0-words-in-context-de
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`0.02` (0.01 - -0.01)
+      - :green:`0.02` (-0.00 - -0.03)
+      - :green:`0.02` (-0.00 - -0.03)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.05` (-0.01 - -0.05)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`0.02` (-0.01 - -0.03)
+      - :green:`0.03` (0.00 - -0.03)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.00` (0.03 - 0.03)
+      - :green:`-0.03` (0.01 - 0.04)
+      - :green:`-0.03` (-0.00 - 0.03)
+      - :green:`-0.03` (0.01 - 0.04)
+    * - checklist-synth-1.0.0-words-in-context-en
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.01` (0.01 - 0.01)
+      - :green:`0.01` (0.02 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`0.05` (0.06 - 0.01)
+      - :green:`0.02` (0.01 - -0.01)
+      - :red:`-0.08` (-0.10 - -0.03)
+      - :red:`-0.09` (-0.12 - -0.03)
+      - :green:`-0.04` (-0.04 - -0.01)
+      - :red:`-0.26` (-0.31 - -0.05)
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`-0.05` (-0.06 - -0.01)
+      - :red:`-0.08` (-0.10 - -0.03)
+      - :red:`-0.09` (-0.13 - -0.03)
+      - :green:`-0.04` (-0.04 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :red:`0.12` (0.15 - 0.03)
+      - :red:`0.16` (0.20 - 0.04)
+      - :red:`0.14` (0.17 - 0.03)
+      - :red:`0.25` (0.29 - 0.04)
+    * - checklist-synth-1.0.0-words-in-context-es
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`0.03` (0.00 - -0.03)
+      - :green:`0.03` (0.00 - -0.03)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.04` (-0.01 - -0.05)
+      - :green:`-0.00` (0.01 - 0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.00` (-0.02 - -0.03)
+      - :green:`0.03` (0.00 - -0.03)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`-0.03` (0.00 - 0.03)
+      - :green:`-0.02` (0.02 - 0.04)
+      - :green:`-0.03` (-0.00 - 0.03)
+      - :green:`-0.04` (0.00 - 0.04)
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (0.01 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.03` (-0.04 - -0.01)
+      - :green:`0.02` (-0.01 - -0.03)
+      - :green:`0.02` (-0.01 - -0.03)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.05` (-0.00 - -0.05)
+      - :green:`0.04` (0.05 - 0.01)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`0.02` (-0.00 - -0.03)
+      - :green:`-0.01` (-0.04 - -0.03)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.02` (0.01 - 0.03)
+      - :green:`-0.03` (0.01 - 0.04)
+      - :green:`0.01` (0.04 - 0.03)
+      - :green:`-0.04` (0.00 - 0.04)
+    * - checklist-synth-1.0.0-words-in-context-it
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.03` (0.04 - 0.01)
+      - :green:`0.03` (0.04 - 0.01)
+      - :green:`0.04` (0.05 - 0.01)
+      - :green:`0.01` (0.02 - 0.01)
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`-0.02` (-0.05 - -0.03)
+      - :green:`-0.01` (-0.03 - -0.03)
+      - :green:`0.00` (-0.00 - -0.01)
+      - :green:`0.03` (-0.02 - -0.05)
+      - :green:`0.01` (0.02 - 0.01)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`0.01` (-0.02 - -0.03)
+      - :green:`-0.00` (-0.04 - -0.03)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.01` (0.02 - 0.03)
+      - :green:`-0.03` (0.01 - 0.04)
+      - :green:`-0.04` (-0.01 - 0.03)
+      - :green:`-0.04` (0.00 - 0.04)
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - :green:`-0.02` (-0.02 - -0.00)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`0.01` (0.02 - 0.01)
+      - :green:`-0.00` (0.00 - 0.01)
+      - :green:`-0.03` (-0.02 - 0.01)
+      - :green:`0.00` (-0.01 - -0.01)
+      - :green:`-0.01` (-0.03 - -0.03)
+      - :green:`-0.01` (-0.04 - -0.03)
+      - :green:`0.02` (0.01 - -0.01)
+      - :green:`0.03` (-0.02 - -0.05)
+      - :green:`0.01` (0.02 - 0.01)
+      - :green:`0.04` (0.03 - -0.01)
+      - :green:`0.04` (0.01 - -0.03)
+      - :green:`0.01` (-0.03 - -0.03)
+      - :green:`0.02` (0.02 - 0.00)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`-0.02` (0.01 - 0.03)
+      - :green:`-0.04` (0.00 - 0.04)
+      - :green:`-0.02` (0.01 - 0.03)
+      - :green:`-0.03` (0.01 - 0.04)
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`-0.00` (0.01 - 0.01)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`0.04` (0.03 - -0.01)
+      - :green:`0.03` (0.01 - -0.03)
+      - :green:`0.02` (-0.01 - -0.03)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.05` (-0.01 - -0.05)
+      - :green:`-0.05` (-0.04 - 0.01)
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`-0.04` (-0.06 - -0.03)
+      - :green:`-0.00` (-0.03 - -0.03)
+      - :green:`-0.02` (-0.02 - 0.00)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.02` (0.01 - 0.03)
+      - :green:`0.03` (0.07 - 0.04)
+      - :green:`0.00` (0.03 - 0.03)
+      - :green:`-0.02` (0.02 - 0.04)
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`-0.00` (0.00 - 0.01)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`0.00` (0.01 - 0.01)
+      - :green:`0.00` (0.01 - 0.01)
+      - :green:`-0.02` (-0.03 - -0.01)
+      - :green:`0.00` (-0.02 - -0.03)
+      - :green:`0.03` (0.00 - -0.03)
+      - :green:`-0.01` (-0.01 - -0.01)
+      - :green:`0.01` (-0.04 - -0.05)
+      - :green:`0.03` (0.04 - 0.01)
+      - :green:`0.03` (0.02 - -0.01)
+      - :green:`0.02` (-0.00 - -0.03)
+      - :green:`0.04` (0.00 - -0.03)
+      - :green:`0.03` (0.03 - 0.00)
+      - :green:`0.00` (0.00 - 0.00)
+      - :green:`-0.03` (-0.00 - 0.03)
+      - :green:`-0.04` (-0.00 - 0.04)
+      - :green:`-0.03` (0.00 - 0.03)
+      - :green:`-0.04` (-0.00 - 0.04)
+    * - mean
+      - -0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - 0.00
+
+Class Proportion Shift Difference Neutral Sentiment
+---------------------------------------------------
+
+Shift in class proportions for neutral sentiment for specific language - Average of the shift in class proportions for neutral sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - checklist-synth-1.0.0-words-in-context-de
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.01` (-0.01 - -0.02)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (-0.01 - -0.02)
+      - :green:`-0.00` (-0.01 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.04` (-0.01 - -0.05)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.01` (0.03 - 0.04)
+      - :green:`0.01` (0.09 - 0.07)
+      - :green:`-0.03` (0.01 - 0.04)
+      - :green:`0.01` (0.11 - 0.10)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.01` (-0.02 - -0.02)
+      - :green:`-0.03` (-0.08 - -0.06)
+      - :green:`0.03` (-0.01 - -0.04)
+      - :green:`-0.06` (-0.10 - -0.04)
+    * - checklist-synth-1.0.0-words-in-context-en
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`0.00` (-0.01 - -0.02)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.04` (-0.05 - -0.01)
+      - :green:`-0.01` (-0.03 - -0.02)
+      - :red:`-0.13` (-0.13 - -0.00)
+      - :red:`-0.16` (-0.16 - -0.00)
+      - :green:`-0.04` (-0.04 - -0.00)
+      - :red:`-0.33` (-0.38 - -0.05)
+      - :green:`0.02` (0.03 - 0.01)
+      - :red:`0.19` (0.23 - 0.04)
+      - :red:`0.29` (0.36 - 0.07)
+      - :red:`0.15` (0.20 - 0.04)
+      - :red:`0.54` (0.64 - 0.10)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.06` (-0.08 - -0.02)
+      - :red:`-0.13` (-0.19 - -0.06)
+      - :red:`-0.11` (-0.15 - -0.04)
+      - :red:`-0.16` (-0.21 - -0.04)
+    * - checklist-synth-1.0.0-words-in-context-es
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`-0.02` (-0.04 - -0.02)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.04` (-0.01 - -0.05)
+      - :green:`0.04` (0.05 - 0.01)
+      - :green:`-0.01` (0.03 - 0.04)
+      - :green:`0.04` (0.11 - 0.07)
+      - :green:`-0.04` (0.00 - 0.04)
+      - :red:`-0.09` (0.01 - 0.10)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.00` (-0.02 - -0.02)
+      - :green:`-0.05` (-0.10 - -0.06)
+      - :green:`0.04` (-0.00 - -0.04)
+      - :green:`0.04` (0.00 - -0.04)
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`-0.04` (-0.05 - -0.01)
+      - :green:`0.01` (-0.00 - -0.02)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.06` (0.04 - -0.02)
+      - :green:`0.02` (0.01 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.04` (-0.01 - -0.05)
+      - :green:`-0.03` (-0.02 - 0.01)
+      - :green:`0.02` (0.06 - 0.04)
+      - :green:`-0.07` (0.00 - 0.07)
+      - :green:`-0.01` (0.03 - 0.04)
+      - :red:`-0.09` (0.01 - 0.10)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.00` (-0.02 - -0.02)
+      - :green:`0.06` (0.00 - -0.06)
+      - :green:`0.01` (-0.03 - -0.04)
+      - :green:`0.05` (0.00 - -0.04)
+    * - checklist-synth-1.0.0-words-in-context-it
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.04` (-0.04 - -0.01)
+      - :green:`-0.06` (-0.08 - -0.02)
+      - :green:`-0.05` (-0.05 - 0.00)
+      - :green:`-0.01` (-0.01 - -0.01)
+      - :green:`0.05` (0.03 - -0.02)
+      - :green:`0.07` (0.07 - -0.00)
+      - :red:`0.08` (0.08 - -0.00)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.07` (0.02 - -0.05)
+      - :green:`-0.03` (-0.02 - 0.01)
+      - :green:`-0.04` (-0.01 - 0.04)
+      - :red:`-0.09` (-0.02 - 0.07)
+      - :green:`-0.04` (-0.00 - 0.04)
+      - :red:`-0.11` (-0.02 - 0.10)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.01` (-0.02 - -0.02)
+      - :green:`0.07` (0.02 - -0.06)
+      - :red:`0.08` (0.04 - -0.04)
+      - :green:`0.05` (0.01 - -0.04)
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - :red:`0.09` (0.10 - 0.01)
+      - :red:`0.11` (0.10 - -0.01)
+      - :green:`0.02` (0.00 - -0.02)
+      - :red:`0.10` (0.10 - 0.00)
+      - :green:`0.04` (0.03 - -0.01)
+      - :red:`-0.09` (-0.12 - -0.02)
+      - :green:`-0.05` (-0.06 - -0.00)
+      - :green:`-0.00` (-0.00 - -0.00)
+      - :green:`-0.06` (-0.06 - -0.00)
+      - :green:`0.02` (-0.03 - -0.05)
+      - :green:`0.01` (0.02 - 0.01)
+      - :green:`-0.07` (-0.04 - 0.04)
+      - :green:`-0.06` (0.01 - 0.07)
+      - :green:`-0.07` (-0.03 - 0.04)
+      - :red:`-0.08` (0.02 - 0.10)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`0.02` (-0.01 - -0.02)
+      - :green:`0.04` (-0.01 - -0.06)
+      - :green:`0.02` (-0.01 - -0.04)
+      - :green:`0.02` (-0.02 - -0.04)
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - :green:`-0.04` (-0.03 - 0.01)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`-0.01` (-0.02 - -0.02)
+      - :green:`0.01` (0.01 - 0.00)
+      - :green:`0.00` (-0.00 - -0.01)
+      - :green:`-0.02` (-0.04 - -0.02)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.07` (0.07 - -0.00)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.04` (-0.01 - -0.05)
+      - :green:`0.07` (0.07 - 0.01)
+      - :green:`-0.00` (0.04 - 0.04)
+      - :green:`-0.04` (0.03 - 0.07)
+      - :red:`0.09` (0.14 - 0.04)
+      - :green:`-0.05` (0.05 - 0.10)
+      - :green:`-0.00` (0.00 - 0.00)
+      - :green:`-0.00` (-0.02 - -0.02)
+      - :green:`-0.03` (-0.08 - -0.06)
+      - :red:`-0.10` (-0.14 - -0.04)
+      - :green:`0.01` (-0.03 - -0.04)
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - :green:`0.04` (0.05 - 0.01)
+      - :green:`-0.03` (-0.04 - -0.01)
+      - :green:`0.01` (-0.01 - -0.02)
+      - :green:`-0.06` (-0.06 - 0.00)
+      - :green:`-0.01` (-0.02 - -0.01)
+      - :green:`0.02` (0.00 - -0.02)
+      - :red:`0.08` (0.08 - -0.00)
+      - :green:`0.02` (0.02 - -0.00)
+      - :green:`0.07` (0.07 - -0.00)
+      - :red:`0.09` (0.04 - -0.05)
+      - :green:`-0.06` (-0.05 - 0.01)
+      - :red:`-0.08` (-0.04 - 0.04)
+      - :red:`-0.08` (-0.00 - 0.07)
+      - :green:`-0.05` (-0.01 - 0.04)
+      - :red:`-0.12` (-0.03 - 0.10)
+      - :green:`-0.00` (-0.00 - 0.00)
+      - :green:`0.03` (0.00 - -0.02)
+      - :green:`0.05` (-0.00 - -0.06)
+      - :green:`0.03` (-0.00 - -0.04)
+      - :green:`0.05` (0.00 - -0.04)
+    * - mean
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+
+Class Proportion Shift Difference Positive Sentiment
+----------------------------------------------------
+
+Shift in class proportions for positive sentiment for specific language - Average of the shift in class proportions for positive sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` anger
+      - :cspan:`4` happiness
+      - :cspan:`4` neutral
+      - :cspan:`4` sadness
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - checklist-synth-1.0.0-words-in-context-de
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`-0.02` (0.01 - 0.03)
+      - :green:`-0.03` (-0.00 - 0.03)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.07` (0.01 - 0.08)
+      - :green:`0.02` (0.00 - -0.01)
+      - :green:`0.02` (0.01 - -0.00)
+      - :green:`-0.02` (-0.02 - -0.00)
+      - :green:`-0.02` (-0.01 - 0.02)
+      - :green:`-0.00` (-0.04 - -0.04)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.00` (-0.02 - -0.02)
+      - :green:`0.04` (0.02 - -0.02)
+      - :green:`0.02` (0.01 - -0.02)
+      - :green:`0.06` (0.03 - -0.03)
+    * - checklist-synth-1.0.0-words-in-context-en
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`-0.01` (-0.01 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`-0.04` (-0.05 - -0.01)
+      - :green:`-0.01` (0.01 - 0.02)
+      - :red:`0.13` (0.16 - 0.03)
+      - :red:`0.16` (0.19 - 0.03)
+      - :green:`0.06` (0.06 - 0.01)
+      - :red:`0.41` (0.49 - 0.08)
+      - :green:`0.01` (-0.01 - -0.01)
+      - :green:`-0.03` (-0.03 - -0.00)
+      - :green:`-0.04` (-0.04 - -0.00)
+      - :green:`0.03` (0.05 - 0.02)
+      - :red:`-0.18` (-0.22 - -0.04)
+      - :green:`0.00` (0.00 - -0.00)
+      - :red:`-0.10` (-0.12 - -0.02)
+      - :red:`-0.12` (-0.13 - -0.02)
+      - :red:`-0.10` (-0.12 - -0.02)
+      - :red:`-0.19` (-0.22 - -0.03)
+    * - checklist-synth-1.0.0-words-in-context-es
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.00` (-0.00 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.01` (0.03 - 0.02)
+      - :green:`-0.03` (-0.00 - 0.03)
+      - :green:`-0.03` (0.00 - 0.03)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.06` (0.01 - 0.08)
+      - :green:`-0.01` (-0.03 - -0.01)
+      - :green:`-0.00` (-0.01 - -0.00)
+      - :green:`-0.02` (-0.02 - -0.00)
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`0.03` (-0.01 - -0.04)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.03` (0.01 - -0.02)
+      - :green:`0.04` (0.02 - -0.02)
+      - :green:`0.02` (0.00 - -0.02)
+      - :green:`0.02` (-0.00 - -0.03)
+    * - checklist-synth-1.0.0-words-in-context-fr
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.02` (0.01 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.01` (0.03 - 0.02)
+      - :green:`-0.03` (0.00 - 0.03)
+      - :green:`-0.02` (0.01 - 0.03)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.07` (0.01 - 0.08)
+      - :green:`-0.03` (-0.04 - -0.01)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`0.02` (0.04 - 0.02)
+      - :green:`0.04` (-0.00 - -0.04)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.01` (-0.01 - -0.02)
+      - :green:`-0.02` (-0.03 - -0.02)
+      - :green:`0.02` (-0.00 - -0.03)
+    * - checklist-synth-1.0.0-words-in-context-it
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`-0.02` (-0.02 - -0.01)
+      - :green:`-0.01` (-0.01 - -0.01)
+      - :green:`-0.03` (-0.03 - -0.01)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`-0.01` (0.01 - 0.02)
+      - :green:`-0.01` (0.02 - 0.03)
+      - :green:`-0.03` (0.00 - 0.03)
+      - :green:`-0.01` (0.00 - 0.01)
+      - :green:`-0.06` (0.01 - 0.08)
+      - :green:`0.00` (-0.01 - -0.01)
+      - :green:`0.02` (0.02 - -0.00)
+      - :green:`0.03` (0.03 - -0.00)
+      - :green:`0.02` (0.04 - 0.02)
+      - :green:`0.04` (0.00 - -0.04)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.00` (-0.02 - -0.02)
+      - :green:`0.00` (-0.01 - -0.02)
+      - :green:`0.01` (-0.01 - -0.02)
+      - :green:`0.02` (-0.01 - -0.03)
+    * - checklist-synth-1.0.0-words-in-context-ja
+      - :green:`-0.01` (-0.02 - -0.00)
+      - :green:`-0.03` (-0.04 - -0.01)
+      - :green:`-0.02` (-0.03 - -0.01)
+      - :green:`-0.04` (-0.04 - -0.01)
+      - :green:`0.01` (0.00 - -0.01)
+      - :green:`0.03` (0.05 - 0.02)
+      - :green:`0.03` (0.06 - 0.03)
+      - :green:`0.02` (0.04 - 0.03)
+      - :green:`0.00` (0.01 - 0.01)
+      - :green:`-0.04` (0.04 - 0.08)
+      - :green:`-0.01` (-0.03 - -0.01)
+      - :green:`-0.01` (-0.02 - -0.00)
+      - :green:`-0.02` (-0.02 - -0.00)
+      - :green:`0.02` (0.04 - 0.02)
+      - :green:`0.01` (-0.03 - -0.04)
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.01` (-0.01 - -0.02)
+      - :green:`0.02` (0.00 - -0.02)
+      - :green:`0.01` (-0.00 - -0.02)
+      - :green:`0.02` (-0.01 - -0.03)
+    * - checklist-synth-1.0.0-words-in-context-pt
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.00` (-0.00 - -0.01)
+      - :green:`0.01` (0.01 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`-0.03` (-0.01 - 0.02)
+      - :green:`-0.04` (-0.01 - 0.03)
+      - :green:`-0.04` (-0.02 - 0.03)
+      - :green:`-0.01` (-0.00 - 0.01)
+      - :green:`-0.07` (0.01 - 0.08)
+      - :green:`0.03` (0.01 - -0.01)
+      - :green:`0.01` (0.01 - -0.00)
+      - :green:`0.05` (0.05 - -0.00)
+      - :green:`-0.03` (-0.02 - 0.02)
+      - :green:`0.04` (0.00 - -0.04)
+      - :green:`0.00` (0.00 - -0.00)
+      - :green:`0.02` (0.00 - -0.02)
+      - :green:`-0.02` (-0.04 - -0.02)
+      - :green:`0.03` (0.02 - -0.02)
+      - :green:`0.02` (-0.01 - -0.03)
+    * - checklist-synth-1.0.0-words-in-context-zh
+      - :green:`-0.01` (-0.01 - -0.00)
+      - :green:`0.02` (0.01 - -0.01)
+      - :green:`0.01` (-0.00 - -0.01)
+      - :green:`0.02` (0.02 - -0.01)
+      - :green:`-0.00` (-0.01 - -0.01)
+      - :green:`0.01` (0.03 - 0.02)
+      - :green:`-0.04` (-0.01 - 0.03)
+      - :green:`-0.03` (-0.01 - 0.03)
+      - :green:`-0.02` (-0.01 - 0.01)
+      - :green:`-0.05` (0.03 - 0.08)
+      - :green:`-0.00` (-0.02 - -0.01)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.01` (0.00 - -0.00)
+      - :green:`-0.02` (-0.00 - 0.02)
+      - :green:`0.02` (-0.02 - -0.04)
+      - :green:`0.00` (-0.00 - -0.00)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.02` (0.00 - -0.02)
+      - :green:`0.02` (-0.00 - -0.02)
+      - :green:`0.03` (-0.00 - -0.03)
+    * - mean
+      - -0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - -0.00
+      - 0.00
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14-cat
+      - w2v2-b-cat
+      - w2v2-L-cat
+      - hubert-b-cat
+      - hubert-L-cat
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+

@@ -1,0 +1,30 @@
+.. _test-arousal-a3b14624-1.1.0-robustness_recording_condition:
+
+Robustness recording condition
+==============================
+
+.. role:: red
+.. role:: green
+
+0.0% passed tests (0 :green:`passed` / 2 :red:`failed`).
+
+
+Percentage Unchanged Predictions Recording Condition
+----------------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_recording_condition/percentage-unchanged-predictions-recording-condition.csv
+
+Visualization
+-------------
+
+Difference of predictions for baseline recording condition audio and different recording condition audio. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-boundary.png
+    :align: center
+
+.. figure:: robustness_recording_condition/visualization_imda-nsc-read-speech-balanced-2.6.0-headset-mobile.png
+    :align: center

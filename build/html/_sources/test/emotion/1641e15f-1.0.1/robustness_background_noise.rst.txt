@@ -1,0 +1,268 @@
+.. _test-emotion-1641e15f-1.0.1-robustness_background_noise:
+
+Robustness background noise
+===========================
+
+.. role:: red
+.. role:: green
+
+57.8% passed tests (52 :green:`passed` / 38 :red:`failed`).
+
+
+Change Uap Babble Noise
+-----------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uap-babble-noise.csv
+
+Change Uap Coughing
+-------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uap-coughing.csv
+
+Change Uap Environmental Noise
+------------------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uap-environmental-noise.csv
+
+Change Uap Music
+----------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uap-music.csv
+
+Change Uap Sneezing
+-------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uap-sneezing.csv
+
+Change Uap White Noise
+----------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uap-white-noise.csv
+
+Change Uar Babble Noise
+-----------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uar-babble-noise.csv
+
+Change Uar Coughing
+-------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uar-coughing.csv
+
+Change Uar Environmental Noise
+------------------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uar-environmental-noise.csv
+
+Change Uar Music
+----------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uar-music.csv
+
+Change Uar Sneezing
+-------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uar-sneezing.csv
+
+Change Uar White Noise
+----------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_background_noise/change-uar-white-noise.csv
+
+Percentage Unchanged Predictions Babble Noise
+---------------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-babble-noise.csv
+
+Percentage Unchanged Predictions Coughing
+-----------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-coughing.csv
+
+Percentage Unchanged Predictions Environmental Noise
+----------------------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-environmental-noise.csv
+
+Percentage Unchanged Predictions Music
+--------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-music.csv
+
+Percentage Unchanged Predictions Sneezing
+-----------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-sneezing.csv
+
+Percentage Unchanged Predictions White Noise
+--------------------------------------------
+
+.. csv-table:: Threshold: 0.9
+    :header-rows: 1
+    :file: robustness_background_noise/percentage-unchanged-predictions-white-noise.csv
+
+Visualization Babble Noise
+--------------------------
+
+Confusion Matrix showing the shift from the predictions of the clean audio to the predictions of the audio with added babble noise.
+
+
+
+.. figure:: robustness_background_noise/visualization-babble-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-babble-noise_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-babble-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-babble-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-babble-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+Visualization Coughing
+----------------------
+
+Confusion Matrix showing the shift from the predictions of the clean audio to the predictions of the audio with added coughing.
+
+
+
+.. figure:: robustness_background_noise/visualization-coughing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-coughing_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-coughing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-coughing_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-coughing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+Visualization Environmental Noise
+---------------------------------
+
+Confusion Matrix showing the shift from the predictions of the clean audio to the predictions of the audio with added environmental noise.
+
+
+
+.. figure:: robustness_background_noise/visualization-environmental-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-environmental-noise_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-environmental-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-environmental-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-environmental-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+Visualization Music
+-------------------
+
+Confusion Matrix showing the shift from the predictions of the clean audio to the predictions of the audio with added music.
+
+
+
+.. figure:: robustness_background_noise/visualization-music_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-music_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-music_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-music_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-music_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+Visualization Sneezing
+----------------------
+
+Confusion Matrix showing the shift from the predictions of the clean audio to the predictions of the audio with added sneezing.
+
+
+
+.. figure:: robustness_background_noise/visualization-sneezing_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-sneezing_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-sneezing_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-sneezing_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-sneezing_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+Visualization White Noise
+-------------------------
+
+Confusion Matrix showing the shift from the predictions of the clean audio to the predictions of the audio with added white noise.
+
+
+
+.. figure:: robustness_background_noise/visualization-white-noise_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-white-noise_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-white-noise_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-white-noise_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_background_noise/visualization-white-noise_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center

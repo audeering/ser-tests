@@ -1,0 +1,53 @@
+.. _test-emotion-379bc045-1.0.0-robustness_low_quality_phone:
+
+Robustness low quality phone
+============================
+
+.. role:: red
+.. role:: green
+
+86.7% passed tests (13 :green:`passed` / 2 :red:`failed`).
+
+
+Change Uap Low Quality Phone
+----------------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_low_quality_phone/change-uap-low-quality-phone.csv
+
+Change Uar Low Quality Phone
+----------------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_low_quality_phone/change-uar-low-quality-phone.csv
+
+Percentage Unchanged Predictions Low Quality Phone
+--------------------------------------------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: robustness_low_quality_phone/percentage-unchanged-predictions-low-quality-phone.csv
+
+Visualization
+-------------
+
+Confusion Matrix showing the shift from the predictions of the original audio to the predictions of the low quality phone audio.
+
+
+
+.. figure:: robustness_low_quality_phone/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_low_quality_phone/visualization_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_low_quality_phone/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_low_quality_phone/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center

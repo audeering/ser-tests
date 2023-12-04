@@ -1,0 +1,1247 @@
+.. _comparison-dominance-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-fairness_accent:
+
+Fairness accent
+===============
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_accent/overall_scores.csv
+
+
+Mean Value
+----------
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` Mean Value
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - speech-accent-archive-2.2.0-amharic
+      - :green:`-0.04`
+      - :green:`-0.07`
+      - :green:`-0.04`
+      - :green:`-0.07`
+      - :green:`-0.04`
+    * - speech-accent-archive-2.2.0-arabic
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.01`
+    * - speech-accent-archive-2.2.0-bengali
+      - :green:`-0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+    * - speech-accent-archive-2.2.0-bulgarian
+      - :green:`-0.05`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.02`
+      - :green:`-0.02`
+    * - speech-accent-archive-2.2.0-cantonese
+      - :green:`-0.03`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`-0.01`
+      - :green:`0.01`
+    * - speech-accent-archive-2.2.0-dutch
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+    * - speech-accent-archive-2.2.0-english
+      - :green:`-0.01`
+      - :green:`0.04`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.03`
+    * - speech-accent-archive-2.2.0-farsi
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`0.00`
+      - :green:`0.00`
+    * - speech-accent-archive-2.2.0-french
+      - :green:`-0.02`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.03`
+    * - speech-accent-archive-2.2.0-german
+      - :green:`0.05`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :green:`0.04`
+      - :green:`0.04`
+    * - speech-accent-archive-2.2.0-greek
+      - :green:`0.03`
+      - :green:`0.05`
+      - :green:`0.03`
+      - :green:`0.05`
+      - :green:`0.03`
+    * - speech-accent-archive-2.2.0-hindi
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.02`
+      - :green:`0.02`
+    * - speech-accent-archive-2.2.0-italian
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`-0.01`
+    * - speech-accent-archive-2.2.0-japanese
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`0.01`
+    * - speech-accent-archive-2.2.0-korean
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+    * - speech-accent-archive-2.2.0-macedonian
+      - :green:`0.07`
+      - :green:`0.03`
+      - :green:`0.06`
+      - :green:`0.03`
+      - :green:`0.05`
+    * - speech-accent-archive-2.2.0-mandarin
+      - :green:`0.01`
+      - :green:`0.07`
+      - :green:`0.05`
+      - :red:`0.08`
+      - :green:`0.04`
+    * - speech-accent-archive-2.2.0-nepali
+      - :green:`0.02`
+      - :green:`-0.04`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.02`
+    * - speech-accent-archive-2.2.0-polish
+      - :green:`-0.03`
+      - :green:`0.01`
+      - :green:`-0.00`
+      - :green:`0.01`
+      - :green:`0.01`
+    * - speech-accent-archive-2.2.0-portuguese
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`0.00`
+    * - speech-accent-archive-2.2.0-romanian
+      - :green:`-0.01`
+      - :green:`-0.04`
+      - :green:`-0.02`
+      - :green:`-0.04`
+      - :green:`-0.03`
+    * - speech-accent-archive-2.2.0-russian
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.00`
+    * - speech-accent-archive-2.2.0-serbian
+      - :green:`-0.04`
+      - :green:`-0.05`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.03`
+    * - speech-accent-archive-2.2.0-spanish
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.02`
+    * - speech-accent-archive-2.2.0-swedish
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.01`
+    * - speech-accent-archive-2.2.0-tagalog
+      - :green:`0.03`
+      - :green:`0.05`
+      - :green:`0.02`
+      - :green:`0.04`
+      - :green:`0.01`
+    * - speech-accent-archive-2.2.0-thai
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`-0.01`
+    * - speech-accent-archive-2.2.0-turkish
+      - :green:`0.06`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`0.02`
+    * - speech-accent-archive-2.2.0-ukrainian
+      - :green:`0.00`
+      - :green:`0.02`
+      - :green:`0.00`
+      - :green:`0.00`
+      - :green:`-0.02`
+    * - speech-accent-archive-2.2.0-urdu
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.02`
+    * - speech-accent-archive-2.2.0-vietnamese
+      - :green:`-0.02`
+      - :green:`-0.05`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.04`
+    * - mean
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+
+Relative Difference Per Bin
+---------------------------
+
+Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.225
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`4` (-inf, 0.25]
+      - :cspan:`4` (0.25, 0.5]
+      - :cspan:`4` (0.5, 0.75]
+      - :cspan:`4` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+      - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - speech-accent-archive-2.2.0-amharic
+      - :green:`-0.01`
+      - :green:`0.04`
+      - 
+      - :green:`0.02`
+      - 
+      - :green:`0.20`
+      - :green:`0.16`
+      - :green:`0.19`
+      - :green:`0.19`
+      - :green:`0.15`
+      - :green:`-0.18`
+      - :green:`-0.20`
+      - :green:`-0.19`
+      - :green:`-0.21`
+      - :green:`-0.14`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-arabic
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`0.01`
+      - :green:`-0.05`
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`0.01`
+      - :green:`0.07`
+      - :green:`0.01`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-bengali
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`0.07`
+      - :green:`0.00`
+      - :green:`-0.05`
+      - :green:`0.03`
+      - :green:`-0.00`
+      - :green:`-0.06`
+      - :green:`0.02`
+      - :green:`0.05`
+      - :green:`-0.01`
+      - :green:`0.00`
+      - :green:`0.00`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-bulgarian
+      - :green:`0.03`
+      - :green:`-0.00`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`0.14`
+      - :green:`0.17`
+      - :red:`0.24`
+      - :green:`0.14`
+      - :green:`0.12`
+      - :green:`-0.16`
+      - :green:`-0.17`
+      - :red:`-0.24`
+      - :green:`-0.12`
+      - :green:`-0.12`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-cantonese
+      - :green:`0.02`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`0.06`
+      - :green:`0.07`
+      - :green:`0.01`
+      - :green:`0.06`
+      - :green:`-0.09`
+      - :green:`-0.07`
+      - :green:`-0.05`
+      - :green:`-0.01`
+      - :green:`-0.05`
+      - :green:`0.09`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-dutch
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.00`
+      - 
+      - :green:`-0.06`
+      - :green:`0.01`
+      - :green:`-0.04`
+      - :green:`0.02`
+      - :green:`0.04`
+      - :green:`0.07`
+      - :green:`0.01`
+      - :green:`0.04`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-english
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - 
+      - :green:`0.01`
+      - 
+      - :green:`0.08`
+      - :green:`-0.18`
+      - :green:`-0.17`
+      - :green:`-0.21`
+      - :green:`-0.17`
+      - :green:`-0.06`
+      - :green:`0.18`
+      - :green:`0.17`
+      - :green:`0.20`
+      - :green:`0.17`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-farsi
+      - :green:`0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`0.06`
+      - :green:`0.18`
+      - :green:`0.01`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :green:`-0.06`
+      - :green:`-0.17`
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-french
+      - :green:`0.04`
+      - :green:`0.04`
+      - 
+      - :green:`0.02`
+      - 
+      - :green:`0.02`
+      - :green:`0.11`
+      - :green:`0.18`
+      - :green:`0.10`
+      - :green:`0.11`
+      - :green:`-0.06`
+      - :green:`-0.14`
+      - :green:`-0.18`
+      - :green:`-0.12`
+      - :green:`-0.11`
+      - :green:`0.00`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-german
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.15`
+      - :green:`-0.06`
+      - :green:`-0.19`
+      - :green:`-0.09`
+      - :green:`-0.21`
+      - :green:`0.17`
+      - :green:`0.08`
+      - :green:`0.19`
+      - :green:`0.11`
+      - :green:`0.21`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-greek
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.10`
+      - :green:`-0.11`
+      - :green:`-0.17`
+      - :green:`-0.19`
+      - :green:`-0.10`
+      - :green:`0.09`
+      - :green:`0.13`
+      - :green:`0.17`
+      - :green:`0.21`
+      - :green:`0.10`
+      - :green:`0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-hindi
+      - :green:`-0.01`
+      - :green:`0.01`
+      - 
+      - :green:`-0.00`
+      - 
+      - :green:`0.01`
+      - :green:`-0.15`
+      - :green:`-0.04`
+      - :green:`-0.05`
+      - :green:`-0.03`
+      - :green:`0.01`
+      - :green:`0.14`
+      - :green:`0.04`
+      - :green:`0.06`
+      - :green:`0.03`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-italian
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - 
+      - :green:`0.01`
+      - 
+      - :green:`-0.01`
+      - :green:`-0.08`
+      - :green:`-0.08`
+      - :green:`0.00`
+      - :green:`0.12`
+      - :green:`-0.03`
+      - :green:`0.09`
+      - :green:`0.08`
+      - :green:`-0.02`
+      - :green:`-0.12`
+      - :green:`0.04`
+      - 
+      - 
+      - :green:`0.01`
+      - 
+    * - speech-accent-archive-2.2.0-japanese
+      - :green:`0.00`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.08`
+      - :green:`-0.08`
+      - :green:`-0.03`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :green:`0.08`
+      - :green:`0.08`
+      - :green:`0.04`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`0.01`
+      - 
+    * - speech-accent-archive-2.2.0-korean
+      - :green:`-0.01`
+      - :green:`0.00`
+      - 
+      - :green:`0.02`
+      - 
+      - :green:`0.11`
+      - :green:`0.06`
+      - :green:`0.08`
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`-0.09`
+      - :green:`-0.07`
+      - :green:`-0.08`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`0.01`
+      - 
+    * - speech-accent-archive-2.2.0-macedonian
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - 
+      - :green:`-0.02`
+      - 
+      - :red:`-0.25`
+      - :green:`-0.13`
+      - :red:`-0.26`
+      - :green:`-0.11`
+      - :green:`-0.17`
+      - :red:`0.23`
+      - :green:`0.13`
+      - :red:`0.26`
+      - :green:`0.13`
+      - :green:`0.17`
+      - :green:`0.02`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-mandarin
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.05`
+      - :green:`-0.19`
+      - :red:`-0.23`
+      - :red:`-0.23`
+      - :green:`-0.18`
+      - :green:`0.07`
+      - :green:`0.20`
+      - :red:`0.23`
+      - :green:`0.21`
+      - :green:`0.18`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`0.03`
+      - 
+    * - speech-accent-archive-2.2.0-nepali
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.12`
+      - :green:`0.16`
+      - :green:`0.11`
+      - :green:`0.04`
+      - :green:`0.09`
+      - :green:`0.11`
+      - :green:`-0.14`
+      - :green:`-0.11`
+      - :green:`-0.02`
+      - :green:`-0.09`
+      - :green:`0.02`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-polish
+      - :green:`0.00`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`0.14`
+      - :green:`-0.03`
+      - :green:`-0.01`
+      - :green:`-0.04`
+      - :green:`-0.03`
+      - :green:`-0.13`
+      - :green:`0.05`
+      - :green:`0.01`
+      - :green:`0.06`
+      - :green:`0.04`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-portuguese
+      - :green:`0.04`
+      - :green:`0.01`
+      - 
+      - :green:`0.02`
+      - 
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.07`
+      - :green:`0.03`
+      - :green:`-0.03`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.09`
+      - :green:`-0.03`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-romanian
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.01`
+      - :green:`0.15`
+      - :green:`0.20`
+      - :green:`0.18`
+      - :green:`0.14`
+      - :green:`0.03`
+      - :green:`-0.13`
+      - :green:`-0.20`
+      - :green:`-0.16`
+      - :green:`-0.13`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-russian
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.09`
+      - :green:`-0.08`
+      - :green:`-0.06`
+      - :green:`-0.08`
+      - :green:`-0.03`
+      - :green:`0.09`
+      - :green:`0.09`
+      - :green:`0.06`
+      - :green:`0.09`
+      - :green:`0.03`
+      - :green:`0.00`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-serbian
+      - :green:`0.04`
+      - :green:`0.12`
+      - 
+      - :green:`0.09`
+      - 
+      - :green:`0.01`
+      - :green:`0.04`
+      - :green:`0.10`
+      - :green:`0.02`
+      - :green:`0.10`
+      - :green:`-0.05`
+      - :green:`-0.16`
+      - :green:`-0.10`
+      - :green:`-0.10`
+      - :green:`-0.10`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-spanish
+      - :green:`-0.01`
+      - :green:`0.01`
+      - 
+      - :green:`0.02`
+      - 
+      - :green:`-0.01`
+      - :green:`0.08`
+      - :green:`0.10`
+      - :green:`0.06`
+      - :green:`-0.01`
+      - :green:`0.03`
+      - :green:`-0.08`
+      - :green:`-0.10`
+      - :green:`-0.07`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-swedish
+      - :green:`-0.01`
+      - :green:`0.03`
+      - 
+      - :green:`0.00`
+      - 
+      - :green:`0.14`
+      - :green:`0.08`
+      - :green:`0.09`
+      - :green:`0.08`
+      - :green:`0.06`
+      - :green:`-0.14`
+      - :green:`-0.11`
+      - :green:`-0.09`
+      - :green:`-0.07`
+      - :green:`-0.05`
+      - :green:`0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-tagalog
+      - :green:`-0.01`
+      - :green:`0.03`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`-0.11`
+      - :red:`-0.27`
+      - :green:`-0.14`
+      - :green:`-0.14`
+      - :green:`-0.12`
+      - :green:`0.03`
+      - :red:`0.25`
+      - :green:`0.14`
+      - :green:`0.16`
+      - :green:`0.12`
+      - :green:`0.08`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-thai
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.00`
+      - 
+      - :green:`-0.00`
+      - :green:`0.05`
+      - :green:`0.06`
+      - :green:`0.02`
+      - :green:`0.04`
+      - :green:`0.01`
+      - :green:`-0.04`
+      - :green:`-0.06`
+      - :green:`-0.01`
+      - :green:`-0.05`
+      - :green:`-0.00`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-turkish
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`0.03`
+      - 
+      - :green:`-0.16`
+      - :green:`-0.10`
+      - :green:`-0.13`
+      - :green:`-0.14`
+      - :green:`-0.06`
+      - :green:`0.16`
+      - :green:`0.12`
+      - :green:`0.13`
+      - :green:`0.10`
+      - :green:`0.06`
+      - :green:`0.01`
+      - 
+      - 
+      - :green:`0.01`
+      - 
+    * - speech-accent-archive-2.2.0-ukrainian
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.02`
+      - 
+      - :green:`0.03`
+      - :green:`-0.00`
+      - :green:`-0.01`
+      - :green:`0.08`
+      - :green:`0.12`
+      - :green:`-0.02`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`-0.07`
+      - :green:`-0.12`
+      - :green:`0.00`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-urdu
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - 
+      - :green:`-0.00`
+      - 
+      - :green:`-0.03`
+      - :green:`-0.09`
+      - :green:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.13`
+      - :green:`0.04`
+      - :green:`0.11`
+      - :green:`0.05`
+      - :green:`0.04`
+      - :green:`0.13`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - speech-accent-archive-2.2.0-vietnamese
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - 
+      - :green:`0.00`
+      - 
+      - :green:`0.06`
+      - :green:`0.12`
+      - :green:`0.20`
+      - :green:`0.14`
+      - :green:`0.13`
+      - :green:`-0.05`
+      - :green:`-0.12`
+      - :green:`-0.20`
+      - :green:`-0.14`
+      - :green:`-0.13`
+      - :green:`-0.01`
+      - 
+      - 
+      - :green:`-0.00`
+      - 
+    * - mean
+      - -0.00
+      - -0.00
+      - 
+      - -0.00
+      - 
+      - -0.00
+      - -0.00
+      - -0.00
+      - -0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 
+      - 
+      - 0.00
+      - 
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - w2v2-L
+      - hubert-b
+      - hubert-L
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-amharic.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-amharic.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-amharic.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-amharic.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-amharic.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-arabic.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-arabic.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-arabic.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-arabic.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-arabic.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-bengali.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bengali.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bengali.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bengali.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bengali.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-bulgarian.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bulgarian.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bulgarian.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bulgarian.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-bulgarian.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-cantonese.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-cantonese.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-cantonese.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-cantonese.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-cantonese.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-dutch.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-dutch.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-dutch.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-dutch.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-dutch.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-english.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-english.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-english.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-english.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-english.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-farsi.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-farsi.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-farsi.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-farsi.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-farsi.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-french.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-french.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-french.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-french.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-french.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-german.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-german.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-german.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-german.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-german.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-greek.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-greek.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-greek.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-greek.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-greek.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-hindi.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-hindi.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-hindi.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-hindi.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-hindi.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-italian.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-italian.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-italian.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-italian.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-italian.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-japanese.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-japanese.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-japanese.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-japanese.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-japanese.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-korean.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-korean.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-korean.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-korean.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-korean.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-macedonian.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-macedonian.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-macedonian.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-macedonian.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-macedonian.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-mandarin.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-mandarin.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-mandarin.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-mandarin.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-mandarin.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-nepali.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-nepali.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-nepali.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-nepali.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-nepali.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-polish.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-polish.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-polish.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-polish.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-polish.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-portuguese.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-portuguese.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-portuguese.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-portuguese.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-portuguese.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-romanian.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-romanian.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-romanian.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-romanian.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-romanian.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-russian.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-russian.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-russian.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-russian.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-russian.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-serbian.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-serbian.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-serbian.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-serbian.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-serbian.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-spanish.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-spanish.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-spanish.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-spanish.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-spanish.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-swedish.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-swedish.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-swedish.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-swedish.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-swedish.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-tagalog.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-tagalog.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-tagalog.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-tagalog.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-tagalog.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-thai.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-thai.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-thai.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-thai.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-thai.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-turkish.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-turkish.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-turkish.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-turkish.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-turkish.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-ukrainian.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-ukrainian.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-ukrainian.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-ukrainian.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-ukrainian.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-urdu.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-urdu.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-urdu.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-urdu.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-urdu.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/fairness_accent/visualization_speech-accent-archive-2.2.0-vietnamese.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-vietnamese.png
+
+      - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/fairness_accent/visualization_speech-accent-archive-2.2.0-vietnamese.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-vietnamese.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/fairness_accent/visualization_speech-accent-archive-2.2.0-vietnamese.png
+

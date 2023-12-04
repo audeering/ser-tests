@@ -1,0 +1,11 @@
+.. _comparison-arousal:
+
+Arousal
+=======
+
+
+.. toctree::
+    :hidden:
+
+    arousal/a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0/index
+    arousal/1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0/index
