@@ -1,0 +1,27 @@
+Data:
+  - name: imda-nsc-read-speech-balanced
+    version: 2.6.0
+    table: headset
+    compare_table: boundary
+    match_columns:
+      - speaker
+      - text
+  - name: imda-nsc-read-speech-balanced
+    version: 2.6.0
+    table: headset
+    compare_table: mobile
+    match_columns:
+      - speaker
+      - text
+
+Metrics:
+  - name: Percentage Unchanged Predictions Recording Condition
+    short: Unchanged Condition
+    threshold: 0.8
+  - name: Visualization
+    description: >
+      Difference of predictions for baseline recording condition
+      audio and different recording condition audio.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.

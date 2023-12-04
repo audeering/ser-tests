@@ -1,0 +1,7 @@
+Entry,Value
+Author,jwagner (onnx export: aderington)
+Date,2023-04-06
+Name,onnx
+Subgroup,ser.adv.audpann.cnn14
+Version,1.0.3
+Sample,"{'emodb': {'version': '1.1.1', 'flavor': {'bit_depth': None, 'channels': None, 'format': 'wav', 'mixdown': True, 'sampling_rate': 16000}, 'data': {'wav/03a01Fa.wav': [[0.6487703323364258, 0.19668646156787872, 0.681863009929657]], 'wav/08a01Ab.wav': [[0.761000394821167, 0.09757468849420547, 0.7346381545066833]]}}}"

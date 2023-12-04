@@ -1,0 +1,9 @@
+Data,fear,sadness
+crema-d-1.2.0-emotion.categories.test.gold_standard,0.37,0.49
+danish-emotional-speech-1.1.1-emotion.test,,0.58
+emodb-1.2.0-emotion.categories.test.gold_standard,0.33,0.56
+emovo-1.2.1-emotion.test,0.38,0.32
+iemocap-2.3.0-emotion.categories.test.gold_standard,0.29,0.37
+meld-1.3.1-emotion.categories.test.gold_standard,0.38,0.42
+polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard,0.38,0.48
+ravdess-1.1.2-emotion.speech.test,0.38,0.41

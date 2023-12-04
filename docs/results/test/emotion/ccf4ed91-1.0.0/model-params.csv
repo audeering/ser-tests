@@ -1,0 +1,5 @@
+Entry,Value
+data,"{'train': {'msppodcast': {'version': '2.6.1', 'tables': ['emotion.categories.train.gold_standard']}}, 'dev': {'msppodcast': {'version': '2.6.1', 'tables': ['emotion.categories.dev.gold_standard']}}}"
+model,facebook/wav2vec2-xls-r-300m
+sampling_rate,16000
+quantization,False

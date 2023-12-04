@@ -1,0 +1,60 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    tables:
+      - emotion.categories.train.gold_standard
+      - emotion.categories.test.gold_standard
+    table_alias: full
+    column: emotion
+    sex_table: speaker
+    sex_column: speaker
+    sex_mapping: gender
+  - name: msppodcast
+    version: 2.6.0
+    table: emotion.categories.test-1.gold_standard
+    column: emotion
+    sex_table: files.test-1
+    sex_column: gender
+
+Metrics:
+  - name: Precision Per Class Female
+    short: Precision Female
+    threshold: 0.075
+    description: >
+      Precision female - Precision combined.
+  - name: Precision Per Class Male
+    short: Precision Male
+    threshold: 0.075
+    description: >
+      Precision male - Precision combined.
+  - name: Recall Per Class Female
+    short: Recall Female
+    threshold: 0.175
+    description: >
+      Recall female - Recall combined.
+  - name: Recall Per Class Male
+    short: Recall Male
+    threshold: 0.175
+    description: >
+      Recall female - Recall combined.
+  - name: Unweighted Average Precision Female
+    short: UAP Female
+    threshold: 0.05
+    description: >
+      UAP Female - UAP combined.
+  - name: Unweighted Average Precision Male
+    short: UAP Male
+    threshold: 0.05
+    description: >
+      UAP Male - UAP combined.
+  - name: Unweighted Average Recall Female
+    short: UAR Female
+    threshold: 0.075
+    description: >
+      UAR Female - UAR combined.
+  - name: Unweighted Average Recall Male
+    short: UAR Male
+    threshold: 0.075
+    description: >
+      UAR Male - UAR combined.
+  - name: Visualization

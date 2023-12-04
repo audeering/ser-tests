@@ -1,0 +1,25 @@
+Data:
+  - name: imda-nsc-read-speech-balanced
+    version: 2.6.0
+    table: headset
+    compare_table: boundary
+    match_columns:
+      - speaker
+      - text
+  - name: imda-nsc-read-speech-balanced
+    version: 2.6.0
+    table: headset
+    compare_table: mobile
+    match_columns:
+      - speaker
+      - text
+
+Metrics:
+  - name: Percentage Unchanged Predictions Recording Condition
+    short: Unchanged Recording Condition
+    threshold: 0.8
+  - name: Visualization
+    description: >
+      Confusion Matrix showing the shift from the predictions of
+      the baseline recording condition audio to the predictions
+      of the different recording condition audio.

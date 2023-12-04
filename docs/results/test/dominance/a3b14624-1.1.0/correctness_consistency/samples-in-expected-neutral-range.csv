@@ -1,0 +1,9 @@
+Data,happiness,neutral,surprise
+crema-d-1.2.0-emotion.categories.test.gold_standard,0.74,0.66,
+danish-emotional-speech-1.1.1-emotion.test,0.87,0.56,0.96
+emodb-1.2.0-emotion.categories.test.gold_standard,0.26,1.0,
+emovo-1.2.1-emotion.test,0.58,0.96,0.73
+iemocap-2.3.0-emotion.categories.test.gold_standard,0.78,0.84,
+meld-1.3.1-emotion.categories.test.gold_standard,0.55,0.66,0.54
+polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard,0.18,1.0,
+ravdess-1.1.2-emotion.speech.test,0.62,1.0,0.06

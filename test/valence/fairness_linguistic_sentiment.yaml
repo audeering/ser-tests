@@ -1,0 +1,93 @@
+Data:
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: de
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: en
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: es
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: fr
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: it
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: ja
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: pt
+  - name: checklist-synth
+    version: 1.0.0
+    table: words-in-context
+    language: zh
+
+Metrics:
+  - name: Bin Proportion Shift Difference Positive Sentiment
+    short: Proportion Shift Positive
+    threshold: 0.075
+    description: >
+      Shift in bin proportions for positive sentiment for specific language
+      - Average of the shift in bin proportions for positive sentiment for
+      all languages.
+      The full expression leading to the test score
+      is displayed in parentheses.
+      Bins with too few samples are skipped.
+  - name: Bin Proportion Shift Difference Negative Sentiment
+    short: Proportion Shift Negative
+    threshold: 0.075
+    description: >
+      Shift in bin proportions for negative sentiment for specific language
+      - Average of the shift in bin proportions for negative sentiment for
+      all languages.
+      The full expression leading to the test score
+      is displayed in parentheses.
+      Bins with too few samples are skipped.
+  - name: Bin Proportion Shift Difference Neutral Sentiment
+    short: Proportion Shift Neutral
+    threshold: 0.075
+    description: >
+      Shift in bin proportions for neutral sentiment for specific language
+      - Average of the shift in bin proportions for neutral sentiment for
+      all languages.
+      The full expression leading to the test score
+      is displayed in parentheses.
+      Bins with too few samples are skipped.
+  - name: Mean Shift Difference Positive Sentiment
+    short: Mean Shift Positive
+    threshold: 0.025
+    description: >
+      Mean shift for positive sentiment for specific language
+      - Average of the mean shift for positive sentiment for
+      all languages.
+      The full expression leading to the test score
+      is displayed in parentheses.
+  - name: Mean Shift Difference Negative Sentiment
+    short: Mean Shift Negative
+    threshold: 0.025
+    description: >
+      Mean shift for negative sentiment for specific language
+      - Average of the mean shift for negative sentiment for
+      all languages.
+      The full expression leading to the test score
+      is displayed in parentheses.
+  - name: Mean Shift Difference Neutral Sentiment
+    short: Mean Neutral
+    threshold: 0.025
+    description: >
+      Mean shift for neutral sentiment for specific language
+      - Average of the mean shift for neutral sentiment for
+      all languages.
+      The full expression leading to the test score
+      is displayed in parentheses.
+  - name: Visualization

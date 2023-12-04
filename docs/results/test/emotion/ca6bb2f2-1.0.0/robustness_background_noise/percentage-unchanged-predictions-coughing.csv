@@ -1,0 +1,6 @@
+Data,Percentage Unchanged Predictions Coughing
+crema-d-1.2.0-emotion.categories.test.gold_standard,0.63
+emovo-1.2.1-emotion.test,0.6
+iemocap-2.3.0-emotion.categories.test.gold_standard,0.66
+meld-1.3.1-emotion.categories.test.gold_standard,0.79
+msppodcast-2.6.0-emotion.categories.test-1.gold_standard,0.68

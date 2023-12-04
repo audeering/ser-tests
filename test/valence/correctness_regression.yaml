@@ -1,0 +1,25 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    table: emotion.dimensions.test.gold_standard
+    column: valence
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: valence
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-2.gold_standard
+    column: valence
+
+Metrics:
+  - name: Concordance Correlation Coeff
+    short: CCC
+    threshold: 0.50
+  - name: Pearson Correlation Coeff
+    short: PCC
+    threshold: 0.50
+  - name: Mean Absolute Error
+    short: MAE
+    threshold: 0.1
+  - name: Visualization

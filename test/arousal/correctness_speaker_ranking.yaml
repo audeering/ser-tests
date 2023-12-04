@@ -1,0 +1,44 @@
+Data:
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: arousal
+    speaker_table: files.test-1
+    speaker_column: speaker
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-2.gold_standard
+    column: arousal
+    speaker_table: files.test-2
+    speaker_column: speaker
+
+Metrics:
+  - name: Spearmans Rho
+    short: Rho
+    threshold: 0.7
+  - name: Precision Top 25%
+    short: Top 25%
+    threshold: 0.7
+  - name: Precision Bottom 25%
+    short: Bottom 25%
+    threshold: 0.7
+  - name: Top-Bottom Confusions
+    short: Confusions
+    threshold: 0.15
+  - name: Visualization
+    description: >
+      The plots visualize the precision
+      of predicting speakers to be in the Top 25%
+      or Bottom 25% of all speakers.
+      Green dots indicate correctly classified speakers,
+      red false positive speakers,
+      whereby red squares indicate confusions
+      between Top 25% and Bottom 25% speakers.
+      The remaining grey data points
+      are samples outside the range of interest.
+      They contain false negatives
+      that should have been predicted in the Top 25% or Bottom 25% of speakers,
+      but were not.
+      True negatives are those speakers
+      that are not part of the Top 25% or Bottom 25%,
+      and were predicted as such.

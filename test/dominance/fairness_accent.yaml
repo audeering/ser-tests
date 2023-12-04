@@ -1,0 +1,105 @@
+Data:
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: amharic
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: arabic
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: bengali
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: bulgarian
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: cantonese
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: dutch
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: english
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: farsi
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: french
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: german
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: greek
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: hindi
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: italian
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: japanese
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: korean
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: macedonian
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: mandarin
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: nepali
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: polish
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: portuguese
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: romanian
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: russian
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: serbian
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: spanish
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: swedish
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: tagalog
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: thai
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: turkish
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: ukrainian
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: urdu
+  - name: speech-accent-archive
+    version: 2.2.0
+    split: vietnamese
+
+Metrics:
+  - name: Mean Value
+    short: Mean
+    threshold: 0.075
+  - name: Relative Difference Per Bin
+    short: Difference
+    threshold: 0.225
+    description: >
+      Bins with too few samples are skipped.
+  - name: Visualization

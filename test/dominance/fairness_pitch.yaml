@@ -1,0 +1,91 @@
+Data:
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: dominance
+    speaker_table: files.test-1
+    speaker_column: speaker
+
+Metrics:
+  - name: Concordance Correlation Coeff High Pitch
+    short: CCC
+    threshold: 0.1
+    description: >
+      CCC high pitch - CCC combined.
+  - name: Concordance Correlation Coeff Low Pitch
+    short: CCC
+    threshold: 0.1
+    description: >
+      CCC low pitch - CCC combined.
+  - name: Concordance Correlation Coeff Medium Pitch
+    short: CCC
+    threshold: 0.1
+    description: >
+      CCC medium pitch - CCC combined.
+  - name: Mean Absolute Error High Pitch
+    threshold: 0.02
+    description: >
+      Mean absolute error high pitch - mean absolute error combined
+      on the regression scale.
+  - name: Mean Absolute Error Low Pitch
+    threshold: 0.02
+    description: >
+      Mean absolute error low pitch - mean absolute error combined
+      on the regression scale.
+  - name: Mean Absolute Error Medium Pitch
+    threshold: 0.02
+    description: >
+      Mean absolute error medium pitch - mean absolute error combined
+      on the regression scale.
+  - name:  Mean Directional Error High Pitch
+    threshold: 0.04
+    description: >
+      Mean directional error high pitch - mean directional error combined
+      on the regression scale.
+  - name: Mean Directional Error Low Pitch
+    threshold: 0.04
+    description: >
+      Mean directional error low pitch - mean directional error combined
+      on the regression scale.
+  - name: Mean Directional Error Medium Pitch
+    threshold: 0.04
+    description: >
+      Mean directional error medium pitch - mean directional error combined
+      on the regression scale.
+  - name: Precision Per Bin High Pitch
+    short: Precision High Pitch
+    threshold: 0.125
+    description: >
+      Precision per bin high pitch - precision per bin combined.
+      Bins with too few samples are skipped.
+  - name: Precision Per Bin Low Pitch
+    short: Precision Low Pitch
+    threshold: 0.125
+    description: >
+      Precision per bin low pitch - precision per bin combined.
+      Bins with too few samples are skipped.
+  - name: Precision Per Bin Medium Pitch
+    short: Precision Medium Pitch
+    threshold: 0.125
+    description: >
+      Precision per bin medium pitch - precision per bin combined.
+      Bins with too few samples are skipped.
+  - name: Recall Per Bin High Pitch
+    short: Recall High Pitch
+    threshold: 0.125
+    description: >
+      Recall per bin high pitch - recall per bin combined.
+      Bins with too few samples are skipped.
+  - name: Recall Per Bin Low Pitch
+    short: Recall Low Pitch
+    threshold: 0.125
+    description: >
+      Recall per bin low pitch - recall per bin combined.
+      Bins with too few samples are skipped.
+  - name: Recall Per Bin Medium Pitch
+    short: Recall Medium Pitch
+    threshold: 0.125
+    description: >
+      Recall per bin medium pitch - recall per bin combined.
+      Bins with too few samples are skipped.
+  - name: Visualization

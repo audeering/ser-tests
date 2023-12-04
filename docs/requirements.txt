@@ -1,0 +1,23 @@
+audb
+audeer >=1.18.0
+audiofile
+audmodel
+audmetric
+audonnx
+audplot
+audresample
+auglib
+docutils
+linuxdoc
+matplotlib
+numpy
+pandas
+praat-parselmouth
+scipy
+seaborn
+sox
+sphinx ==5.3.0
+sphinx-audeering-theme >=1.2.1
+sphinx-copybutton
+sphinxcontrib-bibtex
+sphinxcontrib-katex >=0.9.3

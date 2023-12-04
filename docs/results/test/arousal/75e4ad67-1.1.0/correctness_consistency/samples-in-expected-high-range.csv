@@ -1,0 +1,9 @@
+Data,anger,fear,surprise
+crema-d-1.2.0-emotion.categories.test.gold_standard,0.79,0.4,
+danish-emotional-speech-1.1.1-emotion.test,0.33,,0.27
+emodb-1.2.0-emotion.categories.test.gold_standard,1.0,0.79,
+emovo-1.2.1-emotion.test,0.89,0.42,0.58
+iemocap-2.3.0-emotion.categories.test.gold_standard,0.82,0.65,
+meld-1.3.1-emotion.categories.test.gold_standard,0.96,0.94,0.85
+polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard,0.95,0.42,
+ravdess-1.1.2-emotion.speech.test,0.97,0.44,1.0

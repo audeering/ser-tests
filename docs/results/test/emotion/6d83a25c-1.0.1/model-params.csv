@@ -1,0 +1,7 @@
+Entry,Value
+data,"{'train': {'msppodcast': {'version': '2.6.0', 'table': 'emotion.categories.train.gold_standard'}}, 'dev': {'msppodcast': {'version': '2.6.0', 'table': 'emotion.categories.dev.gold_standard'}}}"
+model,cnn14
+sampling_rate,16000
+features,LogMel64
+softmax,True
+quantization,False

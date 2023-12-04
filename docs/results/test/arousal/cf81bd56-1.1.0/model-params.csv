@@ -1,0 +1,4 @@
+Entry,Value
+data,msp-2.4.0
+model,facebook/hubert-large-ll60k
+sampling_rate,16000

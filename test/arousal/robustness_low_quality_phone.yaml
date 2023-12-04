@@ -1,0 +1,27 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    table: emotion.dimensions.test.gold_standard
+    column: arousal
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: arousal
+
+Metrics:
+  - name: Change CCC Low Quality Phone
+    short: CCC Higher
+    threshold: -0.05
+  - name: Change Average Value Low Quality Phone
+    short: Value Low Quality Phone
+    threshold: 0.05
+  - name: Percentage Unchanged Predictions Low Quality Phone
+    short: Percent Unchanged Pred Low Quality Phone
+    threshold: 0.5
+  - name: Visualization
+    description: >
+      Difference of predictions for original audio
+      and low quality phone audio.
+      The allowed prediction difference :math:`\delta < 0.05`
+      is highlighted in green in the upper plot.
+      The lower plot shows the distributions of the two predictions.

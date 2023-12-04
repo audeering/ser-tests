@@ -1,0 +1,74 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    tables:
+      - emotion.dimensions.train.gold_standard
+      - emotion.dimensions.test.gold_standard
+    table_alias: full
+    column: valence
+    sex_table: speaker
+    sex_column: speaker
+    sex_mapping: gender
+  - name: msppodcast
+    version: 2.6.1
+    table: emotion.dimensions.test-1.gold_standard
+    column: valence
+    sex_table: files.test-1
+    sex_column: gender
+
+Metrics:
+  - name: Concordance Correlation Coeff Female
+    short: CCC Female
+    threshold: 0.075
+    description: >
+      CCC female - CCC combined.
+  - name: Concordance Correlation Coeff Male
+    short: CCC Male
+    threshold: 0.075
+    description: >
+      CCC male - CCC combined.
+  - name: Mean Absolute Error Female
+    threshold: 0.02
+    description: >
+      Mean absolute error female - mean absolute error combined
+      on the regression scale.
+  - name: Mean Absolute Error Male
+    threshold: 0.02
+    description: >
+      Mean absolute error male - mean absolute error combined
+      on the regression scale.
+  - name: Mean Directional Error Female
+    threshold: 0.04
+    description: >
+      Mean directional error female - mean directional error combined
+      on the regression scale.
+  - name: Mean Directional Error Male
+    threshold: 0.04
+    description: >
+      Mean directional error male - mean directional error combined
+      on the regression scale.
+  - name: Precision Per Bin Female
+    short: Precision Female
+    threshold: 0.1
+    description: >
+      Precision per bin female - precision per bin combined.
+      Bins with too few samples are skipped.
+  - name: Precision Per Bin Male
+    short: Precision Male
+    threshold: 0.1
+    description: >
+      Precision per bin male - precision per bin combined.
+      Bins with too few samples are skipped.
+  - name: Recall Per Bin Female
+    short: Recall Female
+    threshold: 0.1
+    description: >
+      Recall per bin female - recall per bin combined.
+      Bins with too few samples are skipped.
+  - name: Recall Per Bin Male
+    short: Recall Male
+    threshold: 0.1
+    description: >
+      Recall per bin male - recall per bin combined.
+      Bins with too few samples are skipped.
+  - name: Visualization

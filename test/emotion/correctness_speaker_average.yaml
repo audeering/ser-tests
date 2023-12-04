@@ -1,0 +1,41 @@
+Data:
+  - name: iemocap
+    version: 2.3.0
+    tables:
+      - emotion.categories.train.gold_standard
+      - emotion.categories.test.gold_standard
+    table_alias: full
+    column: emotion
+    speaker_table: speaker
+    speaker_column: speaker
+  - name: meld
+    version: 1.3.1
+    table: emotion.categories.test.gold_standard
+    column: emotion
+    speaker_table: files
+    speaker_column: speaker
+  - name: msppodcast
+    version: 2.6.0
+    table: emotion.categories.test-1.gold_standard
+    column: emotion
+    speaker_table: files.test-1
+    speaker_column: speaker
+
+Metrics:
+  - name: Class Proportion Mean Absolute Error
+    short: Proportion Absolute
+    threshold: 0.1
+  - name: Class Proportion Mean Directional Error
+    short: Proportion Directional
+    threshold: 0.05
+  - name: Visualization
+    threshold: 0.2
+    description: >
+      The plot shows the proportion of the predicted samples
+      for each class, as well as the true proportion of the
+      class.
+      We select a slightly higher threshold
+      for the absolute error
+      in the plots compared to the Class Proportion Difference
+      test as we are interested
+      in highlighting only big deviations here.
