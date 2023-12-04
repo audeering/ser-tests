@@ -63,10 +63,10 @@ html_theme_options = {
     'display_version': True,
     'logo_only': False,
     'wide_pages': [],
-    'footer_links': True,
+    'footer_links': False,
 }
 html_context = {
-    'display_gitlab': True,
+    'display_github': True,
 }
 html_title = title
 
