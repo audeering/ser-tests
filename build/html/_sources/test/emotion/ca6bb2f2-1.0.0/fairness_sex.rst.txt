@@ -6,7 +6,7 @@ Fairness sex
 .. role:: red
 .. role:: green
 
-95.0% passed tests (38 :green:`passed` / 2 :red:`failed`).
+94.4% passed tests (34 :green:`passed` / 2 :red:`failed`).
 
 
 Precision Per Class Female
@@ -48,26 +48,6 @@ Recall female - Recall combined.
 .. csv-table:: Threshold: 0.175
     :header-rows: 1
     :file: fairness_sex/recall-per-class-male.csv
-
-Unweighted Average Precision Female
------------------------------------
-
-UAP Female - UAP combined.
-
-
-.. csv-table:: Threshold: 0.05
-    :header-rows: 1
-    :file: fairness_sex/unweighted-average-precision-female.csv
-
-Unweighted Average Precision Male
----------------------------------
-
-UAP Male - UAP combined.
-
-
-.. csv-table:: Threshold: 0.05
-    :header-rows: 1
-    :file: fairness_sex/unweighted-average-precision-male.csv
 
 Unweighted Average Recall Female
 --------------------------------

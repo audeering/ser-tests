@@ -6,7 +6,7 @@ Fairness pitch
 .. role:: red
 .. role:: green
 
-100.0% passed tests (30 :green:`passed` / 0 :red:`failed`).
+100.0% passed tests (27 :green:`passed` / 0 :red:`failed`).
 
 
 Precision Per Class High Pitch
@@ -68,36 +68,6 @@ Recall medium pitch - recall combined.
 .. csv-table:: Threshold: 0.225
     :header-rows: 1
     :file: fairness_pitch/recall-per-class-medium-pitch.csv
-
-Unweighted Average Precision High Pitch
----------------------------------------
-
-UAP high pitch - UAP combined.
-
-
-.. csv-table:: Threshold: 0.05
-    :header-rows: 1
-    :file: fairness_pitch/unweighted-average-precision-high-pitch.csv
-
-Unweighted Average Precision Low Pitch
---------------------------------------
-
-UAP low pitch - UAP combined.
-
-
-.. csv-table:: Threshold: 0.05
-    :header-rows: 1
-    :file: fairness_pitch/unweighted-average-precision-low-pitch.csv
-
-Unweighted Average Precision Medium Pitch
------------------------------------------
-
-UAP medium pitch - UAP combined.
-
-
-.. csv-table:: Threshold: 0.05
-    :header-rows: 1
-    :file: fairness_pitch/unweighted-average-precision-medium-pitch.csv
 
 Unweighted Average Recall High Pitch
 ------------------------------------

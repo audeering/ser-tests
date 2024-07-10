@@ -6,7 +6,7 @@ CNN14
 .. role:: red
 .. role:: green
 
-73.9% passed tests (359 :green:`passed` / 127 :red:`failed`).
+79.2% passed tests (350 :green:`passed` / 92 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

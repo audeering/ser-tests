@@ -2,3 +2,6 @@ repositories:
   - name: data-public-local
     backend: artifactory
     host: https://artifactory.audeering.com/artifactory
+  - name: data-public
+    backend: artifactory
+    host: https://artifactory.audeering.com/artifactory

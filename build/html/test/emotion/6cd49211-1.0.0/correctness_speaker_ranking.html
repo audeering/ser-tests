@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
@@ -322,7 +322,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2c39464
               </div>
             
           
@@ -366,10 +366,7 @@
 <li class="toctree-l3"><a class="reference internal" href="correctness_distribution.html">Correctness distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="correctness_speaker_average.html">Correctness speaker average</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Correctness speaker ranking</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#precision-bottom-25">Precision Bottom 25%</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#precision-top-25">Precision Top 25%</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#spearmans-rho">Spearmans Rho</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#top-bottom-confusions">Top Bottom Confusions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a></li>
 </ul>
 </li>
@@ -441,93 +438,11 @@
             
   <div class="section" id="correctness-speaker-ranking">
 <span id="test-emotion-6cd49211-1-0-0-correctness-speaker-ranking"></span><h1>Correctness speaker ranking<a class="headerlink" href="#correctness-speaker-ranking" title="Permalink to this heading">¶</a></h1>
-<p>46.9% passed tests (15 <span class="green">passed</span> / 17 <span class="red">failed</span>).</p>
-<div class="section" id="precision-bottom-25">
-<h2>Precision Bottom 25%<a class="headerlink" href="#precision-bottom-25" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>anger</p></th>
-<th class="head"><p>happiness</p></th>
-<th class="head"><p>neutral</p></th>
-<th class="head"><p>sadness</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>0.50</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="precision-top-25">
-<h2>Precision Top 25%<a class="headerlink" href="#precision-top-25" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>anger</p></th>
-<th class="head"><p>happiness</p></th>
-<th class="head"><p>neutral</p></th>
-<th class="head"><p>sadness</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>0.75</p></td>
-<td><p>0.50</p></td>
-<td><p>0.75</p></td>
-<td><p>0.50</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>50.0% passed tests (4 <span class="green">passed</span> / 4 <span class="red">failed</span>).</p>
 <div class="section" id="spearmans-rho">
 <h2>Spearmans Rho<a class="headerlink" href="#spearmans-rho" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 20%" />
@@ -561,47 +476,6 @@
 <td><p>0.48</p></td>
 <td><p>0.69</p></td>
 <td><p>0.26</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="top-bottom-confusions">
-<h2>Top Bottom Confusions<a class="headerlink" href="#top-bottom-confusions" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">Threshold: 0.15</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>anger</p></th>
-<th class="head"><p>happiness</p></th>
-<th class="head"><p>neutral</p></th>
-<th class="head"><p>sadness</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="red">0.25</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>0.00</p></td>
-<td><p>0.12</p></td>
-<td><p>0.00</p></td>
-<td><p>0.12</p></td>
 </tr>
 </tbody>
 </table>
@@ -641,7 +515,7 @@
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -649,7 +523,7 @@
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -681,6 +555,9 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
     
 
   

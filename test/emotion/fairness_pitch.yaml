@@ -37,21 +37,6 @@ Metrics:
     threshold: 0.225
     description: >
       Recall medium pitch - recall combined.
-  - name: Unweighted Average Precision High Pitch
-    short: UAP High Pitch
-    threshold: 0.05
-    description: >
-      UAP high pitch - UAP combined.
-  - name: Unweighted Average Precision Low Pitch
-    short: UAP Low Pitch
-    threshold: 0.05
-    description: >
-      UAP low pitch - UAP combined.
-  - name: Unweighted Average Precision Medium Pitch
-    short: UAP Medium Pitch
-    threshold: 0.05
-    description: >
-      UAP medium pitch - UAP combined.
   - name: Unweighted Average Recall High Pitch
     short: UAR High Pitch
     threshold: 0.075

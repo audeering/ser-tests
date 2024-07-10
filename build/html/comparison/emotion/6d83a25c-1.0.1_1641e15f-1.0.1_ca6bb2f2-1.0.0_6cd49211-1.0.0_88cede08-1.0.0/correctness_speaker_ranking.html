@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
@@ -324,7 +324,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2c39464
               </div>
             
           
@@ -374,10 +374,7 @@
 <li class="toctree-l3"><a class="reference internal" href="correctness_distribution.html">Correctness distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="correctness_speaker_average.html">Correctness speaker average</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Correctness speaker ranking</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#precision-bottom-25">Precision Bottom 25%</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#precision-top-25">Precision Top 25%</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#spearmans-rho">Spearmans Rho</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#top-bottom-confusions">Top Bottom Confusions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a></li>
 </ul>
 </li>
@@ -457,270 +454,18 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Overall Score</p></td>
-<td><p>40.6% passed tests (13 <span class="green">passed</span> /  19 <span class="red">failed</span>).</p></td>
-<td><p>53.1% passed tests (17 <span class="green">passed</span> /  15 <span class="red">failed</span>).</p></td>
-<td><p>43.8% passed tests (14 <span class="green">passed</span> /  18 <span class="red">failed</span>).</p></td>
-<td><p>46.9% passed tests (15 <span class="green">passed</span> /  17 <span class="red">failed</span>).</p></td>
-<td><p>56.2% passed tests (18 <span class="green">passed</span> /  14 <span class="red">failed</span>).</p></td>
+<td><p>37.5% passed tests (3 <span class="green">passed</span> /  5 <span class="red">failed</span>).</p></td>
+<td><p>75.0% passed tests (6 <span class="green">passed</span> /  2 <span class="red">failed</span>).</p></td>
+<td><p>50.0% passed tests (4 <span class="green">passed</span> /  4 <span class="red">failed</span>).</p></td>
+<td><p>50.0% passed tests (4 <span class="green">passed</span> /  4 <span class="red">failed</span>).</p></td>
+<td><p>62.5% passed tests (5 <span class="green">passed</span> /  3 <span class="red">failed</span>).</p></td>
 </tr>
 </tbody>
 </table>
-<div class="section" id="precision-bottom-25">
-<h2>Precision Bottom 25%<a class="headerlink" href="#precision-bottom-25" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> anger</p></th>
-<th class="head" colspan="5"><p> happiness</p></th>
-<th class="head" colspan="5"><p> neutral</p></th>
-<th class="head" colspan="5"><p> sadness</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.50</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>1.00</p></td>
-<td><p>0.25</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>1.00</p></td>
-<td><p>1.00</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>1.00</p></td>
-<td><p>0.50</p></td>
-<td><p>0.25</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.25</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="precision-top-25">
-<h2>Precision Top 25%<a class="headerlink" href="#precision-top-25" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> anger</p></th>
-<th class="head" colspan="5"><p> happiness</p></th>
-<th class="head" colspan="5"><p> neutral</p></th>
-<th class="head" colspan="5"><p> sadness</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.00</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">1.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>0.75</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.25</p></td>
-<td><p>1.00</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.75</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.75</p></td>
-<td><p>0.50</p></td>
-<td><p>0.50</p></td>
-<td><p>0.75</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="spearmans-rho">
 <h2>Spearmans Rho<a class="headerlink" href="#spearmans-rho" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: 0.7</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 5%" />
 <col style="width: 5%" />
@@ -843,132 +588,6 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="top-bottom-confusions">
-<h2>Top Bottom Confusions<a class="headerlink" href="#top-bottom-confusions" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-text">Threshold: 0.15</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> anger</p></th>
-<th class="head" colspan="5"><p> happiness</p></th>
-<th class="head" colspan="5"><p> neutral</p></th>
-<th class="head" colspan="5"><p> sadness</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-<th class="head"><p>CNN14-cat</p></th>
-<th class="head"><p>w2v2-b-cat</p></th>
-<th class="head"><p>w2v2-L-cat</p></th>
-<th class="head"><p>hubert-b-cat</p></th>
-<th class="head"><p>hubert-L-cat</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="red">0.25</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.25</p></td>
-<td><p>0.00</p></td>
-<td><p>0.00</p></td>
-<td><p>0.00</p></td>
-<td><p>0.00</p></td>
-<td><p>0.25</p></td>
-<td><p>0.12</p></td>
-<td><p>0.12</p></td>
-<td><p>0.12</p></td>
-<td><p>0.25</p></td>
-<td><p>0.00</p></td>
-<td><p>0.00</p></td>
-<td><p>0.00</p></td>
-<td><p>0.00</p></td>
-<td><p>0.00</p></td>
-<td><p>0.25</p></td>
-<td><p>0.25</p></td>
-<td><p>0.12</p></td>
-<td><p>0.12</p></td>
-<td><p>0.25</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="visualization">
 <h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">¶</a></h2>
 <p>The plots visualize the precision of predicting speakers to be in the Top 25% or Bottom 25% of all speakers for each class in respect to the proportion of samples of that class. Green dots indicate correctly classified speakers, red false positive speakers, whereby red squares indicate confusions between Top 25% and Bottom 25% speakers. The remaining grey data points are samples outside the range of interest. They contain false negatives that should have been predicted in the Top 25% or Bottom 25% of speakers, but were not. True negatives are those speakers that are not part of the Top 25% or Bottom 25%, and were predicted as such.</p>
@@ -1059,7 +678,7 @@
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -1067,7 +686,7 @@
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -1099,6 +718,9 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
     
 
   

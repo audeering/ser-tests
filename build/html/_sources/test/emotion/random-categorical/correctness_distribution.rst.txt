@@ -6,7 +6,7 @@ Correctness distribution
 .. role:: red
 .. role:: green
 
-70.0% passed tests (28 :green:`passed` / 12 :red:`failed`).
+72.5% passed tests (29 :green:`passed` / 11 :red:`failed`).
 
 
 Relative Difference Per Class

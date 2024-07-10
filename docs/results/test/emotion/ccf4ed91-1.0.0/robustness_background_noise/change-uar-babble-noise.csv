@@ -1,6 +1,6 @@
 Data,Change UAR Babble Noise
 crema-d-1.2.0-emotion.categories.test.gold_standard,0.03
-emovo-1.2.1-emotion.test,-0.0
+emovo-1.2.1-emotion.test,0.02
 iemocap-2.3.0-emotion.categories.test.gold_standard,-0.02
-meld-1.3.1-emotion.categories.test.gold_standard,0.0
+meld-1.3.1-emotion.categories.test.gold_standard,-0.0
 msppodcast-2.6.0-emotion.categories.test-1.gold_standard,-0.02

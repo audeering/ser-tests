@@ -27,12 +27,6 @@ Metrics:
   - name: Change UAR Upward Tilt
     short: UAR Upward
     threshold: -0.02
-  - name: Change UAP Downward Tilt
-    short: UAP Downward
-    threshold: -0.02
-  - name: Change UAP Upward Tilt
-    short: UAP Upward
-    threshold: -0.02
   - name: Percentage Unchanged Predictions Downward Tilt
     short: Unchanged Downward
     threshold: 0.8

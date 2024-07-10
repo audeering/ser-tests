@@ -6,7 +6,7 @@ w2v2-L-robust
 .. role:: red
 .. role:: green
 
-85.4% passed tests (345 :green:`passed` / 59 :red:`failed`).
+84.4% passed tests (304 :green:`passed` / 56 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

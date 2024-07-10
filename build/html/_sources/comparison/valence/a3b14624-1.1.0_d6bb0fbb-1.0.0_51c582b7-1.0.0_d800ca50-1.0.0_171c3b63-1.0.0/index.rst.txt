@@ -19,11 +19,11 @@ This compares the models :ref:`w2v2-b <test-valence-a3b14624-1.1.0>` and :ref:`w
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - Overall Score
-      - 77.8% (378 :green:`passed` /  108 :red:`failed`)
-      - 79.4% (324 :green:`passed` /  84 :red:`failed`)
-      - 80.5% (360 :green:`passed` /  87 :red:`failed`)
-      - 77.6% (347 :green:`passed` /  100 :red:`failed`)
-      - 81.1% (344 :green:`passed` /  80 :red:`failed`)
+      - 79.2% (350 :green:`passed` /  92 :red:`failed`)
+      - 81.0% (295 :green:`passed` /  69 :red:`failed`)
+      - 80.9% (326 :green:`passed` /  77 :red:`failed`)
+      - 80.4% (324 :green:`passed` /  79 :red:`failed`)
+      - 83.7% (318 :green:`passed` /  62 :red:`failed`)
     * - :ref:`Correctness consistency <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_consistency>`
       - :red:`46.8%`
       - :red:`59.6%`
@@ -32,9 +32,9 @@ This compares the models :ref:`w2v2-b <test-valence-a3b14624-1.1.0>` and :ref:`w
       - :red:`68.1%`
     * - :ref:`Correctness distribution <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_distribution>`
       - :red:`33.3%`
-      - :red:`50.0%`
-      - 83.3%
-      - :red:`50.0%`
+      - :red:`33.3%`
+      - :red:`66.7%`
+      - :red:`33.3%`
       - :red:`33.3%`
     * - :ref:`Correctness regression <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_regression>`
       - :red:`0.0%`
@@ -43,17 +43,17 @@ This compares the models :ref:`w2v2-b <test-valence-a3b14624-1.1.0>` and :ref:`w
       - :red:`0.0%`
       - :red:`0.0%`
     * - :ref:`Correctness speaker average <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_speaker_average>`
-      - 83.3%
-      - 83.3%
       - :green:`100.0%`
-      - 83.3%
-      - :red:`66.7%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
     * - :ref:`Correctness speaker ranking <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_speaker_ranking>`
-      - :red:`25.0%`
-      - :red:`25.0%`
+      - :red:`0.0%`
+      - :red:`0.0%`
       - :red:`50.0%`
-      - :red:`12.5%`
-      - :red:`12.5%`
+      - :red:`0.0%`
+      - :red:`0.0%`
     * - :ref:`Fairness accent <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_accent>`
       - 98.7%
       - 96.8%
@@ -76,8 +76,8 @@ This compares the models :ref:`w2v2-b <test-valence-a3b14624-1.1.0>` and :ref:`w
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
-      - 81.0%
-      - 95.2%
+      - 86.7%
+      - 93.3%
     * - :ref:`Fairness sex <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_sex>`
       - :green:`100.0%`
       - :green:`100.0%`
@@ -85,17 +85,17 @@ This compares the models :ref:`w2v2-b <test-valence-a3b14624-1.1.0>` and :ref:`w
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Robustness background noise <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_background_noise>`
-      - :red:`36.1%`
-      - :red:`22.2%`
+      - :red:`29.2%`
+      - :red:`16.7%`
       - :red:`41.7%`
-      - :red:`33.3%`
-      - :red:`44.4%`
+      - :red:`37.5%`
+      - :red:`41.7%`
     * - :ref:`Robustness low quality phone <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_low_quality_phone>`
       - :red:`0.0%`
-      - 83.3%
-      - :red:`66.7%`
+      - 75.0%
       - :red:`50.0%`
-      - :red:`66.7%`
+      - 75.0%
+      - :green:`100.0%`
     * - :ref:`Robustness recording condition <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_recording_condition>`
       - :red:`0.0%`
       - :red:`0.0%`
@@ -117,9 +117,9 @@ This compares the models :ref:`w2v2-b <test-valence-a3b14624-1.1.0>` and :ref:`w
     * - :ref:`Robustness spectral tilt <comparison-valence-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_spectral_tilt>`
       - 75.0%
       - 75.0%
-      - 91.7%
+      - 87.5%
       - 75.0%
-      - :red:`66.7%`
+      - :red:`62.5%`
 
 
 .. toctree::

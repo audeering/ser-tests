@@ -6,7 +6,7 @@ random-categorical
 .. role:: red
 .. role:: green
 
-61.6% passed tests (433 :green:`passed` / 270 :red:`failed`).
+62.9% passed tests (387 :green:`passed` / 228 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="_static/math.css" type="text/css" />
@@ -322,7 +322,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2c39464
               </div>
             
           
@@ -465,8 +465,8 @@ we add a random model. For categorical emotion, the
 a uniform categorical distribution to generate the prediction.
 For dimensional emotion, the <strong>random-gaussian</strong> model
 randomly samples from a truncated Gaussian distribution
-with values between <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span> and <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span>,
-a mean value of <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn></mrow><annotation encoding="application/x-tex">0.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span></span></span></span></span>, and a standard deviation of <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>.</p>
+with values between <span class="math">\(0\)</span> and <span class="math">\(1\)</span>,
+a mean value of <span class="math">\(0.5\)</span>, and a standard deviation of <span class="math">\(\frac{1}{6}\)</span>.</p>
 </div>
 <div class="section" id="fairness-thresholds">
 <span id="method-tests-fairness-thresholds"></span><h2>Fairness Thresholds<a class="headerlink" href="#fairness-thresholds" title="Permalink to this heading">¶</a></h2>
@@ -487,7 +487,7 @@ For categories, we use the distribution of the (uniform)
 <strong>random-categorical</strong> model to simulate the predictions.
 For the simulation of categorical ground truth, we simulate both a
 uniform distribution as well as a sparse distribution with
-the class probabilities <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.05</mn><mo separator="true">,</mo><mn>0.05</mn><mo separator="true">,</mo><mn>0.3</mn><mo separator="true">,</mo><mn>0.6</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0.05, 0.05, 0.3, 0.6)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0.05</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.05</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0.6</span><span class="mclose">)</span></span></span></span></span>, and select the
+the class probabilities <span class="math">\((0.05, 0.05, 0.3, 0.6)\)</span>, and select the
 distribution that applies to the respective test.</p>
 <p>For certain test sets, the distribution of the ground truth for
 certain groups varies from the distribution of other groups.
@@ -501,12 +501,12 @@ in certain regression bins having very few samples,
 no longer matching the assumed Gaussian distribution.
 In these cases, for fairness metrics that involve bins,
 we skip bins with too few samples.
-We set the minimum number of samples <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mtext>bin</mtext></msub></mrow><annotation encoding="application/x-tex">n_{\text{bin}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">bin</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> to the expected
+We set the minimum number of samples <span class="math">\(n_{\text{bin}}\)</span> to the expected
 number of samples in the first bin for a Gaussian distribution
-with a mean of <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn></mrow><annotation encoding="application/x-tex">0.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span></span></span></span></span> and a standard deviation of <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>:</p>
-<p><span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mtext>bin</mtext></msub><mo>=</mo><mi mathvariant="double-struck">P</mi><mo stretchy="false">(</mo><mi>X</mi><mo>≤</mo><mn>0.25</mn><mo stretchy="false">)</mo><mo>⋅</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n_{\text{bin}} = \mathbb{P}(X\leq0.25) \cdot n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">bin</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">P</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.25</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span>,</p>
-<p>where <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span> is the total number of samples,
-and the random variable <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span></span> follows the aforementioned distribution.</p>
+with a mean of <span class="math">\(0.5\)</span> and a standard deviation of <span class="math">\(\frac{1}{6}\)</span>:</p>
+<p><span class="math">\(n_{\text{bin}} = \mathbb{P}(X\leq0.25) \cdot n\)</span>,</p>
+<p>where <span class="math">\(n\)</span> is the total number of samples,
+and the random variable <span class="math">\(X\)</span> follows the aforementioned distribution.</p>
 <p>We take the same approach for the tests with unlabelled test sets
 in the case that a model has very few predictions in a certain bin
 for the combined test set.</p>
@@ -572,41 +572,41 @@ for emotional categories:</p>
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"></th>
-<th class="head"><p>valence</p></th>
 <th class="head"><p>arousal</p></th>
 <th class="head"><p>dominance</p></th>
+<th class="head"><p>valence</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>anger</p></td>
+<td><p>high</p></td>
+<td><p>high</p></td>
 <td><p>low</p></td>
-<td><p>high</p></td>
-<td><p>high</p></td>
 </tr>
 <tr class="row-odd"><td><p>boredom</p></td>
-<td><p>neutral</p></td>
 <td><p>low</p></td>
 <td></td>
+<td><p>neutral</p></td>
 </tr>
 <tr class="row-even"><td><p>disgust</p></td>
+<td></td>
+<td></td>
 <td><p>low</p></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="row-odd"><td><p>fear</p></td>
-<td><p>low</p></td>
 <td><p>high</p></td>
+<td><p>low</p></td>
 <td><p>low</p></td>
 </tr>
 <tr class="row-even"><td><p>frustration</p></td>
+<td></td>
+<td></td>
 <td><p>low</p></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="row-odd"><td><p>happiness</p></td>
-<td><p>high</p></td>
 <td></td>
 <td><p>neutral</p></td>
+<td><p>high</p></td>
 </tr>
 <tr class="row-even"><td><p>neutral</p></td>
 <td><p>neutral</p></td>
@@ -619,9 +619,9 @@ for emotional categories:</p>
 <td><p>low</p></td>
 </tr>
 <tr class="row-even"><td><p>surprise</p></td>
-<td></td>
 <td><p>high</p></td>
 <td><p>neutral</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -728,9 +728,6 @@ a more similar distribution.
 We bin the distributions
 into 10 bins
 before calculating the distance.</p>
-<p>The <strong>Mean Value</strong> over all samples
-should not change
-compared to the gold standard.</p>
 <p>The test <strong>Relative Difference Per Class</strong>
 checks that the number of samples
 per class is comparable
@@ -755,9 +752,6 @@ in the test set.</p>
 <tr class="row-even"><td><p>Jensen Shannon Distance</p></td>
 <td><p>0.2</p></td>
 </tr>
-<tr class="row-odd"><td><p>Mean Value</p></td>
-<td><p>0.03</p></td>
-</tr>
 </tbody>
 </table>
 <table class="docutils align-default" id="id21">
@@ -775,9 +769,6 @@ in the test set.</p>
 <tr class="row-even"><td><p>Jensen Shannon Distance</p></td>
 <td><p>0.2</p></td>
 </tr>
-<tr class="row-odd"><td><p>Mean Value</p></td>
-<td><p>0.03</p></td>
-</tr>
 </tbody>
 </table>
 <table class="docutils align-default" id="id22">
@@ -794,9 +785,6 @@ in the test set.</p>
 <tbody>
 <tr class="row-even"><td><p>Jensen Shannon Distance</p></td>
 <td><p>0.2</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Value</p></td>
-<td><p>0.03</p></td>
 </tr>
 </tbody>
 </table>
@@ -908,23 +896,13 @@ for regression, and with at least 8 samples per class
 for classification.</p>
 <p>The test
 <strong>Mean Absolute Error</strong>
-measures the absolute error per speaker
-whereas the test
-<strong>Mean Directional Error</strong>
-measures if the overall average
-has a bias towards a higher
-or lower value.</p>
-<p>Analogously, for the classification task,
+measures the absolute error per speaker.</p>
+<p>For the classification task,
 the test
 <strong>Class Proportion Mean Absolute Error</strong>
 measures the absolute error in the
 predicted proportion of each class
-per speaker
-whereas the test
-<strong>Class Proportion Mean Directional Error</strong>
-measures if the predicted class proportions
-have a bias towards a higher
-or lower value.</p>
+per speaker.</p>
 <table class="docutils align-default" id="id27">
 <caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id27" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -939,9 +917,6 @@ or lower value.</p>
 <tbody>
 <tr class="row-even"><td><p>Mean Absolute Error</p></td>
 <td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error</p></td>
-<td><p>0.05</p></td>
 </tr>
 </tbody>
 </table>
@@ -960,9 +935,6 @@ or lower value.</p>
 <tr class="row-even"><td><p>Mean Absolute Error</p></td>
 <td><p>0.1</p></td>
 </tr>
-<tr class="row-odd"><td><p>Mean Directional Error</p></td>
-<td><p>0.05</p></td>
-</tr>
 </tbody>
 </table>
 <table class="docutils align-default" id="id29">
@@ -979,9 +951,6 @@ or lower value.</p>
 <tbody>
 <tr class="row-even"><td><p>Mean Absolute Error</p></td>
 <td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error</p></td>
-<td><p>0.05</p></td>
 </tr>
 </tbody>
 </table>
@@ -1000,9 +969,6 @@ or lower value.</p>
 <tr class="row-even"><td><p>Class Proportion Mean Absolute Error</p></td>
 <td><p>0.1</p></td>
 </tr>
-<tr class="row-odd"><td><p>Class Proportion Mean Directional Error</p></td>
-<td><p>0.05</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -1011,11 +977,7 @@ or lower value.</p>
 <p>For some applications,
 it may be of interest to create a ranking
 of speakers in order to spot outliers on
-either side of the ranking.
-Therefore,
-it is important that the top and bottom
-speaker rankings meaningfully represent
-the true top and bottom speaker rankings.</p>
+either side of the ranking.</p>
 <p>The test uses the raw values per sample
 to calculate the average value for each speaker for regression.
 For classification, the test uses the proportions
@@ -1034,24 +996,6 @@ we use
 <a class="reference external" href="https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman’s rank correlation coefficient</a>
 (<strong>Spearmans Rho</strong>),
 which ranges from 0 to 1.</p>
-<p>The tests
-<strong>Precision Bottom 25%</strong>
-and <strong>Precision Top 25%</strong>
-focus on getting the upper and lower quantiles
-of the ranking correct.
-They show the precision
-for having the correct speakers
-in the respective quantile.</p>
-<p>The test
-<strong>Top Bottom Confusions</strong>
-checks how many confusions we have
-between both quantiles.
-The value ranges from 0 to 1,
-whereas a value of 0.2
-would indicate
-that 20% of speakers
-are wrongly placed in one
-of the two quantiles.</p>
 <table class="docutils align-default" id="id31">
 <caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id31" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -1064,17 +1008,8 @@ of the two quantiles.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Precision Bottom 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Top 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
 <tr class="row-even"><td><p>Spearmans Rho</p></td>
 <td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Top Bottom Confusions</p></td>
-<td><p>0.15</p></td>
 </tr>
 </tbody>
 </table>
@@ -1090,17 +1025,8 @@ of the two quantiles.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Precision Bottom 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Top 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
 <tr class="row-even"><td><p>Spearmans Rho</p></td>
 <td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Top Bottom Confusions</p></td>
-<td><p>0.15</p></td>
 </tr>
 </tbody>
 </table>
@@ -1116,17 +1042,8 @@ of the two quantiles.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Precision Bottom 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Top 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
 <tr class="row-even"><td><p>Spearmans Rho</p></td>
 <td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Top Bottom Confusions</p></td>
-<td><p>0.15</p></td>
 </tr>
 </tbody>
 </table>
@@ -1142,17 +1059,8 @@ of the two quantiles.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Precision Bottom 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Top 25%</p></td>
-<td><p>0.7</p></td>
-</tr>
 <tr class="row-even"><td><p>Spearmans Rho</p></td>
 <td><p>0.7</p></td>
-</tr>
-<tr class="row-odd"><td><p>Top Bottom Confusions</p></td>
-<td><p>0.15</p></td>
 </tr>
 </tbody>
 </table>
@@ -1525,10 +1433,10 @@ test.
 Therefore, we compare the shift in
 prediction when filtering the samples
 by a specific sentiment. We
-denote all samples with sentiment <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span></span> and
-language <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span></span></span></span></span> as <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub></mrow><annotation encoding="application/x-tex">X_{l, s}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></span>,
-and all combined samples of language <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span></span></span></span></span>
-as <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>l</mi></msub></mrow><annotation encoding="application/x-tex">X_l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>.
+denote all samples with sentiment <span class="math">\(s\)</span> and
+language <span class="math">\(l\)</span> as <span class="math">\(X_{l, s}\)</span>,
+and all combined samples of language <span class="math">\(l\)</span>
+as <span class="math">\(X_l\)</span>.
 We compute the
 difference between the
 shift in prediction
@@ -1536,10 +1444,11 @@ for a certain sentiment
 and language
 and the average of the shifts
 in prediction for that sentiment
-for all languages <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><mi>i</mi></msub><mo separator="true">,</mo><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">l_i, 1 \leq i \leq L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0197em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7955em;vertical-align:-0.136em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span></span></p>
+for all languages <span class="math">\(l_i, 1 \leq i \leq L\)</span></p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>shift</mtext><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>−</mo><mfrac><mn>1</mn><mi>L</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>L</mi></munderover><mtext>shift</mtext><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><msub><mi>l</mi><mi>i</mi></msub><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\text{shift}(X_{l, s})
-- \frac{1}{L}\sum_{i=1}^{L} \text{shift}(X_{l_i, s}).</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord text"><span class="mord">shift</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:3.106em;vertical-align:-1.2777em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">L</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">L</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord text"><span class="mord">shift</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0197em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord">.</span></span></span></span></span></div><p>The <strong>Mean Shift Difference Positive Sentiment</strong>,
+\[\text{shift}(X_{l, s})
+- \frac{1}{L}\sum_{i=1}^{L} \text{shift}(X_{l_i, s}).\]</div>
+<p>The <strong>Mean Shift Difference Positive Sentiment</strong>,
 <strong>Mean Shift Difference Negative Sentiment</strong>, and
 <strong>Mean Shift Difference Neutral Sentiment</strong> tests
 compute the difference between
@@ -1549,9 +1458,10 @@ They ensure that its absolute value
 is below a given threshold.
 The shift function of the tests is given by</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mtext>shift</mtext><mtext>mean</mtext></msub><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mtext>mean</mtext><mo stretchy="false">(</mo><mtext>prediction</mtext><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>−</mo><mtext>mean</mtext><mo stretchy="false">(</mo><mtext>prediction</mtext><mo stretchy="false">(</mo><msub><mi>X</mi><mi>l</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\text{shift}_{\text{mean}}(X_{l, s}) =
+\[\text{shift}_{\text{mean}}(X_{l, s}) =
 \text{mean}(\text{prediction}(X_{l, s})) -
-\text{mean}(\text{prediction}(X_l)).</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord text"><span class="mord">shift</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">mean</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord text"><span class="mord">mean</span></span><span class="mopen">(</span><span class="mord text"><span class="mord">prediction</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">mean</span></span><span class="mopen">(</span><span class="mord text"><span class="mord">prediction</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">))</span><span class="mord">.</span></span></span></span></span></div><p>For the tests <strong>Bin Proportion Shift Difference Positive Sentiment</strong>,
+\text{mean}(\text{prediction}(X_l)).\]</div>
+<p>For the tests <strong>Bin Proportion Shift Difference Positive Sentiment</strong>,
 <strong>Bin Proportion Shift Difference Negative Sentiment</strong>, and
 <strong>Bin Proportion Shift Difference Neutral Sentiment</strong>
 we follow <span id="id7">Agarwal <em>et al.</em> [<a class="reference internal" href="bibliography.html#id2" title="Alekh Agarwal, Miroslav Dudík, and Zhiwei Steven Wu. Fair regression: quantitative definitions and reduction-based algorithms. In International Conference on Machine Learning, 120–129. PMLR, 2019.">ADudikW19</a>]</span> and
@@ -1565,18 +1475,19 @@ They ensure that its absolute value
 is below a given threshold.
 The shift function of the tests is given by</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><msub><mtext>shift</mtext><mi>b</mi></msub><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mfrac><mn>1</mn><mrow><mi mathvariant="normal">∣</mi><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><mi>y</mi><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><mi>y</mi><mo>=</mo><mi>b</mi><mtext>  </mtext><mtext>and</mtext><mtext>  </mtext><mi>y</mi><mo>∈</mo><msub><mtext>prediction</mtext><mtext>bin</mtext></msub><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi><mo>−</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mfrac><mn>1</mn><mrow><mi mathvariant="normal">∣</mi><msub><mi>X</mi><mi>l</mi></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><mi>y</mi><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><mi>y</mi><mo>=</mo><mi>b</mi><mtext>  </mtext><mtext>and</mtext><mtext>  </mtext><mi>y</mi><mo>∈</mo><msub><mtext>prediction</mtext><mtext>bin</mtext></msub><mo stretchy="false">(</mo><msub><mi>X</mi><mi>l</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi><mo separator="true">,</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
+\[\begin{align*}
     \text{shift}_{b}(X_{l,s}) =
-    &amp; \frac{1}{| X_{l,s} |} |
+    & \frac{1}{| X_{l,s} |} |
         \{ y \; | \; y = b \; \text{and} \; y \in \text{prediction}_{\text{bin}}(X_{l, s}) \}
     | - \\
-    &amp; \frac{1}{ | X_l |} |
+    & \frac{1}{ | X_l |} |
         \{ y \; | \; y = b \; \text{and} \; y \in \text{prediction}_{\text{bin}}(X_{l}) \}
     |,
 \end{align*}
 
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:5.151em;vertical-align:-2.3255em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.8255em;"><span style="top:-4.8255em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"><span class="mord"><span class="mord text"><span class="mord">shift</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span><span style="top:-2.2319em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.3255em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.8255em;"><span style="top:-4.8255em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"><span class="mord"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9721em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">∣</span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">and</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">bin</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)}</span><span class="mord">∣</span><span class="mord">−</span></span></span><span style="top:-2.2319em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"><span class="mord"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">∣</span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">and</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">bin</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)}</span><span class="mord">∣</span><span class="mpunct">,</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.3255em;"><span></span></span></span></span></span></span></span></span></span></span></span></div><p>where <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span></span> is the tested bin
-and <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>prediction</mtext><mtext>bin</mtext></msub></mrow><annotation encoding="application/x-tex">\text{prediction}_{\text{bin}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9386em;vertical-align:-0.2441em;"></span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">bin</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span></span></span></span></span> is a function
+\]</div>
+<p>where <span class="math">\(b\)</span> is the tested bin
+and <span class="math">\(\text{prediction}_{\text{bin}}\)</span> is a function
 that applies the model to a given set of samples
 and assigns a bin label to each of the model outputs.</p>
 <p>The tests <strong>Class Proportion Shift Difference Positive Sentiment</strong>,
@@ -1589,17 +1500,18 @@ They ensure that its absolute value
 is below a given threshold.
 The shift function of the tests is given by</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><msub><mtext>shift</mtext><mi>c</mi></msub><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mfrac><mn>1</mn><mrow><mi mathvariant="normal">∣</mi><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><mi>y</mi><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><mi>y</mi><mo>=</mo><mi>c</mi><mtext>  </mtext><mtext>and</mtext><mtext>  </mtext><mi>y</mi><mo>∈</mo><mtext>prediction</mtext><mo stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>l</mi><mo separator="true">,</mo><mi>s</mi></mrow></msub><mo stretchy="false">)</mo><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi><mo>−</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mfrac><mn>1</mn><mrow><mi mathvariant="normal">∣</mi><msub><mi>X</mi><mi>l</mi></msub><mi mathvariant="normal">∣</mi></mrow></mfrac><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><mi>y</mi><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><mi>y</mi><mo>=</mo><mi>c</mi><mtext>  </mtext><mtext>and</mtext><mtext>  </mtext><mi>y</mi><mo>∈</mo><mtext>prediction</mtext><mo stretchy="false">(</mo><msub><mi>X</mi><mi>l</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi><mo separator="true">,</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
+\[\begin{align*}
     \text{shift}_{c}(X_{l,s}) =
-    &amp; \frac{1}{| X_{l,s} |} |
+    & \frac{1}{| X_{l,s} |} |
         \{ y \; | \; y = c \; \text{and} \; y \in \text{prediction}(X_{l, s}) \}
     | - \\
-    &amp; \frac{1}{ | X_l |} |
+    & \frac{1}{ | X_l |} |
         \{ y \; | \; y = c \; \text{and} \; y \in \text{prediction}(X_{l}) \}
     |,
 \end{align*}
 
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:5.151em;vertical-align:-2.3255em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.8255em;"><span style="top:-4.8255em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"><span class="mord"><span class="mord text"><span class="mord">shift</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span><span style="top:-2.2319em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.3255em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.8255em;"><span style="top:-4.8255em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"><span class="mord"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9721em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">∣</span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">and</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">prediction</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose">)}</span><span class="mord">∣</span><span class="mord">−</span></span></span><span style="top:-2.2319em;"><span class="pstrut" style="height:3.3214em;"></span><span class="mord"><span class="mord"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">∣</span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">and</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">prediction</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)}</span><span class="mord">∣</span><span class="mpunct">,</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.3255em;"><span></span></span></span></span></span></span></span></span></span></span></span></div><p>where <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span></span> is the tested class label.</p>
+\]</div>
+<p>where <span class="math">\(c\)</span> is the tested class label.</p>
 <p>We base the thresholds on simulations
 with a random-categorical and a
 random-gaussian model for
@@ -1798,28 +1710,7 @@ in concordance correlation coefficient
 between the respective pitch group and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Mean Absolute Error High Pitch</strong>,
-<strong>Mean Absolute Error Low Pitch</strong>, and
-<strong>Mean Absolute Error Medium Pitch</strong> tests
-check that the difference
-in mean absolute error
-between the respective pitch group and
-the combined test set
-is below the given threshold.</p>
-<p>The <strong>Mean Directional Error High Pitch</strong>,
-<strong>Mean Directional Error Low Pitch</strong>, and
-<strong>Mean Directional Error Medium Pitch</strong> tests
-ensure that the difference
-in mean directional error
-between the respective pitch group and
-the combined test set
-is below the given threshold.
-The mean directional error over all segments <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span></span>
-is given by</p>
-<div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mi>S</mi></mfrac><munderover><mo>∑</mo><mrow><mi>s</mi><mo>=</mo><mn>1</mn></mrow><mi>S</mi></munderover><mtext>prediction</mtext><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>−</mo><mtext>truth</mtext><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{1}{S} \sum_{s=1}^S
-\text{prediction}(\text{segment}_s)
-- \text{truth}(\text{segment}_s)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.0954em;vertical-align:-1.2671em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283em;"><span style="top:-1.8829em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">s</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2671em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord text"><span class="mord">prediction</span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">truth</span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></div><p>For the tests <strong>Precision Per Bin High Pitch</strong>,
+<p>For the tests <strong>Precision Per Bin High Pitch</strong>,
 <strong>Precision Per Bin Low Pitch</strong>, and
 <strong>Precision Per Bin Medium Pitch</strong>
 we
@@ -1865,14 +1756,6 @@ in unweighted average recall
 between the respective pitch group and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Unweighted Average Precision High Pitch</strong>,
-<strong>Unweighted Average Precision Low Pitch</strong>, and
-<strong>Unweighted Average Precision Medium Pitch</strong> tests
-ensure that the difference
-in unweighted average precision
-between the respective pitch group and
-the combined test set
-is below the given threshold.</p>
 <p>We base the thresholds
 on simulations
 with a random-categorical and a
@@ -1892,240 +1775,165 @@ random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id56" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id57">
-<img alt="_images/max_mae.png" src="_images/max_mae.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean absolute error
+<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per bin
 for a random gaussian model on a
 random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id57" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id58">
-<img alt="_images/max_mde.png" src="_images/max_mde.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean directional error
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per class
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id58" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id59">
-<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per bin
+<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in recall per bin
 for a random gaussian model on a
 random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id59" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id60">
-<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
+<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
 <p class="caption"><span class="caption-text">The maximum difference in precision per class
 for a random uniform categorical model on a
 random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id60" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id61">
-<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in recall per bin
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
+<p class="caption"><span class="caption-text">The maximum difference in UAR
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id61" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure align-default" id="id62">
-<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id62" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id63">
-<img alt="_images/max_truthsparse_preduniform_precision.png" src="_images/max_truthsparse_preduniform_precision.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id63" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id64">
-<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id64" title="Permalink to this image">¶</a></p>
-</div>
+<table class="docutils align-default" id="id62">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id62" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Test</p></th>
+<th class="head"><p>Threshold</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id63">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id63" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Test</p></th>
+<th class="head"><p>Threshold</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id64">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id64" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Test</p></th>
+<th class="head"><p>Threshold</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+</tbody>
+</table>
 <table class="docutils align-default" id="id65">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id65" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Test</p></th>
-<th class="head"><p>Threshold</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error High Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Absolute Error Low Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error Medium Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error High Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error Low Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error Medium Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default" id="id66">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id66" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Test</p></th>
-<th class="head"><p>Threshold</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error High Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Absolute Error Low Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error Medium Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error High Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error Low Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error Medium Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default" id="id67">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id67" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Test</p></th>
-<th class="head"><p>Threshold</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error High Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Absolute Error Low Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error Medium Pitch</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error High Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error Low Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error Medium Pitch</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default" id="id68">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id68" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id65" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2154,22 +1962,13 @@ simulations.</span><a class="headerlink" href="#id64" title="Permalink to this i
 <tr class="row-odd"><td><p>Recall Per Class Medium Pitch</p></td>
 <td><p>0.225</p></td>
 </tr>
-<tr class="row-even"><td><p>Unweighted Average Precision High Pitch</p></td>
-<td><p>0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Unweighted Average Precision Low Pitch</p></td>
-<td><p>0.05</p></td>
-</tr>
-<tr class="row-even"><td><p>Unweighted Average Precision Medium Pitch</p></td>
-<td><p>0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Unweighted Average Recall High Pitch</p></td>
+<tr class="row-even"><td><p>Unweighted Average Recall High Pitch</p></td>
 <td><p>0.075</p></td>
 </tr>
-<tr class="row-even"><td><p>Unweighted Average Recall Low Pitch</p></td>
+<tr class="row-odd"><td><p>Unweighted Average Recall Low Pitch</p></td>
 <td><p>0.075</p></td>
 </tr>
-<tr class="row-odd"><td><p>Unweighted Average Recall Medium Pitch</p></td>
+<tr class="row-even"><td><p>Unweighted Average Recall Medium Pitch</p></td>
 <td><p>0.075</p></td>
 </tr>
 </tbody>
@@ -2204,26 +2003,7 @@ in concordance correlation coefficient
 between the respective sex and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Mean Absolute Error Female</strong> and
-<strong>Mean Absolute Error Male</strong> tests
-check that the difference
-in mean absolute error
-between the respective sex and
-the combined test set
-is below the given threshold.</p>
-<p>The <strong>Mean Directional Error Female</strong> and
-<strong>Mean Directional Error Male</strong> tests
-ensure that the difference
-in mean directional error
-between the respective sex and
-the combined test set
-is below the given threshold.
-The mean directional error over all segments <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span></span>
-is given by</p>
-<div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mi>S</mi></mfrac><munderover><mo>∑</mo><mrow><mi>s</mi><mo>=</mo><mn>1</mn></mrow><mi>S</mi></munderover><mtext>prediction</mtext><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>−</mo><mtext>truth</mtext><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{1}{S} \sum_{s=1}^S
-\text{prediction}(\text{segment}_s)
-- \text{truth}(\text{segment}_s)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.0954em;vertical-align:-1.2671em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283em;"><span style="top:-1.8829em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">s</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2671em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord text"><span class="mord">prediction</span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">truth</span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></div><p>For the tests <strong>Precision Per Bin Female</strong> and
+<p>For the tests <strong>Precision Per Bin Female</strong> and
 <strong>Precision Per Bin Male</strong>
 we
 discretize the regression model outputs
@@ -2264,13 +2044,6 @@ in unweighted average recall
 between the respective sex and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Unweighted Average Precision Female</strong> and
-<strong>Unweighted Average Precision Male</strong> tests
-ensure that the difference
-in unweighted average precision
-between the respective sex and
-the combined test set
-is below the given threshold.</p>
 <p>We base the thresholds
 on simulations
 with a random-categorical and a
@@ -2282,71 +2055,50 @@ For the Precision Per Bin and Recall Per Bin tests
 we require at least 67 samples per bin
 in the ground truth of the combined dataset,
 or we skip that bin.</p>
-<div class="figure align-default" id="id69">
+<div class="figure align-default" id="id66">
 <img alt="_images/max_ccc.png" src="_images/max_ccc.png" />
 <p class="caption"><span class="caption-text">The maximum difference in CCC
+for a random gaussian model on a
+random gaussian ground truth from 1000
+simulations.</span><a class="headerlink" href="#id66" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id67">
+<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per bin
+for a random gaussian model on a
+random gaussian ground truth from 1000
+simulations.</span><a class="headerlink" href="#id67" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id68">
+<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per class
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
+simulations.</span><a class="headerlink" href="#id68" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id69">
+<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in recall per bin
 for a random gaussian model on a
 random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id69" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id70">
-<img alt="_images/max_mae.png" src="_images/max_mae.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean absolute error
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
+<p class="caption"><span class="caption-text">The maximum difference in recall per class
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id70" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id71">
-<img alt="_images/max_mde.png" src="_images/max_mde.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean directional error
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
+<p class="caption"><span class="caption-text">The maximum difference in UAR
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id71" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure align-default" id="id72">
-<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per bin
-for a random gaussian model on a
-random gaussian ground truth from 1000
-simulations.</span><a class="headerlink" href="#id72" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id73">
-<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id73" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id74">
-<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in recall per bin
-for a random gaussian model on a
-random gaussian ground truth from 1000
-simulations.</span><a class="headerlink" href="#id74" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id75">
-<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id75" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id76">
-<img alt="_images/max_truthsparse_preduniform_precision.png" src="_images/max_truthsparse_preduniform_precision.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id76" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id77">
-<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id77" title="Permalink to this image">¶</a></p>
-</div>
-<table class="docutils align-default" id="id78">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id78" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id72">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id72" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2363,18 +2115,6 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 <tr class="row-odd"><td><p>Concordance Correlation Coeff Male</p></td>
 <td><p>0.075</p></td>
 </tr>
-<tr class="row-even"><td><p>Mean Absolute Error Female</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error Male</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error Female</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error Male</p></td>
-<td><p>0.04</p></td>
-</tr>
 <tr class="row-even"><td><p>Precision Per Bin Female</p></td>
 <td><p>0.1</p></td>
 </tr>
@@ -2389,8 +2129,8 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id79">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id79" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id73">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id73" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2407,18 +2147,6 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 <tr class="row-odd"><td><p>Concordance Correlation Coeff Male</p></td>
 <td><p>0.075</p></td>
 </tr>
-<tr class="row-even"><td><p>Mean Absolute Error Female</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error Male</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error Female</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error Male</p></td>
-<td><p>0.04</p></td>
-</tr>
 <tr class="row-even"><td><p>Precision Per Bin Female</p></td>
 <td><p>0.1</p></td>
 </tr>
@@ -2433,8 +2161,8 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id80">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id80" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id74">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id74" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2451,18 +2179,6 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 <tr class="row-odd"><td><p>Concordance Correlation Coeff Male</p></td>
 <td><p>0.075</p></td>
 </tr>
-<tr class="row-even"><td><p>Mean Absolute Error Female</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Absolute Error Male</p></td>
-<td><p>0.02</p></td>
-</tr>
-<tr class="row-even"><td><p>Mean Directional Error Female</p></td>
-<td><p>0.04</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mean Directional Error Male</p></td>
-<td><p>0.04</p></td>
-</tr>
 <tr class="row-even"><td><p>Precision Per Bin Female</p></td>
 <td><p>0.1</p></td>
 </tr>
@@ -2477,8 +2193,8 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id81">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id81" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id75">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id75" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2500,12 +2216,6 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 </tr>
 <tr class="row-odd"><td><p>Recall Per Class Male</p></td>
 <td><p>0.175</p></td>
-</tr>
-<tr class="row-even"><td><p>Unweighted Average Precision Female</p></td>
-<td><p>0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Unweighted Average Precision Male</p></td>
-<td><p>0.05</p></td>
 </tr>
 <tr class="row-even"><td><p>Unweighted Average Recall Female</p></td>
 <td><p>0.075</p></td>
@@ -2619,28 +2329,6 @@ that the Unweighted Average Recall (UAR)
 does not decrease
 too much when adding
 the given background noise.</p>
-<p>The <strong>Change UAP Babble Noise</strong>,
-<strong>Change UAP Coughing</strong>,
-<strong>Change UAP Environmental Noise</strong>,
-<strong>Change UAP Music</strong>,
-<strong>Change UAP Sneezing</strong>,
-and <strong>Change UAP White Noise</strong>
-tests ensure
-that the Unweighted Average Precision (UAP)
-does not decrease
-too much when adding
-the given background noise.</p>
-<p>The <strong>Change Average Value Babble Noise</strong>,
-<strong>Change Average Value Coughing</strong>,
-<strong>Change Average Value Environmental Noise</strong>,
-<strong>Change Average Value Music</strong>,
-<strong>Change Average Value Sneezing</strong>,
-and <strong>Change Average Value White Noise</strong>
-tests ensure
-that the average value
-is not affected
-too much when adding
-the given background noise.</p>
 <p>The <strong>Percentage Unchanged Predictions Babble Noise</strong>,
 <strong>Percentage Unchanged Predictions Coughing</strong>,
 <strong>Percentage Unchanged Predictions Environmental Noise</strong>,
@@ -2654,8 +2342,8 @@ when adding the given background noise.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id82">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id82" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id76">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id76" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2666,24 +2354,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Babble Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Coughing</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Average Value Environmental Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Music</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Average Value Sneezing</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value White Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Ccc Babble Noise</p></td>
 <td><p>-0.05</p></td>
 </tr>
@@ -2722,8 +2392,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id83">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id83" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id77">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id77" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2734,24 +2404,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Babble Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Coughing</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Average Value Environmental Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Music</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Average Value Sneezing</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value White Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Ccc Babble Noise</p></td>
 <td><p>-0.05</p></td>
 </tr>
@@ -2790,8 +2442,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id84">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id84" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id78">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id78" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2802,24 +2454,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Babble Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Coughing</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Average Value Environmental Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Music</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Average Value Sneezing</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value White Noise</p></td>
-<td><p>0.03</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Ccc Babble Noise</p></td>
 <td><p>-0.05</p></td>
 </tr>
@@ -2858,8 +2492,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id85">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id85" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id79">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id79" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2870,24 +2504,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Uap Babble Noise</p></td>
-<td><p>-0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Uap Coughing</p></td>
-<td><p>-0.05</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Uap Environmental Noise</p></td>
-<td><p>-0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Uap Music</p></td>
-<td><p>-0.05</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Uap Sneezing</p></td>
-<td><p>-0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Uap White Noise</p></td>
-<td><p>-0.05</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Uar Babble Noise</p></td>
 <td><p>-0.05</p></td>
 </tr>
@@ -2979,12 +2595,7 @@ if possible without clipping.</p>
 </div>
 <p>We use the same definitions as in
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
-to compute the difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span></span> in prediction.</p>
-<p>The <strong>Change Average Value Low Quality Phone</strong> test
-ensures that the absolute change in average value
-is below the given threshold
-when applying
-the low quality phone filter.</p>
+to compute the difference <span class="math">\(\delta\)</span> in prediction.</p>
 <p>The <strong>Change CCC Low Quality Phone</strong> test
 ensures that the Concordance Correlation Coefficient (CCC)
 does not decrease further
@@ -2997,12 +2608,6 @@ that the Unweighted Average Recall (UAR)
 does not decrease
 too much when applying
 the low quality phone filter.</p>
-<p>The <strong>Change UAP Low Quality Phone</strong>
-tests ensure
-that the Unweighted Average Precision (UAP)
-does not decrease
-too much when applying
-the low quality phone filter.</p>
 <p>The <strong>Percentage Unchanged Predictions Low Quality Phone</strong>
 tests check
 that the percentage of samples with
@@ -3012,8 +2617,8 @@ the low quality phone filter.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id86">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id86" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id80">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id80" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3024,19 +2629,16 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Low Quality Phone</p></td>
-<td><p>0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Ccc Low Quality Phone</p></td>
+<tr class="row-even"><td><p>Change Ccc Low Quality Phone</p></td>
 <td><p>-0.05</p></td>
 </tr>
-<tr class="row-even"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
+<tr class="row-odd"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
 <td><p>0.5</p></td>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id87">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id87" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id81">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id81" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3047,19 +2649,16 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Low Quality Phone</p></td>
-<td><p>0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Ccc Low Quality Phone</p></td>
+<tr class="row-even"><td><p>Change Ccc Low Quality Phone</p></td>
 <td><p>-0.05</p></td>
 </tr>
-<tr class="row-even"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
+<tr class="row-odd"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
 <td><p>0.5</p></td>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id88">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id88" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id82">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id82" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3070,19 +2669,16 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Low Quality Phone</p></td>
-<td><p>0.05</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Ccc Low Quality Phone</p></td>
+<tr class="row-even"><td><p>Change Ccc Low Quality Phone</p></td>
 <td><p>-0.05</p></td>
 </tr>
-<tr class="row-even"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
+<tr class="row-odd"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
 <td><p>0.5</p></td>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id89">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id89" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id83">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id83" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3093,13 +2689,10 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Uap Low Quality Phone</p></td>
+<tr class="row-even"><td><p>Change Uar Low Quality Phone</p></td>
 <td><p>-0.05</p></td>
 </tr>
-<tr class="row-odd"><td><p>Change Uar Low Quality Phone</p></td>
-<td><p>-0.05</p></td>
-</tr>
-<tr class="row-even"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
+<tr class="row-odd"><td><p>Percentage Unchanged Predictions Low Quality Phone</p></td>
 <td><p>0.5</p></td>
 </tr>
 </tbody>
@@ -3136,8 +2729,8 @@ is high enough.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id90">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id90" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id84">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id84" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3153,8 +2746,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id91">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id91" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id85">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id85" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3170,8 +2763,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id92">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id92" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id86">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id86" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3187,8 +2780,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id93">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id93" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id87">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id87" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3266,8 +2859,8 @@ unchanged predictions is high enough.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id94">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id94" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id88">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id88" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3286,8 +2879,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id95">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id95" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id89">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id89" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3306,8 +2899,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id96">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id96" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id90">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id90" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3326,8 +2919,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id97">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id97" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id91">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id91" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3354,49 +2947,52 @@ if we apply very small changes to the input signals.
 To test this we apply small changes
 to the input signal and compare the predictions.
 For regression, we calculate
-the difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mtext>reg</mtext></msub></mrow><annotation encoding="application/x-tex">\delta_\text{reg}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></span>
+the difference <span class="math">\(\delta_\text{reg}\)</span>
 in prediction</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>δ</mi><mtext>reg</mtext></msub><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∥</mi><msub><mtext>prediction</mtext><mtext>reg</mtext></msub><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>−</mo><msub><mtext>prediction</mtext><mtext>reg</mtext></msub><mo stretchy="false">(</mo><mtext>augment</mtext><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mi mathvariant="normal">∥</mi></mrow><annotation encoding="application/x-tex">\delta_\text{reg}(\text{segment}_s) =
+\[\delta_\text{reg}(\text{segment}_s) =
   \|
     \text{prediction}_\text{reg}(\text{segment}_s)
     - \text{prediction}_\text{reg}(\text{augment}(\text{segment}_s))
-  \|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1302em;vertical-align:-0.3802em;"></span><span class="mord">∥</span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3802em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1302em;vertical-align:-0.3802em;"></span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3802em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord text"><span class="mord">augment</span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">))</span><span class="mord">∥</span></span></span></span></span></div><p>for each segment <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>segment</mtext><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">\text{segment}_s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8592em;vertical-align:-0.2441em;"></span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span></span></span></span></span>,
-with <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>prediction</mtext><mtext>reg</mtext></msub><mo stretchy="false">(</mo><mo>⋅</mo><mo stretchy="false">)</mo><mo>∈</mo><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{prediction}_\text{reg}(\cdot) \in [0, 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1302em;vertical-align:-0.3802em;"></span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3802em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">⋅</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span></span>.
+  \|\]</div>
+<p>for each segment <span class="math">\(\text{segment}_s\)</span>,
+with <span class="math">\(\text{prediction}_\text{reg}(\cdot) \in [0, 1]\)</span>.
 The percentage of unchanged predictions
 for regression is then
 given by the percentage
-of all segments <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span></span>
-with <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mtext>reg</mtext></msub><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta_\text{reg} &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span>:</p>
+of all segments <span class="math">\(S\)</span>
+with <span class="math">\(\delta_\text{reg} &lt; 0.05\)</span>:</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mtext>percentage_unchanged</mtext><mtext>reg</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><msub><mi>δ</mi><mtext>reg</mtext></msub><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>&lt;</mo><mn>0.05</mn><mtext>  </mtext><mtext>and</mtext><mtext>  </mtext><mn>1</mn><mo>≤</mo><mi>s</mi><mo>≤</mo><mi>S</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><mn>1</mn><mo>≤</mo><mi>s</mi><mo>≤</mo><mi>S</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\text{percentage\_unchanged}_\text{reg} =
+\[\text{percentage\_unchanged}_\text{reg} =
     \frac{
       |
-        \{\text{segment}_s \; | \; \delta_\text{reg}(\text{segment}_s) &lt; 0.05 \;
+        \{\text{segment}_s \; | \; \delta_\text{reg}(\text{segment}_s) < 0.05 \;
           \text{and} \; 1 \leq s \leq S\}
       |
     }{
       | \{\text{segment}_s \; | \; 1 \leq s \leq S\} |
-    }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1902em;vertical-align:-0.4958em;"></span><span class="mord"><span class="mord text"><span class="mord">percentage_unchanged</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.0583em;"><span style="top:-2.3403em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4958em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mopen">{</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mopen">{</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">reg</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0.05</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">and</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span><span class="mord">∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div><p>For classification
-the difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mtext>cls</mtext></msub></mrow><annotation encoding="application/x-tex">\delta_\text{cls}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
+    }\]</div>
+<p>For classification
+the difference <span class="math">\(\delta_\text{cls}\)</span>
 in prediction is given by</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>δ</mi><mtext>cls</mtext></msub><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∥</mi><msub><mtext>prediction</mtext><mtext>cls</mtext></msub><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>−</mo><msub><mtext>prediction</mtext><mtext>cls</mtext></msub><mo stretchy="false">(</mo><mtext>augment</mtext><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo><msub><mi mathvariant="normal">∥</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\delta_\text{cls}(\text{segment}_s) =
+\[\delta_\text{cls}(\text{segment}_s) =
   \|
     \text{prediction}_\text{cls}(\text{segment}_s)
     - \text{prediction}_\text{cls}(\text{augment}(\text{segment}_s))
-  \|_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∥</span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord text"><span class="mord">augment</span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">))</span><span class="mord"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></div><p>for each segment <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>segment</mtext><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">\text{segment}_s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8592em;vertical-align:-0.2441em;"></span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span></span></span></span></span>,
-with <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>prediction</mtext><mtext>cls</mtext></msub><mo stretchy="false">(</mo><mo>⋅</mo><mo stretchy="false">)</mo><mo>∈</mo><mo stretchy="false">{</mo><msup><mi mathvariant="bold">e</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msup><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>C</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\text{prediction}_\text{cls}(\cdot) \in \{\mathbf{e}^{(i)} \; | \; 1 \leq i \leq C\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord text"><span class="mord">prediction</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.242em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">⋅</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathbf">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7955em;vertical-align:-0.136em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">}</span></span></span></span></span>,
-where <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">e</mi><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{e}^{(i)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.888em;"></span><span class="mord"><span class="mord mathbf">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span></span>
+  \|_2\]</div>
+<p>for each segment <span class="math">\(\text{segment}_s\)</span>,
+with <span class="math">\(\text{prediction}_\text{cls}(\cdot) \in \{\mathbf{e}^{(i)} \; | \; 1 \leq i \leq C\}\)</span>,
+where <span class="math">\(\mathbf{e}^{(i)}\)</span>
 is a one-hot vector corresponding to
-one of the <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></span> classes.
+one of the <span class="math">\(C\)</span> classes.
 The percentage of unchanged predictions
 for classification is then
 given by the percentage
-of all segments <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span></span>
-with <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mtext>cls</mtext></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta_\text{cls} = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span>:</p>
+of all segments <span class="math">\(S\)</span>
+with <span class="math">\(\delta_\text{cls} = 0\)</span>:</p>
 <div class="math">
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mtext>percentage_unchanged</mtext><mtext>cls</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><msub><mi>δ</mi><mtext>cls</mtext></msub><mo stretchy="false">(</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mtext>  </mtext><mtext>and</mtext><mtext>  </mtext><mn>1</mn><mo>≤</mo><mi>s</mi><mo>≤</mo><mi>S</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><msub><mtext>segment</mtext><mi>s</mi></msub><mtext>  </mtext><mi mathvariant="normal">∣</mi><mtext>  </mtext><mn>1</mn><mo>≤</mo><mi>s</mi><mo>≤</mo><mi>S</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\text{percentage\_unchanged}_\text{cls} =
+\[\text{percentage\_unchanged}_\text{cls} =
     \frac{
       |
         \{\text{segment}_s \; | \; \delta_\text{cls}(\text{segment}_s) = 0 \;
@@ -3404,7 +3000,8 @@ with <span class="math"><span class="katex"><span class="katex-mathml"><math xml
       |
     }{
       | \{\text{segment}_s \; | \; 1 \leq s \leq S\} |
-    }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0541em;vertical-align:-0.3597em;"></span><span class="mord"><span class="mord text"><span class="mord">percentage_unchanged</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1264em;"><span style="top:-2.3403em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3597em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mopen">{</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span><span class="mord">∣</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">∣</span><span class="mopen">{</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0379em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">cls</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord text"><span class="mord">segment</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.0573em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord text"><span class="mord">and</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">}</span><span class="mord">∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div><p>All the changes we apply here,
+    }\]</div>
+<p>All the changes we apply here,
 were optimized by listening
 to one example augmented audio file
 and adjusting the settings
@@ -3486,8 +3083,8 @@ randomly selected from
 35 dB, 40 dB, 45 dB
 and checks that the percentage of unchanged
 predictions is above the given threshold.</p>
-<table class="docutils align-default" id="id98">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id98" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id92">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id92" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3530,8 +3127,8 @@ predictions is above the given threshold.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id99">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id99" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id93">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id93" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3574,8 +3171,8 @@ predictions is above the given threshold.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id100">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id100" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id94">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id94" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3618,8 +3215,8 @@ predictions is above the given threshold.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id101">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id101" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id95">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id95" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3704,18 +3301,6 @@ ensure that the Unweighted Average Recall (UAR)
 does not decrease
 too much when applying
 the downward or upward spectral tilt filter.</p>
-<p>The <strong>Change UAP Downward Tilt</strong>
-and <strong>Change UAP Upward Tilt</strong> tests
-ensure that the Unweighted Average Precision (UAP)
-does not decrease
-too much when applying
-the downward or upward spectral tilt filter.</p>
-<p>The <strong>Change Average Value Downward Tilt</strong>
-and <strong>Change Average Value Upward Tilt</strong> tests
-ensure that the average value
-is not affected
-too much when applying
-the downward or upward spectral tilt filter.</p>
 <p>The <strong>Percentage Unchanged Predictions Downward Tilt</strong>
 and <strong>Percentage Unchanged Predictions Upward Tilt</strong>
 tests check
@@ -3726,8 +3311,8 @@ the downward or upward spectral tilt filter.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id102">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id102" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id96">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id96" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3738,12 +3323,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Downward Tilt</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Upward Tilt</p></td>
-<td><p>0.03</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Ccc Downward Tilt</p></td>
 <td><p>-0.05</p></td>
 </tr>
@@ -3758,8 +3337,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id103">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id103" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id97">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id97" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3770,12 +3349,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Downward Tilt</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Upward Tilt</p></td>
-<td><p>0.03</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Ccc Downward Tilt</p></td>
 <td><p>-0.05</p></td>
 </tr>
@@ -3790,8 +3363,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id104">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id104" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id98">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id98" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3802,12 +3375,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Average Value Downward Tilt</p></td>
-<td><p>0.03</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Average Value Upward Tilt</p></td>
-<td><p>0.03</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Ccc Downward Tilt</p></td>
 <td><p>-0.05</p></td>
 </tr>
@@ -3822,8 +3389,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id105">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id105" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id99">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id99" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3834,12 +3401,6 @@ to compute this percentage.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Change Uap Downward Tilt</p></td>
-<td><p>-0.02</p></td>
-</tr>
-<tr class="row-odd"><td><p>Change Uap Upward Tilt</p></td>
-<td><p>-0.02</p></td>
-</tr>
 <tr class="row-even"><td><p>Change Uar Downward Tilt</p></td>
 <td><p>-0.02</p></td>
 </tr>
@@ -3880,7 +3441,7 @@ to compute this percentage.</p>
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -3888,7 +3449,7 @@ to compute this percentage.</p>
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -3920,6 +3481,9 @@ to compute this percentage.</p>
         <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
+        <script src="_static/katex.min.js"></script>
+        <script src="_static/auto-render.min.js"></script>
+        <script src="_static/katex_autorenderer.js"></script>
     
 
   

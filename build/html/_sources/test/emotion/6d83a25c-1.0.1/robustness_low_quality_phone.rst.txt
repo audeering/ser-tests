@@ -6,15 +6,8 @@ Robustness low quality phone
 .. role:: red
 .. role:: green
 
-80.0% passed tests (12 :green:`passed` / 3 :red:`failed`).
+90.0% passed tests (9 :green:`passed` / 1 :red:`failed`).
 
-
-Change Uap Low Quality Phone
-----------------------------
-
-.. csv-table:: Threshold: -0.05
-    :header-rows: 1
-    :file: robustness_low_quality_phone/change-uap-low-quality-phone.csv
 
 Change Uar Low Quality Phone
 ----------------------------

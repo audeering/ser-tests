@@ -6,7 +6,7 @@ hubert-b
 .. role:: red
 .. role:: green
 
-86.6% passed tests (421 :green:`passed` / 65 :red:`failed`).
+87.1% passed tests (385 :green:`passed` / 57 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

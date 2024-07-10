@@ -6,7 +6,7 @@ Fairness sex
 .. role:: red
 .. role:: green
 
-95.0% passed tests (38 :green:`passed` / 2 :red:`failed`).
+93.8% passed tests (30 :green:`passed` / 2 :red:`failed`).
 
 
 Concordance Correlation Coeff Female
@@ -28,46 +28,6 @@ CCC male - CCC combined.
 .. csv-table:: Threshold: 0.075
     :header-rows: 1
     :file: fairness_sex/concordance-correlation-coeff-male.csv
-
-Mean Absolute Error Female
---------------------------
-
-Mean absolute error female - mean absolute error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.02
-    :header-rows: 1
-    :file: fairness_sex/mean-absolute-error-female.csv
-
-Mean Absolute Error Male
-------------------------
-
-Mean absolute error male - mean absolute error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.02
-    :header-rows: 1
-    :file: fairness_sex/mean-absolute-error-male.csv
-
-Mean Directional Error Female
------------------------------
-
-Mean directional error female - mean directional error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.04
-    :header-rows: 1
-    :file: fairness_sex/mean-directional-error-female.csv
-
-Mean Directional Error Male
----------------------------
-
-Mean directional error male - mean directional error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.04
-    :header-rows: 1
-    :file: fairness_sex/mean-directional-error-male.csv
 
 Precision Per Bin Female
 ------------------------

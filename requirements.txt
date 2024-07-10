@@ -8,13 +8,13 @@ audobject
 audonnx >=0.5.0
 audplot >=1.4.5
 audresample
-auglib >=0.11.1
+auglib >=1.0.1
 # Fix matplotlib version to allow reproducibility of PNG images
 # as the used matploblib version is added as metadata
 matplotlib ==3.6.0
-numpy
+numpy <2.0
 pandas
 praat-parselmouth
 scipy
-seaborn
+seaborn ==0.12.2
 sox

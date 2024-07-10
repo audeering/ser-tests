@@ -16,7 +16,4 @@ Metrics:
   - name: Jensen-Shannon Distance
     short: Distance
     threshold: 0.2
-  - name: Mean Value
-    short: Mean
-    threshold: 0.03
   - name: Visualization

@@ -37,16 +37,6 @@ Metrics:
     threshold: 0.175
     description: >
       Recall female - Recall combined.
-  - name: Unweighted Average Precision Female
-    short: UAP Female
-    threshold: 0.05
-    description: >
-      UAP Female - UAP combined.
-  - name: Unweighted Average Precision Male
-    short: UAP Male
-    threshold: 0.05
-    description: >
-      UAP Male - UAP combined.
   - name: Unweighted Average Recall Female
     short: UAR Female
     threshold: 0.075

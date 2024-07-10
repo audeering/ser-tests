@@ -6,7 +6,7 @@ w2v2-b
 .. role:: red
 .. role:: green
 
-83.9% passed tests (365 :green:`passed` / 70 :red:`failed`).
+84.9% passed tests (332 :green:`passed` / 59 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

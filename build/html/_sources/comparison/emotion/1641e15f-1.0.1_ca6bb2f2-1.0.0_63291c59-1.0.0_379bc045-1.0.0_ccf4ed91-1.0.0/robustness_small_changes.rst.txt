@@ -31,20 +31,20 @@ Percentage Unchanged Predictions Additive Tone
       - :green:`0.99`
       - :green:`0.99`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.94`
-      - :red:`0.91`
-      - :red:`0.94`
       - :red:`0.95`
       - :red:`0.93`
+      - :red:`0.94`
+      - :red:`0.95`
+      - :red:`0.94`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :red:`0.93`
-      - :red:`0.91`
+      - :red:`0.92`
       - :green:`0.96`
       - :red:`0.95`
       - :red:`0.93`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.97`
       - :green:`0.98`
+      - :green:`0.97`
       - :green:`0.98`
       - :green:`0.99`
       - :green:`0.98`
@@ -56,10 +56,10 @@ Percentage Unchanged Predictions Additive Tone
       - :red:`0.94`
     * - mean
       - 0.95
-      - 0.94
+      - 0.95
       - 0.96
       - 0.97
-      - 0.95
+      - 0.96
 
 Percentage Unchanged Predictions Append Zeros
 ---------------------------------------------
@@ -82,14 +82,14 @@ Percentage Unchanged Predictions Append Zeros
       - :green:`1.00`
     * - emovo-1.2.1-emotion.test
       - :green:`0.98`
-      - :green:`0.99`
+      - :green:`0.98`
       - :green:`0.99`
       - :green:`0.99`
       - :green:`1.00`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`0.99`
-      - :green:`0.99`
-      - :green:`0.99`
+      - :green:`0.98`
+      - :green:`0.98`
+      - :green:`0.98`
       - :green:`0.99`
       - :green:`1.00`
     * - meld-1.3.1-emotion.categories.test.gold_standard
@@ -106,8 +106,8 @@ Percentage Unchanged Predictions Append Zeros
       - :green:`0.99`
     * - mean
       - 0.98
-      - 0.99
-      - 0.99
+      - 0.98
+      - 0.98
       - 0.99
       - 1.00
 
@@ -131,15 +131,15 @@ Percentage Unchanged Predictions Clip
       - :green:`0.99`
       - :green:`0.99`
     * - emovo-1.2.1-emotion.test
-      - :green:`0.97`
+      - :green:`0.98`
       - :green:`0.99`
-      - :green:`1.00`
+      - :green:`0.99`
       - :green:`0.99`
       - :green:`0.98`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.96`
-      - :green:`0.97`
-      - :green:`0.99`
+      - :green:`0.98`
+      - :green:`0.98`
       - :green:`0.98`
       - :green:`0.97`
     * - meld-1.3.1-emotion.categories.test.gold_standard
@@ -147,7 +147,7 @@ Percentage Unchanged Predictions Clip
       - :green:`0.98`
       - :green:`0.98`
       - :green:`0.99`
-      - :green:`0.98`
+      - :green:`0.97`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :green:`0.98`
       - :green:`0.99`
@@ -157,7 +157,7 @@ Percentage Unchanged Predictions Clip
     * - mean
       - 0.97
       - 0.98
-      - 0.99
+      - 0.98
       - 0.99
       - 0.98
 
@@ -181,13 +181,13 @@ Percentage Unchanged Predictions Crop Beginning
       - :green:`0.99`
       - :green:`0.98`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.93`
+      - :red:`0.90`
       - :red:`0.91`
       - :red:`0.95`
       - :green:`0.97`
       - :red:`0.94`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :red:`0.91`
+      - :red:`0.92`
       - :red:`0.93`
       - :red:`0.95`
       - :green:`0.96`
@@ -195,17 +195,17 @@ Percentage Unchanged Predictions Crop Beginning
     * - meld-1.3.1-emotion.categories.test.gold_standard
       - :red:`0.90`
       - :red:`0.90`
-      - :red:`0.93`
+      - :red:`0.92`
       - :red:`0.94`
       - :red:`0.90`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :red:`0.95`
-      - :red:`0.95`
+      - :red:`0.94`
+      - :green:`0.96`
       - :green:`0.96`
       - :green:`0.96`
       - :red:`0.94`
     * - mean
-      - 0.92
+      - 0.91
       - 0.92
       - 0.94
       - 0.96
@@ -235,21 +235,21 @@ Percentage Unchanged Predictions Crop End
       - :green:`0.98`
       - :green:`0.99`
       - :green:`1.00`
-      - :green:`0.98`
+      - :green:`0.99`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.98`
       - :green:`0.98`
       - :green:`0.99`
       - :green:`0.99`
-      - :green:`0.98`
+      - :green:`0.99`
     * - meld-1.3.1-emotion.categories.test.gold_standard
       - :green:`0.97`
       - :green:`0.97`
       - :green:`0.97`
-      - :green:`0.99`
+      - :green:`0.98`
       - :green:`0.98`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :green:`0.98`
+      - :green:`0.99`
       - :green:`0.98`
       - :green:`0.99`
       - :green:`0.99`
@@ -282,13 +282,13 @@ Percentage Unchanged Predictions Gain
       - :green:`1.00`
     * - emovo-1.2.1-emotion.test
       - :green:`1.00`
-      - :green:`0.99`
+      - :green:`1.00`
       - :green:`1.00`
       - :green:`1.00`
       - :green:`1.00`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.99`
-      - :green:`1.00`
+      - :green:`0.99`
       - :green:`0.99`
       - :green:`0.99`
       - :green:`0.99`
@@ -333,24 +333,24 @@ Percentage Unchanged Predictions Highpass Filter
     * - emovo-1.2.1-emotion.test
       - :green:`0.96`
       - :red:`0.94`
-      - :green:`0.96`
-      - :red:`0.91`
-      - :green:`0.98`
+      - :green:`0.97`
+      - :red:`0.93`
+      - :green:`0.97`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :red:`0.95`
       - :green:`0.96`
       - :green:`0.97`
       - :red:`0.95`
-      - :green:`0.97`
+      - :green:`0.96`
     * - meld-1.3.1-emotion.categories.test.gold_standard
       - :green:`0.96`
       - :green:`0.96`
       - :green:`0.97`
       - :green:`0.96`
-      - :green:`0.97`
+      - :green:`0.96`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :green:`0.97`
-      - :green:`0.97`
+      - :green:`0.98`
       - :green:`0.98`
       - :red:`0.95`
       - :green:`0.96`
@@ -358,7 +358,7 @@ Percentage Unchanged Predictions Highpass Filter
       - 0.96
       - 0.96
       - 0.97
-      - 0.95
+      - 0.96
       - 0.97
 
 Percentage Unchanged Predictions Lowpass Filter
@@ -381,14 +381,14 @@ Percentage Unchanged Predictions Lowpass Filter
       - :green:`0.98`
       - :green:`0.96`
     * - emovo-1.2.1-emotion.test
+      - :green:`0.98`
       - :green:`0.97`
-      - :green:`0.97`
       - :green:`0.99`
       - :green:`0.99`
-      - :green:`0.99`
+      - :green:`0.98`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.98`
-      - :green:`0.98`
+      - :green:`0.99`
       - :green:`0.99`
       - :green:`0.99`
       - :green:`0.99`
@@ -401,12 +401,12 @@ Percentage Unchanged Predictions Lowpass Filter
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :green:`0.98`
       - :green:`0.98`
-      - :green:`0.99`
+      - :green:`0.98`
       - :green:`0.98`
       - :green:`0.96`
     * - mean
       - 0.97
-      - 0.97
+      - 0.98
       - 0.98
       - 0.98
       - 0.97
@@ -431,23 +431,23 @@ Percentage Unchanged Predictions Prepend Zeros
       - :green:`0.98`
       - :green:`0.97`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.91`
       - :red:`0.90`
+      - :red:`0.89`
       - :red:`0.92`
       - :green:`0.97`
-      - :red:`0.93`
+      - :red:`0.94`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :red:`0.91`
       - :red:`0.93`
-      - :red:`0.94`
+      - :red:`0.93`
       - :green:`0.96`
-      - :red:`0.92`
+      - :red:`0.93`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :red:`0.90`
+      - :red:`0.89`
       - :red:`0.90`
       - :red:`0.90`
       - :red:`0.95`
-      - :red:`0.91`
+      - :red:`0.90`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :red:`0.94`
       - :red:`0.95`
@@ -459,7 +459,7 @@ Percentage Unchanged Predictions Prepend Zeros
       - 0.92
       - 0.92
       - 0.96
-      - 0.93
+      - 0.94
 
 Percentage Unchanged Predictions White Noise
 --------------------------------------------
@@ -481,20 +481,20 @@ Percentage Unchanged Predictions White Noise
       - :green:`0.97`
       - :green:`0.98`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.92`
-      - :red:`0.89`
-      - :red:`0.90`
-      - :red:`0.86`
-      - :red:`0.88`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :red:`0.90`
       - :red:`0.87`
-      - :red:`0.93`
+      - :red:`0.89`
+      - :red:`0.85`
+      - :red:`0.88`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.88`
+      - :red:`0.87`
+      - :red:`0.92`
       - :red:`0.90`
       - :red:`0.95`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.97`
       - :green:`0.96`
+      - :green:`0.97`
       - :green:`0.96`
       - :green:`0.97`
       - :red:`0.95`
@@ -503,11 +503,11 @@ Percentage Unchanged Predictions White Noise
       - :red:`0.92`
       - :red:`0.92`
       - :red:`0.90`
-      - :red:`0.89`
+      - :red:`0.90`
     * - mean
-      - 0.93
       - 0.92
-      - 0.93
+      - 0.91
+      - 0.92
       - 0.92
       - 0.93
 

@@ -6,7 +6,7 @@ Robustness small changes
 .. role:: red
 .. role:: green
 
-64.0% passed tests (32 :green:`passed` / 18 :red:`failed`).
+66.0% passed tests (33 :green:`passed` / 17 :red:`failed`).
 
 
 Percentage Unchanged Predictions Additive Tone

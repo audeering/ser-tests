@@ -6,7 +6,7 @@ Robustness simulated recording condition
 .. role:: red
 .. role:: green
 
-16.7% passed tests (1 :green:`passed` / 5 :red:`failed`).
+33.3% passed tests (2 :green:`passed` / 4 :red:`failed`).
 
 
 Percentage Unchanged Predictions Simulated Position

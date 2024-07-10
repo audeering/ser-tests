@@ -25,17 +25,17 @@ Percentage Unchanged Predictions Simulated Position
       - hubert-b
       - hubert-L
     * - emovo-1.2.1-emotion.test
-      - :red:`0.34`
+      - :red:`0.35`
       - :red:`0.59`
       - :green:`0.81`
       - :red:`0.50`
       - :red:`0.65`
     * - imda-nsc-read-speech-balanced-2.6.0-headset
       - :red:`0.54`
-      - :red:`0.63`
+      - :red:`0.62`
       - :red:`0.79`
       - :red:`0.66`
-      - :red:`0.67`
+      - :red:`0.68`
     * - timit-1.4.1-files
       - :red:`0.39`
       - :red:`0.57`
@@ -43,8 +43,8 @@ Percentage Unchanged Predictions Simulated Position
       - :red:`0.60`
       - :red:`0.75`
     * - mean
-      - 0.42
-      - 0.60
+      - 0.43
+      - 0.59
       - 0.75
       - 0.59
       - 0.69
@@ -65,14 +65,14 @@ Percentage Unchanged Predictions Simulated Room
     * - emovo-1.2.1-emotion.test
       - :red:`0.26`
       - :red:`0.52`
-      - :red:`0.71`
+      - :red:`0.70`
       - :red:`0.40`
       - :red:`0.58`
     * - imda-nsc-read-speech-balanced-2.6.0-headset
       - :red:`0.34`
-      - :red:`0.56`
+      - :red:`0.55`
       - :red:`0.75`
-      - :red:`0.59`
+      - :red:`0.57`
       - :red:`0.66`
     * - timit-1.4.1-files
       - :red:`0.30`
@@ -84,7 +84,7 @@ Percentage Unchanged Predictions Simulated Room
       - 0.30
       - 0.52
       - 0.73
-      - 0.48
+      - 0.47
       - 0.63
 
 Visualization Simulated Position

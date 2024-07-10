@@ -19,11 +19,11 @@ This compares the models :ref:`CNN14 <test-valence-1543ec32-1.0.3>` and :ref:`w2
       - hubert-b
       - hubert-L
     * - Overall Score
-      - 73.9% (359 :green:`passed` /  127 :red:`failed`)
-      - 77.8% (378 :green:`passed` /  108 :red:`failed`)
-      - 79.4% (324 :green:`passed` /  84 :red:`failed`)
-      - 81.2% (414 :green:`passed` /  96 :red:`failed`)
-      - 79.4% (324 :green:`passed` /  84 :red:`failed`)
+      - 79.2% (350 :green:`passed` /  92 :red:`failed`)
+      - 79.2% (350 :green:`passed` /  92 :red:`failed`)
+      - 81.0% (295 :green:`passed` /  69 :red:`failed`)
+      - 81.8% (381 :green:`passed` /  85 :red:`failed`)
+      - 78.8% (287 :green:`passed` /  77 :red:`failed`)
     * - :ref:`Correctness consistency <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_consistency>`
       - :red:`40.4%`
       - :red:`46.8%`
@@ -33,9 +33,9 @@ This compares the models :ref:`CNN14 <test-valence-1543ec32-1.0.3>` and :ref:`w2
     * - :ref:`Correctness distribution <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_distribution>`
       - :red:`33.3%`
       - :red:`33.3%`
-      - :red:`50.0%`
-      - :red:`50.0%`
-      - 83.3%
+      - :red:`33.3%`
+      - :red:`33.3%`
+      - :red:`66.7%`
     * - :ref:`Correctness regression <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_regression>`
       - :red:`0.0%`
       - :red:`0.0%`
@@ -43,16 +43,16 @@ This compares the models :ref:`CNN14 <test-valence-1543ec32-1.0.3>` and :ref:`w2
       - :red:`22.2%`
       - :red:`22.2%`
     * - :ref:`Correctness speaker average <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_speaker_average>`
-      - :red:`66.7%`
-      - 83.3%
-      - 83.3%
-      - 83.3%
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Correctness speaker ranking <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_speaker_ranking>`
       - :red:`0.0%`
-      - :red:`25.0%`
-      - :red:`25.0%`
-      - :red:`37.5%`
+      - :red:`0.0%`
+      - :red:`0.0%`
+      - :red:`50.0%`
       - :red:`50.0%`
     * - :ref:`Fairness accent <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-fairness_accent>`
       - 98.1%
@@ -73,29 +73,29 @@ This compares the models :ref:`CNN14 <test-valence-1543ec32-1.0.3>` and :ref:`w2
       - 85.8%
       - 88.8%
     * - :ref:`Fairness pitch <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-fairness_pitch>`
-      - :red:`57.1%`
+      - 80.0%
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Fairness sex <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-fairness_sex>`
-      - :red:`68.8%`
+      - 83.3%
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Robustness background noise <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_background_noise>`
-      - :red:`38.9%`
-      - :red:`36.1%`
-      - :red:`22.2%`
-      - :red:`38.9%`
-      - :red:`47.2%`
+      - :red:`41.7%`
+      - :red:`29.2%`
+      - :red:`16.7%`
+      - :red:`33.3%`
+      - :red:`37.5%`
     * - :ref:`Robustness low quality phone <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_low_quality_phone>`
       - :red:`0.0%`
       - :red:`0.0%`
-      - 83.3%
-      - :red:`33.3%`
-      - :red:`66.7%`
+      - 75.0%
+      - :red:`0.0%`
+      - :red:`50.0%`
     * - :ref:`Robustness recording condition <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_recording_condition>`
       - :red:`0.0%`
       - :red:`0.0%`
@@ -112,10 +112,10 @@ This compares the models :ref:`CNN14 <test-valence-1543ec32-1.0.3>` and :ref:`w2
       - :red:`70.0%`
       - 75.0%
       - 80.0%
-      - :red:`65.0%`
+      - :red:`60.0%`
       - 95.0%
     * - :ref:`Robustness spectral tilt <comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_spectral_tilt>`
-      - :red:`16.7%`
+      - :red:`12.5%`
       - 75.0%
       - 75.0%
       - :green:`100.0%`

@@ -27,26 +27,6 @@ Metrics:
     threshold: 0.075
     description: >
       CCC male - CCC combined.
-  - name: Mean Absolute Error Female
-    threshold: 0.02
-    description: >
-      Mean absolute error female - mean absolute error combined
-      on the regression scale.
-  - name: Mean Absolute Error Male
-    threshold: 0.02
-    description: >
-      Mean absolute error male - mean absolute error combined
-      on the regression scale.
-  - name: Mean Directional Error Female
-    threshold: 0.04
-    description: >
-      Mean directional error female - mean directional error combined
-      on the regression scale.
-  - name: Mean Directional Error Male
-    threshold: 0.04
-    description: >
-      Mean directional error male - mean directional error combined
-      on the regression scale.
   - name: Precision Per Bin Female
     short: Precision Female
     threshold: 0.1

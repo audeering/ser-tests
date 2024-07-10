@@ -15,12 +15,6 @@ Metrics:
   - name: Change CCC Upward Tilt
     short: CCC Upward
     threshold: -0.05
-  - name: Change Average Value Downward Tilt
-    short: Value Downward
-    threshold: 0.03
-  - name: Change Average Value Upward Tilt
-    short: Value Upward
-    threshold: 0.03
   - name: Percentage Unchanged Predictions Downward Tilt
     short: Unchanged Downward
     threshold: 0.8

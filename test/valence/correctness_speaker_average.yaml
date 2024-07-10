@@ -25,9 +25,6 @@ Metrics:
   - name: Mean Absolute Error
     short: Absolute
     threshold: 0.1
-  - name: Mean Directional Error
-    short: Directional
-    threshold: 0.05
   - name: Visualization
     threshold: 0.2
     description: >

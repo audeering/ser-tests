@@ -454,7 +454,7 @@ def percentage_of_identity(
 
     """
     y2.index = y1.index
-    if y1.dtype == np.object:
+    if y1.dtype == object:
         identical = (
             y1 == y2
         ).sum()

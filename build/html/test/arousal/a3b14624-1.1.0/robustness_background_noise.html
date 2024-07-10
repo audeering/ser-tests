@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
@@ -322,7 +322,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2c39464
               </div>
             
           
@@ -376,12 +376,6 @@
 <li class="toctree-l3"><a class="reference internal" href="fairness_pitch.html">Fairness pitch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Robustness background noise</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-babble-noise">Change Average Value Babble Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-coughing">Change Average Value Coughing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-environmental-noise">Change Average Value Environmental Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-music">Change Average Value Music</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-sneezing">Change Average Value Sneezing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-white-noise">Change Average Value White Noise</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-ccc-babble-noise">Change Ccc Babble Noise</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-ccc-coughing">Change Ccc Coughing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-ccc-environmental-noise">Change Ccc Environmental Noise</a></li>
@@ -461,167 +455,11 @@
             
   <div class="section" id="robustness-background-noise">
 <span id="test-arousal-a3b14624-1-1-0-robustness-background-noise"></span><h1>Robustness background noise<a class="headerlink" href="#robustness-background-noise" title="Permalink to this heading">¶</a></h1>
-<p>44.4% passed tests (16 <span class="green">passed</span> / 20 <span class="red">failed</span>).</p>
-<div class="section" id="change-average-value-babble-noise">
-<h2>Change Average Value Babble Noise<a class="headerlink" href="#change-average-value-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change Average Value Babble Noise</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">0.01</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-coughing">
-<h2>Change Average Value Coughing<a class="headerlink" href="#change-average-value-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change Average Value Coughing</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.06</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">0.06</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>0.06</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-environmental-noise">
-<h2>Change Average Value Environmental Noise<a class="headerlink" href="#change-average-value-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change Average Value Environmental Noise</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>-0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-music">
-<h2>Change Average Value Music<a class="headerlink" href="#change-average-value-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change Average Value Music</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>-0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-sneezing">
-<h2>Change Average Value Sneezing<a class="headerlink" href="#change-average-value-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change Average Value Sneezing</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.04</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">0.06</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>0.05</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-white-noise">
-<h2>Change Average Value White Noise<a class="headerlink" href="#change-average-value-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change Average Value White Noise</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">-0.05</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">-0.05</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>-0.05</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>41.7% passed tests (10 <span class="green">passed</span> / 14 <span class="red">failed</span>).</p>
 <div class="section" id="change-ccc-babble-noise">
 <h2>Change Ccc Babble Noise<a class="headerlink" href="#change-ccc-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -633,21 +471,21 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="green">-0.00</span></p></td>
 </tr>
 <tr class="row-even"><td><p>mean</p></td>
-<td><p>0.00</p></td>
+<td><p>-0.01</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="change-ccc-coughing">
 <h2>Change Ccc Coughing<a class="headerlink" href="#change-ccc-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id8">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -672,8 +510,8 @@
 </div>
 <div class="section" id="change-ccc-environmental-noise">
 <h2>Change Ccc Environmental Noise<a class="headerlink" href="#change-ccc-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id9">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -688,18 +526,18 @@
 <td><p><span class="green">-0.02</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
 </tr>
 <tr class="row-even"><td><p>mean</p></td>
-<td><p>-0.02</p></td>
+<td><p>-0.01</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="change-ccc-music">
 <h2>Change Ccc Music<a class="headerlink" href="#change-ccc-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id10">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -724,8 +562,8 @@
 </div>
 <div class="section" id="change-ccc-sneezing">
 <h2>Change Ccc Sneezing<a class="headerlink" href="#change-ccc-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id11">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -750,8 +588,8 @@
 </div>
 <div class="section" id="change-ccc-white-noise">
 <h2>Change Ccc White Noise<a class="headerlink" href="#change-ccc-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id12">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -776,8 +614,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-babble-noise">
 <h2>Percentage Unchanged Predictions Babble Noise<a class="headerlink" href="#percentage-unchanged-predictions-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id13">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -789,21 +627,21 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">0.92</span></p></td>
+<td><p><span class="green">0.91</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="red">0.89</span></p></td>
 </tr>
 <tr class="row-even"><td><p>mean</p></td>
-<td><p>0.91</p></td>
+<td><p>0.90</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="percentage-unchanged-predictions-coughing">
 <h2>Percentage Unchanged Predictions Coughing<a class="headerlink" href="#percentage-unchanged-predictions-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id14">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -815,21 +653,21 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.50</span></p></td>
+<td><p><span class="red">0.49</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="red">0.46</span></p></td>
 </tr>
 <tr class="row-even"><td><p>mean</p></td>
-<td><p>0.48</p></td>
+<td><p>0.47</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="percentage-unchanged-predictions-environmental-noise">
 <h2>Percentage Unchanged Predictions Environmental Noise<a class="headerlink" href="#percentage-unchanged-predictions-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id15">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -854,8 +692,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-music">
 <h2>Percentage Unchanged Predictions Music<a class="headerlink" href="#percentage-unchanged-predictions-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id16">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -870,18 +708,18 @@
 <td><p><span class="red">0.87</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">0.87</span></p></td>
+<td><p><span class="red">0.86</span></p></td>
 </tr>
 <tr class="row-even"><td><p>mean</p></td>
-<td><p>0.87</p></td>
+<td><p>0.86</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="percentage-unchanged-predictions-sneezing">
 <h2>Percentage Unchanged Predictions Sneezing<a class="headerlink" href="#percentage-unchanged-predictions-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id17">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -893,7 +731,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.53</span></p></td>
+<td><p><span class="red">0.54</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="red">0.48</span></p></td>
@@ -906,8 +744,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-white-noise">
 <h2>Percentage Unchanged Predictions White Noise<a class="headerlink" href="#percentage-unchanged-predictions-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id18">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id12">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -932,7 +770,7 @@
 </div>
 <div class="section" id="visualization-babble-noise">
 <h2>Visualization Babble Noise<a class="headerlink" href="#visualization-babble-noise" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for clean audio and audio with added babble noise. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for clean audio and audio with added babble noise. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <div class="figure align-center">
 <img alt="../../../_images/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" src="../../../_images/visualization-babble-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" />
 </div>
@@ -942,7 +780,7 @@
 </div>
 <div class="section" id="visualization-coughing">
 <h2>Visualization Coughing<a class="headerlink" href="#visualization-coughing" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for clean audio and audio with added coughing. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for clean audio and audio with added coughing. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <div class="figure align-center">
 <img alt="../../../_images/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" src="../../../_images/visualization-coughing_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" />
 </div>
@@ -952,7 +790,7 @@
 </div>
 <div class="section" id="visualization-environmental-noise">
 <h2>Visualization Environmental Noise<a class="headerlink" href="#visualization-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for clean audio and audio with added environmental noise. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for clean audio and audio with added environmental noise. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <div class="figure align-center">
 <img alt="../../../_images/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" src="../../../_images/visualization-environmental-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" />
 </div>
@@ -962,7 +800,7 @@
 </div>
 <div class="section" id="visualization-music">
 <h2>Visualization Music<a class="headerlink" href="#visualization-music" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for clean audio and audio with added music. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for clean audio and audio with added music. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <div class="figure align-center">
 <img alt="../../../_images/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" src="../../../_images/visualization-music_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" />
 </div>
@@ -972,7 +810,7 @@
 </div>
 <div class="section" id="visualization-sneezing">
 <h2>Visualization Sneezing<a class="headerlink" href="#visualization-sneezing" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for clean audio and audio with added sneezing. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for clean audio and audio with added sneezing. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <div class="figure align-center">
 <img alt="../../../_images/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" src="../../../_images/visualization-sneezing_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" />
 </div>
@@ -982,7 +820,7 @@
 </div>
 <div class="section" id="visualization-white-noise">
 <h2>Visualization White Noise<a class="headerlink" href="#visualization-white-noise" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for clean audio and audio with added white noise. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for clean audio and audio with added white noise. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <div class="figure align-center">
 <img alt="../../../_images/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" src="../../../_images/visualization-white-noise_iemocap-2.3.0-emotion.dimensions.test.gold_standard1.png" />
 </div>
@@ -1015,7 +853,7 @@
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -1023,7 +861,7 @@
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -1055,6 +893,9 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
     
 
   

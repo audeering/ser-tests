@@ -12,9 +12,6 @@ Metrics:
   - name: Change CCC Low Quality Phone
     short: CCC Higher
     threshold: -0.05
-  - name: Change Average Value Low Quality Phone
-    short: Value Low Quality Phone
-    threshold: 0.05
   - name: Percentage Unchanged Predictions Low Quality Phone
     short: Percent Unchanged Pred Low Quality Phone
     threshold: 0.5

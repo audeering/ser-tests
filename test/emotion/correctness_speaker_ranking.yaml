@@ -16,15 +16,6 @@ Metrics:
   - name: Spearmans Rho
     short: Rho
     threshold: 0.7
-  - name: Precision Top 25%
-    short: Top 25%
-    threshold: 0.7
-  - name: Precision Bottom 25%
-    short: Bottom 25%
-    threshold: 0.7
-  - name: Top-Bottom Confusions
-    short: Confusions
-    threshold: 0.15
   - name: Visualization
     description: >
       The plots visualize the precision

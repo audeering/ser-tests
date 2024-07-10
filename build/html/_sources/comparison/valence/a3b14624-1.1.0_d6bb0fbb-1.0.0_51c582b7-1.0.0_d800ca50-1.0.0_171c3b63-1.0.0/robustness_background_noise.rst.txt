@@ -11,198 +11,6 @@ Robustness background noise
     :file: robustness_background_noise/overall_scores.csv
 
 
-Change Average Value Babble Noise
----------------------------------
-
-.. flat-table:: Threshold: 0.03
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change Average Value Babble Noise
-    * - w2v2-b
-      - w2v2-L
-      - w2v2-L-robust
-      - w2v2-L-xls-r
-      - w2v2-L-vox
-    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`0.00`
-      - :red:`0.04`
-      - :red:`0.03`
-      - :green:`0.02`
-      - :green:`0.02`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`0.03`
-      - :red:`0.05`
-      - :green:`0.02`
-      - :red:`0.03`
-      - :red:`0.04`
-    * - mean
-      - 0.01
-      - 0.04
-      - 0.03
-      - 0.03
-      - 0.03
-
-Change Average Value Coughing
------------------------------
-
-.. flat-table:: Threshold: 0.03
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change Average Value Coughing
-    * - w2v2-b
-      - w2v2-L
-      - w2v2-L-robust
-      - w2v2-L-xls-r
-      - w2v2-L-vox
-    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`0.09`
-      - :red:`0.09`
-      - :red:`0.05`
-      - :red:`0.09`
-      - :red:`0.05`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`0.12`
-      - :red:`0.08`
-      - :red:`0.05`
-      - :red:`0.10`
-      - :red:`0.06`
-    * - mean
-      - 0.10
-      - 0.08
-      - 0.05
-      - 0.10
-      - 0.06
-
-Change Average Value Environmental Noise
-----------------------------------------
-
-.. flat-table:: Threshold: 0.03
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change Average Value Environmental Noise
-    * - w2v2-b
-      - w2v2-L
-      - w2v2-L-robust
-      - w2v2-L-xls-r
-      - w2v2-L-vox
-    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`0.00`
-      - :red:`0.03`
-      - :green:`0.02`
-      - :red:`0.03`
-      - :green:`0.02`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :green:`0.01`
-      - :green:`0.02`
-      - :green:`0.01`
-      - :red:`0.03`
-      - :green:`0.01`
-    * - mean
-      - 0.01
-      - 0.03
-      - 0.01
-      - 0.03
-      - 0.01
-
-Change Average Value Music
---------------------------
-
-.. flat-table:: Threshold: 0.03
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change Average Value Music
-    * - w2v2-b
-      - w2v2-L
-      - w2v2-L-robust
-      - w2v2-L-xls-r
-      - w2v2-L-vox
-    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`-0.00`
-      - :green:`0.02`
-      - :green:`0.02`
-      - :green:`0.01`
-      - :green:`0.01`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :green:`0.01`
-      - :green:`0.02`
-      - :green:`0.01`
-      - :green:`0.02`
-      - :green:`0.02`
-    * - mean
-      - 0.01
-      - 0.02
-      - 0.01
-      - 0.01
-      - 0.01
-
-Change Average Value Sneezing
------------------------------
-
-.. flat-table:: Threshold: 0.03
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change Average Value Sneezing
-    * - w2v2-b
-      - w2v2-L
-      - w2v2-L-robust
-      - w2v2-L-xls-r
-      - w2v2-L-vox
-    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`0.04`
-      - :red:`0.06`
-      - :red:`0.04`
-      - :red:`0.04`
-      - :green:`0.02`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`0.11`
-      - :red:`0.07`
-      - :red:`0.04`
-      - :red:`0.06`
-      - :red:`0.04`
-    * - mean
-      - 0.07
-      - 0.07
-      - 0.04
-      - 0.05
-      - 0.03
-
-Change Average Value White Noise
---------------------------------
-
-.. flat-table:: Threshold: 0.03
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change Average Value White Noise
-    * - w2v2-b
-      - w2v2-L
-      - w2v2-L-robust
-      - w2v2-L-xls-r
-      - w2v2-L-vox
-    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`-0.04`
-      - :red:`0.04`
-      - :red:`0.05`
-      - :red:`0.05`
-      - :red:`0.04`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :green:`-0.02`
-      - :green:`0.02`
-      - :red:`0.03`
-      - :red:`0.06`
-      - :red:`0.04`
-    * - mean
-      - -0.03
-      - 0.03
-      - 0.04
-      - 0.06
-      - 0.04
-
 Change Ccc Babble Noise
 -----------------------
 
@@ -218,8 +26,8 @@ Change Ccc Babble Noise
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :green:`-0.02`
-      - :red:`-0.07`
-      - :green:`-0.02`
+      - :red:`-0.06`
+      - :green:`-0.03`
       - :green:`-0.02`
       - :green:`-0.04`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
@@ -231,7 +39,7 @@ Change Ccc Babble Noise
     * - mean
       - -0.01
       - -0.07
-      - -0.01
+      - -0.02
       - -0.02
       - -0.03
 
@@ -249,23 +57,23 @@ Change Ccc Coughing
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`-0.11`
       - :red:`-0.12`
-      - :green:`-0.04`
-      - :red:`-0.09`
+      - :red:`-0.14`
       - :red:`-0.06`
+      - :red:`-0.11`
+      - :red:`-0.08`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`-0.13`
       - :red:`-0.12`
       - :red:`-0.05`
       - :red:`-0.11`
-      - :green:`-0.03`
+      - :green:`-0.04`
     * - mean
       - -0.12
-      - -0.12
-      - -0.04
-      - -0.10
-      - -0.04
+      - -0.13
+      - -0.06
+      - -0.11
+      - -0.06
 
 Change Ccc Environmental Noise
 ------------------------------
@@ -285,11 +93,11 @@ Change Ccc Environmental Noise
       - :red:`-0.05`
       - :green:`-0.02`
       - :green:`-0.04`
-      - :green:`-0.04`
+      - :green:`-0.03`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :green:`-0.01`
-      - :green:`-0.04`
-      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.00`
       - :green:`-0.02`
       - :green:`-0.01`
     * - mean
@@ -297,7 +105,7 @@ Change Ccc Environmental Noise
       - -0.04
       - -0.01
       - -0.03
-      - -0.03
+      - -0.02
 
 Change Ccc Music
 ----------------
@@ -323,13 +131,13 @@ Change Ccc Music
       - :green:`-0.03`
       - :green:`-0.01`
       - :green:`-0.02`
-      - :green:`-0.02`
+      - :green:`-0.01`
     * - mean
       - -0.01
       - -0.04
       - -0.01
       - -0.02
-      - -0.03
+      - -0.02
 
 Change Ccc Sneezing
 -------------------
@@ -346,16 +154,16 @@ Change Ccc Sneezing
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :red:`-0.09`
-      - :red:`-0.09`
-      - :red:`-0.05`
+      - :red:`-0.10`
       - :green:`-0.04`
-      - :green:`-0.04`
+      - :green:`-0.03`
+      - :green:`-0.03`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`-0.09`
       - :red:`-0.10`
       - :green:`-0.03`
       - :green:`-0.04`
-      - :green:`-0.01`
+      - :green:`-0.02`
     * - mean
       - -0.09
       - -0.10
@@ -383,13 +191,13 @@ Change Ccc White Noise
       - :red:`-0.09`
       - :red:`-0.05`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`-0.07`
+      - :red:`-0.06`
       - :green:`-0.03`
       - :green:`-0.02`
       - :green:`-0.03`
       - :green:`-0.01`
     * - mean
-      - -0.05
+      - -0.04
       - -0.04
       - -0.03
       - -0.06
@@ -410,20 +218,20 @@ Percentage Unchanged Predictions Babble Noise
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :red:`0.81`
-      - :red:`0.64`
-      - :red:`0.77`
+      - :red:`0.65`
+      - :red:`0.75`
       - :red:`0.81`
       - :red:`0.75`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`0.67`
       - :red:`0.55`
-      - :red:`0.77`
-      - :red:`0.68`
+      - :red:`0.76`
+      - :red:`0.69`
       - :red:`0.65`
     * - mean
       - 0.74
-      - 0.59
-      - 0.77
+      - 0.60
+      - 0.76
       - 0.75
       - 0.70
 
@@ -442,7 +250,7 @@ Percentage Unchanged Predictions Coughing
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :red:`0.36`
-      - :red:`0.41`
+      - :red:`0.43`
       - :red:`0.53`
       - :red:`0.39`
       - :red:`0.54`
@@ -450,11 +258,11 @@ Percentage Unchanged Predictions Coughing
       - :red:`0.26`
       - :red:`0.41`
       - :red:`0.58`
-      - :red:`0.31`
-      - :red:`0.52`
+      - :red:`0.32`
+      - :red:`0.51`
     * - mean
       - 0.31
-      - 0.41
+      - 0.42
       - 0.55
       - 0.35
       - 0.53
@@ -473,8 +281,8 @@ Percentage Unchanged Predictions Environmental Noise
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`0.76`
-      - :red:`0.74`
+      - :red:`0.77`
+      - :red:`0.75`
       - :red:`0.79`
       - :red:`0.72`
       - :red:`0.79`
@@ -483,9 +291,9 @@ Percentage Unchanged Predictions Environmental Noise
       - :red:`0.70`
       - :red:`0.85`
       - :red:`0.64`
-      - :red:`0.76`
+      - :red:`0.77`
     * - mean
-      - 0.73
+      - 0.74
       - 0.72
       - 0.82
       - 0.68
@@ -505,23 +313,23 @@ Percentage Unchanged Predictions Music
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.82`
+      - :red:`0.79`
+      - :red:`0.84`
       - :red:`0.81`
-      - :red:`0.78`
-      - :red:`0.83`
-      - :red:`0.80`
       - :red:`0.81`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`0.74`
-      - :red:`0.72`
+      - :red:`0.71`
       - :red:`0.86`
       - :red:`0.68`
-      - :red:`0.75`
+      - :red:`0.76`
     * - mean
       - 0.78
       - 0.75
-      - 0.84
-      - 0.74
-      - 0.78
+      - 0.85
+      - 0.75
+      - 0.79
 
 Percentage Unchanged Predictions Sneezing
 -----------------------------------------
@@ -537,20 +345,20 @@ Percentage Unchanged Predictions Sneezing
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`0.48`
-      - :red:`0.50`
+      - :red:`0.47`
+      - :red:`0.51`
       - :red:`0.55`
-      - :red:`0.61`
+      - :red:`0.60`
       - :red:`0.65`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`0.26`
       - :red:`0.41`
       - :red:`0.61`
       - :red:`0.50`
-      - :red:`0.58`
+      - :red:`0.57`
     * - mean
-      - 0.37
-      - 0.45
+      - 0.36
+      - 0.46
       - 0.58
       - 0.55
       - 0.61
@@ -572,19 +380,19 @@ Percentage Unchanged Predictions White Noise
       - :red:`0.53`
       - :red:`0.66`
       - :red:`0.46`
-      - :red:`0.53`
+      - :red:`0.52`
       - :red:`0.60`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`0.45`
+      - :red:`0.63`
       - :red:`0.64`
-      - :red:`0.65`
       - :red:`0.34`
       - :red:`0.54`
     * - mean
       - 0.49
       - 0.65
-      - 0.56
-      - 0.44
+      - 0.55
+      - 0.43
       - 0.57
 
 Visualization Babble Noise

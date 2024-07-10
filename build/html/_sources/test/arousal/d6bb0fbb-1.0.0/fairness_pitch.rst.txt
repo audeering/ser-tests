@@ -6,7 +6,7 @@ Fairness pitch
 .. role:: red
 .. role:: green
 
-95.2% passed tests (20 :green:`passed` / 1 :red:`failed`).
+100.0% passed tests (15 :green:`passed` / 0 :red:`failed`).
 
 
 Concordance Correlation Coeff High Pitch
@@ -38,66 +38,6 @@ CCC medium pitch - CCC combined.
 .. csv-table:: Threshold: 0.1
     :header-rows: 1
     :file: fairness_pitch/concordance-correlation-coeff-medium-pitch.csv
-
-Mean Absolute Error High Pitch
-------------------------------
-
-Mean absolute error high pitch - mean absolute error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.02
-    :header-rows: 1
-    :file: fairness_pitch/mean-absolute-error-high-pitch.csv
-
-Mean Absolute Error Low Pitch
------------------------------
-
-Mean absolute error low pitch - mean absolute error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.02
-    :header-rows: 1
-    :file: fairness_pitch/mean-absolute-error-low-pitch.csv
-
-Mean Absolute Error Medium Pitch
---------------------------------
-
-Mean absolute error medium pitch - mean absolute error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.02
-    :header-rows: 1
-    :file: fairness_pitch/mean-absolute-error-medium-pitch.csv
-
-Mean Directional Error High Pitch
----------------------------------
-
-Mean directional error high pitch - mean directional error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.04
-    :header-rows: 1
-    :file: fairness_pitch/mean-directional-error-high-pitch.csv
-
-Mean Directional Error Low Pitch
---------------------------------
-
-Mean directional error low pitch - mean directional error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.04
-    :header-rows: 1
-    :file: fairness_pitch/mean-directional-error-low-pitch.csv
-
-Mean Directional Error Medium Pitch
------------------------------------
-
-Mean directional error medium pitch - mean directional error combined on the regression scale.
-
-
-.. csv-table:: Threshold: 0.04
-    :header-rows: 1
-    :file: fairness_pitch/mean-directional-error-medium-pitch.csv
 
 Precision Per Bin High Pitch
 ----------------------------

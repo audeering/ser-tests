@@ -1,6 +1,6 @@
 Data,Percentage Unchanged Predictions Upward Tilt
 crema-d-1.2.0-emotion.categories.test.gold_standard,0.84
-emovo-1.2.1-emotion.test,0.82
+emovo-1.2.1-emotion.test,0.79
 iemocap-2.3.0-emotion.categories.test.gold_standard,0.77
 meld-1.3.1-emotion.categories.test.gold_standard,0.66
 msppodcast-2.6.0-emotion.categories.test-1.gold_standard,0.72

@@ -6,7 +6,7 @@ Correctness speaker average
 .. role:: red
 .. role:: green
 
-16.7% passed tests (4 :green:`passed` / 20 :red:`failed`).
+25.0% passed tests (3 :green:`passed` / 9 :red:`failed`).
 
 
 Class Proportion Mean Absolute Error
@@ -15,13 +15,6 @@ Class Proportion Mean Absolute Error
 .. csv-table:: Threshold: 0.1
     :header-rows: 1
     :file: correctness_speaker_average/class-proportion-mean-absolute-error.csv
-
-Class Proportion Mean Directional Error
----------------------------------------
-
-.. csv-table:: Threshold: 0.05
-    :header-rows: 1
-    :file: correctness_speaker_average/class-proportion-mean-directional-error.csv
 
 Visualization
 -------------
