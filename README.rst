@@ -22,7 +22,7 @@ you cannot install and run the test suite at the moment.
 It depends on an internal Python package
 to load all the models.
 And most of the data used in the tests
-is also hosted on internal servers.
+is hosted on internal servers.
 The libraries for managing the data,
 and applying the augmentations
 are available as open-source.
