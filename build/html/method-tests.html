@@ -322,7 +322,7 @@
             
             
               <div class="version">
-                v2aa0755
+                v2c39464
               </div>
             
           
@@ -728,9 +728,6 @@ a more similar distribution.
 We bin the distributions
 into 10 bins
 before calculating the distance.</p>
-<p>The <strong>Mean Value</strong> over all samples
-should not change
-compared to the gold standard.</p>
 <p>The test <strong>Relative Difference Per Class</strong>
 checks that the number of samples
 per class is comparable
@@ -899,23 +896,13 @@ for regression, and with at least 8 samples per class
 for classification.</p>
 <p>The test
 <strong>Mean Absolute Error</strong>
-measures the absolute error per speaker
-whereas the test
-<strong>Mean Directional Error</strong>
-measures if the overall average
-has a bias towards a higher
-or lower value.</p>
-<p>Analogously, for the classification task,
+measures the absolute error per speaker.</p>
+<p>For the classification task,
 the test
 <strong>Class Proportion Mean Absolute Error</strong>
 measures the absolute error in the
 predicted proportion of each class
-per speaker
-whereas the test
-<strong>Class Proportion Mean Directional Error</strong>
-measures if the predicted class proportions
-have a bias towards a higher
-or lower value.</p>
+per speaker.</p>
 <table class="docutils align-default" id="id27">
 <caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id27" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -990,11 +977,7 @@ or lower value.</p>
 <p>For some applications,
 it may be of interest to create a ranking
 of speakers in order to spot outliers on
-either side of the ranking.
-Therefore,
-it is important that the top and bottom
-speaker rankings meaningfully represent
-the true top and bottom speaker rankings.</p>
+either side of the ranking.</p>
 <p>The test uses the raw values per sample
 to calculate the average value for each speaker for regression.
 For classification, the test uses the proportions
@@ -1013,24 +996,6 @@ we use
 <a class="reference external" href="https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman’s rank correlation coefficient</a>
 (<strong>Spearmans Rho</strong>),
 which ranges from 0 to 1.</p>
-<p>The tests
-<strong>Precision Bottom 25%</strong>
-and <strong>Precision Top 25%</strong>
-focus on getting the upper and lower quantiles
-of the ranking correct.
-They show the precision
-for having the correct speakers
-in the respective quantile.</p>
-<p>The test
-<strong>Top Bottom Confusions</strong>
-checks how many confusions we have
-between both quantiles.
-The value ranges from 0 to 1,
-whereas a value of 0.2
-would indicate
-that 20% of speakers
-are wrongly placed in one
-of the two quantiles.</p>
 <table class="docutils align-default" id="id31">
 <caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id31" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -1745,28 +1710,6 @@ in concordance correlation coefficient
 between the respective pitch group and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Mean Absolute Error High Pitch</strong>,
-<strong>Mean Absolute Error Low Pitch</strong>, and
-<strong>Mean Absolute Error Medium Pitch</strong> tests
-check that the difference
-in mean absolute error
-between the respective pitch group and
-the combined test set
-is below the given threshold.</p>
-<p>The <strong>Mean Directional Error High Pitch</strong>,
-<strong>Mean Directional Error Low Pitch</strong>, and
-<strong>Mean Directional Error Medium Pitch</strong> tests
-ensure that the difference
-in mean directional error
-between the respective pitch group and
-the combined test set
-is below the given threshold.
-The mean directional error over all segments <span class="math">\(S\)</span>
-is given by</p>
-<div class="math">
-\[\frac{1}{S} \sum_{s=1}^S
-\text{prediction}(\text{segment}_s)
-- \text{truth}(\text{segment}_s)\]</div>
 <p>For the tests <strong>Precision Per Bin High Pitch</strong>,
 <strong>Precision Per Bin Low Pitch</strong>, and
 <strong>Precision Per Bin Medium Pitch</strong>
@@ -1813,14 +1756,6 @@ in unweighted average recall
 between the respective pitch group and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Unweighted Average Precision High Pitch</strong>,
-<strong>Unweighted Average Precision Low Pitch</strong>, and
-<strong>Unweighted Average Precision Medium Pitch</strong> tests
-ensure that the difference
-in unweighted average precision
-between the respective pitch group and
-the combined test set
-is below the given threshold.</p>
 <p>We base the thresholds
 on simulations
 with a random-categorical and a
@@ -1840,186 +1775,165 @@ random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id56" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id57">
-<img alt="_images/max_mae.png" src="_images/max_mae.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean absolute error
+<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per bin
 for a random gaussian model on a
 random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id57" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id58">
-<img alt="_images/max_mde.png" src="_images/max_mde.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean directional error
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per class
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id58" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id59">
-<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per bin
+<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in recall per bin
 for a random gaussian model on a
 random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id59" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id60">
-<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
+<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
 <p class="caption"><span class="caption-text">The maximum difference in precision per class
 for a random uniform categorical model on a
 random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id60" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id61">
-<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in recall per bin
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
+<p class="caption"><span class="caption-text">The maximum difference in UAR
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id61" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure align-default" id="id62">
-<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id62" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id63">
-<img alt="_images/max_truthsparse_preduniform_precision.png" src="_images/max_truthsparse_preduniform_precision.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id63" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id64">
-<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id64" title="Permalink to this image">¶</a></p>
-</div>
+<table class="docutils align-default" id="id62">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id62" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Test</p></th>
+<th class="head"><p>Threshold</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id63">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id63" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Test</p></th>
+<th class="head"><p>Threshold</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id64">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id64" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Test</p></th>
+<th class="head"><p>Threshold</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
+<td><p>0.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
+<td><p>0.125</p></td>
+</tr>
+</tbody>
+</table>
 <table class="docutils align-default" id="id65">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id65" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Test</p></th>
-<th class="head"><p>Threshold</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default" id="id66">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id66" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Test</p></th>
-<th class="head"><p>Threshold</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default" id="id67">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id67" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Test</p></th>
-<th class="head"><p>Threshold</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Concordance Correlation Coeff High Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Concordance Correlation Coeff Low Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-even"><td><p>Concordance Correlation Coeff Medium Pitch</p></td>
-<td><p>0.1</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Precision Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Precision Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin High Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-odd"><td><p>Recall Per Bin Low Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-<tr class="row-even"><td><p>Recall Per Bin Medium Pitch</p></td>
-<td><p>0.125</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default" id="id68">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id68" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id65" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2089,26 +2003,6 @@ in concordance correlation coefficient
 between the respective sex and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Mean Absolute Error Female</strong> and
-<strong>Mean Absolute Error Male</strong> tests
-check that the difference
-in mean absolute error
-between the respective sex and
-the combined test set
-is below the given threshold.</p>
-<p>The <strong>Mean Directional Error Female</strong> and
-<strong>Mean Directional Error Male</strong> tests
-ensure that the difference
-in mean directional error
-between the respective sex and
-the combined test set
-is below the given threshold.
-The mean directional error over all segments <span class="math">\(S\)</span>
-is given by</p>
-<div class="math">
-\[\frac{1}{S} \sum_{s=1}^S
-\text{prediction}(\text{segment}_s)
-- \text{truth}(\text{segment}_s)\]</div>
 <p>For the tests <strong>Precision Per Bin Female</strong> and
 <strong>Precision Per Bin Male</strong>
 we
@@ -2150,13 +2044,6 @@ in unweighted average recall
 between the respective sex and
 the combined test set
 is below the given threshold.</p>
-<p>The <strong>Unweighted Average Precision Female</strong> and
-<strong>Unweighted Average Precision Male</strong> tests
-ensure that the difference
-in unweighted average precision
-between the respective sex and
-the combined test set
-is below the given threshold.</p>
 <p>We base the thresholds
 on simulations
 with a random-categorical and a
@@ -2168,71 +2055,50 @@ For the Precision Per Bin and Recall Per Bin tests
 we require at least 67 samples per bin
 in the ground truth of the combined dataset,
 or we skip that bin.</p>
-<div class="figure align-default" id="id69">
+<div class="figure align-default" id="id66">
 <img alt="_images/max_ccc.png" src="_images/max_ccc.png" />
 <p class="caption"><span class="caption-text">The maximum difference in CCC
+for a random gaussian model on a
+random gaussian ground truth from 1000
+simulations.</span><a class="headerlink" href="#id66" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id67">
+<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per bin
+for a random gaussian model on a
+random gaussian ground truth from 1000
+simulations.</span><a class="headerlink" href="#id67" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id68">
+<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
+<p class="caption"><span class="caption-text">The maximum difference in precision per class
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
+simulations.</span><a class="headerlink" href="#id68" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id69">
+<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
+<p class="caption"><span class="caption-text">The maximum difference in recall per bin
 for a random gaussian model on a
 random gaussian ground truth from 1000
 simulations.</span><a class="headerlink" href="#id69" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id70">
-<img alt="_images/max_mae.png" src="_images/max_mae.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean absolute error
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
+<p class="caption"><span class="caption-text">The maximum difference in recall per class
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id70" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id71">
-<img alt="_images/max_mde.png" src="_images/max_mde.png" />
-<p class="caption"><span class="caption-text">The maximum difference in mean directional error
-for a random gaussian model on a
-random gaussian ground truth from 1000
+<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
+<p class="caption"><span class="caption-text">The maximum difference in UAR
+for a random uniform categorical model on a
+random sparse categorical ground truth from 1000
 simulations.</span><a class="headerlink" href="#id71" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure align-default" id="id72">
-<img alt="_images/max_precision_per_bin.png" src="_images/max_precision_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per bin
-for a random gaussian model on a
-random gaussian ground truth from 1000
-simulations.</span><a class="headerlink" href="#id72" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id73">
-<img alt="_images/max_truthsparse_preduniform_precision_per_class.png" src="_images/max_truthsparse_preduniform_precision_per_class.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id73" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id74">
-<img alt="_images/max_recall_per_bin.png" src="_images/max_recall_per_bin.png" />
-<p class="caption"><span class="caption-text">The maximum difference in recall per bin
-for a random gaussian model on a
-random gaussian ground truth from 1000
-simulations.</span><a class="headerlink" href="#id74" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id75">
-<img alt="_images/max_truthsparse_preduniform_recall_per_class.png" src="_images/max_truthsparse_preduniform_recall_per_class.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id75" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id76">
-<img alt="_images/max_truthsparse_preduniform_precision.png" src="_images/max_truthsparse_preduniform_precision.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id76" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id77">
-<img alt="_images/max_truthsparse_preduniform_recall.png" src="_images/max_truthsparse_preduniform_recall.png" />
-<p class="caption"><span class="caption-text">The maximum difference in precision per class
-for a random uniform categorical model on a
-random sparse categorical ground truth from 1000
-simulations.</span><a class="headerlink" href="#id77" title="Permalink to this image">¶</a></p>
-</div>
-<table class="docutils align-default" id="id78">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id78" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id72">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id72" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2263,8 +2129,8 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id79">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id79" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id73">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id73" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2295,8 +2161,8 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id80">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id80" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id74">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id74" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2327,8 +2193,8 @@ simulations.</span><a class="headerlink" href="#id77" title="Permalink to this i
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id81">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id81" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id75">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id75" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2463,28 +2329,6 @@ that the Unweighted Average Recall (UAR)
 does not decrease
 too much when adding
 the given background noise.</p>
-<p>The <strong>Change UAP Babble Noise</strong>,
-<strong>Change UAP Coughing</strong>,
-<strong>Change UAP Environmental Noise</strong>,
-<strong>Change UAP Music</strong>,
-<strong>Change UAP Sneezing</strong>,
-and <strong>Change UAP White Noise</strong>
-tests ensure
-that the Unweighted Average Precision (UAP)
-does not decrease
-too much when adding
-the given background noise.</p>
-<p>The <strong>Change Average Value Babble Noise</strong>,
-<strong>Change Average Value Coughing</strong>,
-<strong>Change Average Value Environmental Noise</strong>,
-<strong>Change Average Value Music</strong>,
-<strong>Change Average Value Sneezing</strong>,
-and <strong>Change Average Value White Noise</strong>
-tests ensure
-that the average value
-is not affected
-too much when adding
-the given background noise.</p>
 <p>The <strong>Percentage Unchanged Predictions Babble Noise</strong>,
 <strong>Percentage Unchanged Predictions Coughing</strong>,
 <strong>Percentage Unchanged Predictions Environmental Noise</strong>,
@@ -2498,8 +2342,8 @@ when adding the given background noise.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id82">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id82" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id76">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id76" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2548,8 +2392,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id83">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id83" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id77">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id77" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2598,8 +2442,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id84">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id84" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id78">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id78" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2648,8 +2492,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id85">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id85" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id79">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id79" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2752,11 +2596,6 @@ if possible without clipping.</p>
 <p>We use the same definitions as in
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute the difference <span class="math">\(\delta\)</span> in prediction.</p>
-<p>The <strong>Change Average Value Low Quality Phone</strong> test
-ensures that the absolute change in average value
-is below the given threshold
-when applying
-the low quality phone filter.</p>
 <p>The <strong>Change CCC Low Quality Phone</strong> test
 ensures that the Concordance Correlation Coefficient (CCC)
 does not decrease further
@@ -2769,12 +2608,6 @@ that the Unweighted Average Recall (UAR)
 does not decrease
 too much when applying
 the low quality phone filter.</p>
-<p>The <strong>Change UAP Low Quality Phone</strong>
-tests ensure
-that the Unweighted Average Precision (UAP)
-does not decrease
-too much when applying
-the low quality phone filter.</p>
 <p>The <strong>Percentage Unchanged Predictions Low Quality Phone</strong>
 tests check
 that the percentage of samples with
@@ -2784,8 +2617,8 @@ the low quality phone filter.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id86">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id86" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id80">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id80" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2804,8 +2637,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id87">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id87" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id81">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id81" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2824,8 +2657,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id88">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id88" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id82">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id82" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2844,8 +2677,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id89">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id89" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id83">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id83" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2896,8 +2729,8 @@ is high enough.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id90">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id90" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id84">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id84" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2913,8 +2746,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id91">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id91" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id85">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id85" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2930,8 +2763,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id92">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id92" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id86">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id86" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -2947,8 +2780,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id93">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id93" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id87">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id87" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3026,8 +2859,8 @@ unchanged predictions is high enough.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id94">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id94" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id88">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id88" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3046,8 +2879,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id95">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id95" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id89">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id89" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3066,8 +2899,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id96">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id96" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id90">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id90" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3086,8 +2919,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id97">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id97" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id91">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id91" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3250,8 +3083,8 @@ randomly selected from
 35 dB, 40 dB, 45 dB
 and checks that the percentage of unchanged
 predictions is above the given threshold.</p>
-<table class="docutils align-default" id="id98">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id98" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id92">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id92" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3294,8 +3127,8 @@ predictions is above the given threshold.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id99">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id99" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id93">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id93" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3338,8 +3171,8 @@ predictions is above the given threshold.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id100">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id100" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id94">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id94" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3382,8 +3215,8 @@ predictions is above the given threshold.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id101">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id101" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id95">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id95" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3468,18 +3301,6 @@ ensure that the Unweighted Average Recall (UAR)
 does not decrease
 too much when applying
 the downward or upward spectral tilt filter.</p>
-<p>The <strong>Change UAP Downward Tilt</strong>
-and <strong>Change UAP Upward Tilt</strong> tests
-ensure that the Unweighted Average Precision (UAP)
-does not decrease
-too much when applying
-the downward or upward spectral tilt filter.</p>
-<p>The <strong>Change Average Value Downward Tilt</strong>
-and <strong>Change Average Value Upward Tilt</strong> tests
-ensure that the average value
-is not affected
-too much when applying
-the downward or upward spectral tilt filter.</p>
 <p>The <strong>Percentage Unchanged Predictions Downward Tilt</strong>
 and <strong>Percentage Unchanged Predictions Upward Tilt</strong>
 tests check
@@ -3490,8 +3311,8 @@ the downward or upward spectral tilt filter.
 We use the same definitions as in the
 <a class="reference internal" href="#method-tests-robustness-small-changes"><span class="std std-ref">Robustness Small Changes</span></a>
 to compute this percentage.</p>
-<table class="docutils align-default" id="id102">
-<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id102" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id96">
+<caption><span class="caption-text">Overview of tests and thresholds for arousal</span><a class="headerlink" href="#id96" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3516,8 +3337,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id103">
-<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id103" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id97">
+<caption><span class="caption-text">Overview of tests and thresholds for dominance</span><a class="headerlink" href="#id97" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3542,8 +3363,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id104">
-<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id104" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id98">
+<caption><span class="caption-text">Overview of tests and thresholds for valence</span><a class="headerlink" href="#id98" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -3568,8 +3389,8 @@ to compute this percentage.</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id105">
-<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id105" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id99">
+<caption><span class="caption-text">Overview of tests and thresholds for emotion</span><a class="headerlink" href="#id99" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
