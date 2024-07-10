@@ -1,4 +1,4 @@
 Data,Percentage Unchanged Predictions Simulated Room
-emovo-1.2.1-emotion.test,0.49
-imda-nsc-read-speech-balanced-2.6.0-headset,0.7
-timit-1.4.1-files,0.65
+emovo-1.2.1-emotion.test,0.5
+imda-nsc-read-speech-balanced-2.6.0-headset,0.69
+timit-1.4.1-files,0.66
