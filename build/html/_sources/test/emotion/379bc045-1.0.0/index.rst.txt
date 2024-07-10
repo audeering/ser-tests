@@ -6,7 +6,7 @@ w2v2-L-vox-cat
 .. role:: red
 .. role:: green
 
-75.0% passed tests (527 :green:`passed` / 176 :red:`failed`).
+76.3% passed tests (469 :green:`passed` / 146 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

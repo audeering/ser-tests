@@ -25,11 +25,11 @@ Percentage Unchanged Predictions Additive Tone
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`0.98`
-      - :green:`1.00`
-      - :green:`1.00`
-      - :green:`0.98`
       - :green:`0.97`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.98`
+      - :green:`0.98`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :green:`0.98`
       - :green:`0.99`
@@ -37,7 +37,7 @@ Percentage Unchanged Predictions Additive Tone
       - :green:`0.99`
       - :green:`0.99`
     * - mean
-      - 0.98
+      - 0.97
       - 0.99
       - 0.99
       - 0.98
@@ -124,7 +124,7 @@ Percentage Unchanged Predictions Crop Beginning
       - :green:`0.97`
       - :green:`0.99`
       - :green:`0.99`
-      - :green:`0.97`
+      - :green:`0.98`
       - :green:`0.98`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :green:`1.00`
@@ -217,7 +217,7 @@ Percentage Unchanged Predictions Highpass Filter
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`1.00`
+      - :green:`0.99`
       - :green:`1.00`
       - :green:`1.00`
       - :green:`1.00`
@@ -229,7 +229,7 @@ Percentage Unchanged Predictions Highpass Filter
       - :green:`0.99`
       - :green:`0.98`
     * - mean
-      - 1.00
+      - 0.99
       - 1.00
       - 1.00
       - 0.99
@@ -282,14 +282,14 @@ Percentage Unchanged Predictions Prepend Zeros
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :green:`0.96`
+      - :green:`0.99`
       - :green:`0.98`
-      - :green:`0.97`
       - :green:`0.96`
       - :green:`0.97`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :green:`1.00`
       - :green:`1.00`
-      - :green:`1.00`
+      - :green:`0.99`
       - :green:`0.99`
       - :green:`1.00`
     * - mean
@@ -320,7 +320,7 @@ Percentage Unchanged Predictions White Noise
       - :red:`0.85`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`0.83`
-      - :red:`0.66`
+      - :red:`0.65`
       - :red:`0.92`
       - :red:`0.71`
       - :red:`0.80`

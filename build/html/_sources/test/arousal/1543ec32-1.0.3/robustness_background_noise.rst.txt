@@ -6,50 +6,8 @@ Robustness background noise
 .. role:: red
 .. role:: green
 
-38.9% passed tests (14 :green:`passed` / 22 :red:`failed`).
+25.0% passed tests (6 :green:`passed` / 18 :red:`failed`).
 
-
-Change Average Value Babble Noise
----------------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_background_noise/change-average-value-babble-noise.csv
-
-Change Average Value Coughing
------------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_background_noise/change-average-value-coughing.csv
-
-Change Average Value Environmental Noise
-----------------------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_background_noise/change-average-value-environmental-noise.csv
-
-Change Average Value Music
---------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_background_noise/change-average-value-music.csv
-
-Change Average Value Sneezing
------------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_background_noise/change-average-value-sneezing.csv
-
-Change Average Value White Noise
---------------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_background_noise/change-average-value-white-noise.csv
 
 Change Ccc Babble Noise
 -----------------------

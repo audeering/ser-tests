@@ -19,11 +19,11 @@ This compares the models :ref:`w2v2-b <test-dominance-a3b14624-1.1.0>` and :ref:
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - Overall Score
-      - 83.9% (365 :green:`passed` /  70 :red:`failed`)
-      - 81.7% (330 :green:`passed` /  74 :red:`failed`)
-      - 85.4% (345 :green:`passed` /  59 :red:`failed`)
-      - 84.2% (340 :green:`passed` /  64 :red:`failed`)
-      - 84.4% (372 :green:`passed` /  69 :red:`failed`)
+      - 84.9% (332 :green:`passed` /  59 :red:`failed`)
+      - 81.7% (294 :green:`passed` /  66 :red:`failed`)
+      - 84.4% (304 :green:`passed` /  56 :red:`failed`)
+      - 83.6% (301 :green:`passed` /  59 :red:`failed`)
+      - 85.1% (338 :green:`passed` /  59 :red:`failed`)
     * - :ref:`Correctness consistency <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_consistency>`
       - :red:`51.2%`
       - :red:`55.8%`
@@ -32,10 +32,10 @@ This compares the models :ref:`w2v2-b <test-dominance-a3b14624-1.1.0>` and :ref:
       - :red:`51.2%`
     * - :ref:`Correctness distribution <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_distribution>`
       - :red:`66.7%`
-      - 83.3%
       - :red:`66.7%`
-      - 83.3%
-      - 83.3%
+      - :red:`66.7%`
+      - :red:`66.7%`
+      - :red:`66.7%`
     * - :ref:`Correctness regression <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_regression>`
       - :red:`66.7%`
       - :red:`66.7%`
@@ -49,11 +49,11 @@ This compares the models :ref:`w2v2-b <test-dominance-a3b14624-1.1.0>` and :ref:
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Correctness speaker ranking <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_speaker_ranking>`
-      - 75.0%
-      - 87.5%
       - :green:`100.0%`
-      - 87.5%
-      - 75.0%
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
     * - :ref:`Fairness accent <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_accent>`
       - 98.4%
       - 93.5%
@@ -73,29 +73,29 @@ This compares the models :ref:`w2v2-b <test-dominance-a3b14624-1.1.0>` and :ref:
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Fairness pitch <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_pitch>`
-      - 90.5%
-      - 95.2%
       - :green:`100.0%`
-      - 95.2%
+      - 93.3%
+      - :green:`100.0%`
+      - 93.3%
       - :green:`100.0%`
     * - :ref:`Fairness sex <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_sex>`
-      - 92.5%
-      - 97.5%
+      - 90.6%
+      - 96.9%
       - :green:`100.0%`
-      - 97.5%
-      - 95.0%
+      - 96.9%
+      - 93.8%
     * - :ref:`Robustness background noise <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_background_noise>`
-      - :red:`58.3%`
       - :red:`50.0%`
-      - 77.8%
-      - :red:`55.6%`
-      - :red:`58.3%`
+      - :red:`50.0%`
+      - 75.0%
+      - :red:`45.8%`
+      - :red:`54.2%`
     * - :ref:`Robustness low quality phone <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_low_quality_phone>`
-      - :red:`50.0%`
-      - :red:`50.0%`
+      - 75.0%
+      - :red:`25.0%`
       - :green:`100.0%`
-      - :red:`33.3%`
-      - :red:`33.3%`
+      - :red:`25.0%`
+      - :green:`100.0%`
     * - :ref:`Robustness recording condition <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_recording_condition>`
       - :red:`0.0%`
       - :red:`0.0%`
@@ -115,11 +115,11 @@ This compares the models :ref:`w2v2-b <test-dominance-a3b14624-1.1.0>` and :ref:
       - 90.0%
       - 90.0%
     * - :ref:`Robustness spectral tilt <comparison-dominance-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_spectral_tilt>`
-      - 83.3%
-      - 83.3%
+      - 87.5%
+      - 87.5%
       - :green:`100.0%`
-      - 91.7%
-      - 83.3%
+      - 87.5%
+      - 75.0%
 
 
 .. toctree::

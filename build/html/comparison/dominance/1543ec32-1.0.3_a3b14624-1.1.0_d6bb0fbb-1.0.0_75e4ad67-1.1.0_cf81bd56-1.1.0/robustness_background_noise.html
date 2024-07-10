@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
@@ -324,7 +324,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2aa0755
               </div>
             
           
@@ -379,12 +379,6 @@
 <li class="toctree-l3"><a class="reference internal" href="fairness_pitch.html">Fairness pitch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Robustness background noise</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-babble-noise">Change Average Value Babble Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-coughing">Change Average Value Coughing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-environmental-noise">Change Average Value Environmental Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-music">Change Average Value Music</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-sneezing">Change Average Value Sneezing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-white-noise">Change Average Value White Noise</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-ccc-babble-noise">Change Ccc Babble Noise</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-ccc-coughing">Change Ccc Coughing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-ccc-environmental-noise">Change Ccc Environmental Noise</a></li>
@@ -472,306 +466,18 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Overall Score</p></td>
-<td><p>55.6% passed tests (20 <span class="green">passed</span> /  16 <span class="red">failed</span>).</p></td>
-<td><p>58.3% passed tests (21 <span class="green">passed</span> /  15 <span class="red">failed</span>).</p></td>
-<td><p>50.0% passed tests (18 <span class="green">passed</span> /  18 <span class="red">failed</span>).</p></td>
-<td><p>44.4% passed tests (16 <span class="green">passed</span> /  20 <span class="red">failed</span>).</p></td>
-<td><p>55.6% passed tests (20 <span class="green">passed</span> /  16 <span class="red">failed</span>).</p></td>
+<td><p>45.8% passed tests (11 <span class="green">passed</span> /  13 <span class="red">failed</span>).</p></td>
+<td><p>50.0% passed tests (12 <span class="green">passed</span> /  12 <span class="red">failed</span>).</p></td>
+<td><p>50.0% passed tests (12 <span class="green">passed</span> /  12 <span class="red">failed</span>).</p></td>
+<td><p>41.7% passed tests (10 <span class="green">passed</span> /  14 <span class="red">failed</span>).</p></td>
+<td><p>54.2% passed tests (13 <span class="green">passed</span> /  11 <span class="red">failed</span>).</p></td>
 </tr>
 </tbody>
 </table>
-<div class="section" id="change-average-value-babble-noise">
-<h2>Change Average Value Babble Noise<a class="headerlink" href="#change-average-value-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> Change Average Value Babble Noise</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14</p></th>
-<th class="head"><p>w2v2-b</p></th>
-<th class="head"><p>w2v2-L</p></th>
-<th class="head"><p>hubert-b</p></th>
-<th class="head"><p>hubert-L</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.03</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="green">-0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.01</span></p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.03</p></td>
-<td><p>-0.01</p></td>
-<td><p>0.00</p></td>
-<td><p>0.01</p></td>
-<td><p>-0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-coughing">
-<h2>Change Average Value Coughing<a class="headerlink" href="#change-average-value-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> Change Average Value Coughing</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14</p></th>
-<th class="head"><p>w2v2-b</p></th>
-<th class="head"><p>w2v2-L</p></th>
-<th class="head"><p>hubert-b</p></th>
-<th class="head"><p>hubert-L</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-<td><p><span class="green">0.02</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-<td><p><span class="red">0.04</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.02</p></td>
-<td><p>0.02</p></td>
-<td><p>0.03</p></td>
-<td><p>0.04</p></td>
-<td><p>0.03</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-environmental-noise">
-<h2>Change Average Value Environmental Noise<a class="headerlink" href="#change-average-value-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> Change Average Value Environmental Noise</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14</p></th>
-<th class="head"><p>w2v2-b</p></th>
-<th class="head"><p>w2v2-L</p></th>
-<th class="head"><p>hubert-b</p></th>
-<th class="head"><p>hubert-L</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.00</p></td>
-<td><p>-0.02</p></td>
-<td><p>-0.02</p></td>
-<td><p>-0.01</p></td>
-<td><p>-0.02</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-music">
-<h2>Change Average Value Music<a class="headerlink" href="#change-average-value-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> Change Average Value Music</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14</p></th>
-<th class="head"><p>w2v2-b</p></th>
-<th class="head"><p>w2v2-L</p></th>
-<th class="head"><p>hubert-b</p></th>
-<th class="head"><p>hubert-L</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.00</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.00</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.01</p></td>
-<td><p>-0.02</p></td>
-<td><p>-0.01</p></td>
-<td><p>0.00</p></td>
-<td><p>-0.02</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-sneezing">
-<h2>Change Average Value Sneezing<a class="headerlink" href="#change-average-value-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> Change Average Value Sneezing</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14</p></th>
-<th class="head"><p>w2v2-b</p></th>
-<th class="head"><p>w2v2-L</p></th>
-<th class="head"><p>hubert-b</p></th>
-<th class="head"><p>hubert-L</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-<td><p><span class="red">0.04</span></p></td>
-<td><p><span class="red">0.04</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="green">0.02</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-<td><p><span class="red">0.04</span></p></td>
-<td><p><span class="red">0.03</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.02</p></td>
-<td><p>0.03</p></td>
-<td><p>0.04</p></td>
-<td><p>0.04</p></td>
-<td><p>0.03</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-average-value-white-noise">
-<h2>Change Average Value White Noise<a class="headerlink" href="#change-average-value-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-text">Threshold: 0.03</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
-<th class="head" colspan="5"><p> Change Average Value White Noise</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>CNN14</p></th>
-<th class="head"><p>w2v2-b</p></th>
-<th class="head"><p>w2v2-L</p></th>
-<th class="head"><p>hubert-b</p></th>
-<th class="head"><p>hubert-L</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">-0.09</span></p></td>
-<td><p><span class="red">-0.08</span></p></td>
-<td><p><span class="red">-0.08</span></p></td>
-<td><p><span class="red">-0.04</span></p></td>
-<td><p><span class="red">-0.04</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">-0.03</span></p></td>
-<td><p><span class="red">-0.08</span></p></td>
-<td><p><span class="red">-0.09</span></p></td>
-<td><p><span class="red">-0.05</span></p></td>
-<td><p><span class="red">-0.05</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>-0.06</p></td>
-<td><p>-0.08</p></td>
-<td><p>-0.08</p></td>
-<td><p>-0.04</p></td>
-<td><p>-0.04</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="change-ccc-babble-noise">
 <h2>Change Ccc Babble Noise<a class="headerlink" href="#change-ccc-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id8">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -795,7 +501,7 @@
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
 <td><p><span class="green">0.04</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
 <td><p><span class="green">-0.02</span></p></td>
 </tr>
@@ -818,8 +524,8 @@
 </div>
 <div class="section" id="change-ccc-coughing">
 <h2>Change Ccc Coughing<a class="headerlink" href="#change-ccc-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id9">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -841,23 +547,23 @@
 </thead>
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.02</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="green">-0.03</span></p></td>
 <td><p><span class="green">-0.04</span></p></td>
 <td><p><span class="red">-0.06</span></p></td>
-<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
 <td><p><span class="red">-0.05</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.00</p></td>
+<td><p>0.01</p></td>
 <td><p>-0.03</p></td>
-<td><p>-0.04</p></td>
+<td><p>-0.03</p></td>
 <td><p>-0.02</p></td>
 <td><p>-0.03</p></td>
 </tr>
@@ -866,8 +572,8 @@
 </div>
 <div class="section" id="change-ccc-environmental-noise">
 <h2>Change Ccc Environmental Noise<a class="headerlink" href="#change-ccc-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id10">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -891,22 +597,22 @@
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
 <td><p><span class="green">0.02</span></p></td>
 <td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
 <td><p><span class="green">-0.02</span></p></td>
-<td><p><span class="green">-0.03</span></p></td>
 <td><p><span class="green">-0.03</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
 <td><p><span class="green">-0.00</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>-0.00</p></td>
 <td><p>-0.01</p></td>
 <td><p>-0.01</p></td>
-<td><p>-0.02</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.01</p></td>
 <td><p>-0.01</p></td>
 </tr>
 </tbody>
@@ -914,8 +620,8 @@
 </div>
 <div class="section" id="change-ccc-music">
 <h2>Change Ccc Music<a class="headerlink" href="#change-ccc-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id11">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -937,7 +643,7 @@
 </thead>
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
 <td><p><span class="green">-0.02</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
@@ -945,13 +651,13 @@
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="green">-0.03</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">0.00</span></p></td>
-<td><p><span class="green">-0.01</span></p></td>
 <td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>-0.00</p></td>
+<td><p>-0.01</p></td>
 <td><p>-0.01</p></td>
 <td><p>-0.01</p></td>
 <td><p>-0.01</p></td>
@@ -962,8 +668,8 @@
 </div>
 <div class="section" id="change-ccc-sneezing">
 <h2>Change Ccc Sneezing<a class="headerlink" href="#change-ccc-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id12">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -985,9 +691,9 @@
 </thead>
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
 <td><p><span class="green">-0.01</span></p></td>
-<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
 <td><p><span class="green">-0.00</span></p></td>
 <td><p><span class="green">-0.03</span></p></td>
 </tr>
@@ -1001,7 +707,7 @@
 <tr class="row-odd"><td><p>mean</p></td>
 <td><p>0.01</p></td>
 <td><p>-0.02</p></td>
-<td><p>-0.06</p></td>
+<td><p>-0.05</p></td>
 <td><p>-0.02</p></td>
 <td><p>-0.04</p></td>
 </tr>
@@ -1010,8 +716,8 @@
 </div>
 <div class="section" id="change-ccc-white-noise">
 <h2>Change Ccc White Noise<a class="headerlink" href="#change-ccc-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id13">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -1058,8 +764,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-babble-noise">
 <h2>Percentage Unchanged Predictions Babble Noise<a class="headerlink" href="#percentage-unchanged-predictions-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id14">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -1081,7 +787,7 @@
 </thead>
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.69</span></p></td>
+<td><p><span class="red">0.70</span></p></td>
 <td><p><span class="green">0.92</span></p></td>
 <td><p><span class="green">0.97</span></p></td>
 <td><p><span class="red">0.87</span></p></td>
@@ -1089,14 +795,14 @@
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="red">0.73</span></p></td>
-<td><p><span class="green">0.95</span></p></td>
+<td><p><span class="green">0.94</span></p></td>
 <td><p><span class="green">0.95</span></p></td>
 <td><p><span class="red">0.88</span></p></td>
 <td><p><span class="green">0.94</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
 <td><p>0.71</p></td>
-<td><p>0.94</p></td>
+<td><p>0.93</p></td>
 <td><p>0.96</p></td>
 <td><p>0.88</p></td>
 <td><p>0.94</p></td>
@@ -1106,8 +812,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-coughing">
 <h2>Percentage Unchanged Predictions Coughing<a class="headerlink" href="#percentage-unchanged-predictions-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id15">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -1130,32 +836,32 @@
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
 <td><p><span class="red">0.71</span></p></td>
-<td><p><span class="red">0.70</span></p></td>
-<td><p><span class="red">0.75</span></p></td>
+<td><p><span class="red">0.71</span></p></td>
+<td><p><span class="red">0.77</span></p></td>
 <td><p><span class="red">0.63</span></p></td>
-<td><p><span class="red">0.76</span></p></td>
+<td><p><span class="red">0.77</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">0.83</span></p></td>
-<td><p><span class="red">0.76</span></p></td>
-<td><p><span class="red">0.80</span></p></td>
-<td><p><span class="red">0.67</span></p></td>
+<td><p><span class="red">0.84</span></p></td>
 <td><p><span class="red">0.77</span></p></td>
+<td><p><span class="red">0.81</span></p></td>
+<td><p><span class="red">0.67</span></p></td>
+<td><p><span class="red">0.79</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
 <td><p>0.77</p></td>
-<td><p>0.73</p></td>
-<td><p>0.78</p></td>
+<td><p>0.74</p></td>
+<td><p>0.79</p></td>
 <td><p>0.65</p></td>
-<td><p>0.77</p></td>
+<td><p>0.78</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="percentage-unchanged-predictions-environmental-noise">
 <h2>Percentage Unchanged Predictions Environmental Noise<a class="headerlink" href="#percentage-unchanged-predictions-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id16">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -1177,10 +883,10 @@
 </thead>
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.66</span></p></td>
-<td><p><span class="red">0.80</span></p></td>
+<td><p><span class="red">0.67</span></p></td>
+<td><p><span class="red">0.81</span></p></td>
 <td><p><span class="red">0.86</span></p></td>
-<td><p><span class="red">0.80</span></p></td>
+<td><p><span class="red">0.82</span></p></td>
 <td><p><span class="red">0.87</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
@@ -1188,13 +894,13 @@
 <td><p><span class="red">0.81</span></p></td>
 <td><p><span class="red">0.83</span></p></td>
 <td><p><span class="red">0.84</span></p></td>
-<td><p><span class="red">0.88</span></p></td>
+<td><p><span class="red">0.89</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
 <td><p>0.69</p></td>
 <td><p>0.81</p></td>
 <td><p>0.84</p></td>
-<td><p>0.82</p></td>
+<td><p>0.83</p></td>
 <td><p>0.88</p></td>
 </tr>
 </tbody>
@@ -1202,8 +908,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-music">
 <h2>Percentage Unchanged Predictions Music<a class="headerlink" href="#percentage-unchanged-predictions-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id17">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -1227,22 +933,22 @@
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
 <td><p><span class="red">0.67</span></p></td>
 <td><p><span class="red">0.87</span></p></td>
-<td><p><span class="green">0.95</span></p></td>
-<td><p><span class="red">0.88</span></p></td>
-<td><p><span class="green">0.92</span></p></td>
+<td><p><span class="green">0.94</span></p></td>
+<td><p><span class="red">0.87</span></p></td>
+<td><p><span class="green">0.91</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">0.71</span></p></td>
-<td><p><span class="red">0.87</span></p></td>
+<td><p><span class="red">0.72</span></p></td>
+<td><p><span class="red">0.86</span></p></td>
 <td><p><span class="green">0.91</span></p></td>
 <td><p><span class="red">0.89</span></p></td>
 <td><p><span class="green">0.92</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.69</p></td>
-<td><p>0.87</p></td>
+<td><p>0.70</p></td>
+<td><p>0.86</p></td>
 <td><p>0.93</p></td>
-<td><p>0.89</p></td>
+<td><p>0.88</p></td>
 <td><p>0.92</p></td>
 </tr>
 </tbody>
@@ -1250,8 +956,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-sneezing">
 <h2>Percentage Unchanged Predictions Sneezing<a class="headerlink" href="#percentage-unchanged-predictions-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id18">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id12">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -1273,10 +979,10 @@
 </thead>
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.68</span></p></td>
-<td><p><span class="red">0.70</span></p></td>
 <td><p><span class="red">0.67</span></p></td>
-<td><p><span class="red">0.52</span></p></td>
+<td><p><span class="red">0.70</span></p></td>
+<td><p><span class="red">0.69</span></p></td>
+<td><p><span class="red">0.51</span></p></td>
 <td><p><span class="red">0.73</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
@@ -1287,10 +993,10 @@
 <td><p><span class="red">0.80</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
+<td><p>0.73</p></td>
 <td><p>0.74</p></td>
-<td><p>0.74</p></td>
-<td><p>0.71</p></td>
-<td><p>0.56</p></td>
+<td><p>0.72</p></td>
+<td><p>0.55</p></td>
 <td><p>0.77</p></td>
 </tr>
 </tbody>
@@ -1298,8 +1004,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-white-noise">
 <h2>Percentage Unchanged Predictions White Noise<a class="headerlink" href="#percentage-unchanged-predictions-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id19">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id13">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -1321,32 +1027,32 @@
 </thead>
 <tbody>
 <tr class="row-odd"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.29</span></p></td>
-<td><p><span class="red">0.27</span></p></td>
+<td><p><span class="red">0.30</span></p></td>
+<td><p><span class="red">0.26</span></p></td>
 <td><p><span class="red">0.14</span></p></td>
 <td><p><span class="red">0.59</span></p></td>
-<td><p><span class="red">0.57</span></p></td>
+<td><p><span class="red">0.58</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
 <td><p><span class="red">0.47</span></p></td>
 <td><p><span class="red">0.23</span></p></td>
 <td><p><span class="red">0.12</span></p></td>
-<td><p><span class="red">0.50</span></p></td>
+<td><p><span class="red">0.49</span></p></td>
 <td><p><span class="red">0.50</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.38</p></td>
-<td><p>0.25</p></td>
+<td><p>0.39</p></td>
+<td><p>0.24</p></td>
 <td><p>0.13</p></td>
 <td><p>0.54</p></td>
-<td><p>0.53</p></td>
+<td><p>0.54</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="visualization-babble-noise">
 <h2>Visualization Babble Noise<a class="headerlink" href="#visualization-babble-noise" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for clean audio and audio with added babble noise. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for clean audio and audio with added babble noise. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 20%" />
@@ -1644,7 +1350,7 @@
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -1652,7 +1358,7 @@
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -1684,6 +1390,9 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
     
 
   

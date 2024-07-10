@@ -6,22 +6,8 @@ Robustness spectral tilt
 .. role:: red
 .. role:: green
 
-100.0% passed tests (12 :green:`passed` / 0 :red:`failed`).
+100.0% passed tests (8 :green:`passed` / 0 :red:`failed`).
 
-
-Change Average Value Downward Tilt
-----------------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_spectral_tilt/change-average-value-downward-tilt.csv
-
-Change Average Value Upward Tilt
---------------------------------
-
-.. csv-table:: Threshold: 0.03
-    :header-rows: 1
-    :file: robustness_spectral_tilt/change-average-value-upward-tilt.csv
 
 Change Ccc Downward Tilt
 ------------------------

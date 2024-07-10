@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
@@ -322,7 +322,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2aa0755
               </div>
             
           
@@ -376,12 +376,6 @@
 <li class="toctree-l3"><a class="reference internal" href="fairness_pitch.html">Fairness pitch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Robustness background noise</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#change-uap-babble-noise">Change Uap Babble Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-uap-coughing">Change Uap Coughing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-uap-environmental-noise">Change Uap Environmental Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-uap-music">Change Uap Music</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-uap-sneezing">Change Uap Sneezing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#change-uap-white-noise">Change Uap White Noise</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-uar-babble-noise">Change Uar Babble Noise</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-uar-coughing">Change Uar Coughing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-uar-environmental-noise">Change Uar Environmental Noise</a></li>
@@ -460,221 +454,11 @@
             
   <div class="section" id="robustness-background-noise">
 <span id="test-emotion-379bc045-1-0-0-robustness-background-noise"></span><h1>Robustness background noise<a class="headerlink" href="#robustness-background-noise" title="Permalink to this heading">¶</a></h1>
-<p>63.3% passed tests (57 <span class="green">passed</span> / 33 <span class="red">failed</span>).</p>
-<div class="section" id="change-uap-babble-noise">
-<h2>Change Uap Babble Noise<a class="headerlink" href="#change-uap-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change UAP Babble Noise</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">0.02</span></p></td>
-</tr>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>-0.00</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-uap-coughing">
-<h2>Change Uap Coughing<a class="headerlink" href="#change-uap-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change UAP Coughing</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>-0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-uap-environmental-noise">
-<h2>Change Uap Environmental Noise<a class="headerlink" href="#change-uap-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change UAP Environmental Noise</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.05</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">0.01</span></p></td>
-</tr>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-uap-music">
-<h2>Change Uap Music<a class="headerlink" href="#change-uap-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change UAP Music</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.09</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-uap-sneezing">
-<h2>Change Uap Sneezing<a class="headerlink" href="#change-uap-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change UAP Sneezing</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.05</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.01</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="change-uap-white-noise">
-<h2>Change Uap White Noise<a class="headerlink" href="#change-uap-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change UAP White Noise</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">0.07</span></p></td>
-</tr>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.00</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">0.01</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.02</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>43.3% passed tests (26 <span class="green">passed</span> / 34 <span class="red">failed</span>).</p>
 <div class="section" id="change-uar-babble-noise">
 <h2>Change Uar Babble Noise<a class="headerlink" href="#change-uar-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -689,7 +473,7 @@
 <td><p><span class="green">-0.00</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="green">-0.04</span></p></td>
@@ -708,8 +492,8 @@
 </div>
 <div class="section" id="change-uar-coughing">
 <h2>Change Uar Coughing<a class="headerlink" href="#change-uar-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id8">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -724,10 +508,10 @@
 <td><p><span class="green">0.05</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="red">-0.05</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">-0.09</span></p></td>
+<td><p><span class="red">-0.10</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="red">-0.05</span></p></td>
@@ -743,8 +527,8 @@
 </div>
 <div class="section" id="change-uar-environmental-noise">
 <h2>Change Uar Environmental Noise<a class="headerlink" href="#change-uar-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id9">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -759,13 +543,13 @@
 <td><p><span class="green">-0.01</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="green">-0.03</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
 <td><p><span class="green">-0.04</span></p></td>
@@ -778,8 +562,8 @@
 </div>
 <div class="section" id="change-uar-music">
 <h2>Change Uar Music<a class="headerlink" href="#change-uar-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id10">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -791,10 +575,10 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="red">-0.05</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="green">-0.03</span></p></td>
@@ -813,8 +597,8 @@
 </div>
 <div class="section" id="change-uar-sneezing">
 <h2>Change Uar Sneezing<a class="headerlink" href="#change-uar-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id11">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -829,7 +613,7 @@
 <td><p><span class="green">0.02</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="red">-0.08</span></p></td>
@@ -848,8 +632,8 @@
 </div>
 <div class="section" id="change-uar-white-noise">
 <h2>Change Uar White Noise<a class="headerlink" href="#change-uar-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id12">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -864,7 +648,7 @@
 <td><p><span class="red">-0.07</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="red">-0.08</span></p></td>
+<td><p><span class="red">-0.07</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="red">-0.07</span></p></td>
@@ -873,7 +657,7 @@
 <td><p><span class="green">-0.01</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="red">-0.05</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
 <td><p>-0.05</p></td>
@@ -883,8 +667,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-babble-noise">
 <h2>Percentage Unchanged Predictions Babble Noise<a class="headerlink" href="#percentage-unchanged-predictions-babble-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id13">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -899,13 +683,13 @@
 <td><p><span class="green">0.95</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="red">0.74</span></p></td>
+<td><p><span class="red">0.73</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.88</span></p></td>
+<td><p><span class="red">0.87</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.92</span></p></td>
+<td><p><span class="green">0.93</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
 <td><p><span class="red">0.82</span></p></td>
@@ -918,8 +702,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-coughing">
 <h2>Percentage Unchanged Predictions Coughing<a class="headerlink" href="#percentage-unchanged-predictions-coughing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id14">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -937,10 +721,10 @@
 <td><p><span class="red">0.41</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.64</span></p></td>
+<td><p><span class="red">0.63</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.77</span></p></td>
+<td><p><span class="red">0.78</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
 <td><p><span class="red">0.54</span></p></td>
@@ -953,8 +737,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-environmental-noise">
 <h2>Percentage Unchanged Predictions Environmental Noise<a class="headerlink" href="#percentage-unchanged-predictions-environmental-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id15">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -969,7 +753,7 @@
 <td><p><span class="green">0.96</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="red">0.76</span></p></td>
+<td><p><span class="red">0.78</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="red">0.89</span></p></td>
@@ -981,15 +765,15 @@
 <td><p><span class="red">0.84</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.87</p></td>
+<td><p>0.88</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="percentage-unchanged-predictions-music">
 <h2>Percentage Unchanged Predictions Music<a class="headerlink" href="#percentage-unchanged-predictions-music" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id16">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1001,30 +785,30 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.96</span></p></td>
+<td><p><span class="green">0.97</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="red">0.76</span></p></td>
+<td><p><span class="red">0.75</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="red">0.89</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.93</span></p></td>
+<td><p><span class="green">0.94</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
 <td><p><span class="red">0.83</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.87</p></td>
+<td><p>0.88</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="percentage-unchanged-predictions-sneezing">
 <h2>Percentage Unchanged Predictions Sneezing<a class="headerlink" href="#percentage-unchanged-predictions-sneezing" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id17">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1042,10 +826,10 @@
 <td><p><span class="red">0.49</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.74</span></p></td>
+<td><p><span class="red">0.75</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">0.81</span></p></td>
+<td><p><span class="red">0.82</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
 <td><p><span class="red">0.58</span></p></td>
@@ -1058,8 +842,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-white-noise">
 <h2>Percentage Unchanged Predictions White Noise<a class="headerlink" href="#percentage-unchanged-predictions-white-noise" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id18">
-<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id12">
+<caption><span class="caption-text">Threshold: 0.9</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1074,7 +858,7 @@
 <td><p><span class="green">0.91</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="red">0.66</span></p></td>
+<td><p><span class="red">0.67</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="red">0.79</span></p></td>
@@ -1230,7 +1014,7 @@
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -1238,7 +1022,7 @@
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -1270,6 +1054,9 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
     
 
   

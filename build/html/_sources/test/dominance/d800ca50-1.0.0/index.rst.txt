@@ -6,7 +6,7 @@ w2v2-L-xls-r
 .. role:: red
 .. role:: green
 
-84.2% passed tests (340 :green:`passed` / 64 :red:`failed`).
+83.6% passed tests (301 :green:`passed` / 59 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

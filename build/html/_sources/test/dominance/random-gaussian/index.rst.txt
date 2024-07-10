@@ -6,7 +6,7 @@ random-gaussian
 .. role:: red
 .. role:: green
 
-80.4% passed tests (418 :green:`passed` / 102 :red:`failed`).
+81.1% passed tests (386 :green:`passed` / 90 :red:`failed`).
 
 .. csv-table:: Tests overview
     :header-rows: 1

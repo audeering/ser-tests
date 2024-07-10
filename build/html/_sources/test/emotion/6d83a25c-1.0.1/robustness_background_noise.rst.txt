@@ -6,50 +6,8 @@ Robustness background noise
 .. role:: red
 .. role:: green
 
-66.7% passed tests (60 :green:`passed` / 30 :red:`failed`).
+56.7% passed tests (34 :green:`passed` / 26 :red:`failed`).
 
-
-Change Uap Babble Noise
------------------------
-
-.. csv-table:: Threshold: -0.05
-    :header-rows: 1
-    :file: robustness_background_noise/change-uap-babble-noise.csv
-
-Change Uap Coughing
--------------------
-
-.. csv-table:: Threshold: -0.05
-    :header-rows: 1
-    :file: robustness_background_noise/change-uap-coughing.csv
-
-Change Uap Environmental Noise
-------------------------------
-
-.. csv-table:: Threshold: -0.05
-    :header-rows: 1
-    :file: robustness_background_noise/change-uap-environmental-noise.csv
-
-Change Uap Music
-----------------
-
-.. csv-table:: Threshold: -0.05
-    :header-rows: 1
-    :file: robustness_background_noise/change-uap-music.csv
-
-Change Uap Sneezing
--------------------
-
-.. csv-table:: Threshold: -0.05
-    :header-rows: 1
-    :file: robustness_background_noise/change-uap-sneezing.csv
-
-Change Uap White Noise
-----------------------
-
-.. csv-table:: Threshold: -0.05
-    :header-rows: 1
-    :file: robustness_background_noise/change-uap-white-noise.csv
 
 Change Uar Babble Noise
 -----------------------

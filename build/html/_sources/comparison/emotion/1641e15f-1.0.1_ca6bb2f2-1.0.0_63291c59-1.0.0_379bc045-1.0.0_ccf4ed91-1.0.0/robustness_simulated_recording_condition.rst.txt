@@ -25,9 +25,9 @@ Percentage Unchanged Predictions Simulated Position
       - w2v2-L-vox-cat
       - w2v2-L-xls-r-cat
     * - emovo-1.2.1-emotion.test
-      - :red:`0.71`
+      - :red:`0.72`
       - :red:`0.75`
-      - :red:`0.75`
+      - :red:`0.76`
       - :green:`0.88`
       - :green:`0.87`
     * - imda-nsc-read-speech-balanced-2.6.0-headset
@@ -43,7 +43,7 @@ Percentage Unchanged Predictions Simulated Position
       - :green:`0.89`
       - :green:`0.87`
     * - mean
-      - 0.74
+      - 0.75
       - 0.79
       - 0.83
       - 0.90
@@ -63,7 +63,7 @@ Percentage Unchanged Predictions Simulated Room
       - w2v2-L-vox-cat
       - w2v2-L-xls-r-cat
     * - emovo-1.2.1-emotion.test
-      - :red:`0.65`
+      - :red:`0.64`
       - :red:`0.74`
       - :red:`0.76`
       - :green:`0.83`
@@ -72,8 +72,8 @@ Percentage Unchanged Predictions Simulated Room
       - :red:`0.69`
       - :red:`0.76`
       - :green:`0.83`
-      - :green:`0.89`
-      - :green:`0.85`
+      - :green:`0.88`
+      - :green:`0.84`
     * - timit-1.4.1-files
       - :red:`0.71`
       - :red:`0.77`
@@ -84,7 +84,7 @@ Percentage Unchanged Predictions Simulated Room
       - 0.68
       - 0.76
       - 0.80
-      - 0.84
+      - 0.83
       - 0.84
 
 Visualization Simulated Position

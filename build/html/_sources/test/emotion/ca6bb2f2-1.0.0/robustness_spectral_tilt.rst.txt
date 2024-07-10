@@ -6,22 +6,8 @@ Robustness spectral tilt
 .. role:: red
 .. role:: green
 
-86.7% passed tests (26 :green:`passed` / 4 :red:`failed`).
+90.0% passed tests (18 :green:`passed` / 2 :red:`failed`).
 
-
-Change Uap Downward Tilt
-------------------------
-
-.. csv-table:: Threshold: -0.02
-    :header-rows: 1
-    :file: robustness_spectral_tilt/change-uap-downward-tilt.csv
-
-Change Uap Upward Tilt
-----------------------
-
-.. csv-table:: Threshold: -0.02
-    :header-rows: 1
-    :file: robustness_spectral_tilt/change-uap-upward-tilt.csv
 
 Change Uar Downward Tilt
 ------------------------

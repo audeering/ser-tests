@@ -25,10 +25,10 @@ Percentage Unchanged Predictions Additive Tone
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`0.98`
+      - :green:`0.97`
       - :green:`1.00`
       - :green:`1.00`
-      - :green:`0.98`
+      - :green:`0.99`
       - :green:`0.98`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :green:`0.99`
@@ -121,7 +121,7 @@ Percentage Unchanged Predictions Crop Beginning
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`0.98`
+      - :green:`0.99`
       - :green:`0.99`
       - :green:`0.99`
       - :green:`0.99`
@@ -217,7 +217,7 @@ Percentage Unchanged Predictions Highpass Filter
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`1.00`
+      - :green:`0.99`
       - :green:`1.00`
       - :green:`1.00`
       - :green:`1.00`
@@ -229,7 +229,7 @@ Percentage Unchanged Predictions Highpass Filter
       - :green:`1.00`
       - :green:`1.00`
     * - mean
-      - 1.00
+      - 0.99
       - 1.00
       - 1.00
       - 1.00
@@ -313,15 +313,15 @@ Percentage Unchanged Predictions White Noise
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`0.90`
-      - :red:`0.90`
+      - :red:`0.91`
+      - :red:`0.91`
       - :green:`0.99`
       - :red:`0.87`
-      - :red:`0.76`
+      - :red:`0.77`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`0.80`
       - :red:`0.72`
-      - :red:`0.91`
+      - :red:`0.90`
       - :red:`0.74`
       - :red:`0.76`
     * - mean
@@ -329,7 +329,7 @@ Percentage Unchanged Predictions White Noise
       - 0.81
       - 0.95
       - 0.80
-      - 0.76
+      - 0.77
 
 Visualization
 -------------

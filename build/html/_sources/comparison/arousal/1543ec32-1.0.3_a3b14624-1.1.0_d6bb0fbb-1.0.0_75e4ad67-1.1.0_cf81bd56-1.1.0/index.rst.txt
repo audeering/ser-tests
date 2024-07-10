@@ -19,11 +19,11 @@ This compares the models :ref:`CNN14 <test-arousal-1543ec32-1.0.3>` and :ref:`w2
       - hubert-b
       - hubert-L
     * - Overall Score
-      - 79.6% (387 :green:`passed` /  99 :red:`failed`)
-      - 83.7% (381 :green:`passed` /  74 :red:`failed`)
-      - 87.0% (375 :green:`passed` /  56 :red:`failed`)
-      - 86.6% (421 :green:`passed` /  65 :red:`failed`)
-      - 85.9% (365 :green:`passed` /  60 :red:`failed`)
+      - 80.5% (356 :green:`passed` /  86 :red:`failed`)
+      - 84.9% (349 :green:`passed` /  62 :red:`failed`)
+      - 87.9% (340 :green:`passed` /  47 :red:`failed`)
+      - 87.1% (385 :green:`passed` /  57 :red:`failed`)
+      - 86.4% (329 :green:`passed` /  52 :red:`failed`)
     * - :ref:`Correctness consistency <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_consistency>`
       - :red:`48.6%`
       - :red:`56.8%`
@@ -32,10 +32,10 @@ This compares the models :ref:`CNN14 <test-arousal-1543ec32-1.0.3>` and :ref:`w2
       - :red:`73.0%`
     * - :ref:`Correctness distribution <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_distribution>`
       - :red:`66.7%`
-      - :red:`50.0%`
-      - 83.3%
-      - :red:`50.0%`
-      - 83.3%
+      - :red:`33.3%`
+      - :red:`66.7%`
+      - :red:`33.3%`
+      - :red:`66.7%`
     * - :ref:`Correctness regression <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_regression>`
       - :red:`22.2%`
       - :red:`66.7%`
@@ -44,13 +44,13 @@ This compares the models :ref:`CNN14 <test-arousal-1543ec32-1.0.3>` and :ref:`w2
       - 88.9%
     * - :ref:`Correctness speaker average <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_speaker_average>`
       - :green:`100.0%`
-      - 83.3%
+      - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Correctness speaker ranking <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-correctness_speaker_ranking>`
-      - 75.0%
-      - 87.5%
+      - :green:`100.0%`
+      - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
@@ -73,29 +73,29 @@ This compares the models :ref:`CNN14 <test-arousal-1543ec32-1.0.3>` and :ref:`w2
       - 97.9%
       - 88.9%
     * - :ref:`Fairness pitch <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-fairness_pitch>`
-      - 95.2%
-      - 85.7%
-      - 95.2%
-      - 95.2%
+      - :green:`100.0%`
+      - 93.3%
+      - :green:`100.0%`
+      - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Fairness sex <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-fairness_sex>`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
-      - 86.1%
+      - 82.1%
     * - :ref:`Robustness background noise <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_background_noise>`
-      - :red:`38.9%`
-      - :red:`44.4%`
+      - :red:`25.0%`
       - :red:`41.7%`
-      - :red:`47.2%`
-      - :red:`44.4%`
+      - :red:`37.5%`
+      - :red:`41.7%`
+      - :red:`41.7%`
     * - :ref:`Robustness low quality phone <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_low_quality_phone>`
-      - :red:`16.7%`
+      - :red:`25.0%`
       - :green:`100.0%`
-      - :red:`50.0%`
-      - :red:`66.7%`
-      - 83.3%
+      - :red:`25.0%`
+      - :red:`25.0%`
+      - :green:`100.0%`
     * - :ref:`Robustness recording condition <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_recording_condition>`
       - :red:`0.0%`
       - :red:`0.0%`
@@ -105,7 +105,7 @@ This compares the models :ref:`CNN14 <test-arousal-1543ec32-1.0.3>` and :ref:`w2
     * - :ref:`Robustness simulated recording condition <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_simulated_recording_condition>`
       - :red:`0.0%`
       - :red:`0.0%`
-      - :red:`16.7%`
+      - :red:`33.3%`
       - :red:`0.0%`
       - :red:`16.7%`
     * - :ref:`Robustness small changes <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_small_changes>`
@@ -117,9 +117,9 @@ This compares the models :ref:`CNN14 <test-arousal-1543ec32-1.0.3>` and :ref:`w2
     * - :ref:`Robustness spectral tilt <comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_d6bb0fbb-1.0.0_75e4ad67-1.1.0_cf81bd56-1.1.0-robustness_spectral_tilt>`
       - :red:`25.0%`
       - 75.0%
-      - :red:`66.7%`
-      - :red:`66.7%`
-      - 83.3%
+      - :red:`62.5%`
+      - 75.0%
+      - 87.5%
 
 
 .. toctree::

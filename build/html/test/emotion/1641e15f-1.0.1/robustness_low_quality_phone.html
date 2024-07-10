@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
@@ -322,7 +322,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2aa0755
               </div>
             
           
@@ -379,7 +379,6 @@
 <li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="robustness_background_noise.html">Robustness background noise</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Robustness low quality phone</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#change-uap-low-quality-phone">Change Uap Low Quality Phone</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-uar-low-quality-phone">Change Uar Low Quality Phone</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#percentage-unchanged-predictions-low-quality-phone">Percentage Unchanged Predictions Low Quality Phone</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a></li>
@@ -440,46 +439,11 @@
             
   <div class="section" id="robustness-low-quality-phone">
 <span id="test-emotion-1641e15f-1-0-1-robustness-low-quality-phone"></span><h1>Robustness low quality phone<a class="headerlink" href="#robustness-low-quality-phone" title="Permalink to this heading">¶</a></h1>
-<p>80.0% passed tests (12 <span class="green">passed</span> / 3 <span class="red">failed</span>).</p>
-<div class="section" id="change-uap-low-quality-phone">
-<h2>Change Uap Low Quality Phone<a class="headerlink" href="#change-uap-low-quality-phone" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change UAP Low Quality Phone</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.02</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="red">-0.05</span></p></td>
-</tr>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="red">-0.05</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.02</span></p></td>
-</tr>
-<tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">-0.04</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>mean</p></td>
-<td><p>-0.03</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>100.0% passed tests (10 <span class="green">passed</span> / 0 <span class="red">failed</span>).</p>
 <div class="section" id="change-uar-low-quality-phone">
 <h2>Change Uar Low Quality Phone<a class="headerlink" href="#change-uar-low-quality-phone" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -491,10 +455,10 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="green">-0.03</span></p></td>
@@ -503,7 +467,7 @@
 <td><p><span class="green">-0.01</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="red">-0.05</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
 <td><p>-0.03</p></td>
@@ -513,8 +477,8 @@
 </div>
 <div class="section" id="percentage-unchanged-predictions-low-quality-phone">
 <h2>Percentage Unchanged Predictions Low Quality Phone<a class="headerlink" href="#percentage-unchanged-predictions-low-quality-phone" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Threshold: 0.5</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: 0.5</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -526,22 +490,22 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>crema-d-1.2.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.68</span></p></td>
+<td><p><span class="green">0.70</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>emovo-1.2.1-emotion.test</p></td>
-<td><p><span class="green">0.64</span></p></td>
+<td><p><span class="green">0.67</span></p></td>
 </tr>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.categories.test.gold_standard</p></td>
-<td><p><span class="green">0.70</span></p></td>
+<td><p><span class="green">0.71</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>meld-1.3.1-emotion.categories.test.gold_standard</p></td>
 <td><p><span class="green">0.66</span></p></td>
 </tr>
 <tr class="row-even"><td><p>msppodcast-2.6.0-emotion.categories.test-1.gold_standard</p></td>
-<td><p><span class="green">0.69</span></p></td>
+<td><p><span class="green">0.68</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>mean</p></td>
-<td><p>0.67</p></td>
+<td><p>0.68</p></td>
 </tr>
 </tbody>
 </table>
@@ -590,7 +554,7 @@
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -598,7 +562,7 @@
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -630,6 +594,9 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
     
 
   

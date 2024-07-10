@@ -6,15 +6,8 @@ Robustness low quality phone
 .. role:: red
 .. role:: green
 
-0.0% passed tests (0 :green:`passed` / 6 :red:`failed`).
+0.0% passed tests (0 :green:`passed` / 4 :red:`failed`).
 
-
-Change Average Value Low Quality Phone
---------------------------------------
-
-.. csv-table:: Threshold: 0.05
-    :header-rows: 1
-    :file: robustness_low_quality_phone/change-average-value-low-quality-phone.csv
 
 Change Ccc Low Quality Phone
 ----------------------------

@@ -11,106 +11,6 @@ Robustness spectral tilt
     :file: robustness_spectral_tilt/overall_scores.csv
 
 
-Change Uap Downward Tilt
-------------------------
-
-.. flat-table:: Threshold: -0.02
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP Downward Tilt
-    * - w2v2-b-cat
-      - w2v2-L-cat
-      - w2v2-L-robust-cat
-      - w2v2-L-vox-cat
-      - w2v2-L-xls-r-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :green:`-0.00`
-      - :green:`0.02`
-      - :red:`-0.02`
-      - :green:`0.09`
-      - :green:`0.02`
-    * - emovo-1.2.1-emotion.test
-      - :green:`0.02`
-      - :red:`-0.04`
-      - :green:`0.01`
-      - :green:`0.03`
-      - :green:`0.18`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`0.01`
-      - :green:`0.00`
-      - :green:`0.01`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`-0.00`
-      - :red:`-0.02`
-      - :green:`-0.00`
-      - :green:`-0.00`
-      - :green:`0.01`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :green:`0.00`
-      - :green:`-0.00`
-      - :green:`-0.00`
-      - :green:`-0.00`
-      - :green:`0.00`
-    * - mean
-      - 0.00
-      - -0.01
-      - 0.00
-      - 0.02
-      - 0.04
-
-Change Uap Upward Tilt
-----------------------
-
-.. flat-table:: Threshold: -0.02
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP Upward Tilt
-    * - w2v2-b-cat
-      - w2v2-L-cat
-      - w2v2-L-robust-cat
-      - w2v2-L-vox-cat
-      - w2v2-L-xls-r-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :red:`-0.03`
-      - :green:`0.03`
-      - :red:`-0.03`
-      - :red:`-0.09`
-      - :green:`0.27`
-    * - emovo-1.2.1-emotion.test
-      - :green:`0.00`
-      - :green:`-0.01`
-      - :green:`0.00`
-      - :red:`-0.16`
-      - :green:`0.17`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`0.00`
-      - :green:`0.01`
-      - :green:`-0.01`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.00`
-      - :green:`-0.00`
-      - :green:`0.01`
-      - :red:`-0.02`
-      - :green:`-0.00`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :green:`-0.01`
-      - :green:`-0.00`
-      - :green:`0.01`
-      - :green:`-0.01`
-      - :green:`-0.01`
-    * - mean
-      - -0.01
-      - 0.00
-      - -0.00
-      - -0.05
-      - 0.08
-
 Change Uar Downward Tilt
 ------------------------
 
@@ -133,7 +33,7 @@ Change Uar Downward Tilt
     * - emovo-1.2.1-emotion.test
       - :green:`0.02`
       - :red:`-0.02`
-      - :green:`0.01`
+      - :green:`0.02`
       - :green:`0.01`
       - :green:`0.02`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
@@ -157,7 +57,7 @@ Change Uar Downward Tilt
     * - mean
       - 0.00
       - -0.00
-      - 0.00
+      - 0.01
       - 0.01
       - 0.00
 
@@ -183,7 +83,7 @@ Change Uar Upward Tilt
     * - emovo-1.2.1-emotion.test
       - :green:`-0.01`
       - :red:`-0.02`
-      - :red:`-0.04`
+      - :red:`-0.03`
       - :green:`0.01`
       - :green:`0.00`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
@@ -225,15 +125,15 @@ Percentage Unchanged Predictions Downward Tilt
       - w2v2-L-vox-cat
       - w2v2-L-xls-r-cat
     * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.90`
       - :green:`0.91`
-      - :green:`0.91`
-      - :green:`0.91`
+      - :green:`0.90`
       - :green:`0.96`
       - :green:`0.97`
     * - emovo-1.2.1-emotion.test
+      - :green:`0.92`
       - :green:`0.93`
-      - :green:`0.93`
-      - :green:`0.95`
+      - :green:`0.94`
       - :green:`0.96`
       - :green:`0.93`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
@@ -257,7 +157,7 @@ Percentage Unchanged Predictions Downward Tilt
     * - mean
       - 0.92
       - 0.92
-      - 0.94
+      - 0.93
       - 0.95
       - 0.91
 
@@ -283,7 +183,7 @@ Percentage Unchanged Predictions Upward Tilt
     * - emovo-1.2.1-emotion.test
       - :green:`0.85`
       - :green:`0.84`
-      - :green:`0.86`
+      - :green:`0.85`
       - :green:`0.87`
       - :green:`0.82`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
@@ -293,10 +193,10 @@ Percentage Unchanged Predictions Upward Tilt
       - :green:`0.87`
       - :red:`0.74`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.84`
+      - :green:`0.85`
       - :green:`0.85`
       - :green:`0.84`
-      - :red:`0.73`
+      - :red:`0.74`
       - :red:`0.78`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :green:`0.89`

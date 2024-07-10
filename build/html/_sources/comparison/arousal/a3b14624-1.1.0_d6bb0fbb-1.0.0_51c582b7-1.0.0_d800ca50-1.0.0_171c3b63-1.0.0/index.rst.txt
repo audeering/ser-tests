@@ -19,11 +19,11 @@ This compares the models :ref:`w2v2-b <test-arousal-a3b14624-1.1.0>` and :ref:`w
       - w2v2-L-xls-r
       - w2v2-L-vox
     * - Overall Score
-      - 83.7% (381 :green:`passed` /  74 :red:`failed`)
-      - 87.0% (375 :green:`passed` /  56 :red:`failed`)
-      - 87.1% (370 :green:`passed` /  55 :red:`failed`)
-      - 85.4% (368 :green:`passed` /  63 :red:`failed`)
-      - 87.5% (398 :green:`passed` /  57 :red:`failed`)
+      - 84.9% (349 :green:`passed` /  62 :red:`failed`)
+      - 87.9% (340 :green:`passed` /  47 :red:`failed`)
+      - 87.4% (333 :green:`passed` /  48 :red:`failed`)
+      - 86.0% (333 :green:`passed` /  54 :red:`failed`)
+      - 88.3% (363 :green:`passed` /  48 :red:`failed`)
     * - :ref:`Correctness consistency <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_consistency>`
       - :red:`56.8%`
       - :red:`67.6%`
@@ -31,11 +31,11 @@ This compares the models :ref:`w2v2-b <test-arousal-a3b14624-1.1.0>` and :ref:`w
       - :red:`67.6%`
       - :red:`62.2%`
     * - :ref:`Correctness distribution <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_distribution>`
-      - :red:`50.0%`
-      - 83.3%
+      - :red:`33.3%`
       - :red:`66.7%`
-      - 83.3%
-      - :red:`50.0%`
+      - :red:`66.7%`
+      - :red:`66.7%`
+      - :red:`33.3%`
     * - :ref:`Correctness regression <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_regression>`
       - :red:`66.7%`
       - 88.9%
@@ -43,13 +43,13 @@ This compares the models :ref:`w2v2-b <test-arousal-a3b14624-1.1.0>` and :ref:`w
       - :red:`66.7%`
       - :red:`66.7%`
     * - :ref:`Correctness speaker average <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_speaker_average>`
-      - 83.3%
+      - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Correctness speaker ranking <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-correctness_speaker_ranking>`
-      - 87.5%
+      - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
       - :green:`100.0%`
@@ -73,29 +73,29 @@ This compares the models :ref:`w2v2-b <test-arousal-a3b14624-1.1.0>` and :ref:`w
       - :green:`100.0%`
       - :green:`100.0%`
     * - :ref:`Fairness pitch <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_pitch>`
-      - 85.7%
-      - 95.2%
+      - 93.3%
       - :green:`100.0%`
-      - 95.2%
-      - 95.2%
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
     * - :ref:`Fairness sex <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-fairness_sex>`
       - :green:`100.0%`
       - :green:`100.0%`
-      - 88.9%
-      - 94.4%
+      - 85.7%
+      - 92.9%
       - :green:`100.0%`
     * - :ref:`Robustness background noise <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_background_noise>`
-      - :red:`44.4%`
       - :red:`41.7%`
-      - :red:`66.7%`
+      - :red:`37.5%`
+      - :red:`70.8%`
       - :red:`41.7%`
       - :red:`50.0%`
     * - :ref:`Robustness low quality phone <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_low_quality_phone>`
       - :green:`100.0%`
-      - :red:`50.0%`
+      - :red:`25.0%`
       - :green:`100.0%`
-      - :red:`33.3%`
-      - :red:`66.7%`
+      - :red:`0.0%`
+      - 75.0%
     * - :ref:`Robustness recording condition <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_recording_condition>`
       - :red:`0.0%`
       - :red:`0.0%`
@@ -104,7 +104,7 @@ This compares the models :ref:`w2v2-b <test-arousal-a3b14624-1.1.0>` and :ref:`w
       - :green:`100.0%`
     * - :ref:`Robustness simulated recording condition <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_simulated_recording_condition>`
       - :red:`0.0%`
-      - :red:`16.7%`
+      - :red:`33.3%`
       - :red:`33.3%`
       - :red:`0.0%`
       - :red:`33.3%`
@@ -116,10 +116,10 @@ This compares the models :ref:`w2v2-b <test-arousal-a3b14624-1.1.0>` and :ref:`w
       - 90.0%
     * - :ref:`Robustness spectral tilt <comparison-arousal-a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0-robustness_spectral_tilt>`
       - 75.0%
-      - :red:`66.7%`
-      - 83.3%
+      - :red:`62.5%`
+      - 87.5%
       - 75.0%
-      - 83.3%
+      - 75.0%
 
 
 .. toctree::

@@ -11,306 +11,6 @@ Robustness background noise
     :file: robustness_background_noise/overall_scores.csv
 
 
-Change Uap Babble Noise
------------------------
-
-.. flat-table:: Threshold: -0.05
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP Babble Noise
-    * - CNN14-cat
-      - w2v2-b-cat
-      - w2v2-L-cat
-      - hubert-b-cat
-      - hubert-L-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :red:`-0.05`
-      - :green:`-0.00`
-      - :green:`0.01`
-      - :red:`-0.10`
-      - :green:`0.01`
-    * - emovo-1.2.1-emotion.test
-      - :green:`0.06`
-      - :green:`0.02`
-      - :green:`0.04`
-      - :green:`-0.00`
-      - :green:`-0.04`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`-0.04`
-      - :green:`-0.02`
-      - :green:`-0.02`
-      - :green:`-0.02`
-      - :green:`-0.00`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.02`
-      - :green:`0.00`
-      - :green:`0.00`
-      - :green:`-0.01`
-      - :green:`-0.01`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :green:`-0.04`
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`0.00`
-    * - mean
-      - -0.01
-      - -0.00
-      - 0.00
-      - -0.03
-      - -0.01
-
-Change Uap Coughing
--------------------
-
-.. flat-table:: Threshold: -0.05
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP Coughing
-    * - CNN14-cat
-      - w2v2-b-cat
-      - w2v2-L-cat
-      - hubert-b-cat
-      - hubert-L-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :green:`0.00`
-      - :green:`0.01`
-      - :green:`-0.03`
-      - :red:`-0.08`
-      - :green:`-0.03`
-    * - emovo-1.2.1-emotion.test
-      - :green:`0.07`
-      - :green:`-0.01`
-      - :green:`-0.04`
-      - :green:`0.01`
-      - :red:`-0.14`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :red:`-0.06`
-      - :green:`-0.02`
-      - :green:`-0.01`
-      - :green:`-0.03`
-      - :green:`-0.02`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`-0.01`
-      - :green:`-0.04`
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.02`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :green:`-0.04`
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.03`
-      - :green:`-0.03`
-    * - mean
-      - -0.01
-      - -0.01
-      - -0.02
-      - -0.03
-      - -0.05
-
-Change Uap Environmental Noise
-------------------------------
-
-.. flat-table:: Threshold: -0.05
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP Environmental Noise
-    * - CNN14-cat
-      - w2v2-b-cat
-      - w2v2-L-cat
-      - hubert-b-cat
-      - hubert-L-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :green:`-0.03`
-      - :green:`-0.00`
-      - :green:`0.02`
-      - :red:`-0.11`
-      - :green:`-0.01`
-    * - emovo-1.2.1-emotion.test
-      - :green:`0.05`
-      - :green:`-0.01`
-      - :green:`0.01`
-      - :green:`-0.01`
-      - :green:`-0.02`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`-0.04`
-      - :green:`-0.00`
-      - :green:`-0.03`
-      - :green:`-0.02`
-      - :green:`0.00`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`-0.01`
-      - :green:`0.00`
-      - :green:`-0.02`
-      - :green:`-0.00`
-      - :green:`-0.01`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :green:`-0.04`
-      - :green:`-0.00`
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.00`
-    * - mean
-      - -0.01
-      - -0.00
-      - -0.01
-      - -0.03
-      - -0.01
-
-Change Uap Music
-----------------
-
-.. flat-table:: Threshold: -0.05
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP Music
-    * - CNN14-cat
-      - w2v2-b-cat
-      - w2v2-L-cat
-      - hubert-b-cat
-      - hubert-L-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :green:`0.01`
-      - :green:`-0.01`
-      - :green:`0.01`
-      - :red:`-0.13`
-      - :green:`0.01`
-    * - emovo-1.2.1-emotion.test
-      - :green:`0.02`
-      - :green:`-0.00`
-      - :green:`0.02`
-      - :green:`0.01`
-      - :green:`-0.02`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`-0.02`
-      - :green:`-0.00`
-      - :green:`-0.02`
-      - :green:`-0.02`
-      - :green:`-0.00`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.00`
-      - :green:`-0.00`
-      - :green:`-0.01`
-      - :green:`-0.00`
-      - :green:`-0.01`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :red:`-0.05`
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.00`
-    * - mean
-      - -0.01
-      - -0.00
-      - -0.00
-      - -0.03
-      - -0.00
-
-Change Uap Sneezing
--------------------
-
-.. flat-table:: Threshold: -0.05
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP Sneezing
-    * - CNN14-cat
-      - w2v2-b-cat
-      - w2v2-L-cat
-      - hubert-b-cat
-      - hubert-L-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :green:`-0.02`
-      - :green:`0.02`
-      - :green:`-0.03`
-      - :red:`-0.13`
-      - :green:`-0.03`
-    * - emovo-1.2.1-emotion.test
-      - :green:`0.04`
-      - :green:`-0.02`
-      - :green:`-0.01`
-      - :green:`0.03`
-      - :red:`-0.14`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :red:`-0.06`
-      - :green:`0.00`
-      - :green:`-0.02`
-      - :red:`-0.06`
-      - :green:`-0.03`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.01`
-      - :green:`-0.01`
-      - :green:`0.00`
-      - :green:`-0.03`
-      - :green:`-0.04`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :green:`-0.02`
-      - :green:`-0.02`
-      - :green:`-0.01`
-      - :green:`-0.02`
-      - :green:`-0.03`
-    * - mean
-      - -0.01
-      - -0.01
-      - -0.01
-      - -0.04
-      - -0.05
-
-Change Uap White Noise
-----------------------
-
-.. flat-table:: Threshold: -0.05
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change UAP White Noise
-    * - CNN14-cat
-      - w2v2-b-cat
-      - w2v2-L-cat
-      - hubert-b-cat
-      - hubert-L-cat
-    * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :green:`-0.03`
-      - :green:`0.01`
-      - :green:`0.05`
-      - :red:`-0.26`
-      - :green:`0.02`
-    * - emovo-1.2.1-emotion.test
-      - :green:`-0.01`
-      - :green:`-0.02`
-      - :green:`0.01`
-      - :green:`-0.00`
-      - :red:`-0.05`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :red:`-0.05`
-      - :green:`-0.03`
-      - :green:`-0.03`
-      - :green:`-0.04`
-      - :green:`0.00`
-    * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.01`
-      - :green:`-0.01`
-      - :green:`-0.02`
-      - :green:`-0.02`
-      - :green:`-0.01`
-    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :red:`-0.05`
-      - :green:`-0.01`
-      - :green:`0.01`
-      - :green:`0.02`
-      - :green:`0.01`
-    * - mean
-      - -0.03
-      - -0.01
-      - 0.00
-      - -0.06
-      - -0.01
-
 Change Uar Babble Noise
 -----------------------
 
@@ -331,23 +31,23 @@ Change Uar Babble Noise
       - :green:`-0.01`
       - :green:`0.01`
     * - emovo-1.2.1-emotion.test
-      - :green:`0.02`
-      - :green:`0.03`
+      - :green:`0.04`
       - :green:`0.05`
-      - :green:`-0.01`
-      - :green:`0.06`
+      - :green:`0.04`
+      - :green:`-0.00`
+      - :green:`0.03`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`-0.01`
       - :green:`-0.03`
-      - :green:`-0.02`
+      - :green:`-0.03`
       - :green:`-0.04`
       - :green:`-0.02`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`-0.00`
       - :green:`-0.01`
       - :green:`-0.00`
+      - :green:`-0.00`
       - :green:`-0.01`
-      - :green:`-0.01`
+      - :green:`-0.02`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :green:`-0.04`
       - :red:`-0.05`
@@ -357,9 +57,9 @@ Change Uar Babble Noise
     * - mean
       - -0.01
       - -0.01
-      - 0.00
+      - -0.00
       - -0.02
-      - 0.00
+      - -0.00
 
 Change Uar Coughing
 -------------------
@@ -382,20 +82,20 @@ Change Uar Coughing
       - :green:`-0.01`
     * - emovo-1.2.1-emotion.test
       - :green:`0.01`
-      - :red:`-0.07`
       - :red:`-0.11`
-      - :red:`-0.07`
+      - :red:`-0.09`
+      - :red:`-0.05`
       - :red:`-0.07`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`-0.01`
-      - :red:`-0.09`
+      - :green:`0.01`
       - :red:`-0.09`
       - :red:`-0.07`
       - :red:`-0.06`
+      - :red:`-0.07`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`-0.02`
-      - :red:`-0.05`
+      - :green:`-0.00`
       - :green:`-0.03`
+      - :red:`-0.05`
       - :red:`-0.05`
       - :green:`-0.04`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
@@ -405,11 +105,11 @@ Change Uar Coughing
       - :red:`-0.14`
       - :red:`-0.09`
     * - mean
-      - -0.01
+      - 0.00
+      - -0.07
+      - -0.07
+      - -0.04
       - -0.06
-      - -0.08
-      - -0.05
-      - -0.05
 
 Change Uar Environmental Noise
 ------------------------------
@@ -431,22 +131,22 @@ Change Uar Environmental Noise
       - :red:`-0.05`
       - :green:`-0.02`
     * - emovo-1.2.1-emotion.test
-      - :green:`0.02`
-      - :green:`0.01`
-      - :green:`0.03`
-      - :green:`-0.02`
       - :green:`0.04`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :green:`-0.01`
+      - :green:`0.03`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.04`
-      - :red:`-0.05`
+      - :green:`-0.00`
       - :green:`-0.02`
+      - :green:`-0.02`
+      - :red:`-0.05`
+      - :green:`-0.03`
     * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.00`
       - :green:`-0.01`
-      - :green:`0.00`
       - :green:`-0.01`
-      - :green:`-0.01`
+      - :green:`-0.02`
       - :green:`-0.01`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :red:`-0.05`
@@ -455,7 +155,7 @@ Change Uar Environmental Noise
       - :red:`-0.05`
       - :green:`-0.02`
     * - mean
-      - -0.01
+      - -0.00
       - -0.01
       - -0.01
       - -0.04
@@ -476,28 +176,28 @@ Change Uar Music
       - hubert-L-cat
     * - crema-d-1.2.0-emotion.categories.test.gold_standard
       - :green:`0.01`
-      - :green:`-0.04`
+      - :green:`-0.02`
       - :green:`-0.00`
       - :green:`-0.04`
-      - :green:`-0.01`
+      - :green:`-0.02`
     * - emovo-1.2.1-emotion.test
-      - :green:`0.00`
       - :green:`0.01`
       - :green:`0.04`
-      - :green:`-0.01`
       - :green:`0.04`
+      - :green:`-0.02`
+      - :green:`0.03`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`-0.01`
-      - :green:`-0.01`
       - :green:`-0.02`
-      - :green:`-0.04`
-      - :green:`-0.01`
+      - :green:`-0.02`
+      - :red:`-0.05`
+      - :green:`-0.02`
     * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.00`
+      - :green:`-0.00`
       - :green:`0.00`
       - :green:`-0.01`
       - :green:`-0.01`
-      - :green:`-0.00`
-      - :green:`-0.00`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :red:`-0.05`
       - :green:`-0.02`
@@ -506,10 +206,10 @@ Change Uar Music
       - :green:`-0.02`
     * - mean
       - -0.01
-      - -0.01
+      - -0.00
       - -0.00
       - -0.03
-      - -0.00
+      - -0.01
 
 Change Uar Sneezing
 -------------------
@@ -531,23 +231,23 @@ Change Uar Sneezing
       - :green:`0.04`
       - :green:`0.02`
     * - emovo-1.2.1-emotion.test
-      - :green:`0.00`
-      - :red:`-0.07`
-      - :red:`-0.12`
-      - :green:`-0.03`
-      - :red:`-0.07`
-    * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`-0.01`
-      - :red:`-0.10`
+      - :red:`-0.06`
       - :red:`-0.09`
+      - :green:`-0.04`
+      - :red:`-0.06`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`0.01`
+      - :red:`-0.10`
       - :red:`-0.08`
+      - :red:`-0.07`
       - :red:`-0.05`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`-0.00`
-      - :green:`-0.04`
+      - :green:`0.01`
       - :green:`-0.04`
       - :red:`-0.05`
       - :red:`-0.05`
+      - :green:`-0.03`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :green:`-0.03`
       - :red:`-0.16`
@@ -555,9 +255,9 @@ Change Uar Sneezing
       - :red:`-0.13`
       - :red:`-0.07`
     * - mean
-      - -0.00
+      - 0.00
       - -0.07
-      - -0.09
+      - -0.08
       - -0.05
       - -0.04
 
@@ -576,33 +276,33 @@ Change Uar White Noise
       - hubert-L-cat
     * - crema-d-1.2.0-emotion.categories.test.gold_standard
       - :green:`0.04`
-      - :red:`-0.05`
       - :red:`-0.06`
+      - :red:`-0.07`
       - :red:`-0.13`
-      - :red:`-0.06`
+      - :red:`-0.07`
     * - emovo-1.2.1-emotion.test
       - :green:`-0.00`
-      - :green:`0.01`
-      - :green:`0.04`
+      - :green:`-0.01`
+      - :green:`0.06`
       - :red:`-0.12`
       - :green:`-0.01`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.00`
-      - :green:`-0.04`
+      - :green:`-0.03`
       - :green:`-0.03`
       - :red:`-0.13`
       - :green:`-0.03`
     * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`-0.02`
       - :green:`-0.01`
       - :green:`-0.01`
-      - :green:`-0.01`
-      - :green:`-0.04`
+      - :green:`-0.03`
       - :green:`0.00`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
-      - :red:`-0.13`
+      - :red:`-0.12`
       - :green:`-0.04`
-      - :green:`-0.04`
-      - :red:`-0.16`
+      - :red:`-0.05`
+      - :red:`-0.17`
       - :green:`-0.03`
     * - mean
       - -0.02
@@ -632,20 +332,20 @@ Percentage Unchanged Predictions Babble Noise
       - :red:`0.86`
     * - emovo-1.2.1-emotion.test
       - :red:`0.85`
-      - :red:`0.74`
-      - :red:`0.77`
-      - :red:`0.80`
-      - :red:`0.78`
+      - :red:`0.73`
+      - :red:`0.79`
+      - :red:`0.81`
+      - :red:`0.82`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.93`
-      - :red:`0.87`
+      - :red:`0.85`
       - :red:`0.85`
       - :red:`0.89`
-      - :red:`0.88`
+      - :red:`0.89`
     * - meld-1.3.1-emotion.categories.test.gold_standard
-      - :green:`0.91`
       - :red:`0.90`
       - :red:`0.90`
+      - :red:`0.89`
       - :green:`0.91`
       - :green:`0.91`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
@@ -659,7 +359,7 @@ Percentage Unchanged Predictions Babble Noise
       - 0.83
       - 0.83
       - 0.88
-      - 0.86
+      - 0.87
 
 Percentage Unchanged Predictions Coughing
 -----------------------------------------
@@ -682,19 +382,19 @@ Percentage Unchanged Predictions Coughing
       - :red:`0.68`
     * - emovo-1.2.1-emotion.test
       - :red:`0.79`
-      - :red:`0.56`
-      - :red:`0.60`
-      - :red:`0.45`
-      - :red:`0.64`
+      - :red:`0.50`
+      - :red:`0.57`
+      - :red:`0.48`
+      - :red:`0.62`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :red:`0.84`
-      - :red:`0.64`
-      - :red:`0.66`
       - :red:`0.63`
-      - :red:`0.73`
+      - :red:`0.67`
+      - :red:`0.63`
+      - :red:`0.72`
     * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.81`
       - :red:`0.80`
-      - :red:`0.79`
       - :red:`0.79`
       - :red:`0.74`
       - :red:`0.81`
@@ -706,10 +406,10 @@ Percentage Unchanged Predictions Coughing
       - :red:`0.73`
     * - mean
       - 0.81
-      - 0.66
+      - 0.65
       - 0.67
       - 0.63
-      - 0.72
+      - 0.71
 
 Percentage Unchanged Predictions Environmental Noise
 ----------------------------------------------------
@@ -731,22 +431,22 @@ Percentage Unchanged Predictions Environmental Noise
       - :green:`0.92`
       - :red:`0.87`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.80`
+      - :red:`0.82`
       - :red:`0.79`
-      - :red:`0.83`
-      - :red:`0.75`
-      - :red:`0.86`
+      - :red:`0.80`
+      - :red:`0.76`
+      - :red:`0.85`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.92`
+      - :red:`0.84`
       - :red:`0.85`
-      - :red:`0.85`
-      - :red:`0.86`
+      - :red:`0.87`
       - :red:`0.89`
     * - meld-1.3.1-emotion.categories.test.gold_standard
       - :red:`0.88`
       - :red:`0.89`
       - :red:`0.89`
-      - :red:`0.88`
+      - :red:`0.87`
       - :red:`0.90`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :red:`0.71`
@@ -775,28 +475,28 @@ Percentage Unchanged Predictions Music
       - hubert-b-cat
       - hubert-L-cat
     * - crema-d-1.2.0-emotion.categories.test.gold_standard
-      - :green:`0.96`
-      - :red:`0.84`
+      - :green:`0.95`
       - :red:`0.85`
-      - :green:`0.93`
-      - :red:`0.89`
+      - :red:`0.85`
+      - :green:`0.94`
+      - :red:`0.87`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.85`
-      - :red:`0.79`
-      - :red:`0.79`
       - :red:`0.82`
-      - :red:`0.85`
+      - :red:`0.79`
+      - :red:`0.79`
+      - :red:`0.80`
+      - :red:`0.86`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
       - :green:`0.93`
-      - :red:`0.86`
-      - :red:`0.87`
       - :red:`0.88`
-      - :green:`0.92`
+      - :red:`0.87`
+      - :red:`0.89`
+      - :red:`0.90`
     * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.90`
       - :green:`0.91`
-      - :green:`0.91`
-      - :green:`0.92`
-      - :green:`0.91`
+      - :red:`0.90`
+      - :red:`0.90`
       - :green:`0.92`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :red:`0.72`
@@ -805,11 +505,11 @@ Percentage Unchanged Predictions Music
       - :red:`0.83`
       - :red:`0.90`
     * - mean
-      - 0.87
-      - 0.85
       - 0.86
+      - 0.86
+      - 0.85
       - 0.87
-      - 0.90
+      - 0.89
 
 Percentage Unchanged Predictions Sneezing
 -----------------------------------------
@@ -831,20 +531,20 @@ Percentage Unchanged Predictions Sneezing
       - :red:`0.83`
       - :red:`0.66`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.79`
-      - :red:`0.52`
-      - :red:`0.53`
-      - :red:`0.51`
-      - :red:`0.60`
+      - :red:`0.83`
+      - :red:`0.48`
+      - :red:`0.55`
+      - :red:`0.49`
+      - :red:`0.59`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :red:`0.85`
-      - :red:`0.62`
-      - :red:`0.66`
-      - :red:`0.70`
-      - :red:`0.74`
+      - :red:`0.86`
+      - :red:`0.64`
+      - :red:`0.67`
+      - :red:`0.71`
+      - :red:`0.73`
     * - meld-1.3.1-emotion.categories.test.gold_standard
       - :red:`0.83`
-      - :red:`0.77`
+      - :red:`0.78`
       - :red:`0.75`
       - :red:`0.76`
       - :red:`0.80`
@@ -855,11 +555,11 @@ Percentage Unchanged Predictions Sneezing
       - :red:`0.58`
       - :red:`0.74`
     * - mean
-      - 0.83
+      - 0.84
       - 0.64
       - 0.63
-      - 0.68
-      - 0.71
+      - 0.67
+      - 0.70
 
 Percentage Unchanged Predictions White Noise
 --------------------------------------------
@@ -876,27 +576,27 @@ Percentage Unchanged Predictions White Noise
       - hubert-L-cat
     * - crema-d-1.2.0-emotion.categories.test.gold_standard
       - :red:`0.85`
-      - :red:`0.76`
+      - :red:`0.77`
       - :red:`0.73`
       - :red:`0.83`
       - :red:`0.80`
     * - emovo-1.2.1-emotion.test
-      - :red:`0.70`
-      - :red:`0.71`
-      - :red:`0.74`
+      - :red:`0.68`
+      - :red:`0.72`
+      - :red:`0.76`
       - :red:`0.51`
-      - :red:`0.80`
+      - :red:`0.78`
     * - iemocap-2.3.0-emotion.categories.test.gold_standard
-      - :red:`0.83`
-      - :red:`0.77`
+      - :red:`0.84`
+      - :red:`0.76`
       - :red:`0.79`
       - :red:`0.71`
-      - :red:`0.84`
+      - :red:`0.83`
     * - meld-1.3.1-emotion.categories.test.gold_standard
       - :red:`0.75`
       - :red:`0.78`
       - :red:`0.83`
-      - :red:`0.66`
+      - :red:`0.67`
       - :red:`0.83`
     * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
       - :red:`0.46`
@@ -907,9 +607,9 @@ Percentage Unchanged Predictions White Noise
     * - mean
       - 0.72
       - 0.75
-      - 0.77
+      - 0.78
       - 0.66
-      - 0.83
+      - 0.82
 
 Visualization Babble Noise
 --------------------------

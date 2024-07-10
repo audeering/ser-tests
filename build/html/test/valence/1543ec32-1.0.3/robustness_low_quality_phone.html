@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
@@ -322,7 +322,7 @@
             
             
               <div class="version">
-                vdb67f11
+                v2aa0755
               </div>
             
           
@@ -371,7 +371,6 @@
 <li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="robustness_background_noise.html">Robustness background noise</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Robustness low quality phone</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#change-average-value-low-quality-phone">Change Average Value Low Quality Phone</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#change-ccc-low-quality-phone">Change Ccc Low Quality Phone</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#percentage-unchanged-predictions-low-quality-phone">Percentage Unchanged Predictions Low Quality Phone</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a></li>
@@ -441,18 +440,18 @@
             
   <div class="section" id="robustness-low-quality-phone">
 <span id="test-valence-1543ec32-1-0-3-robustness-low-quality-phone"></span><h1>Robustness low quality phone<a class="headerlink" href="#robustness-low-quality-phone" title="Permalink to this heading">¶</a></h1>
-<p>0.0% passed tests (0 <span class="green">passed</span> / 6 <span class="red">failed</span>).</p>
-<div class="section" id="change-average-value-low-quality-phone">
-<h2>Change Average Value Low Quality Phone<a class="headerlink" href="#change-average-value-low-quality-phone" title="Permalink to this heading">¶</a></h2>
+<p>0.0% passed tests (0 <span class="green">passed</span> / 4 <span class="red">failed</span>).</p>
+<div class="section" id="change-ccc-low-quality-phone">
+<h2>Change Ccc Low Quality Phone<a class="headerlink" href="#change-ccc-low-quality-phone" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Threshold: 0.05</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change Average Value Low Quality Phone</p></th>
+<th class="head"><p>Change CCC Low Quality Phone</p></th>
 </tr>
 </thead>
 <tbody>
@@ -468,36 +467,10 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="change-ccc-low-quality-phone">
-<h2>Change Ccc Low Quality Phone<a class="headerlink" href="#change-ccc-low-quality-phone" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-text">Threshold: -0.05</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Data</p></th>
-<th class="head"><p>Change CCC Low Quality Phone</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">-0.14</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">-0.23</span></p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>-0.18</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="percentage-unchanged-predictions-low-quality-phone">
 <h2>Percentage Unchanged Predictions Low Quality Phone<a class="headerlink" href="#percentage-unchanged-predictions-low-quality-phone" title="Permalink to this heading">¶</a></h2>
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Threshold: 0.5</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: 0.5</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -509,20 +482,20 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>iemocap-2.3.0-emotion.dimensions.test.gold_standard</p></td>
-<td><p><span class="red">0.25</span></p></td>
+<td><p><span class="red">0.35</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
-<td><p><span class="red">0.17</span></p></td>
+<td><p><span class="red">0.29</span></p></td>
 </tr>
 <tr class="row-even"><td><p>mean</p></td>
-<td><p>0.21</p></td>
+<td><p>0.32</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="visualization">
 <h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">¶</a></h2>
-<p>Difference of predictions for original audio and low quality phone audio. The allowed prediction difference <span class="math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">\delta &lt; 0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.05</span></span></span></span></span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
+<p>Difference of predictions for original audio and low quality phone audio. The allowed prediction difference <span class="math">\(\delta &lt; 0.05\)</span> is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.</p>
 <div class="figure align-center">
 <img alt="../../../_images/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard74.png" src="../../../_images/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard74.png" />
 </div>
@@ -555,7 +528,7 @@
         
         
         
-          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2023/12/04 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/07/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
         
     </p>
   </div>
@@ -563,7 +536,7 @@
   <div role="contentinfo">
     <p>
         
-      &copy; 2023 audEERING GmbH
+      &copy; 2024 audEERING GmbH
     </p>
   </div> 
 
@@ -595,6 +568,9 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
     
 
   

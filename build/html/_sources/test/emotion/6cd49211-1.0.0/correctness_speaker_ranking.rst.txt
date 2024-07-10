@@ -6,22 +6,8 @@ Correctness speaker ranking
 .. role:: red
 .. role:: green
 
-46.9% passed tests (15 :green:`passed` / 17 :red:`failed`).
+50.0% passed tests (4 :green:`passed` / 4 :red:`failed`).
 
-
-Precision Bottom 25%
---------------------
-
-.. csv-table:: Threshold: 0.7
-    :header-rows: 1
-    :file: correctness_speaker_ranking/precision-bottom-25%.csv
-
-Precision Top 25%
------------------
-
-.. csv-table:: Threshold: 0.7
-    :header-rows: 1
-    :file: correctness_speaker_ranking/precision-top-25%.csv
 
 Spearmans Rho
 -------------
@@ -29,13 +15,6 @@ Spearmans Rho
 .. csv-table:: Threshold: 0.7
     :header-rows: 1
     :file: correctness_speaker_ranking/spearmans-rho.csv
-
-Top Bottom Confusions
----------------------
-
-.. csv-table:: Threshold: 0.15
-    :header-rows: 1
-    :file: correctness_speaker_ranking/top-bottom-confusions.csv
 
 Visualization
 -------------

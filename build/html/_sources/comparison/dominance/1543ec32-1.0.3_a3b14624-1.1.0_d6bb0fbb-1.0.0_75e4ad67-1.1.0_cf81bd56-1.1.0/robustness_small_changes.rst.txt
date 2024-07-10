@@ -26,15 +26,15 @@ Percentage Unchanged Predictions Additive Tone
       - hubert-L
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :red:`0.87`
-      - :green:`0.98`
+      - :green:`0.97`
       - :green:`1.00`
-      - :red:`0.95`
-      - :green:`0.99`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
       - :red:`0.94`
       - :green:`0.99`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.95`
+      - :green:`0.99`
       - :green:`1.00`
-      - :green:`0.97`
+      - :green:`0.98`
       - :green:`1.00`
     * - mean
       - 0.91
@@ -89,7 +89,7 @@ Percentage Unchanged Predictions Clip
       - hubert-b
       - hubert-L
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`0.99`
+      - :green:`1.00`
       - :green:`0.99`
       - :green:`0.99`
       - :green:`0.99`
@@ -101,7 +101,7 @@ Percentage Unchanged Predictions Clip
       - :green:`1.00`
       - :green:`1.00`
     * - mean
-      - 0.99
+      - 1.00
       - 0.99
       - 0.99
       - 0.99
@@ -122,7 +122,7 @@ Percentage Unchanged Predictions Crop Beginning
       - hubert-L
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :green:`0.99`
-      - :green:`0.98`
+      - :green:`0.99`
       - :green:`0.99`
       - :green:`0.97`
       - :green:`1.00`
@@ -218,7 +218,7 @@ Percentage Unchanged Predictions Highpass Filter
       - hubert-L
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
       - :green:`0.99`
-      - :green:`1.00`
+      - :green:`0.99`
       - :green:`1.00`
       - :green:`0.99`
       - :green:`1.00`
@@ -230,7 +230,7 @@ Percentage Unchanged Predictions Highpass Filter
       - :green:`1.00`
     * - mean
       - 0.99
-      - 1.00
+      - 0.99
       - 1.00
       - 0.99
       - 1.00
@@ -290,7 +290,7 @@ Percentage Unchanged Predictions Prepend Zeros
       - :green:`1.00`
       - :green:`1.00`
       - :green:`1.00`
-      - :green:`1.00`
+      - :green:`0.99`
       - :green:`1.00`
     * - mean
       - 0.99
@@ -313,22 +313,22 @@ Percentage Unchanged Predictions White Noise
       - hubert-b
       - hubert-L
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`0.70`
-      - :red:`0.90`
-      - :red:`0.90`
+      - :red:`0.71`
+      - :red:`0.91`
+      - :red:`0.91`
       - :red:`0.90`
       - :green:`0.98`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`0.79`
+      - :red:`0.80`
       - :red:`0.80`
       - :red:`0.72`
-      - :red:`0.85`
+      - :red:`0.84`
       - :red:`0.94`
     * - mean
-      - 0.74
+      - 0.76
       - 0.85
       - 0.81
-      - 0.88
+      - 0.87
       - 0.96
 
 Visualization

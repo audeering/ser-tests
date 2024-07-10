@@ -11,38 +11,6 @@ Robustness low quality phone
     :file: robustness_low_quality_phone/overall_scores.csv
 
 
-Change Average Value Low Quality Phone
---------------------------------------
-
-.. flat-table:: Threshold: 0.05
-    :header-rows: 2
-
-    * - :rspan:`1` Data
-      - :cspan:`4` Change Average Value Low Quality Phone
-    * - CNN14
-      - w2v2-b
-      - w2v2-L
-      - hubert-b
-      - hubert-L
-    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`-0.08`
-      - :green:`-0.04`
-      - :green:`-0.04`
-      - :green:`-0.00`
-      - :green:`-0.01`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`-0.08`
-      - :red:`-0.05`
-      - :red:`-0.05`
-      - :green:`-0.03`
-      - :green:`-0.03`
-    * - mean
-      - -0.08
-      - -0.04
-      - -0.04
-      - -0.01
-      - -0.02
-
 Change Ccc Low Quality Phone
 ----------------------------
 
@@ -57,23 +25,23 @@ Change Ccc Low Quality Phone
       - hubert-b
       - hubert-L
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :green:`-0.00`
+      - :green:`0.02`
       - :red:`-0.06`
       - :red:`-0.06`
-      - :red:`-0.08`
-      - :red:`-0.07`
-    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`-0.11`
+      - :red:`-0.10`
       - :red:`-0.05`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.07`
       - :green:`-0.03`
-      - :green:`-0.04`
-      - :green:`-0.02`
+      - :green:`-0.03`
+      - :red:`-0.08`
+      - :green:`-0.01`
     * - mean
-      - -0.06
-      - -0.06
+      - -0.03
       - -0.04
-      - -0.06
-      - -0.05
+      - -0.04
+      - -0.09
+      - -0.03
 
 Percentage Unchanged Predictions Low Quality Phone
 --------------------------------------------------
@@ -89,23 +57,23 @@ Percentage Unchanged Predictions Low Quality Phone
       - hubert-b
       - hubert-L
     * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
-      - :red:`0.29`
-      - :green:`0.58`
-      - :green:`0.57`
-      - :green:`0.53`
-      - :green:`0.74`
+      - :red:`0.27`
+      - :green:`0.52`
+      - :red:`0.39`
+      - :green:`0.52`
+      - :green:`0.75`
     * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
-      - :red:`0.32`
-      - :green:`0.53`
-      - :red:`0.49`
-      - :green:`0.58`
-      - :green:`0.69`
+      - :red:`0.37`
+      - :green:`0.51`
+      - :red:`0.39`
+      - :red:`0.48`
+      - :green:`0.74`
     * - mean
-      - 0.30
-      - 0.55
-      - 0.53
-      - 0.55
-      - 0.71
+      - 0.32
+      - 0.52
+      - 0.39
+      - 0.50
+      - 0.74
 
 Visualization
 -------------
