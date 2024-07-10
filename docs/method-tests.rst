@@ -241,10 +241,6 @@ We bin the distributions
 into 10 bins
 before calculating the distance.
 
-The **Mean Value** over all samples
-should not change
-compared to the gold standard.
-
 The test **Relative Difference Per Class**
 checks that the number of samples
 per class is comparable
@@ -316,24 +312,14 @@ for classification.
 
 The test
 **Mean Absolute Error**
-measures the absolute error per speaker
-whereas the test
-**Mean Directional Error**
-measures if the overall average
-has a bias towards a higher
-or lower value.
+measures the absolute error per speaker.
 
-Analogously, for the classification task,
+For the classification task,
 the test
 **Class Proportion Mean Absolute Error**
 measures the absolute error in the
 predicted proportion of each class
-per speaker
-whereas the test
-**Class Proportion Mean Directional Error**
-measures if the predicted class proportions
-have a bias towards a higher
-or lower value.
+per speaker.
 
 .. csv-table:: Overview of tests and thresholds for arousal
     :header-rows: 1
@@ -362,10 +348,6 @@ For some applications,
 it may be of interest to create a ranking
 of speakers in order to spot outliers on
 either side of the ranking.
-Therefore,
-it is important that the top and bottom
-speaker rankings meaningfully represent
-the true top and bottom speaker rankings.
 
 The test uses the raw values per sample
 to calculate the average value for each speaker for regression.
@@ -388,26 +370,6 @@ we use
 `Spearman's rank correlation coefficient`_
 (**Spearmans Rho**),
 which ranges from 0 to 1.
-
-The tests
-**Precision Bottom 25%**
-and **Precision Top 25%**
-focus on getting the upper and lower quantiles
-of the ranking correct.
-They show the precision
-for having the correct speakers
-in the respective quantile.
-
-The test
-**Top Bottom Confusions**
-checks how many confusions we have
-between both quantiles.
-The value ranges from 0 to 1,
-whereas a value of 0.2
-would indicate
-that 20% of speakers
-are wrongly placed in one
-of the two quantiles.
 
 .. csv-table:: Overview of tests and thresholds for arousal
     :header-rows: 1
@@ -901,32 +863,6 @@ between the respective pitch group and
 the combined test set
 is below the given threshold.
 
-The **Mean Absolute Error High Pitch**,
-**Mean Absolute Error Low Pitch**, and
-**Mean Absolute Error Medium Pitch** tests
-check that the difference
-in mean absolute error
-between the respective pitch group and
-the combined test set
-is below the given threshold.
-
-The **Mean Directional Error High Pitch**,
-**Mean Directional Error Low Pitch**, and
-**Mean Directional Error Medium Pitch** tests
-ensure that the difference
-in mean directional error
-between the respective pitch group and
-the combined test set
-is below the given threshold.
-The mean directional error over all segments :math:`S`
-is given by
-
-.. math::
-
-    \frac{1}{S} \sum_{s=1}^S
-    \text{prediction}(\text{segment}_s)
-    - \text{truth}(\text{segment}_s)
-
 For the tests **Precision Per Bin High Pitch**,
 **Precision Per Bin Low Pitch**, and
 **Precision Per Bin Medium Pitch**
@@ -978,15 +914,6 @@ between the respective pitch group and
 the combined test set
 is below the given threshold.
 
-The **Unweighted Average Precision High Pitch**,
-**Unweighted Average Precision Low Pitch**, and
-**Unweighted Average Precision Medium Pitch** tests
-ensure that the difference
-in unweighted average precision
-between the respective pitch group and
-the combined test set
-is below the given threshold.
-
 We base the thresholds
 on simulations
 with a random-categorical and a
@@ -1002,20 +929,6 @@ or we skip that bin.
 .. figure:: extra/media/fairness_thresholds/plots/max_ccc.png
 
     The maximum difference in CCC
-    for a random gaussian model on a
-    random gaussian ground truth from 1000
-    simulations.
-
-.. figure:: extra/media/fairness_thresholds/plots/max_mae.png
-
-    The maximum difference in mean absolute error
-    for a random gaussian model on a
-    random gaussian ground truth from 1000
-    simulations.
-
-.. figure:: extra/media/fairness_thresholds/plots/max_mde.png
-
-    The maximum difference in mean directional error
     for a random gaussian model on a
     random gaussian ground truth from 1000
     simulations.
@@ -1048,16 +961,9 @@ or we skip that bin.
     random sparse categorical ground truth from 1000
     simulations.
 
-.. figure:: extra/media/fairness_thresholds/plots/max_truthsparse_preduniform_precision.png
-
-    The maximum difference in precision per class
-    for a random uniform categorical model on a
-    random sparse categorical ground truth from 1000
-    simulations.
-
 .. figure:: extra/media/fairness_thresholds/plots/max_truthsparse_preduniform_recall.png
 
-    The maximum difference in precision per class
+    The maximum difference in UAR
     for a random uniform categorical model on a
     random sparse categorical ground truth from 1000
     simulations.
@@ -1116,30 +1022,6 @@ between the respective sex and
 the combined test set
 is below the given threshold.
 
-The **Mean Absolute Error Female** and
-**Mean Absolute Error Male** tests
-check that the difference
-in mean absolute error
-between the respective sex and
-the combined test set
-is below the given threshold.
-
-The **Mean Directional Error Female** and
-**Mean Directional Error Male** tests
-ensure that the difference
-in mean directional error
-between the respective sex and
-the combined test set
-is below the given threshold.
-The mean directional error over all segments :math:`S`
-is given by
-
-.. math::
-
-    \frac{1}{S} \sum_{s=1}^S
-    \text{prediction}(\text{segment}_s)
-    - \text{truth}(\text{segment}_s)
-
 For the tests **Precision Per Bin Female** and
 **Precision Per Bin Male**
 we
@@ -1186,14 +1068,6 @@ between the respective sex and
 the combined test set
 is below the given threshold.
 
-The **Unweighted Average Precision Female** and
-**Unweighted Average Precision Male** tests
-ensure that the difference
-in unweighted average precision
-between the respective sex and
-the combined test set
-is below the given threshold.
-
 We base the thresholds
 on simulations
 with a random-categorical and a
@@ -1209,20 +1083,6 @@ or we skip that bin.
 .. figure:: extra/media/fairness_thresholds/plots/max_ccc.png
 
     The maximum difference in CCC
-    for a random gaussian model on a
-    random gaussian ground truth from 1000
-    simulations.
-
-.. figure:: extra/media/fairness_thresholds/plots/max_mae.png
-
-    The maximum difference in mean absolute error
-    for a random gaussian model on a
-    random gaussian ground truth from 1000
-    simulations.
-
-.. figure:: extra/media/fairness_thresholds/plots/max_mde.png
-
-    The maximum difference in mean directional error
     for a random gaussian model on a
     random gaussian ground truth from 1000
     simulations.
@@ -1250,21 +1110,14 @@ or we skip that bin.
 
 .. figure:: extra/media/fairness_thresholds/plots/max_truthsparse_preduniform_recall_per_class.png
 
-    The maximum difference in precision per class
-    for a random uniform categorical model on a
-    random sparse categorical ground truth from 1000
-    simulations.
-
-.. figure:: extra/media/fairness_thresholds/plots/max_truthsparse_preduniform_precision.png
-
-    The maximum difference in precision per class
+    The maximum difference in recall per class
     for a random uniform categorical model on a
     random sparse categorical ground truth from 1000
     simulations.
 
 .. figure:: extra/media/fairness_thresholds/plots/max_truthsparse_preduniform_recall.png
 
-    The maximum difference in precision per class
+    The maximum difference in UAR
     for a random uniform categorical model on a
     random sparse categorical ground truth from 1000
     simulations.
@@ -1514,30 +1367,6 @@ and **Change UAR White Noise**
 tests ensure
 that the Unweighted Average Recall (UAR)
 does not decrease
-too much when adding
-the given background noise.
-
-The **Change UAP Babble Noise**,
-**Change UAP Coughing**,
-**Change UAP Environmental Noise**,
-**Change UAP Music**,
-**Change UAP Sneezing**,
-and **Change UAP White Noise**
-tests ensure
-that the Unweighted Average Precision (UAP)
-does not decrease
-too much when adding
-the given background noise.
-
-The **Change Average Value Babble Noise**,
-**Change Average Value Coughing**,
-**Change Average Value Environmental Noise**,
-**Change Average Value Music**,
-**Change Average Value Sneezing**,
-and **Change Average Value White Noise**
-tests ensure
-that the average value
-is not affected
 too much when adding
 the given background noise.
 
@@ -1792,12 +1621,6 @@ We use the same definitions as in
 :ref:`method-tests-robustness-small-changes`
 to compute the difference :math:`\delta` in prediction.
 
-The **Change Average Value Low Quality Phone** test
-ensures that the absolute change in average value
-is below the given threshold
-when applying
-the low quality phone filter.
-
 The **Change CCC Low Quality Phone** test
 ensures that the Concordance Correlation Coefficient (CCC)
 does not decrease further
@@ -1808,13 +1631,6 @@ the low quality phone filter.
 The **Change UAR Low Quality Phone**
 tests ensure
 that the Unweighted Average Recall (UAR)
-does not decrease
-too much when applying
-the low quality phone filter.
-
-The **Change UAP Low Quality Phone**
-tests ensure
-that the Unweighted Average Precision (UAP)
 does not decrease
 too much when applying
 the low quality phone filter.
@@ -2430,20 +2246,6 @@ The **Change UAR Downward Tilt**
 and **Change UAR Upward Tilt** tests
 ensure that the Unweighted Average Recall (UAR)
 does not decrease
-too much when applying
-the downward or upward spectral tilt filter.
-
-The **Change UAP Downward Tilt**
-and **Change UAP Upward Tilt** tests
-ensure that the Unweighted Average Precision (UAP)
-does not decrease
-too much when applying
-the downward or upward spectral tilt filter.
-
-The **Change Average Value Downward Tilt**
-and **Change Average Value Upward Tilt** tests
-ensure that the average value
-is not affected
 too much when applying
 the downward or upward spectral tilt filter.
 
