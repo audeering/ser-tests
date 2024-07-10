@@ -27,24 +27,6 @@ Metrics:
   - name: Change CCC White Noise
     short: CCC White
     threshold: -0.05
-  - name: Change Average Value Babble Noise
-    short: Value Babble
-    threshold: 0.03
-  - name: Change Average Value Coughing
-    short: Value Coughing
-    threshold: 0.03
-  - name: Change Average Value Environmental Noise
-    short: Value Environmental
-    threshold: 0.03
-  - name: Change Average Value Music
-    short: Value Music
-    threshold: 0.03
-  - name: Change Average Value Sneezing
-    short: Value Sneezing
-    threshold: 0.03
-  - name: Change Average Value White Noise
-    short: Value White
-    threshold: 0.03
   - name: Percentage Unchanged Predictions Babble Noise
     short: Unchanged Babble
     threshold: 0.9

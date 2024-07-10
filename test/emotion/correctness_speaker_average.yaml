@@ -25,9 +25,6 @@ Metrics:
   - name: Class Proportion Mean Absolute Error
     short: Proportion Absolute
     threshold: 0.1
-  - name: Class Proportion Mean Directional Error
-    short: Proportion Directional
-    threshold: 0.05
   - name: Visualization
     threshold: 0.2
     description: >

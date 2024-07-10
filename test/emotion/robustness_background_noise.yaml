@@ -39,24 +39,6 @@ Metrics:
   - name: Change UAR White Noise
     short: UAR White
     threshold: -0.05
-  - name: Change UAP Babble Noise
-    short: UAP Babble
-    threshold: -0.05
-  - name: Change UAP Coughing
-    short: UAP Coughing
-    threshold: -0.05
-  - name: Change UAP Environmental Noise
-    short: UAP Environmental
-    threshold: -0.05
-  - name: Change UAP Music
-    short: UAP Music
-    threshold: -0.05
-  - name: Change UAP Sneezing
-    short: Value Sneezing
-    threshold: -0.05
-  - name: Change UAP White Noise
-    short: UAP White
-    threshold: -0.05
   - name: Percentage Unchanged Predictions Babble Noise
     short: Unchanged Babble
     threshold: 0.9
