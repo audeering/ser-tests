@@ -30,10 +30,10 @@ os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
 # To ensure the same hash inside the model cache,
 # we need to force the same auglib and audb cache
 # for all users
-if os.path.exists('/data/audb'):
-    audb.config.CACHE_ROOT = '/data/audb'
-if os.path.exists('data/auglib'):
-    auglib.config.CACHE_ROOT = '/data/auglib'
+if os.path.exists('/cache/audb'):
+    audb.config.CACHE_ROOT = '/cache/audb'
+if os.path.exists('/cache/auglib'):
+    auglib.config.CACHE_ROOT = '/cache/auglib'
 
 
 class Color():
