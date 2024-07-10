@@ -321,7 +321,7 @@
             
             
               <div class="version">
-                v2c39464
+                vbcaaf129
               </div>
             
           
@@ -418,11 +418,16 @@ Results are grouped after the different model tasks:</p>
 </ul>
 <p><strong>🚨 Warning</strong>:
 you cannot install and run the test suite at the moment.
-We will change this by open-sourcing
-the required augmentation library,
-and provide access to the data
-and models
-in the following months.</p>
+It depends on an internal Python package
+to load all the models.
+Most of the datasets used in the tests
+are hosted on internal servers,
+and you would need to download the datasets
+from their original sources
+and convert to <a class="reference external" href="https://audeering.github.io/audformat/">audformat</a>
+to run the tests.
+We released the augmentation library used for the tests
+as the <a class="reference external" href="https://audeering.github.io/auglib/">auglib</a> Python package.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
