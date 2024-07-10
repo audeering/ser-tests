@@ -19,11 +19,14 @@ Results are grouped after the different model tasks:
 
 **🚨 Warning**:
 you cannot install and run the test suite at the moment.
-We will change this by open-sourcing
-the required augmentation library,
-and provide access to the data
-and models
-in the following months.
+It depends on an internal Python package
+to load all the models.
+And most of the data used in the tests
+is also hosted on internal servers.
+
+The libraries for managing the data,
+and applying the augmentations
+are available as open-source.
 
 
 .. _arousal: https://audeering.github.io/ser-tests/test/arousal.html
