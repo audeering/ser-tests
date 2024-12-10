@@ -1,0 +1,70 @@
+.. _comparison-dominance-1543ec32-1.0.3_a3b14624-1.1.0_75e4ad67-1.1.0_b46935cd-1.0.4-correctness_speaker_ranking:
+
+Correctness speaker ranking
+===========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: correctness_speaker_ranking/overall_scores.csv
+
+
+Spearmans Rho
+-------------
+
+.. flat-table:: Threshold: 0.7
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Spearmans Rho
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.87`
+      - :green:`0.93`
+      - :green:`0.93`
+      - :green:`0.89`
+    * - msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard
+      - :red:`0.67`
+      - :green:`0.78`
+      - :green:`0.81`
+      - :green:`0.76`
+    * - mean
+      - 0.77
+      - 0.85
+      - 0.87
+      - 0.82
+
+Visualization
+-------------
+
+The plots visualize the precision of predicting speakers to be in the Top 25% or Bottom 25% of all speakers. Green dots indicate correctly classified speakers, red false positive speakers, whereby red squares indicate confusions between Top 25% and Bottom 25% speakers. The remaining grey data points are samples outside the range of interest. They contain false negatives that should have been predicted in the Top 25% or Bottom 25% of speakers, but were not. True negatives are those speakers that are not part of the Top 25% or Bottom 25%, and were predicted as such.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_speaker_ranking/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+

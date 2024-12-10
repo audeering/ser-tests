@@ -1,0 +1,124 @@
+.. _test-valence-45cf5a55-1.0.0-fairness_accent:
+
+Fairness accent
+===============
+
+.. role:: red
+.. role:: green
+
+100.0% passed tests (124 :green:`passed` / 0 :red:`failed`).
+
+
+Mean Value
+----------
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_accent/mean-value.csv
+
+Relative Difference Per Bin
+---------------------------
+
+Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.225
+    :header-rows: 1
+    :file: fairness_accent/relative-difference-per-bin.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-amharic.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-arabic.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-bengali.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-bulgarian.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-cantonese.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-dutch.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-english.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-farsi.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-french.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-german.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-greek.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-hindi.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-italian.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-japanese.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-korean.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-macedonian.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-mandarin.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-nepali.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-polish.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-portuguese.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-romanian.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-russian.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-serbian.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-spanish.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-swedish.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-tagalog.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-thai.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-turkish.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-ukrainian.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-urdu.png
+    :align: center
+
+.. figure:: fairness_accent/visualization_speech-accent-archive-2.2.0-vietnamese.png
+    :align: center

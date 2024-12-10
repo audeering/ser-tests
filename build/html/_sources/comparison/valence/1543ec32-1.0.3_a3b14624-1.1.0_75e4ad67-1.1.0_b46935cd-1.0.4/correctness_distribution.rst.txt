@@ -1,0 +1,80 @@
+.. _comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_75e4ad67-1.1.0_b46935cd-1.0.4-correctness_distribution:
+
+Correctness distribution
+========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: correctness_distribution/overall_scores.csv
+
+
+Jensen Shannon Distance
+-----------------------
+
+.. flat-table:: Threshold: 0.2
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Jensen-Shannon Distance
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.45`
+      - :red:`0.38`
+      - :red:`0.27`
+      - :red:`0.57`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.14`
+      - :green:`0.11`
+      - :green:`0.15`
+      - :red:`0.24`
+    * - msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard
+      - :red:`0.30`
+      - :red:`0.24`
+      - :red:`0.33`
+      - :red:`0.29`
+    * - mean
+      - 0.30
+      - 0.24
+      - 0.25
+      - 0.37
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+

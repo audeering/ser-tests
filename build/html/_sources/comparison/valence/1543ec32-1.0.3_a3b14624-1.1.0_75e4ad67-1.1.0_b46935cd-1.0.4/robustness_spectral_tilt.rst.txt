@@ -1,0 +1,170 @@
+.. _comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_75e4ad67-1.1.0_b46935cd-1.0.4-robustness_spectral_tilt:
+
+Robustness spectral tilt
+========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_spectral_tilt/overall_scores.csv
+
+
+Change Ccc Downward Tilt
+------------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Change CCC Downward Tilt
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`-0.06`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`-0.01`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.06`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`-0.02`
+    * - mean
+      - -0.06
+      - -0.01
+      - 0.00
+      - -0.01
+
+Change Ccc Upward Tilt
+----------------------
+
+.. flat-table:: Threshold: -0.05
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Change CCC Upward Tilt
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.03`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`0.03`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`-0.08`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.01`
+    * - mean
+      - -0.03
+      - -0.01
+      - -0.01
+      - 0.02
+
+Percentage Unchanged Predictions Downward Tilt
+----------------------------------------------
+
+.. flat-table:: Threshold: 0.8
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percentage Unchanged Predictions Downward Tilt
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.56`
+      - :green:`0.95`
+      - :green:`0.95`
+      - :green:`0.83`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.39`
+      - :green:`0.92`
+      - :green:`0.97`
+      - :red:`0.68`
+    * - mean
+      - 0.48
+      - 0.94
+      - 0.96
+      - 0.76
+
+Percentage Unchanged Predictions Upward Tilt
+--------------------------------------------
+
+.. flat-table:: Threshold: 0.8
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percentage Unchanged Predictions Upward Tilt
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.20`
+      - :red:`0.72`
+      - :green:`0.83`
+      - :red:`0.44`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.25`
+      - :red:`0.72`
+      - :green:`0.87`
+      - :red:`0.46`
+    * - mean
+      - 0.23
+      - 0.72
+      - 0.85
+      - 0.45
+
+Visualization Downward Tilt
+---------------------------
+
+Difference of predictions for original audio and audio with a downward spectral tilt. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/robustness_spectral_tilt/visualization-downward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_spectral_tilt/visualization-downward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/robustness_spectral_tilt/visualization-downward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/robustness_spectral_tilt/visualization-downward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/robustness_spectral_tilt/visualization-downward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_spectral_tilt/visualization-downward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/robustness_spectral_tilt/visualization-downward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/robustness_spectral_tilt/visualization-downward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/robustness_spectral_tilt/visualization-upward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_spectral_tilt/visualization-upward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/robustness_spectral_tilt/visualization-upward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/robustness_spectral_tilt/visualization-upward-tilt_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/robustness_spectral_tilt/visualization-upward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_spectral_tilt/visualization-upward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/robustness_spectral_tilt/visualization-upward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/robustness_spectral_tilt/visualization-upward-tilt_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+

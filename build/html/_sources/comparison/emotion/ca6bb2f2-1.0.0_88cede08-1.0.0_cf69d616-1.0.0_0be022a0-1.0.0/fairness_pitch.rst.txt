@@ -1,0 +1,515 @@
+.. _comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-fairness_pitch:
+
+Fairness pitch
+==============
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_pitch/overall_scores.csv
+
+
+Precision Per Class High Pitch
+------------------------------
+
+Precision high pitch - precision combined.
+
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`-0.03`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.06`
+      - :green:`-0.04`
+      - :green:`-0.03`
+      - :green:`-0.06`
+      - :green:`-0.01`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.01`
+      - :green:`-0.02`
+      - :green:`-0.05`
+      - :green:`-0.05`
+      - :green:`-0.03`
+    * - mean
+      - -0.03
+      - -0.04
+      - -0.04
+      - -0.06
+      - -0.04
+      - -0.03
+      - -0.06
+      - -0.01
+      - 0.03
+      - 0.02
+      - 0.03
+      - 0.01
+      - -0.02
+      - -0.05
+      - -0.05
+      - -0.03
+
+Precision Per Class Low Pitch
+-----------------------------
+
+Precision low pitch - precision combined.
+
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`0.05`
+      - :red:`0.16`
+      - :red:`0.11`
+      - :red:`0.11`
+      - :green:`0.06`
+      - :green:`0.05`
+      - :red:`0.12`
+      - :green:`0.04`
+      - :green:`-0.04`
+      - :green:`-0.04`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - :green:`0.03`
+      - :green:`0.09`
+      - :green:`0.03`
+      - :green:`0.03`
+    * - mean
+      - 0.05
+      - 0.16
+      - 0.11
+      - 0.11
+      - 0.06
+      - 0.05
+      - 0.12
+      - 0.04
+      - -0.04
+      - -0.04
+      - -0.03
+      - -0.02
+      - 0.03
+      - 0.09
+      - 0.03
+      - 0.03
+
+Precision Per Class Medium Pitch
+--------------------------------
+
+Precision medium pitch - precision combined.
+
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.00`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`-0.00`
+      - :green:`-0.02`
+      - :green:`0.03`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`0.04`
+      - :green:`0.02`
+    * - mean
+      - 0.01
+      - -0.01
+      - 0.00
+      - 0.02
+      - 0.01
+      - 0.00
+      - 0.00
+      - -0.02
+      - 0.03
+      - 0.03
+      - 0.02
+      - 0.02
+      - -0.01
+      - -0.02
+      - 0.04
+      - 0.02
+
+Recall Per Class High Pitch
+---------------------------
+
+Recall high pitch - recall combined.
+
+
+.. flat-table:: Threshold: 0.225
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`0.06`
+      - :green:`0.08`
+      - :green:`-0.03`
+      - :green:`-0.14`
+      - :green:`0.06`
+      - :green:`0.03`
+      - :green:`0.09`
+      - :green:`-0.01`
+      - :green:`-0.16`
+      - :green:`-0.12`
+      - :green:`-0.21`
+      - :green:`-0.09`
+      - :green:`0.02`
+      - :green:`0.04`
+      - :green:`-0.01`
+      - :green:`0.06`
+    * - mean
+      - 0.06
+      - 0.08
+      - -0.03
+      - -0.14
+      - 0.06
+      - 0.03
+      - 0.09
+      - -0.01
+      - -0.16
+      - -0.12
+      - -0.21
+      - -0.09
+      - 0.02
+      - 0.04
+      - -0.01
+      - 0.06
+
+Recall Per Class Low Pitch
+--------------------------
+
+Recall low pitch - recall combined.
+
+
+.. flat-table:: Threshold: 0.225
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`-0.22`
+      - :green:`-0.16`
+      - :green:`-0.03`
+      - :green:`-0.05`
+      - :green:`-0.12`
+      - :green:`-0.09`
+      - :green:`-0.12`
+      - :green:`-0.04`
+      - :green:`0.12`
+      - :green:`0.13`
+      - :green:`0.18`
+      - :green:`0.07`
+      - :green:`0.17`
+      - :green:`0.06`
+      - :green:`0.14`
+      - :green:`0.09`
+    * - mean
+      - -0.22
+      - -0.16
+      - -0.03
+      - -0.05
+      - -0.12
+      - -0.09
+      - -0.12
+      - -0.04
+      - 0.12
+      - 0.13
+      - 0.18
+      - 0.07
+      - 0.17
+      - 0.06
+      - 0.14
+      - 0.09
+
+Recall Per Class Medium Pitch
+-----------------------------
+
+Recall medium pitch - recall combined.
+
+
+.. flat-table:: Threshold: 0.225
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`0.16`
+      - :green:`0.08`
+      - :green:`0.06`
+      - :green:`0.19`
+      - :green:`0.06`
+      - :green:`0.06`
+      - :green:`0.03`
+      - :green:`0.05`
+      - :green:`0.04`
+      - :green:`-0.00`
+      - :green:`0.03`
+      - :green:`0.01`
+      - :green:`-0.20`
+      - :green:`-0.11`
+      - :green:`-0.13`
+      - :green:`-0.15`
+    * - mean
+      - 0.16
+      - 0.08
+      - 0.06
+      - 0.19
+      - 0.06
+      - 0.06
+      - 0.03
+      - 0.05
+      - 0.04
+      - 0.00
+      - 0.03
+      - 0.01
+      - -0.20
+      - -0.11
+      - -0.13
+      - -0.15
+
+Unweighted Average Recall High Pitch
+------------------------------------
+
+UAR high pitch - UAR combined.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Unweighted Average Recall High Pitch
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`-0.04`
+      - :green:`-0.05`
+    * - mean
+      - -0.01
+      - 0.01
+      - -0.04
+      - -0.05
+
+Unweighted Average Recall Low Pitch
+-----------------------------------
+
+UAR low pitch - UAR combined.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Unweighted Average Recall Low Pitch
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.04`
+      - :green:`0.02`
+    * - mean
+      - -0.01
+      - -0.01
+      - 0.04
+      - 0.02
+
+Unweighted Average Recall Medium Pitch
+--------------------------------------
+
+UAR medium pitch - UAR combined.
+
+
+.. flat-table:: Threshold: 0.075
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Unweighted Average Recall Medium Pitch
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - msppodcast-2.6.1-emotion.categories.test-1.gold_standard
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`-0.00`
+      - :green:`0.03`
+    * - mean
+      - 0.01
+      - 0.01
+      - 0.00
+      - 0.03
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_high.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_high.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_high.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_high.png
+
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_low.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_low.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_low.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_low.png
+
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_medium.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_medium.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_medium.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.categories.test-1.gold_standard_medium.png
+

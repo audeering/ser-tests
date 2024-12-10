@@ -1,0 +1,146 @@
+.. _comparison-arousal-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-correctness_regression:
+
+Correctness regression
+======================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: correctness_regression/overall_scores.csv
+
+
+Concordance Correlation Coeff
+-----------------------------
+
+.. flat-table:: Threshold: 0.5
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Concordance Correlation Coeff
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.66`
+      - :green:`0.65`
+      - :green:`0.64`
+      - :green:`0.65`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.72`
+      - :green:`0.74`
+      - :green:`0.75`
+      - :green:`0.72`
+    * - msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard
+      - :green:`0.50`
+      - :green:`0.50`
+      - :red:`0.43`
+      - :red:`0.49`
+    * - mean
+      - 0.63
+      - 0.63
+      - 0.61
+      - 0.62
+
+Mean Absolute Error
+-------------------
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Mean Absolute Error
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.12`
+      - :red:`0.11`
+      - :red:`0.13`
+      - :red:`0.12`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.09`
+      - :green:`0.09`
+      - :green:`0.09`
+      - :green:`0.10`
+    * - msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard
+      - :green:`0.10`
+      - :green:`0.09`
+      - :red:`0.12`
+      - :red:`0.10`
+    * - mean
+      - 0.10
+      - 0.10
+      - 0.11
+      - 0.11
+
+Pearson Correlation Coeff
+-------------------------
+
+.. flat-table:: Threshold: 0.5
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Pearson Correlation Coeff
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.66`
+      - :green:`0.65`
+      - :green:`0.70`
+      - :green:`0.66`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.73`
+      - :green:`0.74`
+      - :green:`0.75`
+      - :green:`0.73`
+    * - msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard
+      - :green:`0.51`
+      - :green:`0.50`
+      - :green:`0.55`
+      - :green:`0.50`
+    * - mean
+      - 0.63
+      - 0.63
+      - 0.67
+      - 0.63
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/correctness_regression/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/correctness_regression/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/54d9c66b-1.0.1/correctness_regression/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/45cf5a55-1.0.0/correctness_regression/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/54d9c66b-1.0.1/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/45cf5a55-1.0.0/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/arousal/d6bb0fbb-1.0.0/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/cf81bd56-1.1.0/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/54d9c66b-1.0.1/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/arousal/45cf5a55-1.0.0/correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+

@@ -1,0 +1,218 @@
+.. _comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-fairness_language:
+
+Fairness language
+=================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_language/overall_scores.csv
+
+
+Relative Difference Per Class
+-----------------------------
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+      - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - mozillacommonvoice-10.1.0-de
+      - :green:`-0.03`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.05`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`0.08`
+      - :green:`0.04`
+      - :green:`0.04`
+      - :green:`0.02`
+      - :green:`-0.00`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`0.02`
+    * - mozillacommonvoice-10.1.0-en
+      - :green:`0.00`
+      - :green:`0.00`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`-0.06`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :red:`-0.21`
+      - :red:`-0.19`
+      - :red:`-0.27`
+      - :red:`-0.24`
+      - :red:`0.27`
+      - :red:`0.19`
+      - :red:`0.27`
+      - :red:`0.24`
+    * - mozillacommonvoice-10.1.0-es
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`0.02`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :red:`-0.10`
+      - :green:`-0.01`
+      - :green:`0.01`
+      - :green:`0.04`
+      - :green:`0.07`
+      - :green:`-0.01`
+      - :green:`-0.03`
+      - :green:`-0.03`
+    * - mozillacommonvoice-10.1.0-fr
+      - :green:`0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`0.05`
+      - :green:`0.07`
+      - :red:`0.11`
+      - :green:`0.09`
+      - :green:`-0.06`
+      - :green:`-0.05`
+      - :green:`-0.09`
+      - :green:`-0.06`
+    * - mozillacommonvoice-10.1.0-it
+      - :green:`0.00`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`-0.00`
+      - :green:`0.06`
+      - :green:`0.00`
+      - :green:`-0.02`
+      - :green:`0.02`
+      - :red:`0.11`
+      - :green:`0.05`
+      - :red:`0.13`
+      - :red:`0.13`
+      - :red:`-0.17`
+      - :green:`-0.05`
+      - :red:`-0.10`
+      - :red:`-0.14`
+    * - mozillacommonvoice-10.1.0-zh
+      - :green:`0.01`
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`0.03`
+      - :green:`0.04`
+      - :green:`0.00`
+      - :green:`0.05`
+      - :green:`0.04`
+      - :green:`0.07`
+      - :green:`0.04`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :red:`-0.12`
+      - :green:`-0.05`
+      - :green:`-0.03`
+      - :green:`-0.04`
+    * - mean
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - 0.00
+      - -0.00
+      - -0.00
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+
+    * - .. figure:: ../../../test/emotion/ca6bb2f2-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+
+      - .. figure:: ../../../test/emotion/88cede08-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+
+      - .. figure:: ../../../test/emotion/cf69d616-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+
+      - .. figure:: ../../../test/emotion/0be022a0-1.0.0/fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+

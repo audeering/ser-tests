@@ -1,0 +1,49 @@
+.. _test-arousal-54d9c66b-1.0.1-fairness_language:
+
+Fairness language
+=================
+
+.. role:: red
+.. role:: green
+
+80.0% passed tests (24 :green:`passed` / 6 :red:`failed`).
+
+
+Mean Value
+----------
+
+.. csv-table:: Threshold: 0.03
+    :header-rows: 1
+    :file: fairness_language/mean-value.csv
+
+Relative Difference Per Bin
+---------------------------
+
+Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_language/relative-difference-per-bin.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+    :align: center

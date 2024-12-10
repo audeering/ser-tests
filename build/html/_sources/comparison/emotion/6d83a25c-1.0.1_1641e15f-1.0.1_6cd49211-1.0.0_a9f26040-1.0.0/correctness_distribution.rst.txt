@@ -1,0 +1,318 @@
+.. _comparison-emotion-6d83a25c-1.0.1_1641e15f-1.0.1_6cd49211-1.0.0_a9f26040-1.0.0-correctness_distribution:
+
+Correctness distribution
+========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: correctness_distribution/overall_scores.csv
+
+
+Relative Difference Per Class
+-----------------------------
+
+.. flat-table:: Threshold: 0.15
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` sadness
+    * - CNN14-cat
+      - w2v2-b-cat
+      - hubert-b-cat
+      - axlstm-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - hubert-b-cat
+      - axlstm-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - hubert-b-cat
+      - axlstm-cat
+      - CNN14-cat
+      - w2v2-b-cat
+      - hubert-b-cat
+      - axlstm-cat
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.05`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`-0.04`
+      - :green:`-0.06`
+      - :green:`-0.01`
+      - :green:`-0.06`
+      - :green:`-0.04`
+      - :red:`-0.69`
+      - :red:`-0.56`
+      - :red:`-0.70`
+      - :red:`-0.47`
+      - :red:`0.69`
+      - :red:`0.54`
+      - :red:`0.74`
+      - :red:`0.55`
+    * - danish-emotional-speech-1.1.1-emotion.test
+      - :green:`-0.09`
+      - :green:`-0.02`
+      - :green:`-0.11`
+      - :red:`-0.19`
+      - :red:`-0.19`
+      - :green:`-0.14`
+      - :red:`-0.23`
+      - :red:`-0.19`
+      - :green:`0.00`
+      - :green:`0.05`
+      - :green:`0.00`
+      - :red:`0.38`
+      - :red:`0.27`
+      - :green:`0.11`
+      - :red:`0.34`
+      - :green:`-0.01`
+    * - emodb-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.25`
+      - :green:`-0.04`
+      - :green:`0.12`
+      - :green:`0.12`
+      - :green:`-0.13`
+      - :green:`0.08`
+      - :green:`-0.12`
+      - :green:`-0.13`
+      - :green:`-0.10`
+      - :green:`-0.02`
+      - :green:`-0.03`
+      - :green:`-0.07`
+      - :green:`-0.01`
+      - :green:`-0.01`
+      - :green:`0.04`
+      - :green:`0.07`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.13`
+      - :red:`0.16`
+      - :red:`0.18`
+      - :green:`0.08`
+      - :red:`-0.17`
+      - :green:`-0.09`
+      - :red:`-0.21`
+      - :red:`-0.16`
+      - :red:`-0.15`
+      - :green:`-0.04`
+      - :green:`0.02`
+      - :green:`0.01`
+      - :red:`0.18`
+      - :green:`-0.03`
+      - :green:`0.02`
+      - :green:`0.07`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`-0.04`
+      - :green:`-0.08`
+      - :green:`-0.10`
+      - :red:`-0.19`
+      - :green:`-0.09`
+      - :green:`0.13`
+      - :green:`0.02`
+      - :green:`0.04`
+      - :red:`-0.19`
+      - :red:`-0.20`
+      - :red:`-0.24`
+      - :green:`0.12`
+      - :red:`0.32`
+      - :red:`0.15`
+      - :red:`0.32`
+      - :green:`0.04`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.34`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`-0.02`
+      - :green:`0.05`
+      - :red:`0.42`
+      - :red:`0.29`
+      - :red:`0.39`
+      - :red:`-0.49`
+      - :red:`-0.48`
+      - :red:`-0.44`
+      - :red:`-0.33`
+      - :green:`0.10`
+      - :green:`0.08`
+      - :red:`0.17`
+      - :green:`-0.04`
+    * - msppodcast-2.6.0-emotion.categories.test-1.gold_standard
+      - :green:`0.09`
+      - :green:`0.06`
+      - :green:`0.05`
+      - :green:`0.06`
+      - :green:`-0.10`
+      - :green:`0.04`
+      - :green:`-0.09`
+      - :green:`-0.03`
+      - :red:`-0.16`
+      - :red:`-0.22`
+      - :red:`-0.16`
+      - :red:`-0.23`
+      - :red:`0.16`
+      - :green:`0.12`
+      - :red:`0.19`
+      - :red:`0.20`
+    * - msppodcast-2.6.0-emotion.categories.test-2.gold_standard
+      - :green:`0.13`
+      - :green:`0.10`
+      - :green:`0.08`
+      - :green:`0.04`
+      - :red:`-0.21`
+      - :green:`-0.05`
+      - :red:`-0.16`
+      - :green:`-0.10`
+      - :green:`-0.11`
+      - :red:`-0.21`
+      - :red:`-0.18`
+      - :red:`-0.18`
+      - :red:`0.18`
+      - :red:`0.15`
+      - :red:`0.25`
+      - :red:`0.25`
+    * - polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard
+      - :red:`0.18`
+      - :green:`-0.02`
+      - :green:`0.04`
+      - :green:`0.03`
+      - :red:`-0.25`
+      - :green:`0.12`
+      - :green:`-0.11`
+      - :green:`-0.08`
+      - :green:`0.04`
+      - :green:`-0.08`
+      - :red:`0.15`
+      - :green:`0.00`
+      - :green:`0.04`
+      - :green:`-0.02`
+      - :green:`-0.09`
+      - :green:`0.05`
+    * - ravdess-1.1.2-emotion.speech.test
+      - :green:`0.10`
+      - :green:`0.13`
+      - :green:`-0.04`
+      - :green:`-0.11`
+      - :red:`-0.29`
+      - :red:`-0.29`
+      - :red:`-0.29`
+      - :green:`-0.02`
+      - :green:`0.08`
+      - :green:`-0.10`
+      - :green:`-0.14`
+      - :green:`0.11`
+      - :green:`0.11`
+      - :red:`0.25`
+      - :red:`0.46`
+      - :green:`0.02`
+    * - mean
+      - 0.11
+      - 0.03
+      - 0.02
+      - -0.02
+      - -0.14
+      - 0.02
+      - -0.10
+      - -0.03
+      - -0.18
+      - -0.19
+      - -0.17
+      - -0.07
+      - 0.20
+      - 0.13
+      - 0.24
+      - 0.12
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14-cat
+      - w2v2-b-cat
+      - hubert-b-cat
+      - axlstm-cat
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-2.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_msppodcast-2.6.0-emotion.categories.test-2.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/emotion/6d83a25c-1.0.1/correctness_distribution/visualization_ravdess-1.1.2-emotion.speech.test.png
+
+      - .. figure:: ../../../test/emotion/1641e15f-1.0.1/correctness_distribution/visualization_ravdess-1.1.2-emotion.speech.test.png
+
+      - .. figure:: ../../../test/emotion/6cd49211-1.0.0/correctness_distribution/visualization_ravdess-1.1.2-emotion.speech.test.png
+
+      - .. figure:: ../../../test/emotion/a9f26040-1.0.0/correctness_distribution/visualization_ravdess-1.1.2-emotion.speech.test.png
+

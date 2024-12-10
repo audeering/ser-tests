@@ -1,0 +1,319 @@
+.. _comparison-valence-1543ec32-1.0.3_a3b14624-1.1.0_75e4ad67-1.1.0_b46935cd-1.0.4-robustness_small_changes:
+
+Robustness small changes
+========================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_small_changes/overall_scores.csv
+
+
+Percentage Unchanged Predictions Additive Tone
+----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Additive Tone
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.83`
+      - :red:`0.92`
+      - :red:`0.89`
+      - :red:`0.69`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.78`
+      - :green:`0.96`
+      - :red:`0.94`
+      - :red:`0.75`
+    * - mean
+      - 0.80
+      - 0.94
+      - 0.92
+      - 0.72
+
+Percentage Unchanged Predictions Append Zeros
+---------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Append Zeros
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.99`
+      - :green:`0.99`
+      - :green:`0.98`
+      - :red:`0.83`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :red:`0.87`
+    * - mean
+      - 0.99
+      - 0.99
+      - 0.99
+      - 0.85
+
+Percentage Unchanged Predictions Clip
+-------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Clip
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.99`
+      - :green:`0.98`
+      - :green:`0.97`
+      - :red:`0.91`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.99`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.98`
+    * - mean
+      - 0.99
+      - 0.99
+      - 0.98
+      - 0.95
+
+Percentage Unchanged Predictions Crop Beginning
+-----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Crop Beginning
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.98`
+      - :red:`0.92`
+      - :red:`0.91`
+      - :red:`0.58`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.99`
+      - :green:`0.97`
+      - :red:`0.95`
+      - :red:`0.60`
+    * - mean
+      - 0.98
+      - 0.95
+      - 0.93
+      - 0.59
+
+Percentage Unchanged Predictions Crop End
+-----------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Crop End
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.99`
+      - :green:`0.99`
+      - :green:`0.99`
+      - :red:`0.93`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.99`
+      - :green:`0.97`
+    * - mean
+      - 0.99
+      - 0.99
+      - 0.99
+      - 0.95
+
+Percentage Unchanged Predictions Gain
+-------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Gain
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.97`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.92`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 0.95
+      - 1.00
+      - 1.00
+      - 1.00
+
+Percentage Unchanged Predictions Highpass Filter
+------------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Highpass Filter
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.98`
+      - :green:`0.99`
+      - :green:`0.99`
+      - :green:`0.98`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.98`
+      - :green:`0.99`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - mean
+      - 0.98
+      - 0.99
+      - 0.99
+      - 0.99
+
+Percentage Unchanged Predictions Lowpass Filter
+-----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Lowpass Filter
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.99`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.81`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :red:`0.94`
+    * - mean
+      - 0.90
+      - 1.00
+      - 1.00
+      - 0.97
+
+Percentage Unchanged Predictions Prepend Zeros
+----------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred Prepend Zeros
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :green:`0.98`
+      - :red:`0.92`
+      - :red:`0.89`
+      - :red:`0.55`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.99`
+      - :green:`0.97`
+      - :red:`0.95`
+      - :red:`0.59`
+    * - mean
+      - 0.98
+      - 0.95
+      - 0.92
+      - 0.57
+
+Percentage Unchanged Predictions White Noise
+--------------------------------------------
+
+.. flat-table:: Threshold: 0.95
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percent Unchanged Pred White Noise
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - iemocap-2.3.0-emotion.dimensions.test.gold_standard
+      - :red:`0.52`
+      - :red:`0.83`
+      - :red:`0.74`
+      - :red:`0.65`
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :red:`0.61`
+      - :red:`0.83`
+      - :red:`0.87`
+      - :red:`0.72`
+    * - mean
+      - 0.56
+      - 0.83
+      - 0.80
+      - 0.69
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/robustness_small_changes/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+
+    * - .. figure:: ../../../test/valence/1543ec32-1.0.3/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/a3b14624-1.1.0/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/75e4ad67-1.1.0/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+
+      - .. figure:: ../../../test/valence/b46935cd-1.0.4/robustness_small_changes/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+

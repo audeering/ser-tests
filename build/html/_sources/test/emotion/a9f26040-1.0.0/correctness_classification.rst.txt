@@ -1,0 +1,72 @@
+.. _test-emotion-a9f26040-1.0.0-correctness_classification:
+
+Correctness classification
+==========================
+
+.. role:: red
+.. role:: green
+
+40.0% passed tests (40 :green:`passed` / 60 :red:`failed`).
+
+
+Precision Per Class
+-------------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: correctness_classification/precision-per-class.csv
+
+Recall Per Class
+----------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: correctness_classification/recall-per-class.csv
+
+Unweighted Average Precision
+----------------------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: correctness_classification/unweighted-average-precision.csv
+
+Unweighted Average Recall
+-------------------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: correctness_classification/unweighted-average-recall.csv
+
+Visualization
+-------------
+
+
+.. figure:: correctness_classification/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_msppodcast-2.6.0-emotion.categories.test-1.gold_standard.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_msppodcast-2.6.0-emotion.categories.test-2.gold_standard.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_classification/visualization_ravdess-1.1.2-emotion.speech.test.png
+    :align: center

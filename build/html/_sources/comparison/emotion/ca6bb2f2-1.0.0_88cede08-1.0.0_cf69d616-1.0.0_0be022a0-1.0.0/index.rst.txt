@@ -1,0 +1,119 @@
+.. _comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0:
+
+w2v2-L-cat vs. hubert-L-cat vs. wavlm-cat vs. data2vec-cat
+==========================================================
+
+.. role:: red
+.. role:: green
+
+This compares the models :ref:`w2v2-L-cat <test-emotion-ca6bb2f2-1.0.0>` and :ref:`hubert-L-cat <test-emotion-88cede08-1.0.0>` and :ref:`wavlm-cat <test-emotion-cf69d616-1.0.0>` and :ref:`data2vec-cat <test-emotion-0be022a0-1.0.0>` to one another.
+
+.. flat-table:: Tests overview
+    :header-rows: 2
+
+    * - :rspan:`1` Topic
+      - :cspan:`3` Passed Tests
+    * - w2v2-L-cat
+      - hubert-L-cat
+      - wavlm-cat
+      - data2vec-cat
+    * - Overall Score
+      - 74.5% (458 :green:`passed` /  157 :red:`failed`)
+      - 79.5% (489 :green:`passed` /  126 :red:`failed`)
+      - 78.5% (483 :green:`passed` /  132 :red:`failed`)
+      - 74.3% (457 :green:`passed` /  158 :red:`failed`)
+    * - :ref:`Correctness classification <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-correctness_classification>`
+      - :red:`52.0%`
+      - :red:`64.0%`
+      - :red:`72.0%`
+      - :red:`51.0%`
+    * - :ref:`Correctness distribution <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-correctness_distribution>`
+      - :red:`70.0%`
+      - :red:`62.5%`
+      - :red:`67.5%`
+      - :red:`70.0%`
+    * - :ref:`Correctness speaker average <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-correctness_speaker_average>`
+      - :red:`33.3%`
+      - :red:`66.7%`
+      - :red:`58.3%`
+      - :red:`58.3%`
+    * - :ref:`Correctness speaker ranking <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-correctness_speaker_ranking>`
+      - :red:`50.0%`
+      - :red:`62.5%`
+      - :red:`50.0%`
+      - :red:`37.5%`
+    * - :ref:`Fairness accent <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-fairness_accent>`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - 99.2%
+      - :green:`100.0%`
+    * - :ref:`Fairness language <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-fairness_language>`
+      - 75.0%
+      - 91.7%
+      - 79.2%
+      - 83.3%
+    * - :ref:`Fairness linguistic sentiment <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-fairness_linguistic_sentiment>`
+      - 88.5%
+      - 85.4%
+      - 85.4%
+      - 86.5%
+    * - :ref:`Fairness pitch <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-fairness_pitch>`
+      - :green:`100.0%`
+      - 96.3%
+      - 92.6%
+      - 96.3%
+    * - :ref:`Fairness sex <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-fairness_sex>`
+      - 94.4%
+      - :green:`100.0%`
+      - 94.4%
+      - :green:`100.0%`
+    * - :ref:`Robustness background noise <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-robustness_background_noise>`
+      - :red:`33.3%`
+      - :red:`41.7%`
+      - :red:`46.7%`
+      - :red:`38.3%`
+    * - :ref:`Robustness low quality phone <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-robustness_low_quality_phone>`
+      - 90.0%
+      - 80.0%
+      - 90.0%
+      - 90.0%
+    * - :ref:`Robustness recording condition <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-robustness_recording_condition>`
+      - :red:`0.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :red:`50.0%`
+    * - :ref:`Robustness simulated recording condition <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-robustness_simulated_recording_condition>`
+      - :red:`33.3%`
+      - :red:`66.7%`
+      - :red:`33.3%`
+      - :red:`33.3%`
+    * - :ref:`Robustness small changes <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-robustness_small_changes>`
+      - :red:`66.0%`
+      - 78.0%
+      - :red:`62.0%`
+      - :red:`56.0%`
+    * - :ref:`Robustness spectral tilt <comparison-emotion-ca6bb2f2-1.0.0_88cede08-1.0.0_cf69d616-1.0.0_0be022a0-1.0.0-robustness_spectral_tilt>`
+      - 90.0%
+      - 95.0%
+      - 90.0%
+      - 80.0%
+
+
+.. toctree::
+    :hidden:
+
+    correctness_classification
+    correctness_distribution
+    correctness_speaker_average
+    correctness_speaker_ranking
+    fairness_accent
+    fairness_language
+    fairness_linguistic_sentiment
+    fairness_pitch
+    fairness_sex
+    robustness_background_noise
+    robustness_low_quality_phone
+    robustness_recording_condition
+    robustness_simulated_recording_condition
+    robustness_small_changes
+    robustness_spectral_tilt

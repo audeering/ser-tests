@@ -1,0 +1,2065 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Fairness accent &mdash; SER Tests</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Fairness language" href="fairness_language.html" />
+    <link rel="prev" title="Correctness speaker ranking" href="correctness_speaker_ranking.html" />
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <link rel="stylesheet" href="../../../_static/css/audeering-wide.css" type="text/css" />
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <a href="../../../index.html">
+          
+            <img src="../../../_static/images/audeering.png" class="logo" alt="audEERING"/>
+          
+          
+            <span> SER Tests</span>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                vab4b1db3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../method-tests.html">Method Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bibliography.html">Bibliography</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Results</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/dominance.html">Dominance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/emotion.html">Emotion</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Comparisons</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../arousal.html">Arousal</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../dominance.html">Dominance</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0/index.html">w2v2-b vs. w2v2-L vs. w2v2-L-robust vs. w2v2-L-xls-r vs. w2v2-L-vox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1543ec32-1.0.3_a3b14624-1.1.0_75e4ad67-1.1.0_b46935cd-1.0.4/index.html">CNN14 vs. w2v2-b vs. hubert-b vs. axlstm</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">w2v2-L vs. hubert-L vs. wavlm vs. data2vec</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="correctness_consistency.html">Correctness consistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_distribution.html">Correctness distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_regression.html">Correctness regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_speaker_average.html">Correctness speaker average</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_speaker_ranking.html">Correctness speaker ranking</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Fairness accent</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mean-value">Mean Value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#relative-difference-per-bin">Relative Difference Per Bin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_language.html">Fairness language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_linguistic_sentiment.html">Fairness linguistic sentiment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_pitch.html">Fairness pitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_background_noise.html">Robustness background noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_low_quality_phone.html">Robustness low quality phone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_recording_condition.html">Robustness recording condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_simulated_recording_condition.html">Robustness simulated recording condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_small_changes.html">Robustness small changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_spectral_tilt.html">Robustness spectral tilt</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emotion.html">Emotion</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SER Tests</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../dominance.html">Dominance</a> &raquo;</li>
+          <li><a href="index.html">w2v2-L vs. hubert-L vs. wavlm vs. data2vec</a> &raquo;</li>
+      <li>Fairness accent</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/audeering/ser-tests/" class="fa fa-github"> GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="fairness-accent">
+<span id="comparison-dominance-d6bb0fbb-1-0-0-cf81bd56-1-1-0-54d9c66b-1-0-1-45cf5a55-1-0-0-fairness-accent"></span><h1>Fairness accent<a class="headerlink" href="#fairness-accent" title="Permalink to this heading">¶</a></h1>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Overall scores</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>hubert-L</p></th>
+<th class="head"><p>wavlm</p></th>
+<th class="head"><p>data2vec</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Overall Score</p></td>
+<td><p>93.5% passed tests (87 <span class="green">passed</span> /  6 <span class="red">failed</span>).</p></td>
+<td><p>100.0% passed tests (93 <span class="green">passed</span> /  0 <span class="red">failed</span>).</p></td>
+<td><p>96.0% passed tests (119 <span class="green">passed</span> /  5 <span class="red">failed</span>).</p></td>
+<td><p>96.8% passed tests (120 <span class="green">passed</span> /  4 <span class="red">failed</span>).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="mean-value">
+<h2>Mean Value<a class="headerlink" href="#mean-value" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: 0.075</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="4"><p> Mean Value</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>hubert-L</p></th>
+<th class="head"><p>wavlm</p></th>
+<th class="head"><p>data2vec</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-amharic</p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-arabic</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-bengali</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-bulgarian</p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-cantonese</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-dutch</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-english</p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-farsi</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-french</p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-german</p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-greek</p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-hindi</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-italian</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-japanese</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-korean</p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-macedonian</p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="red">0.10</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-mandarin</p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-nepali</p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-polish</p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-portuguese</p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-romanian</p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-russian</p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-serbian</p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-spanish</p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-swedish</p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-tagalog</p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-thai</p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-turkish</p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-ukrainian</p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-urdu</p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-vietnamese</p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+</tr>
+<tr class="row-even"><td><p>mean</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="relative-difference-per-bin">
+<h2>Relative Difference Per Bin<a class="headerlink" href="#relative-difference-per-bin" title="Permalink to this heading">¶</a></h2>
+<p>Bins with too few samples are skipped.</p>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Threshold: 0.225</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="4"><p> (-inf, 0.25]</p></th>
+<th class="head" colspan="4"><p> (0.25, 0.5]</p></th>
+<th class="head" colspan="4"><p> (0.5, 0.75]</p></th>
+<th class="head" colspan="4"><p> (0.75, inf]</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>hubert-L</p></th>
+<th class="head"><p>wavlm</p></th>
+<th class="head"><p>data2vec</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>hubert-L</p></th>
+<th class="head"><p>wavlm</p></th>
+<th class="head"><p>data2vec</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>hubert-L</p></th>
+<th class="head"><p>wavlm</p></th>
+<th class="head"><p>data2vec</p></th>
+<th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>hubert-L</p></th>
+<th class="head"><p>wavlm</p></th>
+<th class="head"><p>data2vec</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-amharic</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.19</span></p></td>
+<td><p><span class="green">0.15</span></p></td>
+<td><p><span class="green">0.16</span></p></td>
+<td><p><span class="red">0.26</span></p></td>
+<td><p><span class="green">-0.19</span></p></td>
+<td><p><span class="green">-0.14</span></p></td>
+<td><p><span class="green">-0.16</span></p></td>
+<td><p><span class="red">-0.25</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-arabic</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-bengali</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-bulgarian</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="red">0.24</span></p></td>
+<td><p><span class="green">0.12</span></p></td>
+<td><p><span class="green">0.16</span></p></td>
+<td><p><span class="green">0.17</span></p></td>
+<td><p><span class="red">-0.24</span></p></td>
+<td><p><span class="green">-0.12</span></p></td>
+<td><p><span class="green">-0.15</span></p></td>
+<td><p><span class="green">-0.15</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-cantonese</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">0.13</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">-0.14</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-dutch</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-english</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.17</span></p></td>
+<td><p><span class="green">-0.17</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">-0.20</span></p></td>
+<td><p><span class="green">0.17</span></p></td>
+<td><p><span class="green">0.17</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.21</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-farsi</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-french</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.18</span></p></td>
+<td><p><span class="green">0.11</span></p></td>
+<td><p><span class="green">0.11</span></p></td>
+<td><p><span class="green">0.15</span></p></td>
+<td><p><span class="green">-0.18</span></p></td>
+<td><p><span class="green">-0.11</span></p></td>
+<td><p><span class="green">-0.11</span></p></td>
+<td><p><span class="green">-0.17</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-german</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.19</span></p></td>
+<td><p><span class="green">-0.21</span></p></td>
+<td><p><span class="red">-0.26</span></p></td>
+<td><p><span class="green">-0.22</span></p></td>
+<td><p><span class="green">0.19</span></p></td>
+<td><p><span class="green">0.21</span></p></td>
+<td><p><span class="red">0.27</span></p></td>
+<td><p><span class="red">0.24</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-greek</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.17</span></p></td>
+<td><p><span class="green">-0.10</span></p></td>
+<td><p><span class="green">-0.14</span></p></td>
+<td><p><span class="green">-0.13</span></p></td>
+<td><p><span class="green">0.17</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td><p><span class="green">0.15</span></p></td>
+<td><p><span class="green">0.15</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-hindi</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-italian</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">0.12</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">-0.12</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-japanese</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.15</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-korean</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-macedonian</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="red">-0.26</span></p></td>
+<td><p><span class="green">-0.17</span></p></td>
+<td><p><span class="red">-0.50</span></p></td>
+<td><p><span class="green">-0.18</span></p></td>
+<td><p><span class="red">0.26</span></p></td>
+<td><p><span class="green">0.17</span></p></td>
+<td><p><span class="red">0.51</span></p></td>
+<td><p><span class="green">0.18</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-mandarin</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="red">-0.23</span></p></td>
+<td><p><span class="green">-0.18</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.22</span></p></td>
+<td><p><span class="red">0.23</span></p></td>
+<td><p><span class="green">0.18</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="red">0.24</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-nepali</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">0.11</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.11</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">-0.11</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">-0.11</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-polish</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.00</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-portuguese</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-romanian</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">0.20</span></p></td>
+<td><p><span class="green">0.14</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.15</span></p></td>
+<td><p><span class="green">-0.20</span></p></td>
+<td><p><span class="green">-0.13</span></p></td>
+<td><p><span class="green">-0.10</span></p></td>
+<td><p><span class="green">-0.14</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-russian</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">-0.17</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.19</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-serbian</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">0.12</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.10</span></p></td>
+<td><p><span class="green">-0.10</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-spanish</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">-0.10</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-swedish</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.07</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-tagalog</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.03</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.14</span></p></td>
+<td><p><span class="green">-0.12</span></p></td>
+<td><p><span class="green">-0.03</span></p></td>
+<td><p><span class="green">-0.16</span></p></td>
+<td><p><span class="green">0.14</span></p></td>
+<td><p><span class="green">0.12</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.14</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-thai</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.04</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-turkish</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.00</span></p></td>
+<td><p><span class="green">-0.13</span></p></td>
+<td><p><span class="green">-0.06</span></p></td>
+<td><p><span class="green">-0.15</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">0.13</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.16</span></p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-ukrainian</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">0.12</span></p></td>
+<td><p><span class="green">0.11</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">-0.12</span></p></td>
+<td><p><span class="green">-0.12</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>speech-accent-archive-2.2.0-urdu</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">-0.01</span></p></td>
+<td><p><span class="green">-0.02</span></p></td>
+<td><p><span class="green">-0.05</span></p></td>
+<td><p><span class="green">-0.13</span></p></td>
+<td><p><span class="green">-0.08</span></p></td>
+<td><p><span class="green">-0.09</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.13</span></p></td>
+<td><p><span class="green">0.10</span></p></td>
+<td><p><span class="green">0.11</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>speech-accent-archive-2.2.0-vietnamese</p></td>
+<td></td>
+<td></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.20</span></p></td>
+<td><p><span class="green">0.13</span></p></td>
+<td><p><span class="green">0.12</span></p></td>
+<td><p><span class="green">0.16</span></p></td>
+<td><p><span class="green">-0.20</span></p></td>
+<td><p><span class="green">-0.13</span></p></td>
+<td><p><span class="green">-0.13</span></p></td>
+<td><p><span class="green">-0.18</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>mean</p></td>
+<td></td>
+<td></td>
+<td><p>0.00</p></td>
+<td><p>-0.00</p></td>
+<td><p>-0.00</p></td>
+<td><p>-0.00</p></td>
+<td><p>-0.01</p></td>
+<td><p>-0.01</p></td>
+<td><p>0.00</p></td>
+<td><p>0.00</p></td>
+<td><p>0.01</p></td>
+<td><p>0.01</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>w2v2-L</p></th>
+<th class="head"><p>hubert-L</p></th>
+<th class="head"><p>wavlm</p></th>
+<th class="head"><p>data2vec</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-amharic15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-amharic15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-amharic19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-amharic19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-amharic20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-amharic20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-amharic21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-amharic21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-arabic15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-arabic15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-arabic19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-arabic19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-arabic20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-arabic20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-arabic21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-arabic21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bengali15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bengali15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bengali19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bengali19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bengali20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bengali20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bengali21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bengali21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-bulgarian21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-cantonese21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-dutch15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-dutch15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-dutch19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-dutch19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-dutch20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-dutch20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-dutch21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-dutch21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-english15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-english15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-english19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-english19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-english20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-english20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-english21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-english21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-farsi15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-farsi15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-farsi19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-farsi19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-farsi20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-farsi20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-farsi21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-farsi21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-french15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-french15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-french19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-french19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-french20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-french20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-french21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-french21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-german15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-german15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-german19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-german19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-german20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-german20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-german21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-german21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-greek15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-greek15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-greek19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-greek19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-greek20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-greek20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-greek21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-greek21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-hindi15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-hindi15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-hindi19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-hindi19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-hindi20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-hindi20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-hindi21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-hindi21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-italian15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-italian15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-italian19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-italian19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-italian20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-italian20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-italian21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-italian21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-japanese15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-japanese15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-japanese19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-japanese19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-japanese20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-japanese20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-japanese21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-japanese21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-korean15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-korean15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-korean19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-korean19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-korean20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-korean20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-korean21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-korean21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-macedonian21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-mandarin21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-nepali15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-nepali15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-nepali19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-nepali19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-nepali20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-nepali20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-nepali21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-nepali21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-polish15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-polish15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-polish19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-polish19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-polish20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-polish20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-polish21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-polish21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-portuguese21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-romanian15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-romanian15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-romanian19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-romanian19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-romanian20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-romanian20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-romanian21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-romanian21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-russian15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-russian15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-russian19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-russian19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-russian20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-russian20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-russian21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-russian21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-serbian15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-serbian15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-serbian19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-serbian19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-serbian20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-serbian20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-serbian21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-serbian21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-spanish15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-spanish15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-spanish19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-spanish19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-spanish20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-spanish20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-spanish21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-spanish21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-swedish15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-swedish15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-swedish19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-swedish19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-swedish20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-swedish20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-swedish21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-swedish21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-tagalog21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-thai15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-thai15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-thai19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-thai19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-thai20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-thai20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-thai21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-thai21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-turkish15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-turkish15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-turkish19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-turkish19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-turkish20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-turkish20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-turkish21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-turkish21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-ukrainian21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-urdu15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-urdu15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-urdu19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-urdu19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-urdu20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-urdu20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-urdu21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-urdu21.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese15.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese15.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese19.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese19.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese20.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese20.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese21.png" src="../../../_images/visualization_speech-accent-archive-2.2.0-vietnamese21.png" />
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="fairness_language.html" class="btn btn-neutral float-right" title="Fairness language" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="correctness_speaker_ranking.html" class="btn btn-neutral float-left" title="Correctness speaker ranking" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div>
+    <p>
+        
+        
+        
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/12/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+        
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        
+      &copy; 2024 audEERING GmbH
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
