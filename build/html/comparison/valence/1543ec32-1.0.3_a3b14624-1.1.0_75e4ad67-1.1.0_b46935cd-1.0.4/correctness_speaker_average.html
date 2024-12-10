@@ -1,0 +1,792 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Correctness speaker average &mdash; SER Tests</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/audeering.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/katex-math.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/colors.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/math.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Correctness speaker ranking" href="correctness_speaker_ranking.html" />
+    <link rel="prev" title="Correctness regression" href="correctness_regression.html" />
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <link rel="stylesheet" href="../../../_static/css/audeering-wide.css" type="text/css" />
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <a href="../../../index.html">
+          
+            <img src="../../../_static/images/audeering.png" class="logo" alt="audEERING"/>
+          
+          
+            <span> SER Tests</span>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                vab4b1db3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../method-tests.html">Method Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bibliography.html">Bibliography</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Results</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/dominance.html">Dominance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/valence.html">Valence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../test/emotion.html">Emotion</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Comparisons</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../arousal.html">Arousal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dominance.html">Dominance</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../valence.html">Valence</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../a3b14624-1.1.0_d6bb0fbb-1.0.0_51c582b7-1.0.0_d800ca50-1.0.0_171c3b63-1.0.0/index.html">w2v2-b vs. w2v2-L vs. w2v2-L-robust vs. w2v2-L-xls-r vs. w2v2-L-vox</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">CNN14 vs. w2v2-b vs. hubert-b vs. axlstm</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="correctness_consistency.html">Correctness consistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_distribution.html">Correctness distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_regression.html">Correctness regression</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Correctness speaker average</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mean-absolute-error">Mean Absolute Error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization">Visualization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="correctness_speaker_ranking.html">Correctness speaker ranking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_accent.html">Fairness accent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_language.html">Fairness language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_linguistic_sentiment.html">Fairness linguistic sentiment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_pitch.html">Fairness pitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fairness_sex.html">Fairness sex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_background_noise.html">Robustness background noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_low_quality_phone.html">Robustness low quality phone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_recording_condition.html">Robustness recording condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_simulated_recording_condition.html">Robustness simulated recording condition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_small_changes.html">Robustness small changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="robustness_spectral_tilt.html">Robustness spectral tilt</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0/index.html">w2v2-L vs. hubert-L vs. wavlm vs. data2vec</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../emotion.html">Emotion</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SER Tests</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../valence.html">Valence</a> &raquo;</li>
+          <li><a href="index.html">CNN14 vs. w2v2-b vs. hubert-b vs. axlstm</a> &raquo;</li>
+      <li>Correctness speaker average</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/audeering/ser-tests/" class="fa fa-github"> GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="correctness-speaker-average">
+<span id="comparison-valence-1543ec32-1-0-3-a3b14624-1-1-0-75e4ad67-1-1-0-b46935cd-1-0-4-correctness-speaker-average"></span><h1>Correctness speaker average<a class="headerlink" href="#correctness-speaker-average" title="Permalink to this heading">¶</a></h1>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Overall scores</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>CNN14</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>hubert-b</p></th>
+<th class="head"><p>axlstm</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Overall Score</p></td>
+<td><p>100.0% passed tests (3 <span class="green">passed</span> /  0 <span class="red">failed</span>).</p></td>
+<td><p>100.0% passed tests (3 <span class="green">passed</span> /  0 <span class="red">failed</span>).</p></td>
+<td><p>100.0% passed tests (3 <span class="green">passed</span> /  0 <span class="red">failed</span>).</p></td>
+<td><p>100.0% passed tests (3 <span class="green">passed</span> /  0 <span class="red">failed</span>).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="mean-absolute-error">
+<h2>Mean Absolute Error<a class="headerlink" href="#mean-absolute-error" title="Permalink to this heading">¶</a></h2>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Threshold: 0.1</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p> Data</p></th>
+<th class="head" colspan="4"><p> Mean Absolute Error</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>CNN14</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>hubert-b</p></th>
+<th class="head"><p>axlstm</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>iemocap-2.3.0-full</p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.02</span></p></td>
+<td><p><span class="green">0.01</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+</tr>
+<tr class="row-even"><td><p>msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard</p></td>
+<td><p><span class="green">0.09</span></p></td>
+<td><p><span class="green">0.05</span></p></td>
+<td><p><span class="green">0.04</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard</p></td>
+<td><p><span class="green">0.08</span></p></td>
+<td><p><span class="green">0.06</span></p></td>
+<td><p><span class="green">0.07</span></p></td>
+<td><p><span class="green">0.08</span></p></td>
+</tr>
+<tr class="row-even"><td><p>mean</p></td>
+<td><p>0.07</p></td>
+<td><p>0.04</p></td>
+<td><p>0.04</p></td>
+<td><p>0.06</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">¶</a></h2>
+<p>The plot shows the predicted average value with the true average value. We select a slightly higher threshold for the absolute error in the plots compared to the Mean Absolute Error test as we are interested in highlighting only big deviations here.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>CNN14</p></th>
+<th class="head"><p>w2v2-b</p></th>
+<th class="head"><p>hubert-b</p></th>
+<th class="head"><p>axlstm</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full33.png" src="../../../_images/visualization_iemocap-2.3.0-full33.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full34.png" src="../../../_images/visualization_iemocap-2.3.0-full34.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full35.png" src="../../../_images/visualization_iemocap-2.3.0-full35.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_iemocap-2.3.0-full36.png" src="../../../_images/visualization_iemocap-2.3.0-full36.png" />
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard140.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard140.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard141.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard141.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard142.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard142.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard143.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard143.png" />
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard96.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard96.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard97.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard97.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard98.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard98.png" />
+</div>
+</td>
+<td><div class="figure align-default">
+<img alt="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard99.png" src="../../../_images/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard99.png" />
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="correctness_speaker_ranking.html" class="btn btn-neutral float-right" title="Correctness speaker ranking" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="correctness_regression.html" class="btn btn-neutral float-left" title="Correctness regression" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div>
+    <p>
+        
+        
+        
+          Built with <a href="https://www.sphinx-doc.org/en/master/">Sphinx</a> on 2024/12/10 using the <a href="https://github.com/audeering/sphinx-audeering-theme/">audEERING theme</a>
+        
+    </p>
+  </div>
+
+  <div role="contentinfo">
+    <p>
+        
+      &copy; 2024 audEERING GmbH
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/katex.min.js"></script>
+        <script src="../../../_static/auto-render.min.js"></script>
+        <script src="../../../_static/katex_autorenderer.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+.. _test-emotion-a9f26040-1.0.0-robustness_simulated_recording_condition:
+
+Robustness simulated recording condition
+========================================
+
+.. role:: red
+.. role:: green
+
+0.0% passed tests (0 :green:`passed` / 6 :red:`failed`).
+
+
+Percentage Unchanged Predictions Simulated Position
+---------------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_simulated_recording_condition/percentage-unchanged-predictions-simulated-position.csv
+
+Percentage Unchanged Predictions Simulated Room
+-----------------------------------------------
+
+.. csv-table:: Threshold: 0.8
+    :header-rows: 1
+    :file: robustness_simulated_recording_condition/percentage-unchanged-predictions-simulated-room.csv
+
+Visualization Simulated Position
+--------------------------------
+
+Confusion Matrix showing the shift from the predictions of audio with a baseline simulated position to the predictions of audio with a different simulated position.
+
+
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-position_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-position_timit-1.4.1-files.png
+    :align: center
+
+Visualization Simulated Room
+----------------------------
+
+Confusion Matrix showing the shift from the predictions of audio with a baseline simulated room to the predictions of audio with a different simulated room.
+
+
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-room_emovo-1.2.1-emotion.test.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset.png
+    :align: center
+
+.. figure:: robustness_simulated_recording_condition/visualization-simulated-room_timit-1.4.1-files.png
+    :align: center

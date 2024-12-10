@@ -12,6 +12,8 @@ Emotion
     :hidden:
 
     emotion/6d83a25c-1.0.1/index
+    emotion/a9f26040-1.0.0/index
+    emotion/0be022a0-1.0.0/index
     emotion/88cede08-1.0.0/index
     emotion/6cd49211-1.0.0/index
     emotion/random-categorical/index
@@ -20,3 +22,4 @@ Emotion
     emotion/379bc045-1.0.0/index
     emotion/ccf4ed91-1.0.0/index
     emotion/1641e15f-1.0.1/index
+    emotion/cf69d616-1.0.0/index

@@ -1,0 +1,396 @@
+.. _comparison-dominance-1543ec32-1.0.3_a3b14624-1.1.0_75e4ad67-1.1.0_b46935cd-1.0.4-correctness_consistency:
+
+Correctness consistency
+=======================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: correctness_consistency/overall_scores.csv
+
+
+Samples In Expected High Range
+------------------------------
+
+Proportion of samples whose predictions fall into the expected value range of >= 0.55
+
+
+.. flat-table:: Threshold: 0.75
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` anger
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :green:`0.82`
+      - :green:`0.84`
+      - :green:`0.85`
+      - :red:`0.75`
+    * - danish-emotional-speech-1.1.1-emotion.test
+      - :red:`0.40`
+      - :red:`0.48`
+      - :red:`0.29`
+      - :red:`0.54`
+    * - emodb-1.2.0-emotion.categories.test.gold_standard
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.86`
+      - :green:`0.98`
+      - :green:`0.89`
+      - :green:`0.95`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.72`
+      - :green:`0.88`
+      - :green:`0.83`
+      - :green:`0.81`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :green:`0.87`
+      - :green:`0.94`
+      - :green:`0.98`
+      - :green:`0.86`
+    * - polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard
+      - :green:`0.90`
+      - :green:`0.98`
+      - :green:`0.95`
+      - :green:`0.90`
+    * - ravdess-1.1.2-emotion.speech.test
+      - :green:`0.88`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.97`
+    * - mean
+      - 0.81
+      - 0.89
+      - 0.85
+      - 0.85
+
+Samples In Expected Low Range
+-----------------------------
+
+Proportion of samples whose predictions fall into the expected value range of <= 0.45
+
+
+.. flat-table:: Threshold: 0.75
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` fear
+      - :cspan:`3` sadness
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.46`
+      - :red:`0.49`
+      - :red:`0.54`
+      - :red:`0.19`
+      - :green:`0.87`
+      - :green:`0.84`
+      - :green:`0.82`
+      - :red:`0.39`
+    * - danish-emotional-speech-1.1.1-emotion.test
+      - 
+      - 
+      - 
+      - 
+      - :green:`1.00`
+      - :green:`0.98`
+      - :green:`1.00`
+      - :green:`0.87`
+    * - emodb-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.00`
+      - :red:`0.03`
+      - :red:`0.03`
+      - :red:`0.00`
+      - :red:`0.67`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.81`
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.42`
+      - :red:`0.18`
+      - :red:`0.38`
+      - :red:`0.21`
+      - :green:`0.88`
+      - :green:`0.82`
+      - :green:`0.94`
+      - :red:`0.57`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :red:`0.35`
+      - :red:`0.18`
+      - :red:`0.24`
+      - :red:`0.12`
+      - :red:`0.41`
+      - :green:`0.81`
+      - :green:`0.86`
+      - :red:`0.59`
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.10`
+      - :red:`0.02`
+      - :red:`0.06`
+      - :red:`0.08`
+      - :red:`0.20`
+      - :red:`0.22`
+      - :red:`0.21`
+      - :red:`0.17`
+    * - polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard
+      - :red:`0.35`
+      - :red:`0.32`
+      - :red:`0.38`
+      - :red:`0.42`
+      - :green:`0.95`
+      - :green:`1.00`
+      - :green:`0.98`
+      - :green:`0.90`
+    * - ravdess-1.1.2-emotion.speech.test
+      - :red:`0.34`
+      - :red:`0.22`
+      - :red:`0.25`
+      - :red:`0.03`
+      - :green:`0.88`
+      - :green:`0.88`
+      - :green:`0.81`
+      - :red:`0.41`
+    * - mean
+      - 0.29
+      - 0.21
+      - 0.27
+      - 0.15
+      - 0.73
+      - 0.82
+      - 0.83
+      - 0.59
+
+Samples In Expected Neutral Range
+---------------------------------
+
+Proportion of samples whose predictions fall into the expected value range of [0.3, 0.6]
+
+
+.. flat-table:: Threshold: 0.75
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` happiness
+      - :cspan:`3` neutral
+      - :cspan:`3` surprise
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - crema-d-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.73`
+      - :red:`0.74`
+      - :red:`0.75`
+      - :green:`0.89`
+      - :red:`0.54`
+      - :red:`0.66`
+      - :red:`0.65`
+      - :green:`0.97`
+      - 
+      - 
+      - 
+      - 
+    * - danish-emotional-speech-1.1.1-emotion.test
+      - :green:`0.98`
+      - :green:`0.87`
+      - :green:`0.81`
+      - :green:`0.94`
+      - :red:`0.65`
+      - :red:`0.56`
+      - :red:`0.44`
+      - :green:`0.81`
+      - :green:`1.00`
+      - :green:`0.96`
+      - :green:`0.85`
+      - :green:`0.98`
+    * - emodb-1.2.0-emotion.categories.test.gold_standard
+      - :red:`0.37`
+      - :red:`0.26`
+      - :red:`0.19`
+      - :red:`0.56`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.96`
+      - :green:`0.96`
+      - 
+      - 
+      - 
+      - 
+    * - emovo-1.2.1-emotion.test
+      - :green:`0.77`
+      - :red:`0.58`
+      - :red:`0.63`
+      - :red:`0.64`
+      - :red:`0.70`
+      - :green:`0.96`
+      - :green:`0.89`
+      - :green:`0.90`
+      - :green:`0.76`
+      - :red:`0.73`
+      - :red:`0.71`
+      - :green:`0.83`
+    * - iemocap-2.3.0-emotion.categories.test.gold_standard
+      - :green:`0.85`
+      - :green:`0.78`
+      - :red:`0.75`
+      - :green:`0.95`
+      - :green:`0.84`
+      - :green:`0.84`
+      - :green:`0.81`
+      - :green:`0.98`
+      - 
+      - 
+      - 
+      - 
+    * - meld-1.3.1-emotion.categories.test.gold_standard
+      - :red:`0.70`
+      - :red:`0.55`
+      - :red:`0.38`
+      - :red:`0.75`
+      - :green:`0.81`
+      - :red:`0.66`
+      - :red:`0.54`
+      - :green:`0.83`
+      - :red:`0.67`
+      - :red:`0.54`
+      - :red:`0.39`
+      - :red:`0.72`
+    * - polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard
+      - :red:`0.52`
+      - :red:`0.18`
+      - :red:`0.35`
+      - :red:`0.57`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`1.00`
+      - :green:`0.92`
+      - 
+      - 
+      - 
+      - 
+    * - ravdess-1.1.2-emotion.speech.test
+      - :red:`0.72`
+      - :red:`0.62`
+      - :red:`0.56`
+      - :red:`0.56`
+      - :red:`0.56`
+      - :green:`1.00`
+      - :red:`0.50`
+      - :green:`1.00`
+      - :red:`0.41`
+      - :red:`0.06`
+      - :red:`0.03`
+      - :red:`0.75`
+    * - mean
+      - 0.71
+      - 0.57
+      - 0.55
+      - 0.73
+      - 0.76
+      - 0.83
+      - 0.72
+      - 0.92
+      - 0.71
+      - 0.57
+      - 0.49
+      - 0.82
+
+Visualization
+-------------
+
+Distribution of dimensional model predictions for samples with different categorical emotions. The expected range of model predictions is highlighted by the green brackground.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_crema-d-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_danish-emotional-speech-1.1.1-emotion.test.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_emodb-1.2.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_iemocap-2.3.0-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_meld-1.3.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard.png
+
+    * - .. figure:: ../../../test/dominance/1543ec32-1.0.3/correctness_consistency/visualization_ravdess-1.1.2-emotion.speech.test.png
+
+      - .. figure:: ../../../test/dominance/a3b14624-1.1.0/correctness_consistency/visualization_ravdess-1.1.2-emotion.speech.test.png
+
+      - .. figure:: ../../../test/dominance/75e4ad67-1.1.0/correctness_consistency/visualization_ravdess-1.1.2-emotion.speech.test.png
+
+      - .. figure:: ../../../test/dominance/b46935cd-1.0.4/correctness_consistency/visualization_ravdess-1.1.2-emotion.speech.test.png
+

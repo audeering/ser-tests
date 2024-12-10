@@ -12,6 +12,8 @@ Valence
     :hidden:
 
     valence/1543ec32-1.0.3/index
+    valence/b46935cd-1.0.4/index
+    valence/45cf5a55-1.0.0/index
     valence/cf81bd56-1.1.0/index
     valence/75e4ad67-1.1.0/index
     valence/random-gaussian/index
@@ -20,3 +22,4 @@ Valence
     valence/171c3b63-1.0.0/index
     valence/d800ca50-1.0.0/index
     valence/a3b14624-1.1.0/index
+    valence/54d9c66b-1.0.1/index

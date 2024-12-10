@@ -1,0 +1,140 @@
+.. _comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-robustness_simulated_recording_condition:
+
+Robustness simulated recording condition
+========================================
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: robustness_simulated_recording_condition/overall_scores.csv
+
+
+Percentage Unchanged Predictions Simulated Position
+---------------------------------------------------
+
+.. flat-table:: Threshold: 0.8
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percentage Unchanged Predictions Simulated Position
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.60`
+      - :red:`0.75`
+      - :green:`0.83`
+      - :red:`0.59`
+    * - imda-nsc-read-speech-balanced-2.6.0-headset
+      - :red:`0.78`
+      - :red:`0.79`
+      - :green:`0.90`
+      - :red:`0.73`
+    * - timit-1.4.1-files
+      - :green:`0.87`
+      - :green:`0.86`
+      - :green:`0.94`
+      - :green:`0.83`
+    * - mean
+      - 0.75
+      - 0.80
+      - 0.89
+      - 0.72
+
+Percentage Unchanged Predictions Simulated Room
+-----------------------------------------------
+
+.. flat-table:: Threshold: 0.8
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Percentage Unchanged Predictions Simulated Room
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - emovo-1.2.1-emotion.test
+      - :red:`0.42`
+      - :red:`0.67`
+      - :red:`0.72`
+      - :red:`0.45`
+    * - imda-nsc-read-speech-balanced-2.6.0-headset
+      - :red:`0.56`
+      - :red:`0.80`
+      - :red:`0.61`
+      - :red:`0.53`
+    * - timit-1.4.1-files
+      - :red:`0.68`
+      - :red:`0.77`
+      - :red:`0.54`
+      - :red:`0.65`
+    * - mean
+      - 0.55
+      - 0.75
+      - 0.62
+      - 0.54
+
+Visualization Simulated Position
+--------------------------------
+
+Difference of predictions for audio with a baseline simulated position and audio with a different simulated position. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_simulated_recording_condition/visualization-simulated-position_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/robustness_simulated_recording_condition/visualization-simulated-position_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/54d9c66b-1.0.1/robustness_simulated_recording_condition/visualization-simulated-position_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/45cf5a55-1.0.0/robustness_simulated_recording_condition/visualization-simulated-position_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_simulated_recording_condition/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/robustness_simulated_recording_condition/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+      - .. figure:: ../../../test/dominance/54d9c66b-1.0.1/robustness_simulated_recording_condition/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+      - .. figure:: ../../../test/dominance/45cf5a55-1.0.0/robustness_simulated_recording_condition/visualization-simulated-position_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+    * - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_simulated_recording_condition/visualization-simulated-position_timit-1.4.1-files.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/robustness_simulated_recording_condition/visualization-simulated-position_timit-1.4.1-files.png
+
+      - .. figure:: ../../../test/dominance/54d9c66b-1.0.1/robustness_simulated_recording_condition/visualization-simulated-position_timit-1.4.1-files.png
+
+      - .. figure:: ../../../test/dominance/45cf5a55-1.0.0/robustness_simulated_recording_condition/visualization-simulated-position_timit-1.4.1-files.png
+
+    * - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_simulated_recording_condition/visualization-simulated-room_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/robustness_simulated_recording_condition/visualization-simulated-room_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/54d9c66b-1.0.1/robustness_simulated_recording_condition/visualization-simulated-room_emovo-1.2.1-emotion.test.png
+
+      - .. figure:: ../../../test/dominance/45cf5a55-1.0.0/robustness_simulated_recording_condition/visualization-simulated-room_emovo-1.2.1-emotion.test.png
+
+    * - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_simulated_recording_condition/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/robustness_simulated_recording_condition/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+      - .. figure:: ../../../test/dominance/54d9c66b-1.0.1/robustness_simulated_recording_condition/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+      - .. figure:: ../../../test/dominance/45cf5a55-1.0.0/robustness_simulated_recording_condition/visualization-simulated-room_imda-nsc-read-speech-balanced-2.6.0-headset.png
+
+    * - .. figure:: ../../../test/dominance/d6bb0fbb-1.0.0/robustness_simulated_recording_condition/visualization-simulated-room_timit-1.4.1-files.png
+
+      - .. figure:: ../../../test/dominance/cf81bd56-1.1.0/robustness_simulated_recording_condition/visualization-simulated-room_timit-1.4.1-files.png
+
+      - .. figure:: ../../../test/dominance/54d9c66b-1.0.1/robustness_simulated_recording_condition/visualization-simulated-room_timit-1.4.1-files.png
+
+      - .. figure:: ../../../test/dominance/45cf5a55-1.0.0/robustness_simulated_recording_condition/visualization-simulated-room_timit-1.4.1-files.png
+

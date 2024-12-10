@@ -1,0 +1,37 @@
+.. _test-valence-54d9c66b-1.0.1-robustness_low_quality_phone:
+
+Robustness low quality phone
+============================
+
+.. role:: red
+.. role:: green
+
+75.0% passed tests (3 :green:`passed` / 1 :red:`failed`).
+
+
+Change Ccc Low Quality Phone
+----------------------------
+
+.. csv-table:: Threshold: -0.05
+    :header-rows: 1
+    :file: robustness_low_quality_phone/change-ccc-low-quality-phone.csv
+
+Percentage Unchanged Predictions Low Quality Phone
+--------------------------------------------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: robustness_low_quality_phone/percentage-unchanged-predictions-low-quality-phone.csv
+
+Visualization
+-------------
+
+Difference of predictions for original audio and low quality phone audio. The allowed prediction difference :math:`\delta < 0.05` is highlighted in green in the upper plot. The lower plot shows the distributions of the two predictions.
+
+
+
+.. figure:: robustness_low_quality_phone/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: robustness_low_quality_phone/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center

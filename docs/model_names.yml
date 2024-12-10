@@ -6,6 +6,9 @@ d6bb0fbb-1.0.0: w2v2-L
 51c582b7-1.0.0: w2v2-L-robust
 171c3b63-1.0.0: w2v2-L-vox
 d800ca50-1.0.0: w2v2-L-xls-r
+54d9c66b-1.0.1: wavlm
+45cf5a55-1.0.0: data2vec
+b46935cd-1.0.4: axlstm
 6d83a25c-1.0.1: CNN14-cat
 6cd49211-1.0.0: hubert-b-cat
 88cede08-1.0.0: hubert-L-cat
@@ -14,3 +17,6 @@ ca6bb2f2-1.0.0: w2v2-L-cat
 63291c59-1.0.0: w2v2-L-robust-cat
 379bc045-1.0.0: w2v2-L-vox-cat
 ccf4ed91-1.0.0: w2v2-L-xls-r-cat
+cf69d616-1.0.0: wavlm-cat
+0be022a0-1.0.0: data2vec-cat
+a9f26040-1.0.0: axlstm-cat

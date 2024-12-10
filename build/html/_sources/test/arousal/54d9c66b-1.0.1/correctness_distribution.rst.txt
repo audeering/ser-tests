@@ -1,0 +1,30 @@
+.. _test-arousal-54d9c66b-1.0.1-correctness_distribution:
+
+Correctness distribution
+========================
+
+.. role:: red
+.. role:: green
+
+33.3% passed tests (1 :green:`passed` / 2 :red:`failed`).
+
+
+Jensen Shannon Distance
+-----------------------
+
+.. csv-table:: Threshold: 0.2
+    :header-rows: 1
+    :file: correctness_distribution/jensen-shannon-distance.csv
+
+Visualization
+-------------
+
+
+.. figure:: correctness_distribution/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+.. figure:: correctness_distribution/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+    :align: center

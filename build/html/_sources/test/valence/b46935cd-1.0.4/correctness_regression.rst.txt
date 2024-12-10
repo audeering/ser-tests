@@ -1,0 +1,44 @@
+.. _test-valence-b46935cd-1.0.4-correctness_regression:
+
+Correctness regression
+======================
+
+.. role:: red
+.. role:: green
+
+0.0% passed tests (0 :green:`passed` / 9 :red:`failed`).
+
+
+Concordance Correlation Coeff
+-----------------------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: correctness_regression/concordance-correlation-coeff.csv
+
+Mean Absolute Error
+-------------------
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: correctness_regression/mean-absolute-error.csv
+
+Pearson Correlation Coeff
+-------------------------
+
+.. csv-table:: Threshold: 0.5
+    :header-rows: 1
+    :file: correctness_regression/pearson-correlation-coeff.csv
+
+Visualization
+-------------
+
+
+.. figure:: correctness_regression/visualization_iemocap-2.3.0-emotion.dimensions.test.gold_standard.png
+    :align: center
+
+.. figure:: correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard.png
+    :align: center
+
+.. figure:: correctness_regression/visualization_msppodcast-2.6.1-emotion.dimensions.test-2.gold_standard.png
+    :align: center

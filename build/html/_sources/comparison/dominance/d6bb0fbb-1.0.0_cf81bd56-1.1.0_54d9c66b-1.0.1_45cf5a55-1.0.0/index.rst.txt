@@ -1,0 +1,125 @@
+.. _comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0:
+
+w2v2-L vs. hubert-L vs. wavlm vs. data2vec
+==========================================
+
+.. role:: red
+.. role:: green
+
+This compares the models :ref:`w2v2-L <test-dominance-d6bb0fbb-1.0.0>` and :ref:`hubert-L <test-dominance-cf81bd56-1.1.0>` and :ref:`wavlm <test-dominance-54d9c66b-1.0.1>` and :ref:`data2vec <test-dominance-45cf5a55-1.0.0>` to one another.
+
+.. flat-table:: Tests overview
+    :header-rows: 2
+
+    * - :rspan:`1` Topic
+      - :cspan:`3` Passed Tests
+    * - w2v2-L
+      - hubert-L
+      - wavlm
+      - data2vec
+    * - Overall Score
+      - 81.7% (294 :green:`passed` /  66 :red:`failed`)
+      - 84.7% (305 :green:`passed` /  55 :red:`failed`)
+      - 85.1% (338 :green:`passed` /  59 :red:`failed`)
+      - 82.1% (321 :green:`passed` /  70 :red:`failed`)
+    * - :ref:`Correctness consistency <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-correctness_consistency>`
+      - :red:`55.8%`
+      - :red:`51.2%`
+      - :red:`65.1%`
+      - :red:`48.8%`
+    * - :ref:`Correctness distribution <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-correctness_distribution>`
+      - :red:`66.7%`
+      - :red:`66.7%`
+      - :red:`33.3%`
+      - :red:`66.7%`
+    * - :ref:`Correctness regression <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-correctness_regression>`
+      - :red:`66.7%`
+      - :red:`55.6%`
+      - :red:`55.6%`
+      - :red:`66.7%`
+    * - :ref:`Correctness speaker average <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-correctness_speaker_average>`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+    * - :ref:`Correctness speaker ranking <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-correctness_speaker_ranking>`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+      - :green:`100.0%`
+    * - :ref:`Fairness accent <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-fairness_accent>`
+      - 93.5%
+      - :green:`100.0%`
+      - 96.0%
+      - 96.8%
+    * - :ref:`Fairness language <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-fairness_language>`
+      - :red:`66.7%`
+      - 87.5%
+      - 86.7%
+      - 83.3%
+    * - :ref:`Fairness linguistic sentiment <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-fairness_linguistic_sentiment>`
+      - 97.2%
+      - 91.7%
+      - 84.7%
+      - 87.5%
+    * - :ref:`Fairness pitch <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-fairness_pitch>`
+      - 93.3%
+      - :green:`100.0%`
+      - 93.3%
+      - 93.3%
+    * - :ref:`Fairness sex <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-fairness_sex>`
+      - 96.9%
+      - 96.9%
+      - 96.9%
+      - 90.6%
+    * - :ref:`Robustness background noise <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-robustness_background_noise>`
+      - :red:`50.0%`
+      - :red:`54.2%`
+      - :red:`62.5%`
+      - :red:`54.2%`
+    * - :ref:`Robustness low quality phone <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-robustness_low_quality_phone>`
+      - :red:`25.0%`
+      - 75.0%
+      - :green:`100.0%`
+      - 75.0%
+    * - :ref:`Robustness recording condition <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-robustness_recording_condition>`
+      - :red:`0.0%`
+      - :red:`50.0%`
+      - :red:`0.0%`
+      - :red:`50.0%`
+    * - :ref:`Robustness simulated recording condition <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-robustness_simulated_recording_condition>`
+      - :red:`16.7%`
+      - :red:`16.7%`
+      - :red:`50.0%`
+      - :red:`16.7%`
+    * - :ref:`Robustness small changes <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-robustness_small_changes>`
+      - 90.0%
+      - 95.0%
+      - :green:`100.0%`
+      - 90.0%
+    * - :ref:`Robustness spectral tilt <comparison-dominance-d6bb0fbb-1.0.0_cf81bd56-1.1.0_54d9c66b-1.0.1_45cf5a55-1.0.0-robustness_spectral_tilt>`
+      - 87.5%
+      - :green:`100.0%`
+      - 75.0%
+      - :red:`62.5%`
+
+
+.. toctree::
+    :hidden:
+
+    correctness_consistency
+    correctness_distribution
+    correctness_regression
+    correctness_speaker_average
+    correctness_speaker_ranking
+    fairness_accent
+    fairness_language
+    fairness_linguistic_sentiment
+    fairness_pitch
+    fairness_sex
+    robustness_background_noise
+    robustness_low_quality_phone
+    robustness_recording_condition
+    robustness_simulated_recording_condition
+    robustness_small_changes
+    robustness_spectral_tilt

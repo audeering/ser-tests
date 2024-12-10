@@ -498,7 +498,7 @@ or we skip that bin.
     :file: method-tests/emotion/fairness_accent.csv
 
 
-.. _speech-accent-archive: http://data.pp.audeering.com/databases/speech-accent-archive/speech-accent-archive.html
+.. _speech-accent-archive: https://www.kaggle.com/rtatman/speech-accent-archive
 
 
 .. =======================================================================
@@ -626,7 +626,7 @@ on the model predictions,
 it should have the same influence for each
 language.
 
-We use the `checklist-synth`_ database,
+We use the checklist-synth database,
 which contains synthetic speech
 of text with sentiment-labelled
 sentences or words generated from `checklist`_.
@@ -797,7 +797,6 @@ or we skip the bin for that sentiment.
     :file: method-tests/emotion/fairness_linguistic_sentiment.csv
 
 
-.. _checklist-synth: http://data.pp.audeering.com/databases/checklist-synth/checklist-synth.html
 .. _checklist: https://github.com/marcotcr/checklist
 .. _espnet: https://github.com/espnet/espnet
 .. _TTS: https://github.com/coqui-ai/TTS
@@ -1402,7 +1401,7 @@ to compute this percentage.
 
 
 .. _musan: http://www.openslr.org/17/
-.. _cough-speech-sneeze: http://data.pp.audeering.com/databases/cough-speech-sneeze/cough-speech-sneeze.html
+.. _cough-speech-sneeze: https://audeering.github.io/datasets/datasets/cough-speech-sneeze.html
 
 
 .. _method-test-robustness-low-quality-phone:
@@ -1420,7 +1419,7 @@ they may show low pass behavior
 as indicated by the following plot
 showing the magnitude spectrum
 for one low quality phone sample from switchboard-1_,
-and a high quality headphone recording sample from emovo_.
+and a high quality headphone recording sample from emovo.
 
 .. Prepare helper functions
 .. plot::
@@ -1662,8 +1661,7 @@ to compute this percentage.
     :file: method-tests/emotion/robustness_low_quality_phone.csv
 
 
-.. _emovo: http://data.pp.audeering.com/databases/emovo/emovo.html
-.. _switchboard-1: http://data.pp.audeering.com/databases/switchboard-1/switchboard-1.html
+.. _switchboard-1: https://catalog.ldc.upenn.edu/LDC97S62
 
 
 .. =======================================================================

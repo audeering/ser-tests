@@ -1,0 +1,515 @@
+.. _comparison-arousal-1543ec32-1.0.3_a3b14624-1.1.0_75e4ad67-1.1.0_b46935cd-1.0.4-fairness_pitch:
+
+Fairness pitch
+==============
+
+.. role:: red
+.. role:: green
+
+.. csv-table:: Overall scores
+    :header-rows: 1
+    :file: fairness_pitch/overall_scores.csv
+
+
+Concordance Correlation Coeff High Pitch
+----------------------------------------
+
+CCC high pitch - CCC combined.
+
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Concordance Correlation Coeff High Pitch
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.04`
+      - :green:`0.04`
+      - :green:`0.04`
+      - :green:`0.01`
+    * - mean
+      - 0.04
+      - 0.04
+      - 0.04
+      - 0.01
+
+Concordance Correlation Coeff Low Pitch
+---------------------------------------
+
+CCC low pitch - CCC combined.
+
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Concordance Correlation Coeff Low Pitch
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`0.04`
+      - :green:`-0.02`
+      - :green:`0.01`
+      - :green:`0.05`
+    * - mean
+      - 0.04
+      - -0.02
+      - 0.01
+      - 0.05
+
+Concordance Correlation Coeff Medium Pitch
+------------------------------------------
+
+CCC medium pitch - CCC combined.
+
+
+.. flat-table:: Threshold: 0.1
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` Concordance Correlation Coeff Medium Pitch
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - :green:`-0.09`
+      - :green:`-0.03`
+      - :green:`-0.05`
+      - :green:`-0.06`
+    * - mean
+      - -0.09
+      - -0.03
+      - -0.05
+      - -0.06
+
+Precision Per Bin High Pitch
+----------------------------
+
+Precision per bin high pitch - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.125
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` (-inf, 0.25]
+      - :cspan:`3` (0.25, 0.5]
+      - :cspan:`3` (0.5, 0.75]
+      - :cspan:`3` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - 
+      - 
+      - 
+      - 
+      - :green:`0.03`
+      - :green:`0.05`
+      - :green:`0.04`
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`0.00`
+      - :green:`0.00`
+      - :green:`-0.01`
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - 
+      - 0.03
+      - 0.05
+      - 0.04
+      - 0.01
+      - 0.03
+      - 0.00
+      - 0.00
+      - -0.01
+      - 
+      - 
+      - 
+      - 
+
+Precision Per Bin Low Pitch
+---------------------------
+
+Precision per bin low pitch - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.125
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` (-inf, 0.25]
+      - :cspan:`3` (0.25, 0.5]
+      - :cspan:`3` (0.5, 0.75]
+      - :cspan:`3` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - 
+      - 
+      - 
+      - 
+      - :green:`-0.07`
+      - :green:`-0.09`
+      - :green:`-0.05`
+      - :green:`-0.02`
+      - :green:`0.02`
+      - :green:`0.03`
+      - :green:`0.03`
+      - :green:`0.03`
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - 
+      - -0.07
+      - -0.09
+      - -0.05
+      - -0.02
+      - 0.02
+      - 0.03
+      - 0.03
+      - 0.03
+      - 
+      - 
+      - 
+      - 
+
+Precision Per Bin Medium Pitch
+------------------------------
+
+Precision per bin medium pitch - precision per bin combined. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.125
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` (-inf, 0.25]
+      - :cspan:`3` (0.25, 0.5]
+      - :cspan:`3` (0.5, 0.75]
+      - :cspan:`3` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - 
+      - 
+      - 
+      - 
+      - :green:`0.05`
+      - :green:`0.05`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`-0.04`
+      - :green:`-0.03`
+      - :green:`-0.03`
+      - :green:`-0.02`
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - 
+      - 0.05
+      - 0.05
+      - 0.03
+      - 0.02
+      - -0.04
+      - -0.03
+      - -0.03
+      - -0.02
+      - 
+      - 
+      - 
+      - 
+
+Recall Per Bin High Pitch
+-------------------------
+
+Recall per bin high pitch - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.125
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` (-inf, 0.25]
+      - :cspan:`3` (0.25, 0.5]
+      - :cspan:`3` (0.5, 0.75]
+      - :cspan:`3` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - 
+      - 
+      - 
+      - 
+      - :green:`0.04`
+      - :green:`-0.03`
+      - :green:`-0.05`
+      - :green:`-0.09`
+      - :green:`0.05`
+      - :green:`0.11`
+      - :green:`0.10`
+      - :green:`0.07`
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - 
+      - 0.04
+      - -0.03
+      - -0.05
+      - -0.09
+      - 0.05
+      - 0.11
+      - 0.10
+      - 0.07
+      - 
+      - 
+      - 
+      - 
+
+Recall Per Bin Low Pitch
+------------------------
+
+Recall per bin low pitch - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.125
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` (-inf, 0.25]
+      - :cspan:`3` (0.25, 0.5]
+      - :cspan:`3` (0.5, 0.75]
+      - :cspan:`3` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - 
+      - 
+      - 
+      - 
+      - :green:`0.01`
+      - :green:`0.00`
+      - :green:`0.04`
+      - :green:`0.06`
+      - :green:`-0.08`
+      - :red:`-0.13`
+      - :green:`-0.08`
+      - :green:`-0.03`
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - 
+      - 0.01
+      - 0.00
+      - 0.04
+      - 0.06
+      - -0.08
+      - -0.13
+      - -0.08
+      - -0.03
+      - 
+      - 
+      - 
+      - 
+
+Recall Per Bin Medium Pitch
+---------------------------
+
+Recall per bin medium pitch - recall per bin combined. Bins with too few samples are skipped.
+
+
+.. flat-table:: Threshold: 0.125
+    :header-rows: 2
+
+    * - :rspan:`1` Data
+      - :cspan:`3` (-inf, 0.25]
+      - :cspan:`3` (0.25, 0.5]
+      - :cspan:`3` (0.5, 0.75]
+      - :cspan:`3` (0.75, inf]
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+      - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard
+      - 
+      - 
+      - 
+      - 
+      - :green:`-0.04`
+      - :green:`0.03`
+      - :green:`0.01`
+      - :green:`0.03`
+      - :green:`0.03`
+      - :green:`0.02`
+      - :green:`-0.02`
+      - :green:`-0.04`
+      - 
+      - 
+      - 
+      - 
+    * - mean
+      - 
+      - 
+      - 
+      - 
+      - -0.04
+      - 0.03
+      - 0.01
+      - 0.03
+      - 0.03
+      - 0.02
+      - -0.02
+      - -0.04
+      - 
+      - 
+      - 
+      - 
+
+Visualization
+-------------
+
+.. flat-table:: 
+    :header-rows: 1
+
+    * - CNN14
+      - w2v2-b
+      - hubert-b
+      - axlstm
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_high.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_high.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_high.png
+
+      - .. figure:: ../../../test/arousal/b46935cd-1.0.4/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_high.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_low.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_low.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_low.png
+
+      - .. figure:: ../../../test/arousal/b46935cd-1.0.4/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_low.png
+
+    * - .. figure:: ../../../test/arousal/1543ec32-1.0.3/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_medium.png
+
+      - .. figure:: ../../../test/arousal/a3b14624-1.1.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_medium.png
+
+      - .. figure:: ../../../test/arousal/75e4ad67-1.1.0/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_medium.png
+
+      - .. figure:: ../../../test/arousal/b46935cd-1.0.4/fairness_pitch/visualization_msppodcast-2.6.1-emotion.dimensions.test-1.gold_standard_medium.png
+

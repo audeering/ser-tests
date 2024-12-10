@@ -1,0 +1,6 @@
+Entry,Value
+data,MSP-Podcast_Challenge
+model,MSP-Podcast Cat Baseline
+sampling_rate,16000
+attn_pool,True
+quantization,False

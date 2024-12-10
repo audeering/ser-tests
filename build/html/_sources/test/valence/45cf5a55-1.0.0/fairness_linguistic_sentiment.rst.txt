@@ -1,0 +1,98 @@
+.. _test-valence-45cf5a55-1.0.0-fairness_linguistic_sentiment:
+
+Fairness linguistic sentiment
+=============================
+
+.. role:: red
+.. role:: green
+
+78.8% passed tests (63 :green:`passed` / 17 :red:`failed`).
+
+
+Bin Proportion Shift Difference Negative Sentiment
+--------------------------------------------------
+
+Shift in bin proportions for negative sentiment for specific language - Average of the shift in bin proportions for negative sentiment for all languages. The full expression leading to the test score is displayed in parentheses. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/bin-proportion-shift-difference-negative-sentiment.csv
+
+Bin Proportion Shift Difference Neutral Sentiment
+-------------------------------------------------
+
+Shift in bin proportions for neutral sentiment for specific language - Average of the shift in bin proportions for neutral sentiment for all languages. The full expression leading to the test score is displayed in parentheses. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/bin-proportion-shift-difference-neutral-sentiment.csv
+
+Bin Proportion Shift Difference Positive Sentiment
+--------------------------------------------------
+
+Shift in bin proportions for positive sentiment for specific language - Average of the shift in bin proportions for positive sentiment for all languages. The full expression leading to the test score is displayed in parentheses. Bins with too few samples are skipped.
+
+
+.. csv-table:: Threshold: 0.075
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/bin-proportion-shift-difference-positive-sentiment.csv
+
+Mean Shift Difference Negative Sentiment
+----------------------------------------
+
+Mean shift for negative sentiment for specific language - Average of the mean shift for negative sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. csv-table:: Threshold: 0.025
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/mean-shift-difference-negative-sentiment.csv
+
+Mean Shift Difference Neutral Sentiment
+---------------------------------------
+
+Mean shift for neutral sentiment for specific language - Average of the mean shift for neutral sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. csv-table:: Threshold: 0.025
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/mean-shift-difference-neutral-sentiment.csv
+
+Mean Shift Difference Positive Sentiment
+----------------------------------------
+
+Mean shift for positive sentiment for specific language - Average of the mean shift for positive sentiment for all languages. The full expression leading to the test score is displayed in parentheses.
+
+
+.. csv-table:: Threshold: 0.025
+    :header-rows: 1
+    :file: fairness_linguistic_sentiment/mean-shift-difference-positive-sentiment.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-de.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-en.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-es.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-fr.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-it.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-ja.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-pt.png
+    :align: center
+
+.. figure:: fairness_linguistic_sentiment/visualization_checklist-synth-1.0.0-words-in-context-zh.png
+    :align: center

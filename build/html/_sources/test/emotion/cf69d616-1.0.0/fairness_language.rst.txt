@@ -1,0 +1,39 @@
+.. _test-emotion-cf69d616-1.0.0-fairness_language:
+
+Fairness language
+=================
+
+.. role:: red
+.. role:: green
+
+79.2% passed tests (19 :green:`passed` / 5 :red:`failed`).
+
+
+Relative Difference Per Class
+-----------------------------
+
+.. csv-table:: Threshold: 0.1
+    :header-rows: 1
+    :file: fairness_language/relative-difference-per-class.csv
+
+Visualization
+-------------
+
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-de.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-en.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-es.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-fr.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-it.png
+    :align: center
+
+.. figure:: fairness_language/visualization_mozillacommonvoice-10.1.0-zh.png
+    :align: center
