@@ -1,0 +1,5 @@
+Entry,Value
+model,"{'architecture': 'axlstm', 'embeddings': 'axlstm-official/axlstm_base_200_16x4_8x128_fp16_r1'}"
+data,['msppodcast']
+sampling_rate,16000
+quantization,False

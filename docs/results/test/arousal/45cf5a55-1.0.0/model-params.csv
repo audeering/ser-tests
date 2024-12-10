@@ -1,0 +1,5 @@
+Entry,Value
+model,"{'architecture': 'data2vec', 'basemodel': 'facebook/data2vec-audio-large', 'n_layers': 24}"
+data,['msppodcast']
+sampling_rate,16000
+quantization,False

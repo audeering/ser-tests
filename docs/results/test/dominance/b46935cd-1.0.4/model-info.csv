@@ -1,0 +1,8 @@
+Entry,Value
+Author,aderington
+Date,2024-10-14
+Name,onnx
+Subgroup,ser.adv.axlstm
+Version,1.0.4
+Data,"{'train': {'msppodcast': {'version': '2.6.1', 'tables': ['emotion.dimensions.train.gold_standard']}}, 'dev': {'msppodcast': {'version': '2.6.1', 'tables': ['emotion.dimensions.dev.gold_standard']}}, 'config': {'datasets': {'msppodcast-train-dev': {'name': 'msppodcast', 'version': '2.6.1', 'tables': {'train': 'emotion.dimensions.train.gold_standard', 'dev': 'emotion.dimensions.dev.gold_standard'}}, 'msppodcast-test-1': {'name': 'msppodcast', 'version': '2.6.1', 'tables': {'test': 'emotion.dimensions.test-1.gold_standard'}}, 'msppodcast-test-2': {'name': 'msppodcast', 'version': '2.6.1', 'tables': {'test': 'emotion.dimensions.test-2.gold_standard'}}}}}"
+Model,"{'basemodel': 'axlstm-official/axlstm_base_200_16x4_8x128_fp16_r1', 'img_size': (200, 80), 'patch_size': (4, 16), 'frequency_first': False, 'expansion_factor': 2, 'alternation': 'bidirectional', 'depth_multiplier': 1, 'depth': 12, 'num_heads': 12, 'embed_dim': 768, 'freq_dim': 5, 'gradient_accum_steps': 1, 'use_fp16': True, 'per_device_train_batch_size': 1024, 'per_device_eval_batch_size': 1024, 'learning_rate': 0.0001, 'n_epochs': 500, 'min_length_train': 0.5, 'metric_for_eval': 'combined', 'main_metrics': {'arousal': 'CCC', 'dominance': 'CCC', 'valence': 'CCC'}, 'sampling_rate': 16000, 'seed': 1, 'tasks': ['arousal', 'dominance', 'valence'], 'labels': {}, 'task2problemtype': {'arousal': 'regression', 'dominance': 'regression', 'valence': 'regression'}, 'task2postprocessing': {'arousal': None, 'dominance': None, 'valence': None}, 'task2lossweight': {'arousal': 1, 'dominance': 1, 'valence': 1}}"

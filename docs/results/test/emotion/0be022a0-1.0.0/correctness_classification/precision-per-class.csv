@@ -1,0 +1,11 @@
+Data,anger,happiness,neutral,sadness
+crema-d-1.2.0-emotion.categories.test.gold_standard,0.43,0.26,0.84,0.09
+danish-emotional-speech-1.1.1-emotion.test,0.75,0.42,0.34,0.56
+emodb-1.2.0-emotion.categories.test.gold_standard,0.67,0.29,0.74,1.0
+emovo-1.2.1-emotion.test,0.61,0.46,0.43,0.96
+iemocap-2.3.0-emotion.categories.test.gold_standard,0.78,0.28,0.67,0.53
+meld-1.3.1-emotion.categories.test.gold_standard,0.35,0.23,0.69,0.28
+msppodcast-2.6.0-emotion.categories.test-1.gold_standard,0.39,0.73,0.75,0.22
+msppodcast-2.6.0-emotion.categories.test-2.gold_standard,0.14,0.59,0.72,0.12
+polish-emotional-speech-1.1.1-emotion.categories.test.gold_standard,0.76,0.59,0.4,0.9
+ravdess-1.1.2-emotion.speech.test,0.55,0.0,0.24,0.59
